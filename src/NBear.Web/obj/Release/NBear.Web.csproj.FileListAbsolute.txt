@@ -1,0 +1,12 @@
+F:\soft\nbear3.6.6_src\src\NBear.Web\bin\Release\NBear.Web.XML
+F:\soft\nbear3.6.6_src\src\NBear.Web\bin\Release\NBear.Web.dll
+F:\soft\nbear3.6.6_src\src\NBear.Web\bin\Release\NBear.Web.pdb
+F:\soft\nbear3.6.6_src\src\NBear.Web\obj\Release\ResolveAssemblyReference.cache
+F:\soft\nbear3.6.6_src\src\NBear.Web\obj\Release\NBear.Web.dll
+F:\soft\nbear3.6.6_src\src\NBear.Web\obj\Release\NBear.Web.pdb
+F:\nbear3.6.6_src\src\NBear.Web\bin\Release\NBear.Web.XML
+F:\nbear3.6.6_src\src\NBear.Web\bin\Release\NBear.Web.dll
+F:\nbear3.6.6_src\src\NBear.Web\bin\Release\NBear.Web.pdb
+F:\nbear3.6.6_src\src\NBear.Web\obj\Release\ResolveAssemblyReference.cache
+F:\nbear3.6.6_src\src\NBear.Web\obj\Release\NBear.Web.dll
+F:\nbear3.6.6_src\src\NBear.Web\obj\Release\NBear.Web.pdb

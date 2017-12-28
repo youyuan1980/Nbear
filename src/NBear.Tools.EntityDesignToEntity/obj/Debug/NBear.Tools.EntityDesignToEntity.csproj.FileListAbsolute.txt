@@ -1,0 +1,14 @@
+F:\soft\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntity\bin\Debug\NBear.Tools.EntityDesignToEntity.exe
+F:\soft\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntity\bin\Debug\NBear.Tools.EntityDesignToEntity.pdb
+F:\soft\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntity\bin\Debug\NBear.Common.Design.dll
+F:\soft\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntity\bin\Debug\NBear.Common.dll
+F:\soft\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntity\bin\Debug\NBear.Common.Design.pdb
+F:\soft\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntity\bin\Debug\NBear.Common.pdb
+F:\soft\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntity\obj\Debug\ResolveAssemblyReference.cache
+F:\soft\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntity\obj\Debug\NBear.Tools.EntityDesignToEntity.AdvOptForm.resources
+F:\soft\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntity\obj\Debug\NBear.Tools.EntityDesignToEntity.Form1.resources
+F:\soft\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntity\obj\Debug\NBear.Tools.EntityDesignToEntity.Properties.Resources.resources
+F:\soft\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntity\obj\Debug\GenerateResource-ResGen.read.1.tlog
+F:\soft\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntity\obj\Debug\GenerateResource-ResGen.write.1.tlog
+F:\soft\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntity\obj\Debug\NBear.Tools.EntityDesignToEntity.exe
+F:\soft\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntity\obj\Debug\NBear.Tools.EntityDesignToEntity.pdb

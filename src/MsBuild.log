@@ -1,0 +1,1369 @@
+Microsoft (R) Build Engine Version 2.0.50727.42
+[Microsoft .NET Framework, Version 2.0.50727.42]
+Copyright (C) Microsoft Corporation 2005. All rights reserved.
+
+Build started 2007-3-7 8:54:20.
+__________________________________________________
+Project "C:\Teddy\NBearV3\src\NBearV3.sln" (Rebuild target(s)):
+
+Target ValidateSolutionConfiguration:
+    Building solution configuration "Release|Any CPU".
+Target Rebuild:
+    Target Common\NBear_Common:Rebuild:
+        __________________________________________________
+        Project "C:\Teddy\NBearV3\src\NBearV3.sln" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (Rebuild target(s)):
+
+        Target CoreClean:
+            Deleting file "bin\Release\NBear.Common.XML".
+            Deleting file "bin\Release\NBear.Common.dll".
+            Deleting file "bin\Release\NBear.Common.pdb".
+            Deleting file "obj\Release\NBear.Common.dll".
+            Deleting file "obj\Release\NBear.Common.pdb".
+        Target CoreCompile:
+            C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Csc.exe /noconfig /nowarn:1701,1702 /errorreport:prompt /warn:4 /doc:bin\Release\NBear.Common.XML /define:TRACE /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.configuration.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Web.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /debug:pdbonly /keyfile:nbear.snk /optimize+ /out:obj\Release\NBear.Common.dll /target:library Caching\Cache.cs CompressionManager.cs CryptographyManager.cs DesignByContract.cs EntityArrayList.cs EntityQuery.cs Exceptions.cs Entity.cs ILogable.cs JSON\JSONArray.cs JSON\JSONFacade.cs JSON\JSONObject.cs JSON\JSONTokener.cs JSON\JSONUtils.cs JSON\Newtonsoft.Json\Converters\HtmlColorConverter.cs JSON\Newtonsoft.Json\Converters\XmlNodeConverter.cs JSON\Newtonsoft.Json\Identifier.cs JSON\Newtonsoft.Json\JavaScriptArray.cs JSON\Newtonsoft.Json\JavaScriptConstructor.cs JSON\Newtonsoft.Json\JavaScriptConvert.cs JSON\Newtonsoft.Json\JavaScriptObject.cs JSON\Newtonsoft.Json\JavaScriptParameters.cs JSON\Newtonsoft.Json\JavaScriptUtils.cs JSON\Newtonsoft.Json\JsonConverter.cs JSON\Newtonsoft.Json\JsonConverterCollection.cs JSON\Newtonsoft.Json\JsonHandler.cs JSON\Newtonsoft.Json\JsonReader.cs JSON\Newtonsoft.Json\JsonReaderException.cs JSON\Newtonsoft.Json\JsonSerializationException.cs JSON\Newtonsoft.Json\JsonSerializer.cs JSON\Newtonsoft.Json\JsonToken.cs JSON\Newtonsoft.Json\JsonWriter.cs JSON\Newtonsoft.Json\JsonWriterException.cs JSON\Newtonsoft.Json\StringBuffer.cs JSON\Newtonsoft.Json\Utilities\CollectionUtils.cs JSON\Newtonsoft.Json\Utilities\HandlerBase.cs JSON\Newtonsoft.Json\Utilities\ReflectionUtils.cs JSON\Newtonsoft.Json\Utilities\StringUtils.cs MetaDataManager.cs Properties\AssemblyInfo.cs SerializationManager.cs SevenZip\Common\CommandLineParser.cs SevenZip\Common\CRC.cs SevenZip\Common\InBuffer.cs SevenZip\Common\OutBuffer.cs SevenZip\Compress\LzmaAlone\SevenZipHelper.cs SevenZip\Compress\LZMA\LzmaBase.cs SevenZip\Compress\LZMA\LzmaDecoder.cs SevenZip\Compress\LZMA\LzmaEncoder.cs SevenZip\Compress\LZ\IMatchFinder.cs SevenZip\Compress\LZ\LzBinTree.cs SevenZip\Compress\LZ\LzInWindow.cs SevenZip\Compress\LZ\LzOutWindow.cs SevenZip\Compress\RangeCoder\RangeCoder.cs SevenZip\Compress\RangeCoder\RangeCoderBit.cs SevenZip\Compress\RangeCoder\RangeCoderBitTree.cs SevenZip\ICoder.cs Types\Tree.cs Utils.cs
+            EntityQuery.cs(2375,16): warning CS1591: Missing XML comment for publicly visible type or member 'NBear.Common.EntityArrayQuery<EntityType>.EntityArrayQuery(EntityType[])'
+            Entity.cs(88,24): warning CS1591: Missing XML comment for publicly visible type or member 'NBear.Common.Entity.isAttached'
+            Entity.cs(476,26): warning CS1572: XML comment on 'NBear.Common.Entity.GetPrimaryKeyValues(object)' has a param tag for 'type', but there is no parameter by that name
+            JSON\Newtonsoft.Json\Converters\HtmlColorConverter.cs(27,15): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Converters.HtmlColorConverter'
+            JSON\Newtonsoft.Json\JsonConverter.cs(26,24): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JsonConverter'
+            JSON\Newtonsoft.Json\JsonConverter.cs(28,23): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JsonConverter.WriteJson(Newtonsoft.Json.JsonWriter, object)'
+            JSON\Newtonsoft.Json\JsonConverter.cs(35,25): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JsonConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type)'
+            JSON\Newtonsoft.Json\JsonConverter.cs(40,24): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JsonConverter.CanConvert(System.Type)'
+            JSON\Newtonsoft.Json\Converters\HtmlColorConverter.cs(29,24): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Converters.HtmlColorConverter.WriteJson(Newtonsoft.Json.JsonWriter, object)'
+            JSON\Newtonsoft.Json\Converters\HtmlColorConverter.cs(34,24): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Converters.HtmlColorConverter.CanConvert(System.Type)'
+            JSON\Newtonsoft.Json\Converters\XmlNodeConverter.cs(29,15): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Converters.XmlNodeConverter'
+            JSON\Newtonsoft.Json\Converters\XmlNodeConverter.cs(39,24): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Converters.XmlNodeConverter.WriteJson(Newtonsoft.Json.JsonWriter, object)'
+            JSON\Newtonsoft.Json\Converters\XmlNodeConverter.cs(205,26): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Converters.XmlNodeConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type)'
+            JSON\Newtonsoft.Json\Converters\XmlNodeConverter.cs(440,24): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Converters.XmlNodeConverter.CanConvert(System.Type)'
+            JSON\Newtonsoft.Json\Identifier.cs(34,15): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Identifier'
+            JSON\Newtonsoft.Json\Identifier.cs(43,10): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Identifier.Identifier(string)'
+            JSON\Newtonsoft.Json\Identifier.cs(53,24): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Identifier.Equals(object)'
+            JSON\Newtonsoft.Json\Identifier.cs(60,15): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Identifier.Equals(Newtonsoft.Json.Identifier)'
+            JSON\Newtonsoft.Json\Identifier.cs(65,22): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Identifier.Equals(Newtonsoft.Json.Identifier, Newtonsoft.Json.Identifier)'
+            JSON\Newtonsoft.Json\Identifier.cs(76,23): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Identifier.GetHashCode()'
+            JSON\Newtonsoft.Json\Identifier.cs(81,26): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Identifier.ToString()'
+            JSON\Newtonsoft.Json\Identifier.cs(86,22): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Identifier.operator ==(Newtonsoft.Json.Identifier, Newtonsoft.Json.Identifier)'
+            JSON\Newtonsoft.Json\Identifier.cs(91,22): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Identifier.operator !=(Newtonsoft.Json.Identifier, Newtonsoft.Json.Identifier)'
+            JSON\Newtonsoft.Json\Identifier.cs(38,17): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Identifier.Name'
+            JSON\Newtonsoft.Json\JavaScriptConstructor.cs(44,16): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JavaScriptConstructor.JavaScriptConstructor(string, Newtonsoft.Json.JavaScriptParameters)'
+            JSON\Newtonsoft.Json\JavaScriptConstructor.cs(56,26): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JavaScriptConstructor.ToString()'
+            JSON\Newtonsoft.Json\JavaScriptConstructor.cs(34,31): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JavaScriptConstructor.Parameters'
+            JSON\Newtonsoft.Json\JavaScriptConstructor.cs(39,17): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JavaScriptConstructor.Name'
+            JSON\Newtonsoft.Json\JavaScriptConvert.cs(325,24): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JavaScriptConvert.SerializeObject(object, params Newtonsoft.Json.JsonConverter[])'
+            JSON\Newtonsoft.Json\JavaScriptConvert.cs(368,24): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JavaScriptConvert.DeserializeObject(string, System.Type, params Newtonsoft.Json.JsonConverter[])'
+            JSON\Newtonsoft.Json\JavaScriptConvert.cs(391,24): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JavaScriptConvert.SerializeXmlNode(System.Xml.XmlNode)'
+            JSON\Newtonsoft.Json\JavaScriptConvert.cs(398,25): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JavaScriptConvert.DeerializeXmlNode(string)'
+            JSON\Newtonsoft.Json\JavaScriptParameters.cs(27,15): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JavaScriptParameters'
+            JSON\Newtonsoft.Json\JavaScriptParameters.cs(29,47): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JavaScriptParameters.Empty'
+            JSON\Newtonsoft.Json\JavaScriptParameters.cs(31,10): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JavaScriptParameters.JavaScriptParameters(System.Collections.Generic.IList<object>)'
+            JSON\Newtonsoft.Json\JsonConverterCollection.cs(27,15): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JsonConverterCollection'
+            JSON\Newtonsoft.Json\JsonHandler.cs(11,24): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JsonHandler'
+            JSON\Newtonsoft.Json\Utilities\HandlerBase.cs(10,24): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Utilities.HandlerBase'
+            JSON\Newtonsoft.Json\Utilities\HandlerBase.cs(14,25): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Utilities.HandlerBase.Context'
+            JSON\Newtonsoft.Json\Utilities\HandlerBase.cs(26,34): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Utilities.HandlerBase.Application'
+            JSON\Newtonsoft.Json\Utilities\HandlerBase.cs(37,29): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Utilities.HandlerBase.ApplicationInstance'
+            JSON\Newtonsoft.Json\Utilities\HandlerBase.cs(48,19): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Utilities.HandlerBase.Cache'
+            JSON\Newtonsoft.Json\Utilities\HandlerBase.cs(59,25): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Utilities.HandlerBase.Request'
+            JSON\Newtonsoft.Json\Utilities\HandlerBase.cs(70,26): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Utilities.HandlerBase.Response'
+            JSON\Newtonsoft.Json\Utilities\HandlerBase.cs(81,31): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Utilities.HandlerBase.Server'
+            JSON\Newtonsoft.Json\Utilities\HandlerBase.cs(92,26): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Utilities.HandlerBase.Trace'
+            JSON\Newtonsoft.Json\Utilities\HandlerBase.cs(103,21): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Utilities.HandlerBase.User'
+            JSON\Newtonsoft.Json\JsonHandler.cs(15,27): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JsonHandler.WriteResult(Newtonsoft.Json.JsonWriter)'
+            JSON\Newtonsoft.Json\JsonHandler.cs(17,22): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JsonHandler.JsonResponse(System.Web.HttpResponse, System.Action<Newtonsoft.Json.JsonWriter>)'
+            JSON\Newtonsoft.Json\JsonHandler.cs(29,26): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JsonHandler.OnError(System.EventArgs)'
+            JSON\Newtonsoft.Json\JsonHandler.cs(13,29): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JsonHandler.Error'
+            JSON\Newtonsoft.Json\JsonSerializer.cs(76,34): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JsonSerializer.Converters'
+            MetaDataManager.cs(99,28): warning CS1591: Missing XML comment for publicly visible type or member 'NBear.Common.MetaDataManager.AddEntityConfigurations(NBear.Common.EntityConfiguration[])'
+            MetaDataManager.cs(158,28): warning CS1591: Missing XML comment for publicly visible type or member 'NBear.Common.MetaDataManager.ParseNonRelatedEntities()'
+            SevenZip\Common\CommandLineParser.cs(8,14): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchType'
+            SevenZip\Common\CommandLineParser.cs(10,3): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchType.Simple'
+            SevenZip\Common\CommandLineParser.cs(11,3): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchType.PostMinus'
+            SevenZip\Common\CommandLineParser.cs(12,3): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchType.LimitedPostString'
+            SevenZip\Common\CommandLineParser.cs(13,3): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchType.UnLimitedPostString'
+            SevenZip\Common\CommandLineParser.cs(14,3): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchType.PostChar'
+            SevenZip\Common\CommandLineParser.cs(17,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchForm'
+            SevenZip\Common\CommandLineParser.cs(19,17): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchForm.IDString'
+            SevenZip\Common\CommandLineParser.cs(20,21): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchForm.Type'
+            SevenZip\Common\CommandLineParser.cs(21,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchForm.Multi'
+            SevenZip\Common\CommandLineParser.cs(22,14): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchForm.MinLen'
+            SevenZip\Common\CommandLineParser.cs(23,14): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchForm.MaxLen'
+            SevenZip\Common\CommandLineParser.cs(24,17): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchForm.PostCharSet'
+            SevenZip\Common\CommandLineParser.cs(26,10): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchForm.SwitchForm(string, SevenZip.CommandLineParser.SwitchType, bool, int, int, string)'
+            SevenZip\Common\CommandLineParser.cs(36,10): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchForm.SwitchForm(string, SevenZip.CommandLineParser.SwitchType, bool, int)'
+            SevenZip\Common\CommandLineParser.cs(40,10): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchForm.SwitchForm(string, SevenZip.CommandLineParser.SwitchType, bool)'
+            SevenZip\Common\CommandLineParser.cs(46,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchResult'
+            SevenZip\Common\CommandLineParser.cs(48,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchResult.ThereIs'
+            SevenZip\Common\CommandLineParser.cs(49,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchResult.WithMinus'
+            SevenZip\Common\CommandLineParser.cs(50,20): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchResult.PostStrings'
+            SevenZip\Common\CommandLineParser.cs(51,14): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchResult.PostCharIndex'
+            SevenZip\Common\CommandLineParser.cs(52,10): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchResult.SwitchResult()'
+            SevenZip\Common\CommandLineParser.cs(58,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.Parser'
+            SevenZip\Common\CommandLineParser.cs(60,20): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.Parser.NonSwitchStrings'
+            SevenZip\Common\CommandLineParser.cs(63,10): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.Parser.Parser(int)'
+            SevenZip\Common\CommandLineParser.cs(171,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.Parser.ParseStrings(SevenZip.CommandLineParser.SwitchForm[], string[])'
+            SevenZip\Common\CommandLineParser.cs(191,21): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.Parser.ParseCommand(SevenZip.CommandLineParser.CommandForm[], string, out string)'
+            SevenZip\Common\CommandLineParser.cs(189,23): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.Parser.this[int]'
+            SevenZip\Common\CommandLineParser.cs(258,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.CommandForm'
+            SevenZip\Common\CommandLineParser.cs(260,17): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.CommandForm.IDString'
+            SevenZip\Common\CommandLineParser.cs(261,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.CommandForm.PostStringMode'
+            SevenZip\Common\CommandLineParser.cs(262,10): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.CommandForm.CommandForm(string, bool)'
+            SevenZip\Common\CRC.cs(5,14): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CRC'
+            SevenZip\Common\CRC.cs(7,33): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CRC.Table'
+            SevenZip\Common\CRC.cs(27,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CRC.Init()'
+            SevenZip\Common\CRC.cs(29,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CRC.UpdateByte(byte)'
+            SevenZip\Common\CRC.cs(34,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CRC.Update(byte[], uint, uint)'
+            SevenZip\Common\CRC.cs(40,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CRC.GetDigest()'
+            SevenZip\Common\InBuffer.cs(5,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.InBuffer'
+            SevenZip\Common\InBuffer.cs(15,10): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.InBuffer.InBuffer(uint)'
+            SevenZip\Common\InBuffer.cs(21,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.InBuffer.Init(System.IO.Stream)'
+            SevenZip\Common\InBuffer.cs(30,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.InBuffer.ReadBlock()'
+            SevenZip\Common\InBuffer.cs(43,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.InBuffer.ReleaseStream()'
+            SevenZip\Common\InBuffer.cs(49,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.InBuffer.ReadByte(byte)'
+            SevenZip\Common\InBuffer.cs(58,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.InBuffer.ReadByte()'
+            SevenZip\Common\InBuffer.cs(67,16): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.InBuffer.GetProcessedSize()'
+            SevenZip\Common\OutBuffer.cs(5,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.OutBuffer'
+            SevenZip\Common\OutBuffer.cs(13,10): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.OutBuffer.OutBuffer(uint)'
+            SevenZip\Common\OutBuffer.cs(19,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.OutBuffer.SetStream(System.IO.Stream)'
+            SevenZip\Common\OutBuffer.cs(20,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.OutBuffer.FlushStream()'
+            SevenZip\Common\OutBuffer.cs(21,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.OutBuffer.CloseStream()'
+            SevenZip\Common\OutBuffer.cs(22,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.OutBuffer.ReleaseStream()'
+            SevenZip\Common\OutBuffer.cs(24,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.OutBuffer.Init()'
+            SevenZip\Common\OutBuffer.cs(30,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.OutBuffer.WriteByte(byte)'
+            SevenZip\Common\OutBuffer.cs(37,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.OutBuffer.FlushData()'
+            SevenZip\Common\OutBuffer.cs(45,16): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.OutBuffer.GetProcessedSize()'
+            SevenZip\Compress\LzmaAlone\SevenZipHelper.cs(7,25): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.SevenZipHelper'
+            SevenZip\Compress\LzmaAlone\SevenZipHelper.cs(52,30): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.SevenZipHelper.Compress(byte[])'
+            SevenZip\Compress\LzmaAlone\SevenZipHelper.cs(67,30): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.SevenZipHelper.Decompress(byte[])'
+            SevenZip\Compress\LZMA\LzmaDecoder.cs(9,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.Decoder'
+            SevenZip\ICoder.cs(37,19): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.ICoder'
+            SevenZip\ICoder.cs(141,19): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.ISetDecoderProperties'
+            SevenZip\ICoder.cs(143,8): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.ISetDecoderProperties.SetDecoderProperties(byte[])'
+            SevenZip\Compress\LZMA\LzmaDecoder.cs(165,10): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.Decoder.Decoder()'
+            SevenZip\Compress\LZMA\LzmaDecoder.cs(234,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.Decoder.Code(System.IO.Stream, System.IO.Stream, long, long, SevenZip.ICodeProgress)'
+            SevenZip\Compress\LZMA\LzmaDecoder.cs(353,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.Decoder.SetDecoderProperties(byte[])'
+            SevenZip\Compress\LZMA\LzmaEncoder.cs(9,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.Encoder'
+            SevenZip\ICoder.cs(131,19): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.ISetCoderProperties'
+            SevenZip\ICoder.cs(133,8): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.ISetCoderProperties.SetCoderProperties(SevenZip.CoderPropID[], object[])'
+            SevenZip\ICoder.cs(136,19): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.IWriteCoderProperties'
+            SevenZip\ICoder.cs(138,8): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.IWriteCoderProperties.WriteCoderProperties(System.IO.Stream)'
+            SevenZip\Compress\LZMA\LzmaEncoder.cs(382,10): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.Encoder.Encoder()'
+            SevenZip\Compress\LZMA\LzmaEncoder.cs(1063,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.Encoder.CodeOneBlock(out long, out long, out bool)'
+            SevenZip\Compress\LZMA\LzmaEncoder.cs(1271,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.Encoder.Code(System.IO.Stream, System.IO.Stream, long, long, SevenZip.ICodeProgress)'
+            SevenZip\Compress\LZMA\LzmaEncoder.cs(1301,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.Encoder.WriteCoderProperties(System.IO.Stream)'
+            SevenZip\Compress\LZMA\LzmaEncoder.cs(1366,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.Encoder.SetCoderProperties(SevenZip.CoderPropID[], object[])'
+            SevenZip\Compress\LZ\LzBinTree.cs(7,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree'
+            SevenZip\Compress\LZ\LzInWindow.cs(7,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow'
+            SevenZip\Compress\LZ\LzInWindow.cs(9,17): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow._bufferBase'
+            SevenZip\Compress\LZ\LzInWindow.cs(16,17): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow._bufferOffset'
+            SevenZip\Compress\LZ\LzInWindow.cs(18,17): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow._blockSize'
+            SevenZip\Compress\LZ\LzInWindow.cs(19,17): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow._pos'
+            SevenZip\Compress\LZ\LzInWindow.cs(22,17): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow._streamPos'
+            SevenZip\Compress\LZ\LzInWindow.cs(24,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow.MoveBlock()'
+            SevenZip\Compress\LZ\LzInWindow.cs(39,23): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow.ReadBlock()'
+            SevenZip\Compress\LZ\LzInWindow.cs(67,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow.Create(uint, uint, uint)'
+            SevenZip\Compress\LZ\LzInWindow.cs(81,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow.SetStream(System.IO.Stream)'
+            SevenZip\Compress\LZ\LzInWindow.cs(82,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow.ReleaseStream()'
+            SevenZip\Compress\LZ\LzInWindow.cs(84,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow.Init()'
+            SevenZip\Compress\LZ\LzInWindow.cs(93,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow.MovePos()'
+            SevenZip\Compress\LZ\LzInWindow.cs(105,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow.GetIndexByte(int)'
+            SevenZip\Compress\LZ\LzInWindow.cs(108,17): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow.GetMatchLen(int, uint, uint)'
+            SevenZip\Compress\LZ\LzInWindow.cs(122,17): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow.GetNumAvailableBytes()'
+            SevenZip\Compress\LZ\LzInWindow.cs(124,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow.ReduceOffsets(int)'
+            SevenZip\Compress\LZ\LzBinTree.cs(34,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree.SetType(int)'
+            SevenZip\Compress\LZ\LzBinTree.cs(51,19): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree.SetStream(System.IO.Stream)'
+            SevenZip\Compress\LZ\LzBinTree.cs(52,19): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree.ReleaseStream()'
+            SevenZip\Compress\LZ\LzBinTree.cs(54,19): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree.Init()'
+            SevenZip\Compress\LZ\LzBinTree.cs(63,19): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree.MovePos()'
+            SevenZip\Compress\LZ\LzBinTree.cs(72,19): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree.GetIndexByte(int)'
+            SevenZip\Compress\LZ\LzBinTree.cs(74,21): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree.GetMatchLen(int, uint, uint)'
+            SevenZip\Compress\LZ\LzBinTree.cs(77,21): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree.GetNumAvailableBytes()'
+            SevenZip\Compress\LZ\LzBinTree.cs(79,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree.Create(uint, uint, uint, uint)'
+            SevenZip\Compress\LZ\LzBinTree.cs(118,17): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree.GetMatches(uint[])'
+            SevenZip\Compress\LZ\LzBinTree.cs(252,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree.Skip(uint)'
+            SevenZip\Compress\LZ\LzBinTree.cs(365,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree.SetCutValue(uint)'
+            SevenZip\Compress\LZ\LzOutWindow.cs(5,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.OutWindow'
+            SevenZip\Compress\LZ\LzOutWindow.cs(13,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.OutWindow.Create(uint)'
+            SevenZip\Compress\LZ\LzOutWindow.cs(25,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.OutWindow.Init(System.IO.Stream, bool)'
+            SevenZip\Compress\LZ\LzOutWindow.cs(36,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.OutWindow.Init(System.IO.Stream)'
+            SevenZip\Compress\LZ\LzOutWindow.cs(38,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.OutWindow.ReleaseStream()'
+            SevenZip\Compress\LZ\LzOutWindow.cs(44,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.OutWindow.Flush()'
+            SevenZip\Compress\LZ\LzOutWindow.cs(55,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.OutWindow.CopyBlock(uint, uint)'
+            SevenZip\Compress\LZ\LzOutWindow.cs(70,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.OutWindow.PutByte(byte)'
+            SevenZip\Compress\LZ\LzOutWindow.cs(77,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.OutWindow.GetByte(uint)'
+            SevenZip\ICoder.cs(23,19): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.ICodeProgress'
+            SevenZip\ICoder.cs(93,59): warning CS1570: XML comment on 'SevenZip.CoderPropID.PosStateBits' has badly formed XML -- 'A name was started with an invalid character.'
+            SevenZip\ICoder.cs(97,61): warning CS1570: XML comment on 'SevenZip.CoderPropID.LitContextBits' has badly formed XML -- 'A name was started with an invalid character.'
+            SevenZip\ICoder.cs(101,62): warning CS1570: XML comment on 'SevenZip.CoderPropID.LitPosBits' has badly formed XML -- 'A name was started with an invalid character.'
+        Done building target "CoreCompile" in project "NBear.Common.csproj".
+        Target CopyFilesToOutputDirectory:
+            Copying file from "obj\Release\NBear.Common.dll" to "bin\Release\NBear.Common.dll".
+            NBear.Common -> C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll
+            Copying file from "obj\Release\NBear.Common.pdb" to "bin\Release\NBear.Common.pdb".
+
+        Done building project "NBear.Common.csproj".
+    Target Data\NBear_Data:Rebuild:
+        __________________________________________________
+        Project "C:\Teddy\NBearV3\src\NBearV3.sln" is building "C:\Teddy\NBearV3\src\NBear.Data\NBear.Data.csproj" (Rebuild target(s)):
+
+        Target CoreClean:
+            Deleting file "bin\Release\NBear.Data.XML".
+            Deleting file "bin\Release\NBear.Data.dll".
+            Deleting file "bin\Release\NBear.Data.pdb".
+            Deleting file "bin\Release\NBear.Common.dll".
+            Deleting file "bin\Release\NBear.Common.pdb".
+            Deleting file "bin\Release\NBear.Common.xml".
+            Deleting file "obj\Release\ResolveAssemblyReference.cache".
+            Deleting file "obj\Release\NBear.Data.dll".
+            Deleting file "obj\Release\NBear.Data.pdb".
+        Target ResolveProjectReferences:
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Data\NBear.Data.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Data\NBear.Data.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetNativeManifest target(s)):
+
+        Target CoreCompile:
+            C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Csc.exe /noconfig /nowarn:1701,1702 /errorreport:prompt /warn:4 /doc:bin\Release\NBear.Data.XML /define:TRACE /reference:C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.configuration.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.OracleClient.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Transactions.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /debug:pdbonly /keyfile:nbear.snk /optimize+ /out:obj\Release\NBear.Data.dll /target:library BatchCommander.cs CacheConfiguration.cs Database.cs DbProvider.cs DbProviderFactory.cs Gateway.cs IPageSplit.cs IStatementFactory.cs MsAccess\AccessDbProvider.cs MsAccess\AccessPageSplit.cs MsAccess\AccessStatementFactory.cs MySql\MySqlDbProvider.cs MySql\MySqlPageSplit.cs MySql\MySqlStatementFactory.cs Oracle\OracleDbProvider.cs Oracle\OraclePageSplit.cs Oracle\OracleStatementFactory.cs PageSelector.cs PageSplit.cs ParameterCache.cs Properties\AssemblyInfo.cs DbHelper.cs SqlServer9\SqlDbProvider9.cs SqlServer9\SqlPageSplit9.cs SqlServer\SqlDbProvider.cs SqlServer\SqlPageSplit.cs SqlServer\SqlStatementFactory.cs StatementFactory.cs
+            BatchCommander.cs(71,21): warning CS1591: Missing XML comment for publicly visible type or member 'NBear.Data.BatchCommander.ExecuteBatch()'
+            PageSplit.cs(269,25): warning CS1591: Missing XML comment for publicly visible type or member 'NBear.Data.PageSplit.ParamValues'
+        Done building target "CoreCompile" in project "NBear.Data.csproj".
+        Target _CopyFilesMarkedCopyLocal:
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll" to "bin\Release\NBear.Common.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.pdb" to "bin\Release\NBear.Common.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.xml" to "bin\Release\NBear.Common.xml".
+        Target GetCopyToOutputDirectoryItems:
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Data\NBear.Data.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+        Target CopyFilesToOutputDirectory:
+            Copying file from "obj\Release\NBear.Data.dll" to "bin\Release\NBear.Data.dll".
+            NBear.Data -> C:\Teddy\NBearV3\src\NBear.Data\bin\Release\NBear.Data.dll
+            Copying file from "obj\Release\NBear.Data.pdb" to "bin\Release\NBear.Data.pdb".
+
+        Done building project "NBear.Data.csproj".
+    Target Common\NBear_Common_Design:Rebuild:
+        __________________________________________________
+        Project "C:\Teddy\NBearV3\src\NBearV3.sln" is building "C:\Teddy\NBearV3\src\NBear.Common.Design\NBear.Common.Design.csproj" (Rebuild target(s)):
+
+        Target CoreClean:
+            Deleting file "bin\Release\NBear.Common.Design.XML".
+            Deleting file "bin\Release\NBear.Common.Design.dll".
+            Deleting file "bin\Release\NBear.Common.Design.pdb".
+            Deleting file "obj\Release\NBear.Common.Design.dll".
+            Deleting file "obj\Release\NBear.Common.Design.pdb".
+        Target CoreCompile:
+            C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Csc.exe /noconfig /nowarn:1701,1702 /errorreport:prompt /warn:4 /doc:bin\Release\NBear.Common.Design.XML /define:TRACE /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /debug:pdbonly /keyfile:nbear.snk /optimize+ /out:obj\Release\NBear.Common.Design.dll /target:library OtherAttributes.cs Entity.cs QueryAttributes.cs Properties\AssemblyInfo.cs QueryDescriber.cs
+            OtherAttributes.cs(169,16): warning CS1591: Missing XML comment for publicly visible type or member 'NBear.Common.Design.AdditionalSqlScriptAttribute.AdditionalSqlScriptAttribute(string)'
+            OtherAttributes.cs(348,26): warning CS1572: XML comment on 'NBear.Common.Design.CommentAttribute.CommentAttribute(string)' has a param tag for 'name', but there is no parameter by that name
+            OtherAttributes.cs(349,40): warning CS1573: Parameter 'content' has no matching param tag in the XML comment for 'NBear.Common.Design.CommentAttribute.CommentAttribute(string)' (but other parameters do)
+        Done building target "CoreCompile" in project "NBear.Common.Design.csproj".
+        Target CopyFilesToOutputDirectory:
+            Copying file from "obj\Release\NBear.Common.Design.dll" to "bin\Release\NBear.Common.Design.dll".
+            NBear.Common.Design -> C:\Teddy\NBearV3\src\NBear.Common.Design\bin\Release\NBear.Common.Design.dll
+            Copying file from "obj\Release\NBear.Common.Design.pdb" to "bin\Release\NBear.Common.Design.pdb".
+
+        Done building project "NBear.Common.Design.csproj".
+    Target Service\NBear_Net:Rebuild:
+        __________________________________________________
+        Project "C:\Teddy\NBearV3\src\NBearV3.sln" is building "C:\Teddy\NBearV3\src\NBear.Net\NBear.Net.csproj" (Rebuild target(s)):
+
+        Target CoreClean:
+            Deleting file "bin\Release\NBear.Net.XML".
+            Deleting file "bin\Release\NBear.Net.dll".
+            Deleting file "bin\Release\NBear.Net.pdb".
+            Deleting file "bin\Release\NBear.Common.dll".
+            Deleting file "bin\Release\NBear.Common.pdb".
+            Deleting file "bin\Release\NBear.Common.xml".
+            Deleting file "obj\Release\NBear.Net.dll".
+            Deleting file "obj\Release\NBear.Net.pdb".
+        Target ResolveProjectReferences:
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Net\NBear.Net.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Net\NBear.Net.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetNativeManifest target(s)):
+
+        Target CoreCompile:
+            C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Csc.exe /noconfig /nowarn:1701,1702 /errorreport:prompt /warn:4 /doc:bin\Release\NBear.Net.XML /define:TRACE;DBC_CHECK_PRECONDITION /reference:C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Runtime.Remoting.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /debug:pdbonly /keyfile:nbear.snk /optimize+ /out:obj\Release\NBear.Net.dll /target:library Properties\AssemblyInfo.cs Remoting\RemotingChannelType.cs Remoting\RemotingClientHelper.cs Remoting\RemotingServiceHelper.cs
+        Target _CopyFilesMarkedCopyLocal:
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll" to "bin\Release\NBear.Common.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.pdb" to "bin\Release\NBear.Common.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.xml" to "bin\Release\NBear.Common.xml".
+        Target GetCopyToOutputDirectoryItems:
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Net\NBear.Net.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+        Target CopyFilesToOutputDirectory:
+            Copying file from "obj\Release\NBear.Net.dll" to "bin\Release\NBear.Net.dll".
+            NBear.Net -> C:\Teddy\NBearV3\src\NBear.Net\bin\Release\NBear.Net.dll
+            Copying file from "obj\Release\NBear.Net.pdb" to "bin\Release\NBear.Net.pdb".
+    Target Service\NBear_IoC:Rebuild:
+        __________________________________________________
+        Project "C:\Teddy\NBearV3\src\NBearV3.sln" is building "C:\Teddy\NBearV3\src\NBear.IoC\NBear.IoC.csproj" (Rebuild target(s)):
+
+        Target CoreClean:
+            Deleting file "bin\Release\NBear.IoC.XML".
+            Deleting file "bin\Release\NBear.IoC.dll".
+            Deleting file "bin\Release\NBear.IoC.pdb".
+            Deleting file "bin\Release\Castle.Core.dll".
+            Deleting file "bin\Release\Castle.MicroKernel.dll".
+            Deleting file "bin\Release\Castle.Windsor.dll".
+            Deleting file "bin\Release\NBear.Common.dll".
+            Deleting file "bin\Release\NBear.Net.dll".
+            Deleting file "bin\Release\Castle.DynamicProxy.dll".
+            Deleting file "bin\Release\Castle.Windsor.xml".
+            Deleting file "bin\Release\Castle.DynamicProxy.xml".
+            Deleting file "bin\Release\Castle.Core.xml".
+            Deleting file "bin\Release\Castle.MicroKernel.xml".
+            Deleting file "bin\Release\NBear.Net.pdb".
+            Deleting file "bin\Release\NBear.Net.xml".
+            Deleting file "bin\Release\NBear.Common.pdb".
+            Deleting file "bin\Release\NBear.Common.xml".
+            Deleting file "obj\Release\ResolveAssemblyReference.cache".
+            Deleting file "obj\Release\NBear.IoC.dll".
+            Deleting file "obj\Release\NBear.IoC.pdb".
+        Target ResolveProjectReferences:
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.IoC\NBear.IoC.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.IoC\NBear.IoC.csproj" is building "C:\Teddy\NBearV3\src\NBear.Net\NBear.Net.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.IoC\NBear.IoC.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetNativeManifest target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.IoC\NBear.IoC.csproj" is building "C:\Teddy\NBearV3\src\NBear.Net\NBear.Net.csproj" (GetNativeManifest target(s)):
+
+        Target CoreCompile:
+            C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Csc.exe /noconfig /nowarn:1701,1702 /errorreport:prompt /warn:4 /doc:bin\Release\NBear.IoC.XML /define:TRACE;DBC_CHECK_PRECONDITION /reference:..\..\lib\Castle.Core.dll /reference:..\..\lib\Castle.MicroKernel.dll /reference:..\..\lib\Castle.Windsor.dll /reference:C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll /reference:C:\Teddy\NBearV3\src\NBear.Net\bin\Release\NBear.Net.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.configuration.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /debug:pdbonly /keyfile:nbear.snk /optimize+ /out:obj\Release\NBear.IoC.dll /target:library Properties\AssemblyInfo.cs Service\BaseServiceInterfaceImpl.cs Service\Configuration\ServiceFactorySetting.cs Service\Exceptions.cs Service\Facilities\ServiceDiscoverFacility.cs Service\Facilities\ServiceSubscribeMessageRequestFacility.cs Service\IBroadCastStrategy.cs Service\IServiceContainer.cs Service\IServiceMQ.cs Service\MemoryServiceMQ.cs Service\RequestMessage.cs Service\ParameterCollection.cs Service\ResponseMessage.cs Service\ServiceFactory.cs Service\ServiceProxy.cs Service\Services\BaseAutoService.cs Service\Services\BaseService.cs Service\Services\Configuration\ServiceNodeInfo.cs Service\Services\DemoServices.cs Service\Services\DynamicService.cs Service\IService.cs Service\IServiceInterface.cs Service\Services\MessageRequestCallbackHandler.cs Service\SimpleBroadCastStrategy.cs Service\SimpleServiceContainer.cs
+        Target _CopyFilesMarkedCopyLocal:
+            Copying file from "..\..\lib\Castle.Core.dll" to "bin\Release\Castle.Core.dll".
+            Copying file from "..\..\lib\Castle.MicroKernel.dll" to "bin\Release\Castle.MicroKernel.dll".
+            Copying file from "..\..\lib\Castle.Windsor.dll" to "bin\Release\Castle.Windsor.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll" to "bin\Release\NBear.Common.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Net\bin\Release\NBear.Net.dll" to "bin\Release\NBear.Net.dll".
+            Copying file from "..\..\lib\Castle.DynamicProxy.dll" to "bin\Release\Castle.DynamicProxy.dll".
+            Copying file from "..\..\lib\Castle.Windsor.xml" to "bin\Release\Castle.Windsor.xml".
+            Copying file from "..\..\lib\Castle.DynamicProxy.xml" to "bin\Release\Castle.DynamicProxy.xml".
+            Copying file from "..\..\lib\Castle.Core.xml" to "bin\Release\Castle.Core.xml".
+            Copying file from "..\..\lib\Castle.MicroKernel.xml" to "bin\Release\Castle.MicroKernel.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Net\bin\Release\NBear.Net.pdb" to "bin\Release\NBear.Net.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Net\bin\Release\NBear.Net.xml" to "bin\Release\NBear.Net.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.pdb" to "bin\Release\NBear.Common.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.xml" to "bin\Release\NBear.Common.xml".
+        Target GetCopyToOutputDirectoryItems:
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.IoC\NBear.IoC.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.IoC\NBear.IoC.csproj" is building "C:\Teddy\NBearV3\src\NBear.Net\NBear.Net.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+        Target CopyFilesToOutputDirectory:
+            Copying file from "obj\Release\NBear.IoC.dll" to "bin\Release\NBear.IoC.dll".
+            NBear.IoC -> C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\NBear.IoC.dll
+            Copying file from "obj\Release\NBear.IoC.pdb" to "bin\Release\NBear.IoC.pdb".
+    Target Service\NBear_MVP:Rebuild:
+        __________________________________________________
+        Project "C:\Teddy\NBearV3\src\NBearV3.sln" is building "C:\Teddy\NBearV3\src\NBear.MVP\NBear.MVP.csproj" (Rebuild target(s)):
+
+        Target CoreClean:
+            Deleting file "bin\Release\NBear.MVP.XML".
+            Deleting file "bin\Release\NBear.MVP.dll".
+            Deleting file "bin\Release\NBear.MVP.pdb".
+            Deleting file "bin\Release\Castle.MicroKernel.dll".
+            Deleting file "bin\Release\NBear.Common.dll".
+            Deleting file "bin\Release\NBear.IoC.dll".
+            Deleting file "bin\Release\Castle.DynamicProxy.dll".
+            Deleting file "bin\Release\Castle.Windsor.dll".
+            Deleting file "bin\Release\Castle.Core.dll".
+            Deleting file "bin\Release\NBear.Net.dll".
+            Deleting file "bin\Release\Castle.DynamicProxy.xml".
+            Deleting file "bin\Release\Castle.Windsor.xml".
+            Deleting file "bin\Release\Castle.Core.xml".
+            Deleting file "bin\Release\Castle.MicroKernel.xml".
+            Deleting file "bin\Release\NBear.IoC.pdb".
+            Deleting file "bin\Release\NBear.IoC.xml".
+            Deleting file "bin\Release\NBear.Net.pdb".
+            Deleting file "bin\Release\NBear.Net.xml".
+            Deleting file "bin\Release\NBear.Common.pdb".
+            Deleting file "bin\Release\NBear.Common.xml".
+            Deleting file "obj\Release\ResolveAssemblyReference.cache".
+            Deleting file "obj\Release\NBear.MVP.dll".
+            Deleting file "obj\Release\NBear.MVP.pdb".
+        Target ResolveProjectReferences:
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.MVP\NBear.MVP.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.MVP\NBear.MVP.csproj" is building "C:\Teddy\NBearV3\src\NBear.IoC\NBear.IoC.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.MVP\NBear.MVP.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetNativeManifest target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.MVP\NBear.MVP.csproj" is building "C:\Teddy\NBearV3\src\NBear.IoC\NBear.IoC.csproj" (GetNativeManifest target(s)):
+
+        Target CoreCompile:
+            C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Csc.exe /noconfig /nowarn:1701,1702 /errorreport:prompt /warn:4 /doc:bin\Release\NBear.MVP.XML /define:TRACE /reference:..\..\lib\Castle.MicroKernel.dll /reference:C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll /reference:C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\NBear.IoC.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.configuration.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /debug:pdbonly /keyfile:nbear.snk /optimize+ /out:obj\Release\NBear.MVP.dll /target:library Presenter.cs PresenterFactory.cs Properties\AssemblyInfo.cs
+            Presenter.cs(49,26): warning CS1572: XML comment on 'NBear.MVP.IPresenter2.BindModels(object[])' has a param tag for 'model', but there is no parameter by that name
+            Presenter.cs(50,34): warning CS1573: Parameter 'models' has no matching param tag in the XML comment for 'NBear.MVP.IPresenter2.BindModels(object[])' (but other parameters do)
+            Presenter.cs(102,26): warning CS1572: XML comment on 'NBear.MVP.Presenter<ViewType>.BindModels(object[])' has a param tag for 'model', but there is no parameter by that name
+            Presenter.cs(103,41): warning CS1573: Parameter 'models' has no matching param tag in the XML comment for 'NBear.MVP.Presenter<ViewType>.BindModels(object[])' (but other parameters do)
+            Presenter.cs(270,26): warning CS1572: XML comment on 'NBear.MVP.Presenter<ViewType,IModelType1,IModelType2>.BindModels(object[])' has a param tag for 'model', but there is no parameter by that name
+            Presenter.cs(271,41): warning CS1573: Parameter 'models' has no matching param tag in the XML comment for 'NBear.MVP.Presenter<ViewType,IModelType1,IModelType2>.BindModels(object[])' (but other parameters do)
+            Presenter.cs(367,26): warning CS1572: XML comment on 'NBear.MVP.Presenter<ViewType,IModelType1,IModelType2,IModelType3>.BindModels(object[])' has a param tag for 'model', but there is no parameter by that name
+            Presenter.cs(368,41): warning CS1573: Parameter 'models' has no matching param tag in the XML comment for 'NBear.MVP.Presenter<ViewType,IModelType1,IModelType2,IModelType3>.BindModels(object[])' (but other parameters do)
+            Presenter.cs(473,26): warning CS1572: XML comment on 'NBear.MVP.Presenter<ViewType,IModelType1,IModelType2,IModelType3,IModelType4>.BindModels(object[])' has a param tag for 'model', but there is no parameter by that name
+            Presenter.cs(474,41): warning CS1573: Parameter 'models' has no matching param tag in the XML comment for 'NBear.MVP.Presenter<ViewType,IModelType1,IModelType2,IModelType3,IModelType4>.BindModels(object[])' (but other parameters do)
+            Presenter.cs(588,26): warning CS1572: XML comment on 'NBear.MVP.Presenter<ViewType,IModelType1,IModelType2,IModelType3,IModelType4,IModelType5>.BindModels(object[])' has a param tag for 'model', but there is no parameter by that name
+            Presenter.cs(589,41): warning CS1573: Parameter 'models' has no matching param tag in the XML comment for 'NBear.MVP.Presenter<ViewType,IModelType1,IModelType2,IModelType3,IModelType4,IModelType5>.BindModels(object[])' (but other parameters do)
+            Presenter.cs(712,26): warning CS1572: XML comment on 'NBear.MVP.Presenter<ViewType,IModelType1,IModelType2,IModelType3,IModelType4,IModelType5,IModelType6>.BindModels(object[])' has a param tag for 'model', but there is no parameter by that name
+            Presenter.cs(713,41): warning CS1573: Parameter 'models' has no matching param tag in the XML comment for 'NBear.MVP.Presenter<ViewType,IModelType1,IModelType2,IModelType3,IModelType4,IModelType5,IModelType6>.BindModels(object[])' (but other parameters do)
+        Done building target "CoreCompile" in project "NBear.MVP.csproj".
+        Target _CopyFilesMarkedCopyLocal:
+            Copying file from "..\..\lib\Castle.MicroKernel.dll" to "bin\Release\Castle.MicroKernel.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll" to "bin\Release\NBear.Common.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\NBear.IoC.dll" to "bin\Release\NBear.IoC.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.DynamicProxy.dll" to "bin\Release\Castle.DynamicProxy.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.Windsor.dll" to "bin\Release\Castle.Windsor.dll".
+            Copying file from "..\..\lib\Castle.Core.dll" to "bin\Release\Castle.Core.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\NBear.Net.dll" to "bin\Release\NBear.Net.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.DynamicProxy.xml" to "bin\Release\Castle.DynamicProxy.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.Windsor.xml" to "bin\Release\Castle.Windsor.xml".
+            Copying file from "..\..\lib\Castle.Core.xml" to "bin\Release\Castle.Core.xml".
+            Copying file from "..\..\lib\Castle.MicroKernel.xml" to "bin\Release\Castle.MicroKernel.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\NBear.IoC.pdb" to "bin\Release\NBear.IoC.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\NBear.IoC.xml" to "bin\Release\NBear.IoC.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\NBear.Net.pdb" to "bin\Release\NBear.Net.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\NBear.Net.xml" to "bin\Release\NBear.Net.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.pdb" to "bin\Release\NBear.Common.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.xml" to "bin\Release\NBear.Common.xml".
+        Target GetCopyToOutputDirectoryItems:
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.MVP\NBear.MVP.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.MVP\NBear.MVP.csproj" is building "C:\Teddy\NBearV3\src\NBear.IoC\NBear.IoC.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+        Target CopyFilesToOutputDirectory:
+            Copying file from "obj\Release\NBear.MVP.dll" to "bin\Release\NBear.MVP.dll".
+            NBear.MVP -> C:\Teddy\NBearV3\src\NBear.MVP\bin\Release\NBear.MVP.dll
+            Copying file from "obj\Release\NBear.MVP.pdb" to "bin\Release\NBear.MVP.pdb".
+
+        Done building project "NBear.MVP.csproj".
+    Target Tools\NBear_Tools_EntityDesignToEntityVsPlugin:Rebuild:
+        __________________________________________________
+        Project "C:\Teddy\NBearV3\src\NBearV3.sln" is building "C:\Teddy\NBearV3\src\NBear.Tools.EntityDesignToEntityVsPlugin\NBear.Tools.EntityDesignToEntityVsPlugin.csproj" (Rebuild target(s)):
+
+        Target CoreClean:
+            Deleting file "bin\NBear.Tools.EntityDesignToEntityVsPlugin.dll".
+            Deleting file "bin\NBear.Tools.EntityDesignToEntityVsPlugin.pdb".
+            Deleting file "obj\Release\ResolveAssemblyReference.cache".
+            Deleting file "obj\Release\NBear.Tools.EntityDesignToEntityVsPlugin.csproj.ResolveComReference.cache".
+            Deleting file "obj\Release\NBear.Tools.EntityDesignToEntityVsPlugin.CommandBar.resources".
+            Deleting file "obj\Release\NBear.Tools.EntityDesignToEntityVsPlugin.csproj.GenerateResource.Cache".
+            Deleting file "obj\Release\NBear.Tools.EntityDesignToEntityVsPlugin.dll".
+        Target CoreResGen:
+            Processing resource file "CommandBar.resx" into "obj\Release\NBear.Tools.EntityDesignToEntityVsPlugin.CommandBar.resources".
+        Target CoreCompile:
+            C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Csc.exe /noconfig /nowarn:1701,1702 /warn:4 /define:TRACE /reference:"C:\Program Files\Common Files\Microsoft Shared\MSEnv\PublicAssemblies\Extensibility.dll" /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /reference:C:\WINDOWS\assembly\GAC\EnvDTE\8.0.0.0__b03f5f7f11d50a3a\EnvDTE.dll /reference:C:\WINDOWS\assembly\GAC\EnvDTE80\8.0.0.0__b03f5f7f11d50a3a\EnvDTE80.dll /reference:C:\WINDOWS\assembly\GAC\Microsoft.VisualStudio.CommandBars\8.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.CommandBars.dll /reference:C:\WINDOWS\assembly\GAC\stdole\7.0.3300.0__b03f5f7f11d50a3a\stdole.dll /debug- /keyfile:nbear.snk /optimize+ /out:obj\Release\NBear.Tools.EntityDesignToEntityVsPlugin.dll /resource:obj\Release\NBear.Tools.EntityDesignToEntityVsPlugin.CommandBar.resources /target:library Properties\AssemblyInfo.cs Connect.cs
+        Target CopyFilesToOutputDirectory:
+            Copying file from "obj\Release\NBear.Tools.EntityDesignToEntityVsPlugin.dll" to "bin\NBear.Tools.EntityDesignToEntityVsPlugin.dll".
+            NBear.Tools.EntityDesignToEntityVsPlugin -> C:\Teddy\NBearV3\src\NBear.Tools.EntityDesignToEntityVsPlugin\bin\NBear.Tools.EntityDesignToEntityVsPlugin.dll
+    Target Web\NBear_Web_Data:Rebuild:
+        __________________________________________________
+        Project "C:\Teddy\NBearV3\src\NBearV3.sln" is building "C:\Teddy\NBearV3\src\NBear.Web.Data\NBear.Web.Data.csproj" (Rebuild target(s)):
+
+        Target CoreClean:
+            Deleting file "bin\Release\NBear.Web.Data.dll".
+            Deleting file "bin\Release\NBear.Web.Data.pdb".
+            Deleting file "bin\Release\NBear.Common.Design.dll".
+            Deleting file "bin\Release\NBear.Common.dll".
+            Deleting file "bin\Release\NBear.Data.dll".
+            Deleting file "bin\Release\NBear.Data.pdb".
+            Deleting file "bin\Release\NBear.Data.xml".
+            Deleting file "bin\Release\NBear.Common.Design.pdb".
+            Deleting file "bin\Release\NBear.Common.Design.xml".
+            Deleting file "bin\Release\NBear.Common.pdb".
+            Deleting file "bin\Release\NBear.Common.xml".
+            Deleting file "obj\Release\ResolveAssemblyReference.cache".
+            Deleting file "obj\Release\NBear.Web.Data.AspNetDbEntitiesConfig.xml".
+            Deleting file "obj\Release\NBear.Web.Data.dll".
+            Deleting file "obj\Release\NBear.Web.Data.pdb".
+        Target ResolveProjectReferences:
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Web.Data\NBear.Web.Data.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common.Design\NBear.Common.Design.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Web.Data\NBear.Web.Data.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Web.Data\NBear.Web.Data.csproj" is building "C:\Teddy\NBearV3\src\NBear.Data\NBear.Data.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Web.Data\NBear.Web.Data.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common.Design\NBear.Common.Design.csproj" (GetNativeManifest target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Web.Data\NBear.Web.Data.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetNativeManifest target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Web.Data\NBear.Web.Data.csproj" is building "C:\Teddy\NBearV3\src\NBear.Data\NBear.Data.csproj" (GetNativeManifest target(s)):
+
+        Target _CopyNonResxEmbeddedResources:
+            Copying file from "AspNetDbEntitiesConfig.xml" to "obj\Release\NBear.Web.Data.AspNetDbEntitiesConfig.xml".
+        Target CoreCompile:
+            C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Csc.exe /noconfig /nowarn:1701,1702 /errorreport:prompt /warn:4 /define:TRACE /reference:C:\Teddy\NBearV3\src\NBear.Common.Design\bin\Release\NBear.Common.Design.dll /reference:C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll /reference:C:\Teddy\NBearV3\src\NBear.Data\bin\Release\NBear.Data.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.configuration.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Web.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /debug:pdbonly /keyfile:nbear.snk /optimize+ /out:obj\Release\NBear.Web.Data.dll /resource:obj\Release\NBear.Web.Data.AspNetDbEntitiesConfig.xml /target:library AspNetDbEntities.cs AspNetDbEntitiesDesign.cs NBearDataSource.cs NBearDataView.cs PagableDataList.cs PagableRepeater.cs Properties\AssemblyInfo.cs
+        Target _CopyFilesMarkedCopyLocal:
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common.Design\bin\Release\NBear.Common.Design.dll" to "bin\Release\NBear.Common.Design.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll" to "bin\Release\NBear.Common.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Data\bin\Release\NBear.Data.dll" to "bin\Release\NBear.Data.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Data\bin\Release\NBear.Data.pdb" to "bin\Release\NBear.Data.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Data\bin\Release\NBear.Data.xml" to "bin\Release\NBear.Data.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common.Design\bin\Release\NBear.Common.Design.pdb" to "bin\Release\NBear.Common.Design.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common.Design\bin\Release\NBear.Common.Design.xml" to "bin\Release\NBear.Common.Design.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.pdb" to "bin\Release\NBear.Common.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.xml" to "bin\Release\NBear.Common.xml".
+        Target GetCopyToOutputDirectoryItems:
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Web.Data\NBear.Web.Data.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common.Design\NBear.Common.Design.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Web.Data\NBear.Web.Data.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Web.Data\NBear.Web.Data.csproj" is building "C:\Teddy\NBearV3\src\NBear.Data\NBear.Data.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+        Target CopyFilesToOutputDirectory:
+            Copying file from "obj\Release\NBear.Web.Data.dll" to "bin\Release\NBear.Web.Data.dll".
+            NBear.Web.Data -> C:\Teddy\NBearV3\src\NBear.Web.Data\bin\Release\NBear.Web.Data.dll
+            Copying file from "obj\Release\NBear.Web.Data.pdb" to "bin\Release\NBear.Web.Data.pdb".
+    Target Tests\NBear_Test_UnitTests:Rebuild:
+        __________________________________________________
+        Project "C:\Teddy\NBearV3\src\NBearV3.sln" is building "C:\Teddy\NBearV3\src\NBear.Test.UnitTests\NBear.Test.UnitTests.csproj" (Rebuild target(s)):
+
+        Target CoreClean:
+            Deleting file ".\bin\Release\NBear.Test.UnitTests.dll.config".
+            Deleting file ".\bin\Release\NBear.Test.UnitTests.dll".
+            Deleting file ".\bin\Release\NBear.Common.Design.dll".
+            Deleting file ".\bin\Release\NBear.Common.dll".
+            Deleting file ".\bin\Release\NBear.Data.dll".
+            Deleting file ".\bin\Release\NBear.IoC.dll".
+            Deleting file ".\bin\Release\NBear.MVP.dll".
+            Deleting file ".\bin\Release\NBear.Tools.EntityDesignToEntityVsPlugin.dll".
+            Deleting file ".\bin\Release\NBear.Web.Data.dll".
+            Deleting file ".\bin\Release\NBear.Net.dll".
+            Deleting file ".\bin\Release\Castle.Core.dll".
+            Deleting file ".\bin\Release\Castle.MicroKernel.dll".
+            Deleting file ".\bin\Release\Castle.DynamicProxy.dll".
+            Deleting file ".\bin\Release\Castle.Windsor.dll".
+            Deleting file ".\bin\Release\NBear.Net.pdb".
+            Deleting file ".\bin\Release\NBear.Net.xml".
+            Deleting file ".\bin\Release\Castle.Core.xml".
+            Deleting file ".\bin\Release\Castle.MicroKernel.xml".
+            Deleting file ".\bin\Release\Castle.DynamicProxy.xml".
+            Deleting file ".\bin\Release\Castle.Windsor.xml".
+            Deleting file ".\bin\Release\NBear.Data.pdb".
+            Deleting file ".\bin\Release\NBear.Data.xml".
+            Deleting file ".\bin\Release\NBear.IoC.pdb".
+            Deleting file ".\bin\Release\NBear.IoC.xml".
+            Deleting file ".\bin\Release\NBear.Common.Design.pdb".
+            Deleting file ".\bin\Release\NBear.Common.Design.xml".
+            Deleting file ".\bin\Release\NBear.MVP.pdb".
+            Deleting file ".\bin\Release\NBear.MVP.xml".
+            Deleting file ".\bin\Release\NBear.Common.pdb".
+            Deleting file ".\bin\Release\NBear.Common.xml".
+            Deleting file ".\bin\Release\NBear.Web.Data.pdb".
+            Deleting file "obj\Release\ResolveAssemblyReference.cache".
+            Deleting file "obj\Release\NBear.Test.UnitTests.dll".
+        Target ResolveProjectReferences:
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.UnitTests\NBear.Test.UnitTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common.Design\NBear.Common.Design.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.UnitTests\NBear.Test.UnitTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.UnitTests\NBear.Test.UnitTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.Data\NBear.Data.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.UnitTests\NBear.Test.UnitTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.IoC\NBear.IoC.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.UnitTests\NBear.Test.UnitTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.MVP\NBear.MVP.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.UnitTests\NBear.Test.UnitTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.Tools.EntityDesignToEntityVsPlugin\NBear.Tools.EntityDesignToEntityVsPlugin.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.UnitTests\NBear.Test.UnitTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.Web.Data\NBear.Web.Data.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.UnitTests\NBear.Test.UnitTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common.Design\NBear.Common.Design.csproj" (GetNativeManifest target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.UnitTests\NBear.Test.UnitTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetNativeManifest target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.UnitTests\NBear.Test.UnitTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.Data\NBear.Data.csproj" (GetNativeManifest target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.UnitTests\NBear.Test.UnitTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.IoC\NBear.IoC.csproj" (GetNativeManifest target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.UnitTests\NBear.Test.UnitTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.MVP\NBear.MVP.csproj" (GetNativeManifest target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.UnitTests\NBear.Test.UnitTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.Tools.EntityDesignToEntityVsPlugin\NBear.Tools.EntityDesignToEntityVsPlugin.csproj" (GetNativeManifest target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.UnitTests\NBear.Test.UnitTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.Web.Data\NBear.Web.Data.csproj" (GetNativeManifest target(s)):
+
+        Target CoreCompile:
+            C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Csc.exe /noconfig /nowarn:1701,1702 /warn:4 /define:TRACE /reference:..\..\..\..\WINDOWS\assembly\GAC_MSIL\Microsoft.VisualStudio.QualityTools.UnitTestFramework\8.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll /reference:C:\Teddy\NBearV3\src\NBear.Common.Design\bin\Release\NBear.Common.Design.dll /reference:C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll /reference:C:\Teddy\NBearV3\src\NBear.Data\bin\Release\NBear.Data.dll /reference:C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\NBear.IoC.dll /reference:C:\Teddy\NBearV3\src\NBear.MVP\bin\Release\NBear.MVP.dll /reference:C:\Teddy\NBearV3\src\NBear.Tools.EntityDesignToEntityVsPlugin\bin\NBear.Tools.EntityDesignToEntityVsPlugin.dll /reference:C:\Teddy\NBearV3\src\NBear.Web.Data\bin\Release\NBear.Web.Data.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.configuration.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.XML.dll /debug- /keyfile:nbear.snk /optimize+ /out:obj\Release\NBear.Test.UnitTests.dll /target:library AnalysisTests\NullableSerializeTest.cs Common\EntityQueryTest.cs Common\EntityTest.cs Common\MetaDataManagerTest.cs Common\QueryProxyTest.cs Common\SerializationManagerTest.cs Common\Types\TreeTest.cs Common\UtilTest.cs Data\GatewayTest.cs Data\PerformenceComparisonTest.cs EntityDesignToEntity\GenerateTest.cs IoC\ServiceFactoryTest.cs MVP\MVPTest.cs Properties\AssemblyInfo.cs temp\EntityDesignTemp1.cs temp\EntityImplSample.cs temp\EntitySampleTemp1.cs temp\EntitySampleTemp1_impl.cs TestLoader.cs Web.Data\AspNetDbEntitiesTest.cs
+        Target _CopyFilesMarkedCopyLocal:
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common.Design\bin\Release\NBear.Common.Design.dll" to ".\bin\Release\NBear.Common.Design.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll" to ".\bin\Release\NBear.Common.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Data\bin\Release\NBear.Data.dll" to ".\bin\Release\NBear.Data.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\NBear.IoC.dll" to ".\bin\Release\NBear.IoC.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.MVP\bin\Release\NBear.MVP.dll" to ".\bin\Release\NBear.MVP.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Tools.EntityDesignToEntityVsPlugin\bin\NBear.Tools.EntityDesignToEntityVsPlugin.dll" to ".\bin\Release\NBear.Tools.EntityDesignToEntityVsPlugin.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Web.Data\bin\Release\NBear.Web.Data.dll" to ".\bin\Release\NBear.Web.Data.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\NBear.Net.dll" to ".\bin\Release\NBear.Net.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.Core.dll" to ".\bin\Release\Castle.Core.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.MicroKernel.dll" to ".\bin\Release\Castle.MicroKernel.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.DynamicProxy.dll" to ".\bin\Release\Castle.DynamicProxy.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.Windsor.dll" to ".\bin\Release\Castle.Windsor.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\NBear.Net.pdb" to ".\bin\Release\NBear.Net.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\NBear.Net.xml" to ".\bin\Release\NBear.Net.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.Core.xml" to ".\bin\Release\Castle.Core.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.MicroKernel.xml" to ".\bin\Release\Castle.MicroKernel.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.DynamicProxy.xml" to ".\bin\Release\Castle.DynamicProxy.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.Windsor.xml" to ".\bin\Release\Castle.Windsor.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Data\bin\Release\NBear.Data.pdb" to ".\bin\Release\NBear.Data.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Data\bin\Release\NBear.Data.xml" to ".\bin\Release\NBear.Data.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\NBear.IoC.pdb" to ".\bin\Release\NBear.IoC.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\NBear.IoC.xml" to ".\bin\Release\NBear.IoC.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common.Design\bin\Release\NBear.Common.Design.pdb" to ".\bin\Release\NBear.Common.Design.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common.Design\bin\Release\NBear.Common.Design.xml" to ".\bin\Release\NBear.Common.Design.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.MVP\bin\Release\NBear.MVP.pdb" to ".\bin\Release\NBear.MVP.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.MVP\bin\Release\NBear.MVP.xml" to ".\bin\Release\NBear.MVP.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.pdb" to ".\bin\Release\NBear.Common.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.xml" to ".\bin\Release\NBear.Common.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Web.Data\bin\Release\NBear.Web.Data.pdb" to ".\bin\Release\NBear.Web.Data.pdb".
+        Target GetCopyToOutputDirectoryItems:
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.UnitTests\NBear.Test.UnitTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common.Design\NBear.Common.Design.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.UnitTests\NBear.Test.UnitTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.UnitTests\NBear.Test.UnitTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.Data\NBear.Data.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.UnitTests\NBear.Test.UnitTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.IoC\NBear.IoC.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.UnitTests\NBear.Test.UnitTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.MVP\NBear.MVP.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.UnitTests\NBear.Test.UnitTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.Tools.EntityDesignToEntityVsPlugin\NBear.Tools.EntityDesignToEntityVsPlugin.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.UnitTests\NBear.Test.UnitTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.Web.Data\NBear.Web.Data.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+        Target _CopyAppConfigFile:
+            Copying file from "App.config" to ".\bin\Release\NBear.Test.UnitTests.dll.config".
+        Target CopyFilesToOutputDirectory:
+            Copying file from "obj\Release\NBear.Test.UnitTests.dll" to ".\bin\Release\NBear.Test.UnitTests.dll".
+            NBear.Test.UnitTests -> C:\Teddy\NBearV3\src\NBear.Test.UnitTests\bin\Release\NBear.Test.UnitTests.dll
+    Target Tools\NBear_Tools_DbToEntityDesign:Rebuild:
+        __________________________________________________
+        Project "C:\Teddy\NBearV3\src\NBearV3.sln" is building "C:\Teddy\NBearV3\src\NBear.Tools.DbToEntityDesign\NBear.Tools.DbToEntityDesign.csproj" (Rebuild target(s)):
+
+        Target CoreClean:
+            Deleting file "bin\Release\NBear.Tools.DbToEntityDesign.exe".
+            Deleting file "bin\Release\NBear.Tools.DbToEntityDesign.pdb".
+            Deleting file "bin\Release\NBear.Common.dll".
+            Deleting file "bin\Release\NBear.Data.dll".
+            Deleting file "bin\Release\NBear.Data.pdb".
+            Deleting file "bin\Release\NBear.Data.xml".
+            Deleting file "bin\Release\NBear.Common.pdb".
+            Deleting file "bin\Release\NBear.Common.xml".
+            Deleting file "obj\Release\ResolveAssemblyReference.cache".
+            Deleting file "obj\Release\NBear.Tools.EntityGen.Form1.resources".
+            Deleting file "obj\Release\NBear.Tools.DbToEntityDesign.Properties.Resources.resources".
+            Deleting file "obj\Release\NBear.Tools.DbToEntityDesign.csproj.GenerateResource.Cache".
+            Deleting file "obj\Release\NBear.Tools.DbToEntityDesign.exe".
+            Deleting file "obj\Release\NBear.Tools.DbToEntityDesign.pdb".
+        Target ResolveProjectReferences:
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Tools.DbToEntityDesign\NBear.Tools.DbToEntityDesign.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Tools.DbToEntityDesign\NBear.Tools.DbToEntityDesign.csproj" is building "C:\Teddy\NBearV3\src\NBear.Data\NBear.Data.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Tools.DbToEntityDesign\NBear.Tools.DbToEntityDesign.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetNativeManifest target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Tools.DbToEntityDesign\NBear.Tools.DbToEntityDesign.csproj" is building "C:\Teddy\NBearV3\src\NBear.Data\NBear.Data.csproj" (GetNativeManifest target(s)):
+
+        Target CoreResGen:
+            Processing resource file "Form1.resx" into "obj\Release\NBear.Tools.EntityGen.Form1.resources".
+            Processing resource file "Properties\Resources.resx" into "obj\Release\NBear.Tools.DbToEntityDesign.Properties.Resources.resources".
+        Target CoreCompile:
+            C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Csc.exe /noconfig /nowarn:1701,1702 /errorreport:prompt /warn:4 /define:TRACE /reference:"C:\Program Files\Microsoft.NET\Primary Interop Assemblies\adodb.dll" /reference:C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll /reference:C:\Teddy\NBearV3\src\NBear.Data\bin\Release\NBear.Data.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Deployment.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /debug:pdbonly /keyfile:nbear.snk /optimize+ /out:obj\Release\NBear.Tools.DbToEntityDesign.exe /resource:obj\Release\NBear.Tools.EntityGen.Form1.resources /resource:obj\Release\NBear.Tools.DbToEntityDesign.Properties.Resources.resources /target:winexe Form1.cs Form1.Designer.cs Program.cs Properties\AssemblyInfo.cs Properties\Resources.Designer.cs Properties\Settings.Designer.cs
+        Target _CopyFilesMarkedCopyLocal:
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll" to "bin\Release\NBear.Common.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Data\bin\Release\NBear.Data.dll" to "bin\Release\NBear.Data.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Data\bin\Release\NBear.Data.pdb" to "bin\Release\NBear.Data.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Data\bin\Release\NBear.Data.xml" to "bin\Release\NBear.Data.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.pdb" to "bin\Release\NBear.Common.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.xml" to "bin\Release\NBear.Common.xml".
+        Target GetCopyToOutputDirectoryItems:
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Tools.DbToEntityDesign\NBear.Tools.DbToEntityDesign.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Tools.DbToEntityDesign\NBear.Tools.DbToEntityDesign.csproj" is building "C:\Teddy\NBearV3\src\NBear.Data\NBear.Data.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+        Target CopyFilesToOutputDirectory:
+            Copying file from "obj\Release\NBear.Tools.DbToEntityDesign.exe" to "bin\Release\NBear.Tools.DbToEntityDesign.exe".
+            NBear.Tools.DbToEntityDesign -> C:\Teddy\NBearV3\src\NBear.Tools.DbToEntityDesign\bin\Release\NBear.Tools.DbToEntityDesign.exe
+            Copying file from "obj\Release\NBear.Tools.DbToEntityDesign.pdb" to "bin\Release\NBear.Tools.DbToEntityDesign.pdb".
+    Target Service\NBear_IoC_Hosts_ServiceHost:Rebuild:
+        __________________________________________________
+        Project "C:\Teddy\NBearV3\src\NBearV3.sln" is building "C:\Teddy\NBearV3\src\NBear.IoC.Hosts.ServiceHost\NBear.IoC.Hosts.ServiceHost.csproj" (Rebuild target(s)):
+
+        Target CoreClean:
+            Deleting file "bin\Release\NBear.IoC.Hosts.ServiceHost.exe.config".
+            Deleting file "bin\Release\NBear.IoC.Hosts.ServiceHost.exe".
+            Deleting file "bin\Release\NBear.IoC.Hosts.ServiceHost.pdb".
+            Deleting file "bin\Release\NBear.Common.dll".
+            Deleting file "bin\Release\NBear.IoC.dll".
+            Deleting file "bin\Release\NBear.Net.dll".
+            Deleting file "bin\Release\Castle.Windsor.dll".
+            Deleting file "bin\Release\Castle.DynamicProxy.dll".
+            Deleting file "bin\Release\Castle.Core.dll".
+            Deleting file "bin\Release\Castle.MicroKernel.dll".
+            Deleting file "bin\Release\Castle.Windsor.xml".
+            Deleting file "bin\Release\Castle.DynamicProxy.xml".
+            Deleting file "bin\Release\Castle.Core.xml".
+            Deleting file "bin\Release\Castle.MicroKernel.xml".
+            Deleting file "bin\Release\NBear.IoC.pdb".
+            Deleting file "bin\Release\NBear.IoC.xml".
+            Deleting file "bin\Release\NBear.Net.pdb".
+            Deleting file "bin\Release\NBear.Net.xml".
+            Deleting file "bin\Release\NBear.Common.pdb".
+            Deleting file "bin\Release\NBear.Common.xml".
+            Deleting file "obj\Release\NBear.IoC.Hosts.ServiceHost.exe".
+            Deleting file "obj\Release\NBear.IoC.Hosts.ServiceHost.pdb".
+        Target ResolveProjectReferences:
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.IoC.Hosts.ServiceHost\NBear.IoC.Hosts.ServiceHost.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.IoC.Hosts.ServiceHost\NBear.IoC.Hosts.ServiceHost.csproj" is building "C:\Teddy\NBearV3\src\NBear.IoC\NBear.IoC.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.IoC.Hosts.ServiceHost\NBear.IoC.Hosts.ServiceHost.csproj" is building "C:\Teddy\NBearV3\src\NBear.Net\NBear.Net.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.IoC.Hosts.ServiceHost\NBear.IoC.Hosts.ServiceHost.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetNativeManifest target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.IoC.Hosts.ServiceHost\NBear.IoC.Hosts.ServiceHost.csproj" is building "C:\Teddy\NBearV3\src\NBear.IoC\NBear.IoC.csproj" (GetNativeManifest target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.IoC.Hosts.ServiceHost\NBear.IoC.Hosts.ServiceHost.csproj" is building "C:\Teddy\NBearV3\src\NBear.Net\NBear.Net.csproj" (GetNativeManifest target(s)):
+
+        Target CoreCompile:
+            C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Csc.exe /noconfig /nowarn:1701,1702 /errorreport:prompt /warn:4 /define:TRACE;DBC_CHECK_PRECONDITION /reference:C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll /reference:C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\NBear.IoC.dll /reference:C:\Teddy\NBearV3\src\NBear.Net\bin\Release\NBear.Net.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.configuration.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /debug:pdbonly /optimize+ /out:obj\Release\NBear.IoC.Hosts.ServiceHost.exe /target:exe Program.cs Properties\AssemblyInfo.cs
+        Target _CopyFilesMarkedCopyLocal:
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll" to "bin\Release\NBear.Common.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\NBear.IoC.dll" to "bin\Release\NBear.IoC.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Net\bin\Release\NBear.Net.dll" to "bin\Release\NBear.Net.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.Windsor.dll" to "bin\Release\Castle.Windsor.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.DynamicProxy.dll" to "bin\Release\Castle.DynamicProxy.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.Core.dll" to "bin\Release\Castle.Core.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.MicroKernel.dll" to "bin\Release\Castle.MicroKernel.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.Windsor.xml" to "bin\Release\Castle.Windsor.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.DynamicProxy.xml" to "bin\Release\Castle.DynamicProxy.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.Core.xml" to "bin\Release\Castle.Core.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.MicroKernel.xml" to "bin\Release\Castle.MicroKernel.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\NBear.IoC.pdb" to "bin\Release\NBear.IoC.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\NBear.IoC.xml" to "bin\Release\NBear.IoC.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Net\bin\Release\NBear.Net.pdb" to "bin\Release\NBear.Net.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Net\bin\Release\NBear.Net.xml" to "bin\Release\NBear.Net.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.pdb" to "bin\Release\NBear.Common.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.xml" to "bin\Release\NBear.Common.xml".
+        Target GetCopyToOutputDirectoryItems:
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.IoC.Hosts.ServiceHost\NBear.IoC.Hosts.ServiceHost.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.IoC.Hosts.ServiceHost\NBear.IoC.Hosts.ServiceHost.csproj" is building "C:\Teddy\NBearV3\src\NBear.IoC\NBear.IoC.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.IoC.Hosts.ServiceHost\NBear.IoC.Hosts.ServiceHost.csproj" is building "C:\Teddy\NBearV3\src\NBear.Net\NBear.Net.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+        Target _CopyAppConfigFile:
+            Copying file from "App.config" to "bin\Release\NBear.IoC.Hosts.ServiceHost.exe.config".
+        Target CopyFilesToOutputDirectory:
+            Copying file from "obj\Release\NBear.IoC.Hosts.ServiceHost.exe" to "bin\Release\NBear.IoC.Hosts.ServiceHost.exe".
+            NBear.IoC.Hosts.ServiceHost -> C:\Teddy\NBearV3\src\NBear.IoC.Hosts.ServiceHost\bin\Release\NBear.IoC.Hosts.ServiceHost.exe
+            Copying file from "obj\Release\NBear.IoC.Hosts.ServiceHost.pdb" to "bin\Release\NBear.IoC.Hosts.ServiceHost.pdb".
+    Target Service\NBear_IoC_Servers_ServiceMQServer:Rebuild:
+        __________________________________________________
+        Project "C:\Teddy\NBearV3\src\NBearV3.sln" is building "C:\Teddy\NBearV3\src\NBear.IoC.Servers.ServiceMQServer\NBear.IoC.Servers.ServiceMQServer.csproj" (Rebuild target(s)):
+
+        Target CoreClean:
+            Deleting file "bin\Release\NBear.IoC.Servers.ServiceMQServer.exe.config".
+            Deleting file "bin\Release\NBear.IoC.Servers.ServiceMQServer.exe".
+            Deleting file "bin\Release\NBear.IoC.Servers.ServiceMQServer.pdb".
+            Deleting file "bin\Release\NBear.Common.dll".
+            Deleting file "bin\Release\NBear.IoC.dll".
+            Deleting file "bin\Release\NBear.Net.dll".
+            Deleting file "bin\Release\Castle.Windsor.dll".
+            Deleting file "bin\Release\Castle.DynamicProxy.dll".
+            Deleting file "bin\Release\Castle.Core.dll".
+            Deleting file "bin\Release\Castle.MicroKernel.dll".
+            Deleting file "bin\Release\Castle.Windsor.xml".
+            Deleting file "bin\Release\Castle.DynamicProxy.xml".
+            Deleting file "bin\Release\Castle.Core.xml".
+            Deleting file "bin\Release\Castle.MicroKernel.xml".
+            Deleting file "bin\Release\NBear.IoC.pdb".
+            Deleting file "bin\Release\NBear.IoC.xml".
+            Deleting file "bin\Release\NBear.Net.pdb".
+            Deleting file "bin\Release\NBear.Net.xml".
+            Deleting file "bin\Release\NBear.Common.pdb".
+            Deleting file "bin\Release\NBear.Common.xml".
+            Deleting file "obj\Release\NBear.IoC.Servers.ServiceMQServer.exe".
+            Deleting file "obj\Release\NBear.IoC.Servers.ServiceMQServer.pdb".
+        Target ResolveProjectReferences:
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.IoC.Servers.ServiceMQServer\NBear.IoC.Servers.ServiceMQServer.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.IoC.Servers.ServiceMQServer\NBear.IoC.Servers.ServiceMQServer.csproj" is building "C:\Teddy\NBearV3\src\NBear.IoC\NBear.IoC.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.IoC.Servers.ServiceMQServer\NBear.IoC.Servers.ServiceMQServer.csproj" is building "C:\Teddy\NBearV3\src\NBear.Net\NBear.Net.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.IoC.Servers.ServiceMQServer\NBear.IoC.Servers.ServiceMQServer.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetNativeManifest target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.IoC.Servers.ServiceMQServer\NBear.IoC.Servers.ServiceMQServer.csproj" is building "C:\Teddy\NBearV3\src\NBear.IoC\NBear.IoC.csproj" (GetNativeManifest target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.IoC.Servers.ServiceMQServer\NBear.IoC.Servers.ServiceMQServer.csproj" is building "C:\Teddy\NBearV3\src\NBear.Net\NBear.Net.csproj" (GetNativeManifest target(s)):
+
+        Target CoreCompile:
+            C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Csc.exe /noconfig /nowarn:1701,1702 /errorreport:prompt /warn:4 /define:TRACE;DBC_CHECK_PRECONDITION /reference:C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll /reference:C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\NBear.IoC.dll /reference:C:\Teddy\NBearV3\src\NBear.Net\bin\Release\NBear.Net.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.configuration.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /debug:pdbonly /optimize+ /out:obj\Release\NBear.IoC.Servers.ServiceMQServer.exe /target:exe Program.cs Properties\AssemblyInfo.cs
+        Target _CopyFilesMarkedCopyLocal:
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll" to "bin\Release\NBear.Common.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\NBear.IoC.dll" to "bin\Release\NBear.IoC.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Net\bin\Release\NBear.Net.dll" to "bin\Release\NBear.Net.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.Windsor.dll" to "bin\Release\Castle.Windsor.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.DynamicProxy.dll" to "bin\Release\Castle.DynamicProxy.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.Core.dll" to "bin\Release\Castle.Core.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.MicroKernel.dll" to "bin\Release\Castle.MicroKernel.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.Windsor.xml" to "bin\Release\Castle.Windsor.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.DynamicProxy.xml" to "bin\Release\Castle.DynamicProxy.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.Core.xml" to "bin\Release\Castle.Core.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\Castle.MicroKernel.xml" to "bin\Release\Castle.MicroKernel.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\NBear.IoC.pdb" to "bin\Release\NBear.IoC.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.IoC\bin\Release\NBear.IoC.xml" to "bin\Release\NBear.IoC.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Net\bin\Release\NBear.Net.pdb" to "bin\Release\NBear.Net.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Net\bin\Release\NBear.Net.xml" to "bin\Release\NBear.Net.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.pdb" to "bin\Release\NBear.Common.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.xml" to "bin\Release\NBear.Common.xml".
+        Target GetCopyToOutputDirectoryItems:
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.IoC.Servers.ServiceMQServer\NBear.IoC.Servers.ServiceMQServer.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.IoC.Servers.ServiceMQServer\NBear.IoC.Servers.ServiceMQServer.csproj" is building "C:\Teddy\NBearV3\src\NBear.IoC\NBear.IoC.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.IoC.Servers.ServiceMQServer\NBear.IoC.Servers.ServiceMQServer.csproj" is building "C:\Teddy\NBearV3\src\NBear.Net\NBear.Net.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+        Target _CopyAppConfigFile:
+            Copying file from "App.config" to "bin\Release\NBear.IoC.Servers.ServiceMQServer.exe.config".
+        Target CopyFilesToOutputDirectory:
+            Copying file from "obj\Release\NBear.IoC.Servers.ServiceMQServer.exe" to "bin\Release\NBear.IoC.Servers.ServiceMQServer.exe".
+            NBear.IoC.Servers.ServiceMQServer -> C:\Teddy\NBearV3\src\NBear.IoC.Servers.ServiceMQServer\bin\Release\NBear.IoC.Servers.ServiceMQServer.exe
+            Copying file from "obj\Release\NBear.IoC.Servers.ServiceMQServer.pdb" to "bin\Release\NBear.IoC.Servers.ServiceMQServer.pdb".
+    Target Web\NBear_Web:Rebuild:
+        __________________________________________________
+        Project "C:\Teddy\NBearV3\src\NBearV3.sln" is building "C:\Teddy\NBearV3\src\NBear.Web\NBear.Web.csproj" (Rebuild target(s)):
+
+        Target CoreClean:
+            Deleting file "bin\Release\NBear.Web.XML".
+            Deleting file "bin\Release\NBear.Web.dll".
+            Deleting file "bin\Release\NBear.Web.pdb".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.0.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.1.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.2.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.3.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.4.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.5.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.6.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.7.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.8.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.9.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.A.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.B.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.C.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.D.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.E.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.F.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.G.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.H.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.I.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.J.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.K.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.L.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.M.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.N.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.O.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.P.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.Q.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.R.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.S.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.T.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.U.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.V.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.W.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.X.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.Y.gif".
+            Deleting file "obj\Release\NBear.Web.EmbeddedImages.Z.gif".
+            Deleting file "obj\Release\NBear.Web.dll".
+            Deleting file "obj\Release\NBear.Web.pdb".
+        Target _CopyNonResxEmbeddedResources:
+            Copying file from "EmbeddedImages\0.gif" to "obj\Release\NBear.Web.EmbeddedImages.0.gif".
+            Copying file from "EmbeddedImages\1.gif" to "obj\Release\NBear.Web.EmbeddedImages.1.gif".
+            Copying file from "EmbeddedImages\2.gif" to "obj\Release\NBear.Web.EmbeddedImages.2.gif".
+            Copying file from "EmbeddedImages\3.gif" to "obj\Release\NBear.Web.EmbeddedImages.3.gif".
+            Copying file from "EmbeddedImages\4.gif" to "obj\Release\NBear.Web.EmbeddedImages.4.gif".
+            Copying file from "EmbeddedImages\5.gif" to "obj\Release\NBear.Web.EmbeddedImages.5.gif".
+            Copying file from "EmbeddedImages\6.gif" to "obj\Release\NBear.Web.EmbeddedImages.6.gif".
+            Copying file from "EmbeddedImages\7.gif" to "obj\Release\NBear.Web.EmbeddedImages.7.gif".
+            Copying file from "EmbeddedImages\8.gif" to "obj\Release\NBear.Web.EmbeddedImages.8.gif".
+            Copying file from "EmbeddedImages\9.gif" to "obj\Release\NBear.Web.EmbeddedImages.9.gif".
+            Copying file from "EmbeddedImages\A.gif" to "obj\Release\NBear.Web.EmbeddedImages.A.gif".
+            Copying file from "EmbeddedImages\B.gif" to "obj\Release\NBear.Web.EmbeddedImages.B.gif".
+            Copying file from "EmbeddedImages\C.gif" to "obj\Release\NBear.Web.EmbeddedImages.C.gif".
+            Copying file from "EmbeddedImages\D.gif" to "obj\Release\NBear.Web.EmbeddedImages.D.gif".
+            Copying file from "EmbeddedImages\E.gif" to "obj\Release\NBear.Web.EmbeddedImages.E.gif".
+            Copying file from "EmbeddedImages\F.gif" to "obj\Release\NBear.Web.EmbeddedImages.F.gif".
+            Copying file from "EmbeddedImages\G.gif" to "obj\Release\NBear.Web.EmbeddedImages.G.gif".
+            Copying file from "EmbeddedImages\H.gif" to "obj\Release\NBear.Web.EmbeddedImages.H.gif".
+            Copying file from "EmbeddedImages\I.gif" to "obj\Release\NBear.Web.EmbeddedImages.I.gif".
+            Copying file from "EmbeddedImages\J.gif" to "obj\Release\NBear.Web.EmbeddedImages.J.gif".
+            Copying file from "EmbeddedImages\K.gif" to "obj\Release\NBear.Web.EmbeddedImages.K.gif".
+            Copying file from "EmbeddedImages\L.gif" to "obj\Release\NBear.Web.EmbeddedImages.L.gif".
+            Copying file from "EmbeddedImages\M.gif" to "obj\Release\NBear.Web.EmbeddedImages.M.gif".
+            Copying file from "EmbeddedImages\N.gif" to "obj\Release\NBear.Web.EmbeddedImages.N.gif".
+            Copying file from "EmbeddedImages\O.gif" to "obj\Release\NBear.Web.EmbeddedImages.O.gif".
+            Copying file from "EmbeddedImages\P.gif" to "obj\Release\NBear.Web.EmbeddedImages.P.gif".
+            Copying file from "EmbeddedImages\Q.gif" to "obj\Release\NBear.Web.EmbeddedImages.Q.gif".
+            Copying file from "EmbeddedImages\R.gif" to "obj\Release\NBear.Web.EmbeddedImages.R.gif".
+            Copying file from "EmbeddedImages\S.gif" to "obj\Release\NBear.Web.EmbeddedImages.S.gif".
+            Copying file from "EmbeddedImages\T.gif" to "obj\Release\NBear.Web.EmbeddedImages.T.gif".
+            Copying file from "EmbeddedImages\U.gif" to "obj\Release\NBear.Web.EmbeddedImages.U.gif".
+            Copying file from "EmbeddedImages\V.gif" to "obj\Release\NBear.Web.EmbeddedImages.V.gif".
+            Copying file from "EmbeddedImages\W.gif" to "obj\Release\NBear.Web.EmbeddedImages.W.gif".
+            Copying file from "EmbeddedImages\X.gif" to "obj\Release\NBear.Web.EmbeddedImages.X.gif".
+            Copying file from "EmbeddedImages\Y.gif" to "obj\Release\NBear.Web.EmbeddedImages.Y.gif".
+            Copying file from "EmbeddedImages\Z.gif" to "obj\Release\NBear.Web.EmbeddedImages.Z.gif".
+        Target CoreCompile:
+            C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Csc.exe /noconfig /nowarn:1701,1702 /errorreport:prompt /warn:4 /doc:bin\Release\NBear.Web.XML /define:TRACE;DBC_CHECK_PRECONDITION /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.configuration.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Web.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /debug:pdbonly /keyfile:nbear.snk /optimize+ /out:obj\Release\NBear.Web.dll /resource:obj\Release\NBear.Web.EmbeddedImages.0.gif /resource:obj\Release\NBear.Web.EmbeddedImages.1.gif /resource:obj\Release\NBear.Web.EmbeddedImages.2.gif /resource:obj\Release\NBear.Web.EmbeddedImages.3.gif /resource:obj\Release\NBear.Web.EmbeddedImages.4.gif /resource:obj\Release\NBear.Web.EmbeddedImages.5.gif /resource:obj\Release\NBear.Web.EmbeddedImages.6.gif /resource:obj\Release\NBear.Web.EmbeddedImages.7.gif /resource:obj\Release\NBear.Web.EmbeddedImages.8.gif /resource:obj\Release\NBear.Web.EmbeddedImages.9.gif /resource:obj\Release\NBear.Web.EmbeddedImages.A.gif /resource:obj\Release\NBear.Web.EmbeddedImages.B.gif /resource:obj\Release\NBear.Web.EmbeddedImages.C.gif /resource:obj\Release\NBear.Web.EmbeddedImages.D.gif /resource:obj\Release\NBear.Web.EmbeddedImages.E.gif /resource:obj\Release\NBear.Web.EmbeddedImages.F.gif /resource:obj\Release\NBear.Web.EmbeddedImages.G.gif /resource:obj\Release\NBear.Web.EmbeddedImages.H.gif /resource:obj\Release\NBear.Web.EmbeddedImages.I.gif /resource:obj\Release\NBear.Web.EmbeddedImages.J.gif /resource:obj\Release\NBear.Web.EmbeddedImages.K.gif /resource:obj\Release\NBear.Web.EmbeddedImages.L.gif /resource:obj\Release\NBear.Web.EmbeddedImages.M.gif /resource:obj\Release\NBear.Web.EmbeddedImages.N.gif /resource:obj\Release\NBear.Web.EmbeddedImages.O.gif /resource:obj\Release\NBear.Web.EmbeddedImages.P.gif /resource:obj\Release\NBear.Web.EmbeddedImages.Q.gif /resource:obj\Release\NBear.Web.EmbeddedImages.R.gif /resource:obj\Release\NBear.Web.EmbeddedImages.S.gif /resource:obj\Release\NBear.Web.EmbeddedImages.T.gif /resource:obj\Release\NBear.Web.EmbeddedImages.U.gif /resource:obj\Release\NBear.Web.EmbeddedImages.V.gif /resource:obj\Release\NBear.Web.EmbeddedImages.W.gif /resource:obj\Release\NBear.Web.EmbeddedImages.X.gif /resource:obj\Release\NBear.Web.EmbeddedImages.Y.gif /resource:obj\Release\NBear.Web.EmbeddedImages.Z.gif /target:library Properties\AssemblyInfo.cs UI\AjaxTemplate.cs UI\MasterPage.cs UI\Page.cs UI\UserControl.cs UI\WebControls\SerialNumberValidator.cs UI\WebHelper.cs
+        Target CopyFilesToOutputDirectory:
+            Copying file from "obj\Release\NBear.Web.dll" to "bin\Release\NBear.Web.dll".
+            NBear.Web -> C:\Teddy\NBearV3\src\NBear.Web\bin\Release\NBear.Web.dll
+            Copying file from "obj\Release\NBear.Web.pdb" to "bin\Release\NBear.Web.pdb".
+    Target Tools\NBear_Tools_EntityDesignToEntity:Rebuild:
+        __________________________________________________
+        Project "C:\Teddy\NBearV3\src\NBearV3.sln" is building "C:\Teddy\NBearV3\src\NBear.Tools.EntityDesignToEntity\NBear.Tools.EntityDesignToEntity.csproj" (Rebuild target(s)):
+
+        Target CoreClean:
+            Deleting file "bin\Release\NBear.Tools.EntityDesignToEntity.exe".
+            Deleting file "bin\Release\NBear.Tools.EntityDesignToEntity.pdb".
+            Deleting file "bin\Release\NBear.Common.Design.dll".
+            Deleting file "bin\Release\NBear.Common.dll".
+            Deleting file "bin\Release\NBear.Common.Design.pdb".
+            Deleting file "bin\Release\NBear.Common.Design.xml".
+            Deleting file "bin\Release\NBear.Common.pdb".
+            Deleting file "bin\Release\NBear.Common.xml".
+            Deleting file "obj\Release\ResolveAssemblyReference.cache".
+            Deleting file "obj\Release\NBear.Tools.EntityDesignToEntity.AdvOptForm.resources".
+            Deleting file "obj\Release\NBear.Tools.EntityDesignToEntity.Form1.resources".
+            Deleting file "obj\Release\NBear.Tools.EntityDesignToEntity.Properties.Resources.resources".
+            Deleting file "obj\Release\NBear.Tools.EntityDesignToEntity.csproj.GenerateResource.Cache".
+            Deleting file "obj\Release\NBear.Tools.EntityDesignToEntity.exe".
+            Deleting file "obj\Release\NBear.Tools.EntityDesignToEntity.pdb".
+        Target ResolveProjectReferences:
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Tools.EntityDesignToEntity\NBear.Tools.EntityDesignToEntity.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common.Design\NBear.Common.Design.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Tools.EntityDesignToEntity\NBear.Tools.EntityDesignToEntity.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Tools.EntityDesignToEntity\NBear.Tools.EntityDesignToEntity.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common.Design\NBear.Common.Design.csproj" (GetNativeManifest target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Tools.EntityDesignToEntity\NBear.Tools.EntityDesignToEntity.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetNativeManifest target(s)):
+
+        Target CoreResGen:
+            Processing resource file "AdvOptForm.resx" into "obj\Release\NBear.Tools.EntityDesignToEntity.AdvOptForm.resources".
+            Processing resource file "Form1.resx" into "obj\Release\NBear.Tools.EntityDesignToEntity.Form1.resources".
+            Processing resource file "Properties\Resources.resx" into "obj\Release\NBear.Tools.EntityDesignToEntity.Properties.Resources.resources".
+        Target CoreCompile:
+            C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Csc.exe /noconfig /nowarn:1701,1702 /errorreport:prompt /warn:4 /define:TRACE /reference:"C:\Program Files\Microsoft Visual Studio 8\Common7\IDE\PublicAssemblies\CppCodeProvider.dll" /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Microsoft.JScript.dll /reference:C:\Teddy\NBearV3\src\NBear.Common.Design\bin\Release\NBear.Common.Design.dll /reference:C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.configuration.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Deployment.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /debug:pdbonly /optimize+ /out:obj\Release\NBear.Tools.EntityDesignToEntity.exe /resource:obj\Release\NBear.Tools.EntityDesignToEntity.AdvOptForm.resources /resource:obj\Release\NBear.Tools.EntityDesignToEntity.Form1.resources /resource:obj\Release\NBear.Tools.EntityDesignToEntity.Properties.Resources.resources /target:winexe AdvOptForm.cs AdvOptForm.Designer.cs CodeGenHelper.cs EntityDesignToEntityConfiguration.cs Form1.cs Form1.Designer.cs Program.cs Properties\AssemblyInfo.cs Properties\Resources.Designer.cs Properties\Settings.Designer.cs
+        Target _CopyFilesMarkedCopyLocal:
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common.Design\bin\Release\NBear.Common.Design.dll" to "bin\Release\NBear.Common.Design.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll" to "bin\Release\NBear.Common.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common.Design\bin\Release\NBear.Common.Design.pdb" to "bin\Release\NBear.Common.Design.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common.Design\bin\Release\NBear.Common.Design.xml" to "bin\Release\NBear.Common.Design.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.pdb" to "bin\Release\NBear.Common.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.xml" to "bin\Release\NBear.Common.xml".
+        Target GetCopyToOutputDirectoryItems:
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Tools.EntityDesignToEntity\NBear.Tools.EntityDesignToEntity.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common.Design\NBear.Common.Design.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Tools.EntityDesignToEntity\NBear.Tools.EntityDesignToEntity.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+        Target CopyFilesToOutputDirectory:
+            Copying file from "obj\Release\NBear.Tools.EntityDesignToEntity.exe" to "bin\Release\NBear.Tools.EntityDesignToEntity.exe".
+            NBear.Tools.EntityDesignToEntity -> C:\Teddy\NBearV3\src\NBear.Tools.EntityDesignToEntity\bin\Release\NBear.Tools.EntityDesignToEntity.exe
+            Copying file from "obj\Release\NBear.Tools.EntityDesignToEntity.pdb" to "bin\Release\NBear.Tools.EntityDesignToEntity.pdb".
+    Target Tools\NBear_Tools_ConfigurationEncrypter:Rebuild:
+        __________________________________________________
+        Project "C:\Teddy\NBearV3\src\NBearV3.sln" is building "C:\Teddy\NBearV3\src\NBear.Tools.ConfigurationEncrypter\NBear.Tools.ConfigurationEncrypter.csproj" (Rebuild target(s)):
+
+        Target CoreClean:
+            Deleting file "bin\Release\NBear.Tools.ConfigurationEncrypter.exe".
+            Deleting file "bin\Release\NBear.Tools.ConfigurationEncrypter.pdb".
+            Deleting file "bin\Release\NBear.Common.dll".
+            Deleting file "bin\Release\NBear.Common.pdb".
+            Deleting file "bin\Release\NBear.Common.xml".
+            Deleting file "obj\Release\NBear.Tools.ConfigurationEncrypter.Form1.resources".
+            Deleting file "obj\Release\NBear.Tools.ConfigurationEncrypter.Properties.Resources.resources".
+            Deleting file "obj\Release\NBear.Tools.ConfigurationEncrypter.csproj.GenerateResource.Cache".
+            Deleting file "obj\Release\NBear.Tools.ConfigurationEncrypter.exe".
+            Deleting file "obj\Release\NBear.Tools.ConfigurationEncrypter.pdb".
+        Target ResolveProjectReferences:
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Tools.ConfigurationEncrypter\NBear.Tools.ConfigurationEncrypter.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Tools.ConfigurationEncrypter\NBear.Tools.ConfigurationEncrypter.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetNativeManifest target(s)):
+
+        Target CoreResGen:
+            Processing resource file "Form1.resx" into "obj\Release\NBear.Tools.ConfigurationEncrypter.Form1.resources".
+            Processing resource file "Properties\Resources.resx" into "obj\Release\NBear.Tools.ConfigurationEncrypter.Properties.Resources.resources".
+        Target CoreCompile:
+            C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Csc.exe /noconfig /nowarn:1701,1702 /errorreport:prompt /warn:4 /define:TRACE /reference:C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Deployment.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /debug:pdbonly /keyfile:nbear.snk /optimize+ /out:obj\Release\NBear.Tools.ConfigurationEncrypter.exe /resource:obj\Release\NBear.Tools.ConfigurationEncrypter.Form1.resources /resource:obj\Release\NBear.Tools.ConfigurationEncrypter.Properties.Resources.resources /target:winexe Form1.cs Form1.Designer.cs Program.cs Properties\AssemblyInfo.cs Properties\Resources.Designer.cs Properties\Settings.Designer.cs
+        Target _CopyFilesMarkedCopyLocal:
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll" to "bin\Release\NBear.Common.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.pdb" to "bin\Release\NBear.Common.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.xml" to "bin\Release\NBear.Common.xml".
+        Target GetCopyToOutputDirectoryItems:
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Tools.ConfigurationEncrypter\NBear.Tools.ConfigurationEncrypter.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+        Target CopyFilesToOutputDirectory:
+            Copying file from "obj\Release\NBear.Tools.ConfigurationEncrypter.exe" to "bin\Release\NBear.Tools.ConfigurationEncrypter.exe".
+            NBear.Tools.ConfigurationEncrypter -> C:\Teddy\NBearV3\src\NBear.Tools.ConfigurationEncrypter\bin\Release\NBear.Tools.ConfigurationEncrypter.exe
+            Copying file from "obj\Release\NBear.Tools.ConfigurationEncrypter.pdb" to "bin\Release\NBear.Tools.ConfigurationEncrypter.pdb".
+    Target Tools\SetupNBearVsPlugin:Rebuild:
+        __________________________________________________
+        Project "C:\Teddy\NBearV3\src\NBearV3.sln" is building "C:\Teddy\NBearV3\src\SetupNBearVsPlugin\SetupNBearVsPlugin.csproj" (Rebuild target(s)):
+
+        Target CoreClean:
+            Deleting file "bin\Release\SetupNBearVsPlugin.exe".
+            Deleting file "bin\Release\SetupNBearVsPlugin.pdb".
+            Deleting file "obj\Release\SetupNBearVsPlugin.Properties.Resources.resources".
+            Deleting file "obj\Release\SetupNBearVsPlugin.csproj.GenerateResource.Cache".
+            Deleting file "obj\Release\SetupNBearVsPlugin.exe".
+            Deleting file "obj\Release\SetupNBearVsPlugin.pdb".
+        Target CoreResGen:
+            Processing resource file "Properties\Resources.resx" into "obj\Release\SetupNBearVsPlugin.Properties.Resources.resources".
+        Target CoreCompile:
+            C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Csc.exe /noconfig /nowarn:1701,1702 /errorreport:prompt /warn:4 /define:TRACE /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Deployment.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /debug:pdbonly /optimize+ /out:obj\Release\SetupNBearVsPlugin.exe /resource:obj\Release\SetupNBearVsPlugin.Properties.Resources.resources /target:winexe Program.cs Properties\AssemblyInfo.cs Properties\Resources.Designer.cs Properties\Settings.Designer.cs
+        Target CopyFilesToOutputDirectory:
+            Copying file from "obj\Release\SetupNBearVsPlugin.exe" to "bin\Release\SetupNBearVsPlugin.exe".
+            SetupNBearVsPlugin -> C:\Teddy\NBearV3\src\SetupNBearVsPlugin\bin\Release\SetupNBearVsPlugin.exe
+            Copying file from "obj\Release\SetupNBearVsPlugin.pdb" to "bin\Release\SetupNBearVsPlugin.pdb".
+    Target Tests\NBear_Test_CaseTests:Rebuild:
+        __________________________________________________
+        Project "C:\Teddy\NBearV3\src\NBearV3.sln" is building "C:\Teddy\NBearV3\src\NBear.Test.CaseTests\NBear.Test.CaseTests.csproj" (Rebuild target(s)):
+
+        Target CoreClean:
+            Deleting file ".\bin\Release\NBear.Test.CaseTests.dll.config".
+            Deleting file ".\bin\Release\NBear.Test.CaseTests.dll".
+            Deleting file ".\bin\Release\NBear.Common.Design.dll".
+            Deleting file ".\bin\Release\NBear.Common.dll".
+            Deleting file ".\bin\Release\NBear.Data.dll".
+            Deleting file ".\bin\Release\NBear.Data.pdb".
+            Deleting file ".\bin\Release\NBear.Data.xml".
+            Deleting file ".\bin\Release\NBear.Common.Design.pdb".
+            Deleting file ".\bin\Release\NBear.Common.Design.xml".
+            Deleting file ".\bin\Release\NBear.Common.pdb".
+            Deleting file ".\bin\Release\NBear.Common.xml".
+            Deleting file "obj\Release\NBear.Test.CaseTests.dll".
+        Target ResolveProjectReferences:
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.CaseTests\NBear.Test.CaseTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common.Design\NBear.Common.Design.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.CaseTests\NBear.Test.CaseTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.CaseTests\NBear.Test.CaseTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.Data\NBear.Data.csproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.CaseTests\NBear.Test.CaseTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common.Design\NBear.Common.Design.csproj" (GetNativeManifest target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.CaseTests\NBear.Test.CaseTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetNativeManifest target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.CaseTests\NBear.Test.CaseTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.Data\NBear.Data.csproj" (GetNativeManifest target(s)):
+
+        Target CoreCompile:
+            C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Csc.exe /noconfig /nowarn:1701,1702 /warn:4 /define:TRACE /reference:..\..\..\..\WINDOWS\assembly\GAC_MSIL\Microsoft.VisualStudio.QualityTools.UnitTestFramework\8.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll /reference:C:\Teddy\NBearV3\src\NBear.Common.Design\bin\Release\NBear.Common.Design.dll /reference:C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll /reference:C:\Teddy\NBearV3\src\NBear.Data\bin\Release\NBear.Data.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Transactions.dll /reference:C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /debug- /optimize+ /out:obj\Release\NBear.Test.CaseTests.dll /target:library CaseTest.cs design\EntityDesign.cs design\LukiyaSampleContractDesign.cs design\ManyToManyDesign.cs design\ManyToManyDesign2.cs design\Temp.cs impl\EntityImpl.cs ManyToManyCase2Tests.cs ManyToManyCaseTests.cs Properties\AssemblyInfo.cs shared\SharedTypes.cs
+            design\Temp.cs(18,16): warning CS0108: 'Temp.TempContract1.BaseID' hides inherited member 'Temp.TempContractBase.BaseID'. Use the new keyword if hiding was intended.
+        Done building target "CoreCompile" in project "NBear.Test.CaseTests.csproj".
+        Target _CopyFilesMarkedCopyLocal:
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common.Design\bin\Release\NBear.Common.Design.dll" to ".\bin\Release\NBear.Common.Design.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.dll" to ".\bin\Release\NBear.Common.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Data\bin\Release\NBear.Data.dll" to ".\bin\Release\NBear.Data.dll".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Data\bin\Release\NBear.Data.pdb" to ".\bin\Release\NBear.Data.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Data\bin\Release\NBear.Data.xml" to ".\bin\Release\NBear.Data.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common.Design\bin\Release\NBear.Common.Design.pdb" to ".\bin\Release\NBear.Common.Design.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common.Design\bin\Release\NBear.Common.Design.xml" to ".\bin\Release\NBear.Common.Design.xml".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.pdb" to ".\bin\Release\NBear.Common.pdb".
+            Copying file from "C:\Teddy\NBearV3\src\NBear.Common\bin\Release\NBear.Common.xml" to ".\bin\Release\NBear.Common.xml".
+        Target GetCopyToOutputDirectoryItems:
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.CaseTests\NBear.Test.CaseTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common.Design\NBear.Common.Design.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.CaseTests\NBear.Test.CaseTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.Common\NBear.Common.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+            __________________________________________________
+            Project "C:\Teddy\NBearV3\src\NBear.Test.CaseTests\NBear.Test.CaseTests.csproj" is building "C:\Teddy\NBearV3\src\NBear.Data\NBear.Data.csproj" (GetCopyToOutputDirectoryItems target(s)):
+
+        Target _CopyAppConfigFile:
+            Copying file from "App.config" to ".\bin\Release\NBear.Test.CaseTests.dll.config".
+        Target CopyFilesToOutputDirectory:
+            Copying file from "obj\Release\NBear.Test.CaseTests.dll" to ".\bin\Release\NBear.Test.CaseTests.dll".
+            NBear.Test.CaseTests -> C:\Teddy\NBearV3\src\NBear.Test.CaseTests\bin\Release\NBear.Test.CaseTests.dll
+
+        Done building project "NBear.Test.CaseTests.csproj".
+
+Build succeeded.
+EntityQuery.cs(2375,16): warning CS1591: Missing XML comment for publicly visible type or member 'NBear.Common.EntityArrayQuery<EntityType>.EntityArrayQuery(EntityType[])'
+Entity.cs(88,24): warning CS1591: Missing XML comment for publicly visible type or member 'NBear.Common.Entity.isAttached'
+Entity.cs(476,26): warning CS1572: XML comment on 'NBear.Common.Entity.GetPrimaryKeyValues(object)' has a param tag for 'type', but there is no parameter by that name
+JSON\Newtonsoft.Json\Converters\HtmlColorConverter.cs(27,15): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Converters.HtmlColorConverter'
+JSON\Newtonsoft.Json\JsonConverter.cs(26,24): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JsonConverter'
+JSON\Newtonsoft.Json\JsonConverter.cs(28,23): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JsonConverter.WriteJson(Newtonsoft.Json.JsonWriter, object)'
+JSON\Newtonsoft.Json\JsonConverter.cs(35,25): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JsonConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type)'
+JSON\Newtonsoft.Json\JsonConverter.cs(40,24): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JsonConverter.CanConvert(System.Type)'
+JSON\Newtonsoft.Json\Converters\HtmlColorConverter.cs(29,24): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Converters.HtmlColorConverter.WriteJson(Newtonsoft.Json.JsonWriter, object)'
+JSON\Newtonsoft.Json\Converters\HtmlColorConverter.cs(34,24): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Converters.HtmlColorConverter.CanConvert(System.Type)'
+JSON\Newtonsoft.Json\Converters\XmlNodeConverter.cs(29,15): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Converters.XmlNodeConverter'
+JSON\Newtonsoft.Json\Converters\XmlNodeConverter.cs(39,24): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Converters.XmlNodeConverter.WriteJson(Newtonsoft.Json.JsonWriter, object)'
+JSON\Newtonsoft.Json\Converters\XmlNodeConverter.cs(205,26): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Converters.XmlNodeConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type)'
+JSON\Newtonsoft.Json\Converters\XmlNodeConverter.cs(440,24): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Converters.XmlNodeConverter.CanConvert(System.Type)'
+JSON\Newtonsoft.Json\Identifier.cs(34,15): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Identifier'
+JSON\Newtonsoft.Json\Identifier.cs(43,10): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Identifier.Identifier(string)'
+JSON\Newtonsoft.Json\Identifier.cs(53,24): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Identifier.Equals(object)'
+JSON\Newtonsoft.Json\Identifier.cs(60,15): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Identifier.Equals(Newtonsoft.Json.Identifier)'
+JSON\Newtonsoft.Json\Identifier.cs(65,22): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Identifier.Equals(Newtonsoft.Json.Identifier, Newtonsoft.Json.Identifier)'
+JSON\Newtonsoft.Json\Identifier.cs(76,23): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Identifier.GetHashCode()'
+JSON\Newtonsoft.Json\Identifier.cs(81,26): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Identifier.ToString()'
+JSON\Newtonsoft.Json\Identifier.cs(86,22): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Identifier.operator ==(Newtonsoft.Json.Identifier, Newtonsoft.Json.Identifier)'
+JSON\Newtonsoft.Json\Identifier.cs(91,22): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Identifier.operator !=(Newtonsoft.Json.Identifier, Newtonsoft.Json.Identifier)'
+JSON\Newtonsoft.Json\Identifier.cs(38,17): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Identifier.Name'
+JSON\Newtonsoft.Json\JavaScriptConstructor.cs(44,16): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JavaScriptConstructor.JavaScriptConstructor(string, Newtonsoft.Json.JavaScriptParameters)'
+JSON\Newtonsoft.Json\JavaScriptConstructor.cs(56,26): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JavaScriptConstructor.ToString()'
+JSON\Newtonsoft.Json\JavaScriptConstructor.cs(34,31): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JavaScriptConstructor.Parameters'
+JSON\Newtonsoft.Json\JavaScriptConstructor.cs(39,17): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JavaScriptConstructor.Name'
+JSON\Newtonsoft.Json\JavaScriptConvert.cs(325,24): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JavaScriptConvert.SerializeObject(object, params Newtonsoft.Json.JsonConverter[])'
+JSON\Newtonsoft.Json\JavaScriptConvert.cs(368,24): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JavaScriptConvert.DeserializeObject(string, System.Type, params Newtonsoft.Json.JsonConverter[])'
+JSON\Newtonsoft.Json\JavaScriptConvert.cs(391,24): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JavaScriptConvert.SerializeXmlNode(System.Xml.XmlNode)'
+JSON\Newtonsoft.Json\JavaScriptConvert.cs(398,25): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JavaScriptConvert.DeerializeXmlNode(string)'
+JSON\Newtonsoft.Json\JavaScriptParameters.cs(27,15): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JavaScriptParameters'
+JSON\Newtonsoft.Json\JavaScriptParameters.cs(29,47): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JavaScriptParameters.Empty'
+JSON\Newtonsoft.Json\JavaScriptParameters.cs(31,10): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JavaScriptParameters.JavaScriptParameters(System.Collections.Generic.IList<object>)'
+JSON\Newtonsoft.Json\JsonConverterCollection.cs(27,15): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JsonConverterCollection'
+JSON\Newtonsoft.Json\JsonHandler.cs(11,24): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JsonHandler'
+JSON\Newtonsoft.Json\Utilities\HandlerBase.cs(10,24): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Utilities.HandlerBase'
+JSON\Newtonsoft.Json\Utilities\HandlerBase.cs(14,25): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Utilities.HandlerBase.Context'
+JSON\Newtonsoft.Json\Utilities\HandlerBase.cs(26,34): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Utilities.HandlerBase.Application'
+JSON\Newtonsoft.Json\Utilities\HandlerBase.cs(37,29): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Utilities.HandlerBase.ApplicationInstance'
+JSON\Newtonsoft.Json\Utilities\HandlerBase.cs(48,19): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Utilities.HandlerBase.Cache'
+JSON\Newtonsoft.Json\Utilities\HandlerBase.cs(59,25): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Utilities.HandlerBase.Request'
+JSON\Newtonsoft.Json\Utilities\HandlerBase.cs(70,26): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Utilities.HandlerBase.Response'
+JSON\Newtonsoft.Json\Utilities\HandlerBase.cs(81,31): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Utilities.HandlerBase.Server'
+JSON\Newtonsoft.Json\Utilities\HandlerBase.cs(92,26): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Utilities.HandlerBase.Trace'
+JSON\Newtonsoft.Json\Utilities\HandlerBase.cs(103,21): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.Utilities.HandlerBase.User'
+JSON\Newtonsoft.Json\JsonHandler.cs(15,27): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JsonHandler.WriteResult(Newtonsoft.Json.JsonWriter)'
+JSON\Newtonsoft.Json\JsonHandler.cs(17,22): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JsonHandler.JsonResponse(System.Web.HttpResponse, System.Action<Newtonsoft.Json.JsonWriter>)'
+JSON\Newtonsoft.Json\JsonHandler.cs(29,26): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JsonHandler.OnError(System.EventArgs)'
+JSON\Newtonsoft.Json\JsonHandler.cs(13,29): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JsonHandler.Error'
+JSON\Newtonsoft.Json\JsonSerializer.cs(76,34): warning CS1591: Missing XML comment for publicly visible type or member 'Newtonsoft.Json.JsonSerializer.Converters'
+MetaDataManager.cs(99,28): warning CS1591: Missing XML comment for publicly visible type or member 'NBear.Common.MetaDataManager.AddEntityConfigurations(NBear.Common.EntityConfiguration[])'
+MetaDataManager.cs(158,28): warning CS1591: Missing XML comment for publicly visible type or member 'NBear.Common.MetaDataManager.ParseNonRelatedEntities()'
+SevenZip\Common\CommandLineParser.cs(8,14): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchType'
+SevenZip\Common\CommandLineParser.cs(10,3): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchType.Simple'
+SevenZip\Common\CommandLineParser.cs(11,3): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchType.PostMinus'
+SevenZip\Common\CommandLineParser.cs(12,3): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchType.LimitedPostString'
+SevenZip\Common\CommandLineParser.cs(13,3): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchType.UnLimitedPostString'
+SevenZip\Common\CommandLineParser.cs(14,3): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchType.PostChar'
+SevenZip\Common\CommandLineParser.cs(17,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchForm'
+SevenZip\Common\CommandLineParser.cs(19,17): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchForm.IDString'
+SevenZip\Common\CommandLineParser.cs(20,21): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchForm.Type'
+SevenZip\Common\CommandLineParser.cs(21,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchForm.Multi'
+SevenZip\Common\CommandLineParser.cs(22,14): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchForm.MinLen'
+SevenZip\Common\CommandLineParser.cs(23,14): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchForm.MaxLen'
+SevenZip\Common\CommandLineParser.cs(24,17): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchForm.PostCharSet'
+SevenZip\Common\CommandLineParser.cs(26,10): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchForm.SwitchForm(string, SevenZip.CommandLineParser.SwitchType, bool, int, int, string)'
+SevenZip\Common\CommandLineParser.cs(36,10): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchForm.SwitchForm(string, SevenZip.CommandLineParser.SwitchType, bool, int)'
+SevenZip\Common\CommandLineParser.cs(40,10): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchForm.SwitchForm(string, SevenZip.CommandLineParser.SwitchType, bool)'
+SevenZip\Common\CommandLineParser.cs(46,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchResult'
+SevenZip\Common\CommandLineParser.cs(48,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchResult.ThereIs'
+SevenZip\Common\CommandLineParser.cs(49,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchResult.WithMinus'
+SevenZip\Common\CommandLineParser.cs(50,20): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchResult.PostStrings'
+SevenZip\Common\CommandLineParser.cs(51,14): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchResult.PostCharIndex'
+SevenZip\Common\CommandLineParser.cs(52,10): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.SwitchResult.SwitchResult()'
+SevenZip\Common\CommandLineParser.cs(58,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.Parser'
+SevenZip\Common\CommandLineParser.cs(60,20): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.Parser.NonSwitchStrings'
+SevenZip\Common\CommandLineParser.cs(63,10): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.Parser.Parser(int)'
+SevenZip\Common\CommandLineParser.cs(171,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.Parser.ParseStrings(SevenZip.CommandLineParser.SwitchForm[], string[])'
+SevenZip\Common\CommandLineParser.cs(191,21): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.Parser.ParseCommand(SevenZip.CommandLineParser.CommandForm[], string, out string)'
+SevenZip\Common\CommandLineParser.cs(189,23): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.Parser.this[int]'
+SevenZip\Common\CommandLineParser.cs(258,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.CommandForm'
+SevenZip\Common\CommandLineParser.cs(260,17): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.CommandForm.IDString'
+SevenZip\Common\CommandLineParser.cs(261,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.CommandForm.PostStringMode'
+SevenZip\Common\CommandLineParser.cs(262,10): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CommandLineParser.CommandForm.CommandForm(string, bool)'
+SevenZip\Common\CRC.cs(5,14): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CRC'
+SevenZip\Common\CRC.cs(7,33): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CRC.Table'
+SevenZip\Common\CRC.cs(27,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CRC.Init()'
+SevenZip\Common\CRC.cs(29,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CRC.UpdateByte(byte)'
+SevenZip\Common\CRC.cs(34,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CRC.Update(byte[], uint, uint)'
+SevenZip\Common\CRC.cs(40,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.CRC.GetDigest()'
+SevenZip\Common\InBuffer.cs(5,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.InBuffer'
+SevenZip\Common\InBuffer.cs(15,10): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.InBuffer.InBuffer(uint)'
+SevenZip\Common\InBuffer.cs(21,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.InBuffer.Init(System.IO.Stream)'
+SevenZip\Common\InBuffer.cs(30,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.InBuffer.ReadBlock()'
+SevenZip\Common\InBuffer.cs(43,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.InBuffer.ReleaseStream()'
+SevenZip\Common\InBuffer.cs(49,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.InBuffer.ReadByte(byte)'
+SevenZip\Common\InBuffer.cs(58,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.InBuffer.ReadByte()'
+SevenZip\Common\InBuffer.cs(67,16): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.InBuffer.GetProcessedSize()'
+SevenZip\Common\OutBuffer.cs(5,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.OutBuffer'
+SevenZip\Common\OutBuffer.cs(13,10): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.OutBuffer.OutBuffer(uint)'
+SevenZip\Common\OutBuffer.cs(19,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.OutBuffer.SetStream(System.IO.Stream)'
+SevenZip\Common\OutBuffer.cs(20,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.OutBuffer.FlushStream()'
+SevenZip\Common\OutBuffer.cs(21,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.OutBuffer.CloseStream()'
+SevenZip\Common\OutBuffer.cs(22,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.OutBuffer.ReleaseStream()'
+SevenZip\Common\OutBuffer.cs(24,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.OutBuffer.Init()'
+SevenZip\Common\OutBuffer.cs(30,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.OutBuffer.WriteByte(byte)'
+SevenZip\Common\OutBuffer.cs(37,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.OutBuffer.FlushData()'
+SevenZip\Common\OutBuffer.cs(45,16): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Buffer.OutBuffer.GetProcessedSize()'
+SevenZip\Compress\LzmaAlone\SevenZipHelper.cs(7,25): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.SevenZipHelper'
+SevenZip\Compress\LzmaAlone\SevenZipHelper.cs(52,30): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.SevenZipHelper.Compress(byte[])'
+SevenZip\Compress\LzmaAlone\SevenZipHelper.cs(67,30): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.SevenZipHelper.Decompress(byte[])'
+SevenZip\Compress\LZMA\LzmaDecoder.cs(9,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.Decoder'
+SevenZip\ICoder.cs(37,19): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.ICoder'
+SevenZip\ICoder.cs(141,19): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.ISetDecoderProperties'
+SevenZip\ICoder.cs(143,8): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.ISetDecoderProperties.SetDecoderProperties(byte[])'
+SevenZip\Compress\LZMA\LzmaDecoder.cs(165,10): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.Decoder.Decoder()'
+SevenZip\Compress\LZMA\LzmaDecoder.cs(234,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.Decoder.Code(System.IO.Stream, System.IO.Stream, long, long, SevenZip.ICodeProgress)'
+SevenZip\Compress\LZMA\LzmaDecoder.cs(353,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.Decoder.SetDecoderProperties(byte[])'
+SevenZip\Compress\LZMA\LzmaEncoder.cs(9,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.Encoder'
+SevenZip\ICoder.cs(131,19): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.ISetCoderProperties'
+SevenZip\ICoder.cs(133,8): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.ISetCoderProperties.SetCoderProperties(SevenZip.CoderPropID[], object[])'
+SevenZip\ICoder.cs(136,19): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.IWriteCoderProperties'
+SevenZip\ICoder.cs(138,8): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.IWriteCoderProperties.WriteCoderProperties(System.IO.Stream)'
+SevenZip\Compress\LZMA\LzmaEncoder.cs(382,10): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.Encoder.Encoder()'
+SevenZip\Compress\LZMA\LzmaEncoder.cs(1063,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.Encoder.CodeOneBlock(out long, out long, out bool)'
+SevenZip\Compress\LZMA\LzmaEncoder.cs(1271,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.Encoder.Code(System.IO.Stream, System.IO.Stream, long, long, SevenZip.ICodeProgress)'
+SevenZip\Compress\LZMA\LzmaEncoder.cs(1301,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.Encoder.WriteCoderProperties(System.IO.Stream)'
+SevenZip\Compress\LZMA\LzmaEncoder.cs(1366,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZMA.Encoder.SetCoderProperties(SevenZip.CoderPropID[], object[])'
+SevenZip\Compress\LZ\LzBinTree.cs(7,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree'
+SevenZip\Compress\LZ\LzInWindow.cs(7,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow'
+SevenZip\Compress\LZ\LzInWindow.cs(9,17): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow._bufferBase'
+SevenZip\Compress\LZ\LzInWindow.cs(16,17): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow._bufferOffset'
+SevenZip\Compress\LZ\LzInWindow.cs(18,17): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow._blockSize'
+SevenZip\Compress\LZ\LzInWindow.cs(19,17): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow._pos'
+SevenZip\Compress\LZ\LzInWindow.cs(22,17): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow._streamPos'
+SevenZip\Compress\LZ\LzInWindow.cs(24,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow.MoveBlock()'
+SevenZip\Compress\LZ\LzInWindow.cs(39,23): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow.ReadBlock()'
+SevenZip\Compress\LZ\LzInWindow.cs(67,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow.Create(uint, uint, uint)'
+SevenZip\Compress\LZ\LzInWindow.cs(81,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow.SetStream(System.IO.Stream)'
+SevenZip\Compress\LZ\LzInWindow.cs(82,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow.ReleaseStream()'
+SevenZip\Compress\LZ\LzInWindow.cs(84,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow.Init()'
+SevenZip\Compress\LZ\LzInWindow.cs(93,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow.MovePos()'
+SevenZip\Compress\LZ\LzInWindow.cs(105,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow.GetIndexByte(int)'
+SevenZip\Compress\LZ\LzInWindow.cs(108,17): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow.GetMatchLen(int, uint, uint)'
+SevenZip\Compress\LZ\LzInWindow.cs(122,17): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow.GetNumAvailableBytes()'
+SevenZip\Compress\LZ\LzInWindow.cs(124,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.InWindow.ReduceOffsets(int)'
+SevenZip\Compress\LZ\LzBinTree.cs(34,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree.SetType(int)'
+SevenZip\Compress\LZ\LzBinTree.cs(51,19): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree.SetStream(System.IO.Stream)'
+SevenZip\Compress\LZ\LzBinTree.cs(52,19): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree.ReleaseStream()'
+SevenZip\Compress\LZ\LzBinTree.cs(54,19): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree.Init()'
+SevenZip\Compress\LZ\LzBinTree.cs(63,19): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree.MovePos()'
+SevenZip\Compress\LZ\LzBinTree.cs(72,19): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree.GetIndexByte(int)'
+SevenZip\Compress\LZ\LzBinTree.cs(74,21): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree.GetMatchLen(int, uint, uint)'
+SevenZip\Compress\LZ\LzBinTree.cs(77,21): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree.GetNumAvailableBytes()'
+SevenZip\Compress\LZ\LzBinTree.cs(79,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree.Create(uint, uint, uint, uint)'
+SevenZip\Compress\LZ\LzBinTree.cs(118,17): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree.GetMatches(uint[])'
+SevenZip\Compress\LZ\LzBinTree.cs(252,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree.Skip(uint)'
+SevenZip\Compress\LZ\LzBinTree.cs(365,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.BinTree.SetCutValue(uint)'
+SevenZip\Compress\LZ\LzOutWindow.cs(5,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.OutWindow'
+SevenZip\Compress\LZ\LzOutWindow.cs(13,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.OutWindow.Create(uint)'
+SevenZip\Compress\LZ\LzOutWindow.cs(25,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.OutWindow.Init(System.IO.Stream, bool)'
+SevenZip\Compress\LZ\LzOutWindow.cs(36,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.OutWindow.Init(System.IO.Stream)'
+SevenZip\Compress\LZ\LzOutWindow.cs(38,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.OutWindow.ReleaseStream()'
+SevenZip\Compress\LZ\LzOutWindow.cs(44,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.OutWindow.Flush()'
+SevenZip\Compress\LZ\LzOutWindow.cs(55,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.OutWindow.CopyBlock(uint, uint)'
+SevenZip\Compress\LZ\LzOutWindow.cs(70,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.OutWindow.PutByte(byte)'
+SevenZip\Compress\LZ\LzOutWindow.cs(77,15): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.Compression.LZ.OutWindow.GetByte(uint)'
+SevenZip\ICoder.cs(23,19): warning CS1591: Missing XML comment for publicly visible type or member 'SevenZip.ICodeProgress'
+SevenZip\ICoder.cs(93,59): warning CS1570: XML comment on 'SevenZip.CoderPropID.PosStateBits' has badly formed XML -- 'A name was started with an invalid character.'
+SevenZip\ICoder.cs(97,61): warning CS1570: XML comment on 'SevenZip.CoderPropID.LitContextBits' has badly formed XML -- 'A name was started with an invalid character.'
+SevenZip\ICoder.cs(101,62): warning CS1570: XML comment on 'SevenZip.CoderPropID.LitPosBits' has badly formed XML -- 'A name was started with an invalid character.'
+BatchCommander.cs(71,21): warning CS1591: Missing XML comment for publicly visible type or member 'NBear.Data.BatchCommander.ExecuteBatch()'
+PageSplit.cs(269,25): warning CS1591: Missing XML comment for publicly visible type or member 'NBear.Data.PageSplit.ParamValues'
+OtherAttributes.cs(169,16): warning CS1591: Missing XML comment for publicly visible type or member 'NBear.Common.Design.AdditionalSqlScriptAttribute.AdditionalSqlScriptAttribute(string)'
+OtherAttributes.cs(348,26): warning CS1572: XML comment on 'NBear.Common.Design.CommentAttribute.CommentAttribute(string)' has a param tag for 'name', but there is no parameter by that name
+OtherAttributes.cs(349,40): warning CS1573: Parameter 'content' has no matching param tag in the XML comment for 'NBear.Common.Design.CommentAttribute.CommentAttribute(string)' (but other parameters do)
+Presenter.cs(49,26): warning CS1572: XML comment on 'NBear.MVP.IPresenter2.BindModels(object[])' has a param tag for 'model', but there is no parameter by that name
+Presenter.cs(50,34): warning CS1573: Parameter 'models' has no matching param tag in the XML comment for 'NBear.MVP.IPresenter2.BindModels(object[])' (but other parameters do)
+Presenter.cs(102,26): warning CS1572: XML comment on 'NBear.MVP.Presenter<ViewType>.BindModels(object[])' has a param tag for 'model', but there is no parameter by that name
+Presenter.cs(103,41): warning CS1573: Parameter 'models' has no matching param tag in the XML comment for 'NBear.MVP.Presenter<ViewType>.BindModels(object[])' (but other parameters do)
+Presenter.cs(270,26): warning CS1572: XML comment on 'NBear.MVP.Presenter<ViewType,IModelType1,IModelType2>.BindModels(object[])' has a param tag for 'model', but there is no parameter by that name
+Presenter.cs(271,41): warning CS1573: Parameter 'models' has no matching param tag in the XML comment for 'NBear.MVP.Presenter<ViewType,IModelType1,IModelType2>.BindModels(object[])' (but other parameters do)
+Presenter.cs(367,26): warning CS1572: XML comment on 'NBear.MVP.Presenter<ViewType,IModelType1,IModelType2,IModelType3>.BindModels(object[])' has a param tag for 'model', but there is no parameter by that name
+Presenter.cs(368,41): warning CS1573: Parameter 'models' has no matching param tag in the XML comment for 'NBear.MVP.Presenter<ViewType,IModelType1,IModelType2,IModelType3>.BindModels(object[])' (but other parameters do)
+Presenter.cs(473,26): warning CS1572: XML comment on 'NBear.MVP.Presenter<ViewType,IModelType1,IModelType2,IModelType3,IModelType4>.BindModels(object[])' has a param tag for 'model', but there is no parameter by that name
+Presenter.cs(474,41): warning CS1573: Parameter 'models' has no matching param tag in the XML comment for 'NBear.MVP.Presenter<ViewType,IModelType1,IModelType2,IModelType3,IModelType4>.BindModels(object[])' (but other parameters do)
+Presenter.cs(588,26): warning CS1572: XML comment on 'NBear.MVP.Presenter<ViewType,IModelType1,IModelType2,IModelType3,IModelType4,IModelType5>.BindModels(object[])' has a param tag for 'model', but there is no parameter by that name
+Presenter.cs(589,41): warning CS1573: Parameter 'models' has no matching param tag in the XML comment for 'NBear.MVP.Presenter<ViewType,IModelType1,IModelType2,IModelType3,IModelType4,IModelType5>.BindModels(object[])' (but other parameters do)
+Presenter.cs(712,26): warning CS1572: XML comment on 'NBear.MVP.Presenter<ViewType,IModelType1,IModelType2,IModelType3,IModelType4,IModelType5,IModelType6>.BindModels(object[])' has a param tag for 'model', but there is no parameter by that name
+Presenter.cs(713,41): warning CS1573: Parameter 'models' has no matching param tag in the XML comment for 'NBear.MVP.Presenter<ViewType,IModelType1,IModelType2,IModelType3,IModelType4,IModelType5,IModelType6>.BindModels(object[])' (but other parameters do)
+design\Temp.cs(18,16): warning CS0108: 'Temp.TempContract1.BaseID' hides inherited member 'Temp.TempContractBase.BaseID'. Use the new keyword if hiding was intended.
+    193 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:11

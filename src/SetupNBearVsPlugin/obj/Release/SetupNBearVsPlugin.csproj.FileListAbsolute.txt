@@ -1,0 +1,16 @@
+F:\soft\nbear3.6.6_src\src\SetupNBearVsPlugin\bin\Release\SetupNBearVsPlugin.exe
+F:\soft\nbear3.6.6_src\src\SetupNBearVsPlugin\bin\Release\SetupNBearVsPlugin.pdb
+F:\soft\nbear3.6.6_src\src\SetupNBearVsPlugin\obj\Release\ResolveAssemblyReference.cache
+F:\soft\nbear3.6.6_src\src\SetupNBearVsPlugin\obj\Release\SetupNBearVsPlugin.Properties.Resources.resources
+F:\soft\nbear3.6.6_src\src\SetupNBearVsPlugin\obj\Release\GenerateResource-ResGen.read.1.tlog
+F:\soft\nbear3.6.6_src\src\SetupNBearVsPlugin\obj\Release\GenerateResource-ResGen.write.1.tlog
+F:\soft\nbear3.6.6_src\src\SetupNBearVsPlugin\obj\Release\SetupNBearVsPlugin.exe
+F:\soft\nbear3.6.6_src\src\SetupNBearVsPlugin\obj\Release\SetupNBearVsPlugin.pdb
+F:\nbear3.6.6_src\src\SetupNBearVsPlugin\bin\Release\SetupNBearVsPlugin.exe
+F:\nbear3.6.6_src\src\SetupNBearVsPlugin\bin\Release\SetupNBearVsPlugin.pdb
+F:\nbear3.6.6_src\src\SetupNBearVsPlugin\obj\Release\ResolveAssemblyReference.cache
+F:\nbear3.6.6_src\src\SetupNBearVsPlugin\obj\Release\SetupNBearVsPlugin.Properties.Resources.resources
+F:\nbear3.6.6_src\src\SetupNBearVsPlugin\obj\Release\GenerateResource-ResGen.read.1.tlog
+F:\nbear3.6.6_src\src\SetupNBearVsPlugin\obj\Release\GenerateResource-ResGen.write.1.tlog
+F:\nbear3.6.6_src\src\SetupNBearVsPlugin\obj\Release\SetupNBearVsPlugin.exe
+F:\nbear3.6.6_src\src\SetupNBearVsPlugin\obj\Release\SetupNBearVsPlugin.pdb

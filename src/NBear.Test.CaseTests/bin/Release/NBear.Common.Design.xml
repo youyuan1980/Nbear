@@ -1,0 +1,558 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NBear.Common.Design</name>
+    </assembly>
+    <members>
+        <member name="T:NBear.Common.Design.PrimaryKeyAttribute">
+            <summary>
+            Mark a property as one of the primary keys of the owned entity.
+            </summary>
+        </member>
+        <member name="T:NBear.Common.Design.FriendKeyAttribute">
+            <summary>
+            Mark a property as a FriendKey property. You must specify the related entity type, which this friend key depending on.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Design.FriendKeyAttribute.#ctor(System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.Design.FriendKeyAttribute"/> class.
+            </summary>
+            <param name="relatedEntityType">Type of the related entity.</param>
+        </member>
+        <member name="P:NBear.Common.Design.FriendKeyAttribute.RelatedEntityType">
+            <summary>
+            Gets the type of the related entity.
+            </summary>
+            <value>The type of the related entity.</value>
+        </member>
+        <member name="P:NBear.Common.Design.FriendKeyAttribute.RelatedEntityPk">
+            <summary>
+            Gets the related entity pk.
+            </summary>
+            <value>The related entity pk.</value>
+        </member>
+        <member name="T:NBear.Common.Design.DraftAttribute">
+            <summary>
+            A draft entity will be ignored in code generating.
+            </summary>
+        </member>
+        <member name="T:NBear.Common.Design.ImplementInterfaceAttribute">
+            <summary>
+            Interfaces makred with this attribute will be generated into the implementing interface list of output entities.
+            The interface specified here must be defined in Entities assembly or a shared assembly that Entities assembly referencing.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Design.ImplementInterfaceAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.Design.ImplementInterfaceAttribute"/> class.
+            </summary>
+            <param name="interfaceFullName">Full name of the interface.</param>
+        </member>
+        <member name="P:NBear.Common.Design.ImplementInterfaceAttribute.InterfaceFullName">
+            <summary>
+            Gets the full name of the interface.
+            </summary>
+            <value>The full name of the interface.</value>
+        </member>
+        <member name="T:NBear.Common.Design.IndexPropertyAttribute">
+            <summary>
+            Mark a property as needed to add index when creating the table in database.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Design.IndexPropertyAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.Design.IndexPropertyAttribute"/> class.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Design.IndexPropertyAttribute.#ctor(System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.Design.IndexPropertyAttribute"/> class.
+            </summary>
+            <param name="isDesc">if set to <c>true</c> [is desc].</param>
+        </member>
+        <member name="P:NBear.Common.Design.IndexPropertyAttribute.IsDesc">
+            <summary>
+            Gets a value indicating whether this instance is desc.
+            </summary>
+            <value><c>true</c> if this instance is desc; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:NBear.Common.Design.NotNullAttribute">
+            <summary>
+            Whether the mapping column in database could not be NULL.
+            </summary>
+        </member>
+        <member name="T:NBear.Common.Design.SerializationIgnoreAttribute">
+            <summary>
+            Whether a property should not included in default XML serialization. This attribute maps to a XmlIgnore attribute in actual generated entity code by EntityDesignToEntity.exe tool.
+            </summary>
+        </member>
+        <member name="T:NBear.Common.Design.ReadOnlyAttribute">
+            <summary>
+            Mark an entity as readonly, which means it can be used in finding entities and cannot be updated. Generally, a readonly entity maps to a database view.
+            </summary>
+        </member>
+        <member name="T:NBear.Common.Design.RelationAttribute">
+            <summary>
+            Mark an entity as a relation entity, which is used to realize many to many relation mapping.
+            </summary>
+        </member>
+        <member name="T:NBear.Common.Design.AdditionalSqlScriptAttribute">
+            <summary>
+            Additional sql script clip which will be included into the sql script batch.
+            </summary>
+        </member>
+        <member name="P:NBear.Common.Design.AdditionalSqlScriptAttribute.Sql">
+            <summary>
+            Gets the SQL.
+            </summary>
+            <value>The SQL.</value>
+        </member>
+        <member name="P:NBear.Common.Design.AdditionalSqlScriptAttribute.PreCleanSql">
+            <summary>
+            Gets or sets the pre clean SQL.
+            </summary>
+            <value>The pre clean SQL.</value>
+        </member>
+        <member name="T:NBear.Common.Design.BatchUpdateAttribute">
+            <summary>
+            Mark an entity as needed to save all related base entity and property entity values in a batch gateway to improve performance.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Design.BatchUpdateAttribute.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.Design.BatchUpdateAttribute"/> class.
+            </summary>
+            <param name="batchSize">Size of the batch save.</param>
+        </member>
+        <member name="P:NBear.Common.Design.BatchUpdateAttribute.BatchSize">
+            <summary>
+            Gets the size of the batch save.
+            </summary>
+            <value>The size of the batch save.</value>
+        </member>
+        <member name="T:NBear.Common.Design.AutoPreLoadAttribute">
+            <summary>
+            Whether instances of the entity are automatically preloaded.
+            </summary>
+        </member>
+        <member name="T:NBear.Common.Design.RelationKeyAttribute">
+            <summary>
+            Mark a property of a relation entity as a relation key, which is used to relate an entity's primary key.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Design.RelationKeyAttribute.#ctor(System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.Design.RelationKeyAttribute"/> class.
+            </summary>
+            <param name="relatedType">Type of the related.</param>
+        </member>
+        <member name="P:NBear.Common.Design.RelationKeyAttribute.RelatedType">
+            <summary>
+            Gets the type of the related entity.
+            </summary>
+            <value>The type of the related.</value>
+        </member>
+        <member name="P:NBear.Common.Design.RelationKeyAttribute.RelatedPk">
+            <summary>
+            Gets the related pk.
+            </summary>
+            <value>The pk.</value>
+        </member>
+        <member name="T:NBear.Common.Design.CompoundUnitAttribute">
+            <summary>
+            Mark a property as a CompoundUnit property.
+            </summary>
+            <remarks>
+            A compound unit can be a serializable struct or class. It can contains properties which is mapping to an single data column. A classic compound unit example is UserName: FirstName, LastName.
+            </remarks>
+        </member>
+        <member name="T:NBear.Common.Design.MappingNameAttribute">
+            <summary>
+            Specify the actual mapping name  of an entity to a table/view/procedure or a property to a data column. 
+            By default, entity/properties with same names map to table/view/procedure/data columns with same name.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Design.MappingNameAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.Design.MappingNameAttribute"/> class.
+            </summary>
+            <param name="name">The name.</param>
+        </member>
+        <member name="P:NBear.Common.Design.MappingNameAttribute.Name">
+            <summary>
+            Gets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="T:NBear.Common.Design.CommentAttribute">
+            <summary>
+            Comment content set with this attribute will be generated into the generated Entities code.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Design.CommentAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.Design.CommentAttribute"/> class.
+            </summary>
+            <param name="name">The name.</param>
+        </member>
+        <member name="P:NBear.Common.Design.CommentAttribute.Content">
+            <summary>
+            Gets the comment content.
+            </summary>
+            <value>The content.</value>
+        </member>
+        <member name="T:NBear.Common.Design.OutputNamespaceAttribute">
+            <summary>
+            Specify the output namespace of this entity
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Design.OutputNamespaceAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.Design.OutputNamespaceAttribute"/> class.
+            </summary>
+            <param name="ns">The namespace.</param>
+        </member>
+        <member name="P:NBear.Common.Design.OutputNamespaceAttribute.Namespace">
+            <summary>
+            Gets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="T:NBear.Common.Design.CustomDataAttribute">
+            <summary>
+            Custom data of entity or property, by which you can take advantage of for custom use. 
+            When you set some custom data for an entity or property, you can get these data at runtime 
+            by calling NBear.Common.MetaDataManager.GetEntityConfiguration() and EntityConfiguration.GetPropertyConfiguration().
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Design.CustomDataAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.Design.CustomDataAttribute"/> class.
+            </summary>
+            <param name="data">The data.</param>
+        </member>
+        <member name="P:NBear.Common.Design.CustomDataAttribute.Data">
+            <summary>
+            Gets the custom data.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="T:NBear.Common.Design.SqlTypeAttribute">
+            <summary>
+            Specify the database column's sql type mapping to the property. If there is no SqlType specified for a property, NBear will generate a default according to it's .Net type.
+            By default, value types maps to relevant value types in database, and string type maps to database type - nvarchar(127).
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Design.SqlTypeAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.Design.SqlTypeAttribute"/> class.
+            </summary>
+            <param name="type">The type.</param>
+        </member>
+        <member name="P:NBear.Common.Design.SqlTypeAttribute.Type">
+            <summary>
+            Gets the type.
+            </summary>
+            <value>The type.</value>
+        </member>
+        <member name="P:NBear.Common.Design.SqlTypeAttribute.DefaultValue">
+            <summary>
+            Gets or sets the default value.
+            </summary>
+            <value>The default value.</value>
+        </member>
+        <member name="T:NBear.Common.Design.QueryType">
+            <summary>
+            Types of query attributes
+            </summary>
+        </member>
+        <member name="F:NBear.Common.Design.QueryType.PkQuery">
+            <summary>
+            PkQuery
+            </summary>
+        </member>
+        <member name="F:NBear.Common.Design.QueryType.PkReverseQuery">
+            <summary>
+            PkReverseQuery
+            </summary>
+        </member>
+        <member name="F:NBear.Common.Design.QueryType.FkQuery">
+            <summary>
+            FkQuery
+            </summary>
+        </member>
+        <member name="F:NBear.Common.Design.QueryType.FkReverseQuery">
+            <summary>
+            FkReverseQuery
+            </summary>
+        </member>
+        <member name="F:NBear.Common.Design.QueryType.ManyToManyQuery">
+            <summary>
+            ManyToManyQuery
+            </summary>
+        </member>
+        <member name="F:NBear.Common.Design.QueryType.CustomQuery">
+            <summary>
+            CustomQuery
+            </summary>
+        </member>
+        <member name="T:NBear.Common.Design.QueryAttribute">
+            <summary>
+            Base class of all query attributes.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.Design.QueryAttribute.contained">
+            <summary>
+            whether the related property values is contained in owner entity's cascade update.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Design.QueryAttribute.#ctor(NBear.Common.Design.QueryType)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.Design.QueryAttribute"/> class.
+            </summary>
+            <param name="queryType">Type of the query.</param>
+        </member>
+        <member name="P:NBear.Common.Design.QueryAttribute.LazyLoad">
+            <summary>
+            Gets or sets a value indicating whether the property is lazyload.
+            </summary>
+            <value><c>true</c> if lazyload; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:NBear.Common.Design.QueryAttribute.QueryType">
+            <summary>
+            Gets the type of the query.
+            </summary>
+            <value>The type of the query.</value>
+        </member>
+        <member name="P:NBear.Common.Design.QueryAttribute.Contained">
+            <summary>
+            Gets a value indicating whether this property is contained in cascade update.
+            </summary>
+            <value><c>true</c> if contained; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:NBear.Common.Design.PkQueryAttribute">
+            <summary>
+            Mark a property as a primary key one to one related property.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Design.PkQueryAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.Design.PkQueryAttribute"/> class.
+            </summary>
+        </member>
+        <member name="T:NBear.Common.Design.FkQueryAttribute">
+            <summary>
+            Mark a property as a friend key one to one / one to many related property.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Design.FkQueryAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.Design.FkQueryAttribute"/> class.
+            </summary>
+            <param name="relatedManyToOneQueryPropertyName">The name of the related property which is the friend key of the related type or a property marked by FkReverseQuery</param>
+        </member>
+        <member name="P:NBear.Common.Design.FkQueryAttribute.RelatedManyToOneQueryPropertyName">
+            <summary>
+            Gets the name of the related property which is the friend key of the related type or a property marked by FkReverseQuery.
+            </summary>
+            <value>The name of the related many to one query property.</value>
+        </member>
+        <member name="P:NBear.Common.Design.FkQueryAttribute.OrderBy">
+            <summary>
+            Gets or sets the order by condition, when is used when it is a onte to many related property.
+            </summary>
+            <value>The order by.</value>
+        </member>
+        <member name="P:NBear.Common.Design.FkQueryAttribute.Contained">
+            <summary>
+            Gets a value indicating whether this property values is contained in owner entity's cascade update.
+            </summary>
+            <value><c>true</c> if contained; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:NBear.Common.Design.FkQueryAttribute.AdditionalWhere">
+            <summary>
+            Gets or sets the additional where.
+            </summary>
+            <value>The additional where.</value>
+        </member>
+        <member name="T:NBear.Common.Design.CustomQueryAttribute">
+            <summary>
+            Mark a property as a custom query property. A custom quey can use custom query creterias to query one to one or one to many related entities.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Design.CustomQueryAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.Design.CustomQueryAttribute"/> class.
+            </summary>
+            <param name="where">The where.</param>
+        </member>
+        <member name="P:NBear.Common.Design.CustomQueryAttribute.Where">
+            <summary>
+            Gets the where creteria.
+            </summary>
+            <value>The where.</value>
+        </member>
+        <member name="P:NBear.Common.Design.CustomQueryAttribute.OrderBy">
+            <summary>
+            Gets or sets the order by.
+            </summary>
+            <value>The order by.</value>
+        </member>
+        <member name="P:NBear.Common.Design.CustomQueryAttribute.RelationType">
+            <summary>
+            Gets or sets the type of the relation entity.
+            </summary>
+            <value>The type of the relation.</value>
+        </member>
+        <member name="T:NBear.Common.Design.PkReverseQueryAttribute">
+            <summary>
+            Mark a property as a Reverse PkQuery property.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Design.PkReverseQueryAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.Design.PkReverseQueryAttribute"/> class.
+            </summary>
+        </member>
+        <member name="T:NBear.Common.Design.FkReverseQueryAttribute">
+            <summary>
+            Mark a property as a Reverse FkQuery property.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Design.FkReverseQueryAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.Design.FkReverseQueryAttribute"/> class.
+            </summary>
+        </member>
+        <member name="T:NBear.Common.Design.ManyToManyQueryAttribute">
+            <summary>
+            Mark a property as a many to many related property.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Design.ManyToManyQueryAttribute.#ctor(System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.Design.ManyToManyQueryAttribute"/> class.
+            </summary>
+            <param name="relationType">Type of the relation entity.</param>
+        </member>
+        <member name="P:NBear.Common.Design.ManyToManyQueryAttribute.Contained">
+            <summary>
+            Gets a value indicating whether this property is contained in owner entity's cascade update.
+            </summary>
+            <value><c>true</c> if contained; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:NBear.Common.Design.ManyToManyQueryAttribute.RelationType">
+            <summary>
+            Gets the type of the relation entity.
+            </summary>
+            <value>The type of the relation.</value>
+        </member>
+        <member name="P:NBear.Common.Design.ManyToManyQueryAttribute.OrderBy">
+            <summary>
+            Gets or sets the order by.
+            </summary>
+            <value>The order by.</value>
+        </member>
+        <member name="P:NBear.Common.Design.ManyToManyQueryAttribute.AdditionalWhere">
+            <summary>
+            Gets or sets the additional where.
+            </summary>
+            <value>The additional where.</value>
+        </member>
+        <member name="T:NBear.Common.Design.QueryDescriber">
+            <summary>
+            Used by NBear self to describe the details of a QueryAttribute.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Design.QueryDescriber.GetPkPropertyName(System.Type)">
+            <summary>
+            Gets the name of the pk property or specified entity type.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>The pk name.</returns>
+        </member>
+        <member name="M:NBear.Common.Design.QueryDescriber.GetPkPropertyInfo(System.Type)">
+            <summary>
+            Gets the pk property info of the specified entity type.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>The property info.</returns>
+        </member>
+        <member name="M:NBear.Common.Design.QueryDescriber.GetPkPropertyType(System.Type)">
+            <summary>
+            Gets the type of the pk property.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>The type.</returns>
+        </member>
+        <member name="M:NBear.Common.Design.QueryDescriber.#ctor(NBear.Common.Design.QueryAttribute,System.Reflection.PropertyInfo,System.Type,System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.Design.QueryDescriber"/> class.
+            </summary>
+            <param name="qa">The query attribute instance.</param>
+            <param name="pi">The property's property info.</param>
+            <param name="propertyEntityType">The entity type that the property returns.</param>
+            <param name="entityType">The entity type.</param>
+        </member>
+        <member name="P:NBear.Common.Design.QueryDescriber.Where">
+            <summary>
+            Gets the where.
+            </summary>
+            <value>The where.</value>
+        </member>
+        <member name="P:NBear.Common.Design.QueryDescriber.OrderBy">
+            <summary>
+            Gets the order by.
+            </summary>
+            <value>The order by.</value>
+        </member>
+        <member name="P:NBear.Common.Design.QueryDescriber.RelationType">
+            <summary>
+            Gets the type of the relation.
+            </summary>
+            <value>The type of the relation.</value>
+        </member>
+        <member name="P:NBear.Common.Design.QueryDescriber.Contained">
+            <summary>
+            Gets a value indicating whether this <see cref="T:NBear.Common.Design.QueryDescriber"/> is contained in cascade update.
+            </summary>
+            <value><c>true</c> if contained; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:NBear.Common.Design.QueryDescriber.RelatedForeignKey">
+            <summary>
+            Gets the related foreign key.
+            </summary>
+            <value>The related foreign key.</value>
+        </member>
+        <member name="P:NBear.Common.Design.QueryDescriber.RelatedForeignKeyType">
+            <summary>
+            Gets the type of the related foreign key.
+            </summary>
+            <value>The type of the related foreign key.</value>
+        </member>
+        <member name="P:NBear.Common.Design.QueryDescriber.RelatedForeignKeyPropertyInfo">
+            <summary>
+            Gets the related foreign key property info.
+            </summary>
+            <value>The related foreign key property info.</value>
+        </member>
+        <member name="P:NBear.Common.Design.QueryDescriber.RelatedType">
+            <summary>
+            Gets the type of the related entity.
+            </summary>
+            <value>The type of the related.</value>
+        </member>
+        <member name="P:NBear.Common.Design.QueryDescriber.LazyLoad">
+            <summary>
+            Gets a value indicating whether the property is lazyload.
+            </summary>
+            <value><c>true</c> if lazyload; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:NBear.Common.Design.Entity">
+            <summary>
+            This interface is only used at entity design time to mark a interface as an entity.
+            </summary>
+        </member>
+    </members>
+</doc>

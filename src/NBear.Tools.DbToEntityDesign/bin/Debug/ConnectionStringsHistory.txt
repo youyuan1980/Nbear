@@ -1,0 +1,2 @@
+uid=htbaimg;pwd=123;datasource=yzcqtest
+Data Source=yzcqtest;User ID=htbaimg;Password=123

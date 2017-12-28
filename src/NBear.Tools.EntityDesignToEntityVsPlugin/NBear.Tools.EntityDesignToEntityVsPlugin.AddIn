@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Extensibility xmlns="http://schemas.microsoft.com/AutomationExtensibility">
+  <HostApplication>
+    <Name>Microsoft Visual Studio</Name>
+    <Version>8.0</Version>
+  </HostApplication>
+  <Addin>
+    <FriendlyName>NBear Plugin</FriendlyName>
+    <Description>NBear EntityDesign To Entity Plugin</Description>
+    <Assembly>C:\Teddy\NBearV3\dist\NBear.Tools.EntityDesignToEntityVsPlugin.dll</Assembly>
+    <FullClassName>NBear.Tools.EntityDesignToEntityVsPlugin.Connect</FullClassName>
+    <LoadBehavior>1</LoadBehavior>
+    <CommandPreload>0</CommandPreload>
+    <CommandLineSafe>0</CommandLineSafe>
+  </Addin>
+</Extensibility>

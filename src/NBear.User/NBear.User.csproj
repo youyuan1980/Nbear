@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC8E8574-789A-41AD-A67D-8165FE0A9EE4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NBear.User</RootNamespace>
+    <AssemblyName>NBear.User</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserInfo.cs" />
+    <Compile Include="UserManage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NBear.Common.Design\NBear.Common.Design.csproj">
+      <Project>{5E826E27-992C-46C9-830B-3B6A697C859C}</Project>
+      <Name>NBear.Common.Design</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NBear.Common\NBear.Common.csproj">
+      <Project>{B8F80BEB-93A6-4966-842F-92E38E11082C}</Project>
+      <Name>NBear.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NBear.Data\NBear.Data.csproj">
+      <Project>{B71D2A5F-5E7D-4B16-B178-29DF6F7755C1}</Project>
+      <Name>NBear.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NBear.Web.Data\NBear.Web.Data.csproj">
+      <Project>{B0D8E81B-21BC-444D-B671-A5712EEA9E5A}</Project>
+      <Name>NBear.Web.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NBear.Web\NBear.Web.csproj">
+      <Project>{836E1F12-C5B3-43AB-9117-9458A24BC888}</Project>
+      <Name>NBear.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

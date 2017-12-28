@@ -1,0 +1,14 @@
+F:\soft\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntityVsPlugin\bin\NBear.Tools.EntityDesignToEntityVsPlugin.dll
+F:\soft\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntityVsPlugin\obj\Release\ResolveAssemblyReference.cache
+F:\soft\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntityVsPlugin\obj\Release\NBear.Tools.EntityDesignToEntityVsPlugin.csproj.ResolveComReference.cache
+F:\soft\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntityVsPlugin\obj\Release\NBear.Tools.EntityDesignToEntityVsPlugin.CommandBar.resources
+F:\soft\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntityVsPlugin\obj\Release\GenerateResource-ResGen.read.1.tlog
+F:\soft\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntityVsPlugin\obj\Release\GenerateResource-ResGen.write.1.tlog
+F:\soft\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntityVsPlugin\obj\Release\NBear.Tools.EntityDesignToEntityVsPlugin.dll
+F:\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntityVsPlugin\bin\NBear.Tools.EntityDesignToEntityVsPlugin.dll
+F:\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntityVsPlugin\obj\Release\ResolveAssemblyReference.cache
+F:\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntityVsPlugin\obj\Release\NBear.Tools.EntityDesignToEntityVsPlugin.csproj.ResolveComReference.cache
+F:\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntityVsPlugin\obj\Release\NBear.Tools.EntityDesignToEntityVsPlugin.CommandBar.resources
+F:\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntityVsPlugin\obj\Release\GenerateResource-ResGen.read.1.tlog
+F:\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntityVsPlugin\obj\Release\GenerateResource-ResGen.write.1.tlog
+F:\nbear3.6.6_src\src\NBear.Tools.EntityDesignToEntityVsPlugin\obj\Release\NBear.Tools.EntityDesignToEntityVsPlugin.dll

@@ -1,0 +1,1036 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NBear.IoC</name>
+    </assembly>
+    <members>
+        <member name="T:NBear.IoC.Service.IService">
+            <summary>
+            interface of all services.
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.IService.CallService(NBear.IoC.Service.RequestMessage)">
+            <summary>
+            Calls the service.
+            </summary>
+            <param name="msg">The MSG.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="P:NBear.IoC.Service.IService.ServiceName">
+            <summary>
+            Gets the name of the service.
+            </summary>
+            <value>The name of the service.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.IService.ClientId">
+            <summary>
+            Gets the client id.
+            </summary>
+            <value>The client id.</value>
+        </member>
+        <member name="T:NBear.IoC.Service.ResponseMessage">
+            <summary>
+            The response msg.
+            </summary>
+        </member>
+        <member name="T:NBear.IoC.Service.RequestMessage">
+            <summary>
+            The request msg.
+            </summary>
+        </member>
+        <member name="P:NBear.IoC.Service.RequestMessage.ServiceName">
+            <summary>
+            Gets or sets the name of the service.
+            </summary>
+            <value>The name of the service.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.RequestMessage.SubServiceName">
+            <summary>
+            Gets or sets the name of the sub service.
+            </summary>
+            <value>The name of the sub service.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.RequestMessage.TransactionId">
+            <summary>
+            Gets or sets the transaction id.
+            </summary>
+            <value>The transaction id.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.RequestMessage.Parameters">
+            <summary>
+            Gets or sets the parameters.
+            </summary>
+            <value>The parameters.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.RequestMessage.Expiration">
+            <summary>
+            Gets or sets the expiration.
+            </summary>
+            <value>The expiration.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.RequestMessage.MessageId">
+            <summary>
+            Gets or sets the message id.
+            </summary>
+            <value>The message id.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.RequestMessage.Priority">
+            <summary>
+            Gets or sets the priority.
+            </summary>
+            <value>The priority.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.RequestMessage.Timestamp">
+            <summary>
+            Gets or sets the timestamp.
+            </summary>
+            <value>The timestamp.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.ResponseMessage.Request">
+            <summary>
+            Gets or sets the request.
+            </summary>
+            <value>The request.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.ResponseMessage.Text">
+            <summary>
+            Gets or sets the text.
+            </summary>
+            <value>The text.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.ResponseMessage.Data">
+            <summary>
+            Gets or sets the data.
+            </summary>
+            <value>The data.</value>
+        </member>
+        <member name="T:NBear.IoC.Service.SimpleServiceContainer">
+            <summary>
+            The simple service container.
+            </summary>
+        </member>
+        <member name="T:NBear.IoC.Service.IServiceContainer">
+            <summary>
+            The service container interface.
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.IServiceContainer.RegisterComponent(System.String,System.Type)">
+            <summary>
+            Registers the component.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="classType">Type of the class.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.IServiceContainer.RegisterComponent(System.String,System.Type,System.Type)">
+            <summary>
+            Registers the component.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="serviceType">Type of the service.</param>
+            <param name="classType">Type of the class.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.IServiceContainer.RegisterComponents(System.Collections.IDictionary)">
+            <summary>
+            Registers the components.
+            </summary>
+            <param name="serviceKeyTypes">The service key types.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.IServiceContainer.Release(System.Object)">
+            <summary>
+            Releases the specified obj.
+            </summary>
+            <param name="obj">The obj.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.IServiceContainer.CallService(System.String,NBear.IoC.Service.RequestMessage)">
+            <summary>
+            Calls the service.
+            </summary>
+            <param name="serviceName">Name of the service.</param>
+            <param name="msg">The MSG.</param>
+            <returns>The response msg.</returns>
+        </member>
+        <member name="M:NBear.IoC.Service.IServiceContainer.GetServiceNodes">
+            <summary>
+            Gets the service nodes.
+            </summary>
+            <returns>The service nodes.</returns>
+        </member>
+        <member name="M:NBear.IoC.Service.IServiceContainer.GetDependerServiceNodes(System.String)">
+            <summary>
+            Gets the depender service nodes.
+            </summary>
+            <param name="key">The key.</param>
+            <returns>The service nodes.</returns>
+        </member>
+        <member name="M:NBear.IoC.Service.IServiceContainer.GetDependentServiceNodes(System.String)">
+            <summary>
+            Gets the dependent service nodes.
+            </summary>
+            <param name="key">The key.</param>
+            <returns>The service nodes.</returns>
+        </member>
+        <member name="M:NBear.IoC.Service.IServiceContainer.WriteLog(System.String)">
+            <summary>
+            Writes the log.
+            </summary>
+            <param name="logInfo">The log info.</param>
+        </member>
+        <member name="P:NBear.IoC.Service.IServiceContainer.MaxTryNum">
+            <summary>
+            Gets or sets the max try num.
+            </summary>
+            <value>The max try num.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.IServiceContainer.Kernel">
+            <summary>
+            Gets the kernel.
+            </summary>
+            <value>The kernel.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.IServiceContainer.MQ">
+            <summary>
+            Gets the MQ.
+            </summary>
+            <value>The MQ.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.IServiceContainer.Item(System.String)">
+            <summary>
+            Gets the <see cref="T:System.Object"/> with the specified key.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:NBear.IoC.Service.IServiceContainer.Item(System.Type)">
+            <summary>
+            Gets the <see cref="T:System.Object"/> with the specified service type.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:NBear.IoC.Service.IServiceContainer.Compress">
+            <summary>
+            Gets or sets a value indicating whether return value of service <see cref="T:NBear.IoC.Service.IServiceContainer"/> is compress.
+            </summary>
+            <value><c>true</c> if compress; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:NBear.IoC.Service.SimpleServiceContainer.DEFAULT_MAX_TRY_NUMBER">
+            <summary>
+            The default max try number.
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.SimpleServiceContainer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.IoC.Service.SimpleServiceContainer"/> class.
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.SimpleServiceContainer.#ctor(NBear.IoC.Service.IServiceMQ)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.IoC.Service.SimpleServiceContainer"/> class.
+            </summary>
+            <param name="mq">The mq.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.SimpleServiceContainer.#ctor(NBear.IoC.Service.IServiceMQ,System.Collections.IDictionary)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.IoC.Service.SimpleServiceContainer"/> class.
+            </summary>
+            <param name="mq">The mq.</param>
+            <param name="serviceKeyTypes">The service key types.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.SimpleServiceContainer.RegisterComponent(System.String,System.Type,System.Type)">
+            <summary>
+            Registers the component.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="serviceType">Type of the service.</param>
+            <param name="classType">Type of the class.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.SimpleServiceContainer.RegisterComponent(System.String,System.Type)">
+            <summary>
+            Registers the component.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="classType">Type of the class.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.SimpleServiceContainer.RegisterComponents(System.Collections.IDictionary)">
+            <summary>
+            Registers the components.
+            </summary>
+            <param name="serviceKeyTypes">The service key types.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.SimpleServiceContainer.Release(System.Object)">
+            <summary>
+            Releases the specified obj.
+            </summary>
+            <param name="obj">The obj.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.SimpleServiceContainer.CallService(System.String,NBear.IoC.Service.RequestMessage)">
+            <summary>
+            Calls the service.
+            </summary>
+            <param name="serviceName">Name of the service.</param>
+            <param name="msg">The MSG.</param>
+            <returns>The msg.</returns>
+        </member>
+        <member name="M:NBear.IoC.Service.SimpleServiceContainer.GetServiceNodes">
+            <summary>
+            Gets the service nodes.
+            </summary>
+            <returns>The service nodes.</returns>
+        </member>
+        <member name="M:NBear.IoC.Service.SimpleServiceContainer.GetDependerServiceNodes(System.String)">
+            <summary>
+            Gets the depender service nodes.
+            </summary>
+            <param name="key">The key.</param>
+            <returns>The service nodes.</returns>
+        </member>
+        <member name="M:NBear.IoC.Service.SimpleServiceContainer.GetDependentServiceNodes(System.String)">
+            <summary>
+            Gets the dependent service nodes.
+            </summary>
+            <param name="key">The key.</param>
+            <returns>The service nodes.</returns>
+        </member>
+        <member name="M:NBear.IoC.Service.SimpleServiceContainer.WriteLog(System.String)">
+            <summary>
+            Writes the log.
+            </summary>
+            <param name="logInfo">The log info.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.SimpleServiceContainer.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="P:NBear.IoC.Service.SimpleServiceContainer.MaxTryNum">
+            <summary>
+            Gets or sets the max try num.
+            </summary>
+            <value>The max try num.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.SimpleServiceContainer.Kernel">
+            <summary>
+            Gets the kernel.
+            </summary>
+            <value>The kernel.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.SimpleServiceContainer.MQ">
+            <summary>
+            Gets the MQ.
+            </summary>
+            <value>The MQ.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.SimpleServiceContainer.Item(System.String)">
+            <summary>
+            Gets the <see cref="T:System.Object"/> with the specified key.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:NBear.IoC.Service.SimpleServiceContainer.Item(System.Type)">
+            <summary>
+            Gets the <see cref="T:System.Object"/> with the specified service type.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:NBear.IoC.Service.SimpleServiceContainer.Compress">
+            <summary>
+            Gets or sets a value indicating whether return value of service <see cref="T:NBear.IoC.Service.IServiceContainer"/> is compress.
+            </summary>
+            <value><c>true</c> if compress; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="E:NBear.IoC.Service.SimpleServiceContainer.OnLog">
+            <summary>
+            OnLog event.
+            </summary>
+        </member>
+        <member name="T:NBear.IoC.Service.Services.MessageRequestCallbackHandler">
+            <summary>
+            The MessageRequestCallbackHandler.
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.Services.MessageRequestCallbackHandler.#ctor(NBear.IoC.Service.IServiceMQ,NBear.IoC.Service.IService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.IoC.Service.Services.MessageRequestCallbackHandler"/> class.
+            </summary>
+            <param name="mq">The mq.</param>
+            <param name="service">The service.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.Services.MessageRequestCallbackHandler.OnMessageRequestCallback(NBear.IoC.Service.RequestMessage)">
+            <summary>
+            Called when [message request callback].
+            </summary>
+            <param name="header">The header.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.Services.MessageRequestCallbackHandler.InitializeLifetimeService">
+            <summary>
+            Obtains a lifetime service object to control the lifetime policy for this instance.
+            </summary>
+            <returns>
+            An object of type <see cref="T:System.Runtime.Remoting.Lifetime.ILease"></see> used to control the lifetime policy for this instance. This is the current lifetime service object for this instance if one exists; otherwise, a new lifetime service object initialized to the value of the <see cref="P:System.Runtime.Remoting.Lifetime.LifetimeServices.LeaseManagerPollTime"></see> property.
+            </returns>
+            <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission. </exception>
+            <PermissionSet><IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="RemotingConfiguration, Infrastructure"/></PermissionSet>
+        </member>
+        <member name="P:NBear.IoC.Service.Services.MessageRequestCallbackHandler.Service">
+            <summary>
+            Gets the service.
+            </summary>
+            <value>The service.</value>
+        </member>
+        <member name="T:NBear.IoC.Service.TypeMismatchedException">
+            <summary>
+            TypeMismatchedException
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.TypeMismatchedException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.IoC.Service.TypeMismatchedException"/> class.
+            </summary>
+            <param name="info">The info.</param>
+        </member>
+        <member name="T:NBear.IoC.Service.Services.BaseAutoService">
+            <summary>
+            The base class of all auto service.
+            </summary>
+        </member>
+        <member name="T:NBear.IoC.Service.Services.BaseService">
+            <summary>
+            The base class of services.
+            </summary>
+        </member>
+        <member name="F:NBear.IoC.Service.Services.BaseService.serviceName">
+            <summary>
+            The service name.
+            </summary>
+        </member>
+        <member name="F:NBear.IoC.Service.Services.BaseService.mq">
+            <summary>
+            The service mq.
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.Services.BaseService.Run(NBear.IoC.Service.RequestMessage)">
+            <summary>
+            Runs the specified MSG.
+            </summary>
+            <param name="msg">The MSG.</param>
+            <returns>The msg.</returns>
+        </member>
+        <member name="M:NBear.IoC.Service.Services.BaseService.#ctor(System.String,NBear.IoC.Service.IServiceMQ)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.IoC.Service.Services.BaseService"/> class.
+            </summary>
+            <param name="serviceName">Name of the service.</param>
+            <param name="mq">The mq.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.Services.BaseService.CallService(NBear.IoC.Service.RequestMessage)">
+            <summary>
+            Calls the service.
+            </summary>
+            <param name="msg">The MSG.</param>
+            <returns>The msg.</returns>
+        </member>
+        <member name="M:NBear.IoC.Service.Services.BaseService.InitializeLifetimeService">
+            <summary>
+            Obtains a lifetime service object to control the lifetime policy for this instance.
+            </summary>
+            <returns>
+            An object of type <see cref="T:System.Runtime.Remoting.Lifetime.ILease"></see> used to control the lifetime policy for this instance. This is the current lifetime service object for this instance if one exists; otherwise, a new lifetime service object initialized to the value of the <see cref="P:System.Runtime.Remoting.Lifetime.LifetimeServices.LeaseManagerPollTime"></see> property.
+            </returns>
+            <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission. </exception>
+            <PermissionSet><IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="RemotingConfiguration, Infrastructure"/></PermissionSet>
+        </member>
+        <member name="P:NBear.IoC.Service.Services.BaseService.ClientId">
+            <summary>
+            Gets the client id.
+            </summary>
+            <value>The client id.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.Services.BaseService.ServiceName">
+            <summary>
+            Gets the name of the service.
+            </summary>
+            <value>The name of the service.</value>
+        </member>
+        <member name="E:NBear.IoC.Service.Services.BaseService.OnLog">
+            <summary>
+            OnLog event.
+            </summary>
+        </member>
+        <member name="F:NBear.IoC.Service.Services.BaseAutoService.started">
+            <summary>
+            if service is started.
+            </summary>
+        </member>
+        <member name="F:NBear.IoC.Service.Services.BaseAutoService.stopped">
+            <summary>
+            if service is stopped.
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.Services.BaseAutoService.#ctor(System.String,NBear.IoC.Service.IServiceMQ)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.IoC.Service.Services.BaseAutoService"/> class.
+            </summary>
+            <param name="serviceName">Name of the service.</param>
+            <param name="mq">The mq.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.Services.BaseAutoService.Start">
+            <summary>
+            Starts this instance.
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.Services.BaseAutoService.Stop">
+            <summary>
+            Stops this instance.
+            </summary>
+        </member>
+        <member name="T:NBear.IoC.Service.MemoryServiceMQ">
+            <summary>
+            A memory service mq impl.
+            </summary>
+        </member>
+        <member name="T:NBear.IoC.Service.IServiceMQ">
+            <summary>
+            interface of service mq.
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.IServiceMQ.SendRequestToQueue(System.String,NBear.IoC.Service.RequestMessage)">
+            <summary>
+            Sends the request to queue.
+            </summary>
+            <param name="serviceName">Name of the service.</param>
+            <param name="msg">The MSG.</param>
+            <returns>The id of the msg.</returns>
+        </member>
+        <member name="M:NBear.IoC.Service.IServiceMQ.SendResponseToQueue(NBear.IoC.Service.ResponseMessage)">
+            <summary>
+            Sends the response to queue.
+            </summary>
+            <param name="msg">The MSG.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.IServiceMQ.ReceiveRequestFromQueue(System.Guid)">
+            <summary>
+            Receives the request from queue.
+            </summary>
+            <param name="transactionId">The transaction id.</param>
+            <returns>The msg.</returns>
+        </member>
+        <member name="M:NBear.IoC.Service.IServiceMQ.ReceieveResponseFromQueue(System.Guid)">
+            <summary>
+            Receieves the response from queue.
+            </summary>
+            <param name="transactionId">The transaction id.</param>
+            <returns>The msg.</returns>
+        </member>
+        <member name="M:NBear.IoC.Service.IServiceMQ.SubscribeServiceRequest(System.String,System.Guid,NBear.IoC.Service.ServiceRequestNotifyHandler)">
+            <summary>
+            Subscribes the service request.
+            </summary>
+            <param name="serviceName">Name of the service.</param>
+            <param name="clientId">The client id.</param>
+            <param name="handler">The handler.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.IServiceMQ.CleanExpiredMessages(NBear.IoC.Service.RequestMessage[]@,NBear.IoC.Service.ResponseMessage[]@)">
+            <summary>
+            Cleans the expired messages.
+            </summary>
+            <param name="expiredRequests">The expired requests.</param>
+            <param name="expiredResponses">The expired responses.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.IServiceMQ.SetBroadCastStrategy(NBear.IoC.Service.IBroadCastStrategy)">
+            <summary>
+            Sets the broad cast strategy.
+            </summary>
+            <param name="broadCastStrategy">The broad cast strategy.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.MemoryServiceMQ.AddRequestToQueue(System.Guid,NBear.IoC.Service.RequestMessage)">
+            <summary>
+            Adds the request to queue.
+            </summary>
+            <param name="tid">The tid.</param>
+            <param name="msg">The MSG.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.MemoryServiceMQ.AddResponseToQueue(System.Guid,NBear.IoC.Service.ResponseMessage)">
+            <summary>
+            Adds the response to queue.
+            </summary>
+            <param name="tid">The tid.</param>
+            <param name="msg">The MSG.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.MemoryServiceMQ.GetRequestFromQueue(System.Guid)">
+            <summary>
+            Gets the request from queue.
+            </summary>
+            <param name="tid">The tid.</param>
+            <returns>The msg.</returns>
+        </member>
+        <member name="M:NBear.IoC.Service.MemoryServiceMQ.GetNextRequestByServiceNameFromQueue(System.String)">
+            <summary>
+            Gets the next request by service name from queue.
+            </summary>
+            <param name="serviceName">Name of the service.</param>
+            <returns>The msg.</returns>
+        </member>
+        <member name="M:NBear.IoC.Service.MemoryServiceMQ.GetResponseFromQueue(System.Guid)">
+            <summary>
+            Gets the response from queue.
+            </summary>
+            <param name="tid">The tid.</param>
+            <returns>The msg.</returns>
+        </member>
+        <member name="M:NBear.IoC.Service.MemoryServiceMQ.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.IoC.Service.MemoryServiceMQ"/> class.
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.MemoryServiceMQ.#ctor(NBear.IoC.Service.IBroadCastStrategy)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.IoC.Service.MemoryServiceMQ"/> class.
+            </summary>
+            <param name="broadCastStrategy">The broad cast strategy.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.MemoryServiceMQ.SendRequestToQueue(System.String,NBear.IoC.Service.RequestMessage)">
+            <summary>
+            Sends the request to queue.
+            </summary>
+            <param name="serviceName">Name of the service.</param>
+            <param name="msg">The MSG.</param>
+            <returns>The id of the msg.</returns>
+        </member>
+        <member name="M:NBear.IoC.Service.MemoryServiceMQ.SendResponseToQueue(NBear.IoC.Service.ResponseMessage)">
+            <summary>
+            Sends the response to queue.
+            </summary>
+            <param name="msg">The MSG.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.MemoryServiceMQ.ReceiveRequestFromQueue(System.Guid)">
+            <summary>
+            Receives the request from queue.
+            </summary>
+            <param name="transactionId">The transaction id.</param>
+            <returns>The msg.</returns>
+        </member>
+        <member name="M:NBear.IoC.Service.MemoryServiceMQ.ReceiveNextRequestFromQueue(System.String)">
+            <summary>
+            Receives the next request from queue.
+            </summary>
+            <param name="serviceName">Name of the service.</param>
+            <returns>The msg.</returns>
+        </member>
+        <member name="M:NBear.IoC.Service.MemoryServiceMQ.ReceieveResponseFromQueue(System.Guid)">
+            <summary>
+            Receieves the response from queue.
+            </summary>
+            <param name="transactionId">The transaction id.</param>
+            <returns>The msg.</returns>
+        </member>
+        <member name="M:NBear.IoC.Service.MemoryServiceMQ.SubscribeServiceRequest(System.String,System.Guid,NBear.IoC.Service.ServiceRequestNotifyHandler)">
+            <summary>
+            Subscribes the service request.
+            </summary>
+            <param name="serviceName">Name of the service.</param>
+            <param name="clientId">The client id.</param>
+            <param name="handler">The handler.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.MemoryServiceMQ.CleanExpiredMessages(NBear.IoC.Service.RequestMessage[]@,NBear.IoC.Service.ResponseMessage[]@)">
+            <summary>
+            Cleans the expired messages.
+            </summary>
+            <param name="expiredRequests">The expired requests.</param>
+            <param name="expiredResponses">The expired responses.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.MemoryServiceMQ.SetBroadCastStrategy(NBear.IoC.Service.IBroadCastStrategy)">
+            <summary>
+            Sets the broad cast strategy.
+            </summary>
+            <param name="broadCastStrategy">The broad cast strategy.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.MemoryServiceMQ.InitializeLifetimeService">
+            <summary>
+            Obtains a lifetime service object to control the lifetime policy for this instance.
+            </summary>
+            <returns>
+            An object of type <see cref="T:System.Runtime.Remoting.Lifetime.ILease"></see> used to control the lifetime policy for this instance. This is the current lifetime service object for this instance if one exists; otherwise, a new lifetime service object initialized to the value of the <see cref="P:System.Runtime.Remoting.Lifetime.LifetimeServices.LeaseManagerPollTime"></see> property.
+            </returns>
+            <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission. </exception>
+            <PermissionSet><IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="RemotingConfiguration, Infrastructure"/></PermissionSet>
+        </member>
+        <member name="E:NBear.IoC.Service.MemoryServiceMQ.OnLog">
+            <summary>
+            OnLog event.
+            </summary>
+        </member>
+        <member name="T:NBear.IoC.Service.Facilities.ServiceDiscoverFacility">
+            <summary>
+            The facility is used toautomatically discover services from castle config.
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.Facilities.ServiceDiscoverFacility.CheckWaitingList">
+            <summary>
+            For each new component registered,
+            some components in the WaitingDependency
+            state may have became valid, so we check them
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.Facilities.ServiceDiscoverFacility.#ctor(NBear.IoC.Service.IServiceContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.IoC.Service.Facilities.ServiceDiscoverFacility"/> class.
+            </summary>
+            <param name="container">The container.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.Facilities.ServiceDiscoverFacility.Init">
+            <summary>
+            Inits this instance.
+            </summary>
+        </member>
+        <member name="T:NBear.IoC.Service.ServiceFactory">
+            <summary>
+            The service factory.
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.ServiceFactory.#ctor(NBear.IoC.Service.IServiceContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.IoC.Service.ServiceFactory"/> class.
+            </summary>
+            <param name="container">The container.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.ServiceFactory.LoadServiceFactoryConfiguration">
+            <summary>
+            Loads the service factory configuration.
+            </summary>
+            <returns>The section.</returns>
+        </member>
+        <member name="M:NBear.IoC.Service.ServiceFactory.Create">
+            <summary>
+            Creates this instance.
+            </summary>
+            <returns>The service factoru singleton instance.</returns>
+        </member>
+        <member name="M:NBear.IoC.Service.ServiceFactory.GetService``1">
+            <summary>
+            Gets the service.
+            </summary>
+            <returns>The service implemetation instance.</returns>
+        </member>
+        <member name="P:NBear.IoC.Service.ServiceFactory.ServiceContainer">
+            <summary>
+            Gets the service container.
+            </summary>
+            <value>The service container.</value>
+        </member>
+        <member name="E:NBear.IoC.Service.ServiceFactory.OnLog">
+            <summary>
+            OnLog event.
+            </summary>
+        </member>
+        <member name="T:NBear.IoC.Service.ServiceRequestNotifyHandler">
+            <summary>
+            The ServiceRequestNotifyHandler
+            </summary>
+            <param name="header">the msg request handler.</param>
+        </member>
+        <member name="T:NBear.IoC.Service.Services.DemoServices.IMathService">
+            <summary>
+            sample math service interface.
+            </summary>
+        </member>
+        <member name="T:NBear.IoC.Service.IServiceInterface">
+            <summary>
+            interface used to mark service interfaces.
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.Services.DemoServices.IMathService.GetResult(System.Char,System.Int32,System.Int32)">
+            <summary>
+            Gets the result.
+            </summary>
+            <param name="op">The op.</param>
+            <param name="x">The x.</param>
+            <param name="y">The y.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="T:NBear.IoC.Service.Services.DemoServices.MathService">
+            <summary>
+            sample math service impl.
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.Services.DemoServices.MathService.#ctor(NBear.IoC.Service.IServiceMQ)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.IoC.Service.Services.DemoServices.MathService"/> class.
+            </summary>
+            <param name="mq">The mq.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.Services.DemoServices.MathService.GetResult(System.Char,System.Int32,System.Int32)">
+            <summary>
+            Gets the result.
+            </summary>
+            <param name="op">The op.</param>
+            <param name="x">The x.</param>
+            <param name="y">The y.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.IoC.Service.Services.DemoServices.MathService.Run(NBear.IoC.Service.RequestMessage)">
+            <summary>
+            Runs the specified MSG.
+            </summary>
+            <param name="msg">The MSG.</param>
+            <returns>The msg.</returns>
+        </member>
+        <member name="T:NBear.IoC.Service.IBroadCastStrategy">
+            <summary>
+            interface of BroadCastStrategy.
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.IBroadCastStrategy.BroadCast(NBear.IoC.Service.RequestMessage,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.Dictionary{System.Guid,NBear.IoC.Service.ServiceRequestNotifyHandler}})">
+            <summary>
+            Broads the cast.
+            </summary>
+            <param name="reqMsg">The req MSG.</param>
+            <param name="onServiceRequests">The on service requests.</param>
+        </member>
+        <member name="T:NBear.IoC.Service.Services.DynamicService">
+            <summary>
+            The dynamic service.
+            </summary>
+        </member>
+        <member name="F:NBear.IoC.Service.Services.DynamicService.DefaultExpireMinutes">
+            <summary>
+            The default  message expire minutes.
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.Services.DynamicService.#ctor(NBear.IoC.Service.IServiceContainer,System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.IoC.Service.Services.DynamicService"/> class.
+            </summary>
+            <param name="container">The container.</param>
+            <param name="serviceInterfaceType">Type of the service interface.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.Services.DynamicService.Run(NBear.IoC.Service.RequestMessage)">
+            <summary>
+            Runs the specified MSG.
+            </summary>
+            <param name="msg">The MSG.</param>
+            <returns>The msg.</returns>
+        </member>
+        <member name="T:NBear.IoC.Service.BaseServiceInterfaceImpl">
+            <summary>
+            The base impl class of the service interface, this class is used by service factory to emit service interface impl automatically at runtime.
+            </summary>
+        </member>
+        <member name="F:NBear.IoC.Service.BaseServiceInterfaceImpl.DefaultExpireMinutes">
+            <summary>
+            The default msg expire time.
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.BaseServiceInterfaceImpl.#ctor(NBear.IoC.Service.IServiceContainer,System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.IoC.Service.BaseServiceInterfaceImpl"/> class.
+            </summary>
+            <param name="container">The container.</param>
+            <param name="serviceInterfaceType">Type of the service interface.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.BaseServiceInterfaceImpl.CallService(System.String,System.Type,System.Object[])">
+            <summary>
+            Calls the service.
+            </summary>
+            <param name="subServiceName">Name of the sub service.</param>
+            <param name="returnType">Type of the return.</param>
+            <param name="paramValues">The param values.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="T:NBear.IoC.Service.Services.Configuration.ServiceNodeInfo">
+            <summary>
+            The service node info.
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.Services.Configuration.ServiceNodeInfo.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.IoC.Service.Services.Configuration.ServiceNodeInfo"/> class.
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.Services.Configuration.ServiceNodeInfo.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"></see> that represents the current <see cref="T:System.Object"></see>.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"></see> that represents the current <see cref="T:System.Object"></see>.
+            </returns>
+        </member>
+        <member name="P:NBear.IoC.Service.Services.Configuration.ServiceNodeInfo.Key">
+            <summary>
+            Gets or sets the DEFAULT_KEY.
+            </summary>
+            <value>The DEFAULT_KEY.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.Services.Configuration.ServiceNodeInfo.Sevice">
+            <summary>
+            Gets or sets the sevice.
+            </summary>
+            <value>The sevice.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.Services.Configuration.ServiceNodeInfo.Implementation">
+            <summary>
+            Gets or sets the implementation.
+            </summary>
+            <value>The implementation.</value>
+        </member>
+        <member name="T:NBear.IoC.Service.ParameterCollection">
+            <summary>
+            The parameter collection type used by request msg.
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.ParameterCollection.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.IoC.Service.ParameterCollection"/> class.
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.ParameterCollection.Remove(System.String)">
+            <summary>
+            Removes the specified param name.
+            </summary>
+            <param name="paramName">Name of the param.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.ParameterCollection.Clear">
+            <summary>
+            Clears this instance.
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.ParameterCollection.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"></see> that represents the current <see cref="T:System.Object"></see>.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"></see> that represents the current <see cref="T:System.Object"></see>.
+            </returns>
+        </member>
+        <member name="P:NBear.IoC.Service.ParameterCollection.SerializedData">
+            <summary>
+            Gets or sets the serialized data.
+            </summary>
+            <value>The serialized data.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.ParameterCollection.Item(System.String)">
+            <summary>
+            Gets or sets the <see cref="T:System.String"/> with the specified param name.
+            </summary>
+            <value></value>
+        </member>
+        <member name="T:NBear.IoC.Service.Configuration.ServiceFactoryConfigurationSection">
+            <summary>
+            The service factory configuration.
+            </summary>
+        </member>
+        <member name="P:NBear.IoC.Service.Configuration.ServiceFactoryConfigurationSection.Type">
+            <summary>
+            Gets or sets the type.
+            </summary>
+            <value>The type.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.Configuration.ServiceFactoryConfigurationSection.Protocol">
+            <summary>
+            Gets or sets the protocol.
+            </summary>
+            <value>The protocol.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.Configuration.ServiceFactoryConfigurationSection.Server">
+            <summary>
+            Gets or sets the server.
+            </summary>
+            <value>The server.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.Configuration.ServiceFactoryConfigurationSection.Port">
+            <summary>
+            Gets or sets the port.
+            </summary>
+            <value>The port.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.Configuration.ServiceFactoryConfigurationSection.ServiceMQName">
+            <summary>
+            Gets or sets the name of the service MQ.
+            </summary>
+            <value>The name of the service MQ.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.Configuration.ServiceFactoryConfigurationSection.Debug">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:NBear.IoC.Service.Configuration.ServiceFactoryConfigurationSection"/> is debug.
+            </summary>
+            <value><c>true</c> if debug; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.Configuration.ServiceFactoryConfigurationSection.Compress">
+            <summary>
+            Gets or sets a value indicating whether data dispatched by this service factory is compressed.
+            </summary>
+            <value><c>true</c> if compress; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:NBear.IoC.Service.Configuration.ServiceFactoryConfigurationSection.MaxTry">
+            <summary>
+            Gets or sets the max try.
+            </summary>
+            <value>The max try.</value>
+        </member>
+        <member name="T:NBear.IoC.Service.Configuration.ServiceFactoryType">
+            <summary>
+            Service facrory type
+            </summary>
+        </member>
+        <member name="F:NBear.IoC.Service.Configuration.ServiceFactoryType.Local">
+            <summary>
+            Local
+            </summary>
+        </member>
+        <member name="F:NBear.IoC.Service.Configuration.ServiceFactoryType.Remoting">
+            <summary>
+            Remoting
+            </summary>
+        </member>
+        <member name="T:NBear.IoC.Service.SimpleBroadCastStrategy">
+            <summary>
+            SimpleBroadCastStrategy for service request.
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.SimpleBroadCastStrategy.DoBroadCast(NBear.IoC.Service.RequestMessage,System.Collections.Generic.Dictionary{System.Guid,NBear.IoC.Service.ServiceRequestNotifyHandler})">
+            <summary>
+            Does the broad cast.
+            </summary>
+            <param name="reqMsg">The req MSG.</param>
+            <param name="handlers">The handlers.</param>
+            <returns>Is needed to clean null handlers</returns>
+        </member>
+        <member name="M:NBear.IoC.Service.SimpleBroadCastStrategy.BroadCast(NBear.IoC.Service.RequestMessage,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.Dictionary{System.Guid,NBear.IoC.Service.ServiceRequestNotifyHandler}})">
+            <summary>
+            Broads the cast.
+            </summary>
+            <param name="reqMsg">The req MSG.</param>
+            <param name="onServiceRequests">The on service requests.</param>
+        </member>
+        <member name="E:NBear.IoC.Service.SimpleBroadCastStrategy.OnLog">
+            <summary>
+            OnLog event.
+            </summary>
+        </member>
+        <member name="T:NBear.IoC.Service.ServiceContractAttribute">
+            <summary>
+            Attribute used to mark service interfaces.
+            </summary>
+        </member>
+        <member name="T:NBear.IoC.Service.Facilities.ServiceSubscribeMessageRequestFacility">
+            <summary>
+            The facility is used to automatically subscribe msg reqyest to specified services.
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.Facilities.ServiceSubscribeMessageRequestFacility.CheckWaitingList">
+            <summary>
+            For each new component registered,
+            some components in the WaitingDependency
+            state may have became valid, so we check them
+            </summary>
+        </member>
+        <member name="M:NBear.IoC.Service.Facilities.ServiceSubscribeMessageRequestFacility.#ctor(NBear.IoC.Service.IServiceMQ)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.IoC.Service.Facilities.ServiceSubscribeMessageRequestFacility"/> class.
+            </summary>
+            <param name="mq">The mq.</param>
+        </member>
+        <member name="M:NBear.IoC.Service.Facilities.ServiceSubscribeMessageRequestFacility.Init">
+            <summary>
+            Inits this instance.
+            </summary>
+        </member>
+    </members>
+</doc>

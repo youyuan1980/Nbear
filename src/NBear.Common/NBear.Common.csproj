@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8F80BEB-93A6-4966-842F-92E38E11082C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NBear.Common</RootNamespace>
+    <AssemblyName>NBear.Common</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>nbear.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/NBear.Common/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DBC_CHECK_PRECONDITION</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\NBear.Common.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Caching\Cache.cs" />
+    <Compile Include="CompressionManager.cs" />
+    <Compile Include="CryptographyManager.cs" />
+    <Compile Include="DesignByContract.cs" />
+    <Compile Include="EntityArrayList.cs" />
+    <Compile Include="EntityQuery.cs" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="ILogable.cs" />
+    <Compile Include="JSON\JSONArray.cs" />
+    <Compile Include="JSON\JSONFacade.cs" />
+    <Compile Include="JSON\JSONObject.cs" />
+    <Compile Include="JSON\JSONTokener.cs" />
+    <Compile Include="JSON\JSONUtils.cs" />
+    <Compile Include="JSON\Newtonsoft.Json\Converters\HtmlColorConverter.cs" />
+    <Compile Include="JSON\Newtonsoft.Json\Converters\XmlNodeConverter.cs" />
+    <Compile Include="JSON\Newtonsoft.Json\Identifier.cs" />
+    <Compile Include="JSON\Newtonsoft.Json\JavaScriptArray.cs" />
+    <Compile Include="JSON\Newtonsoft.Json\JavaScriptConstructor.cs" />
+    <Compile Include="JSON\Newtonsoft.Json\JavaScriptConvert.cs" />
+    <Compile Include="JSON\Newtonsoft.Json\JavaScriptObject.cs" />
+    <Compile Include="JSON\Newtonsoft.Json\JavaScriptParameters.cs" />
+    <Compile Include="JSON\Newtonsoft.Json\JavaScriptUtils.cs" />
+    <Compile Include="JSON\Newtonsoft.Json\JsonConverter.cs" />
+    <Compile Include="JSON\Newtonsoft.Json\JsonConverterCollection.cs" />
+    <Compile Include="JSON\Newtonsoft.Json\JsonHandler.cs" />
+    <Compile Include="JSON\Newtonsoft.Json\JsonReader.cs" />
+    <Compile Include="JSON\Newtonsoft.Json\JsonReaderException.cs" />
+    <Compile Include="JSON\Newtonsoft.Json\JsonSerializationException.cs" />
+    <Compile Include="JSON\Newtonsoft.Json\JsonSerializer.cs" />
+    <Compile Include="JSON\Newtonsoft.Json\JsonToken.cs" />
+    <Compile Include="JSON\Newtonsoft.Json\JsonWriter.cs" />
+    <Compile Include="JSON\Newtonsoft.Json\JsonWriterException.cs" />
+    <Compile Include="JSON\Newtonsoft.Json\StringBuffer.cs" />
+    <Compile Include="JSON\Newtonsoft.Json\Utilities\CollectionUtils.cs" />
+    <Compile Include="JSON\Newtonsoft.Json\Utilities\HandlerBase.cs" />
+    <Compile Include="JSON\Newtonsoft.Json\Utilities\ReflectionUtils.cs" />
+    <Compile Include="JSON\Newtonsoft.Json\Utilities\StringUtils.cs" />
+    <Compile Include="MetaDataManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SerializationManager.cs" />
+    <Compile Include="SevenZip\Common\CommandLineParser.cs" />
+    <Compile Include="SevenZip\Common\CRC.cs" />
+    <Compile Include="SevenZip\Common\InBuffer.cs" />
+    <Compile Include="SevenZip\Common\OutBuffer.cs" />
+    <Compile Include="SevenZip\Compress\LzmaAlone\SevenZipHelper.cs" />
+    <Compile Include="SevenZip\Compress\LZMA\LzmaBase.cs" />
+    <Compile Include="SevenZip\Compress\LZMA\LzmaDecoder.cs" />
+    <Compile Include="SevenZip\Compress\LZMA\LzmaEncoder.cs" />
+    <Compile Include="SevenZip\Compress\LZ\IMatchFinder.cs" />
+    <Compile Include="SevenZip\Compress\LZ\LzBinTree.cs" />
+    <Compile Include="SevenZip\Compress\LZ\LzInWindow.cs" />
+    <Compile Include="SevenZip\Compress\LZ\LzOutWindow.cs" />
+    <Compile Include="SevenZip\Compress\RangeCoder\RangeCoder.cs" />
+    <Compile Include="SevenZip\Compress\RangeCoder\RangeCoderBit.cs" />
+    <Compile Include="SevenZip\Compress\RangeCoder\RangeCoderBitTree.cs" />
+    <Compile Include="SevenZip\ICoder.cs" />
+    <Compile Include="Types\Tree.cs" />
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nbear.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SevenZip\Compress\LzmaAlone\Common\" />
+    <Folder Include="SevenZip\Compress\LzmaAlone\LZMA\" />
+    <Folder Include="SevenZip\Compress\LzmaAlone\LZ\" />
+    <Folder Include="SevenZip\Compress\LzmaAlone\RangeCoder\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

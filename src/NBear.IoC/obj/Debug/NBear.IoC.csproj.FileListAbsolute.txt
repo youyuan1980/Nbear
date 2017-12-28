@@ -1,0 +1,17 @@
+F:\soft\nbear3.6.6_src\src\NBear.IoC\bin\Debug\NBear.IoC.dll
+F:\soft\nbear3.6.6_src\src\NBear.IoC\bin\Debug\NBear.IoC.pdb
+F:\soft\nbear3.6.6_src\src\NBear.IoC\bin\Debug\Castle.Core.dll
+F:\soft\nbear3.6.6_src\src\NBear.IoC\bin\Debug\Castle.MicroKernel.dll
+F:\soft\nbear3.6.6_src\src\NBear.IoC\bin\Debug\Castle.Windsor.dll
+F:\soft\nbear3.6.6_src\src\NBear.IoC\bin\Debug\NBear.Common.dll
+F:\soft\nbear3.6.6_src\src\NBear.IoC\bin\Debug\NBear.Net.dll
+F:\soft\nbear3.6.6_src\src\NBear.IoC\bin\Debug\Castle.DynamicProxy.dll
+F:\soft\nbear3.6.6_src\src\NBear.IoC\bin\Debug\NBear.Common.pdb
+F:\soft\nbear3.6.6_src\src\NBear.IoC\bin\Debug\NBear.Net.pdb
+F:\soft\nbear3.6.6_src\src\NBear.IoC\bin\Debug\Castle.Core.xml
+F:\soft\nbear3.6.6_src\src\NBear.IoC\bin\Debug\Castle.MicroKernel.xml
+F:\soft\nbear3.6.6_src\src\NBear.IoC\bin\Debug\Castle.Windsor.xml
+F:\soft\nbear3.6.6_src\src\NBear.IoC\bin\Debug\Castle.DynamicProxy.xml
+F:\soft\nbear3.6.6_src\src\NBear.IoC\obj\Debug\ResolveAssemblyReference.cache
+F:\soft\nbear3.6.6_src\src\NBear.IoC\obj\Debug\NBear.IoC.dll
+F:\soft\nbear3.6.6_src\src\NBear.IoC\obj\Debug\NBear.IoC.pdb

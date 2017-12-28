@@ -1,0 +1,12 @@
+F:\soft\nbear3.6.6_src\src\NBear.Test.CaseTests\bin\Debug\NBear.Test.CaseTests.dll.config
+F:\soft\nbear3.6.6_src\src\NBear.Test.CaseTests\bin\Debug\NBear.Test.CaseTests.dll
+F:\soft\nbear3.6.6_src\src\NBear.Test.CaseTests\bin\Debug\NBear.Test.CaseTests.pdb
+F:\soft\nbear3.6.6_src\src\NBear.Test.CaseTests\bin\Debug\NBear.Common.Design.dll
+F:\soft\nbear3.6.6_src\src\NBear.Test.CaseTests\bin\Debug\NBear.Common.dll
+F:\soft\nbear3.6.6_src\src\NBear.Test.CaseTests\bin\Debug\NBear.Data.dll
+F:\soft\nbear3.6.6_src\src\NBear.Test.CaseTests\bin\Debug\NBear.Common.Design.pdb
+F:\soft\nbear3.6.6_src\src\NBear.Test.CaseTests\bin\Debug\NBear.Common.pdb
+F:\soft\nbear3.6.6_src\src\NBear.Test.CaseTests\bin\Debug\NBear.Data.pdb
+F:\soft\nbear3.6.6_src\src\NBear.Test.CaseTests\obj\Debug\ResolveAssemblyReference.cache
+F:\soft\nbear3.6.6_src\src\NBear.Test.CaseTests\obj\Debug\NBear.Test.CaseTests.dll
+F:\soft\nbear3.6.6_src\src\NBear.Test.CaseTests\obj\Debug\NBear.Test.CaseTests.pdb

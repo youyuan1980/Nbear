@@ -1,0 +1,1285 @@
+-----------------------------
+Release History of NBear V3
+-----------------------------
+
+2007/3/7
+Version 3.6.6 stable
+
+1) Fix "lazyload not cache bug" of query one properties.
+
+2007/3/3
+Version 3.6.6 beta build 3
+
+1) Fix bug in generating db sql for inherited entities with inherited contract interfaces.
+
+2007/3/2
+Version 3.6.6 beta build 2
+
+1) Fix bug in generating db sql for inherited entities with contract interfaces.
+
+2007/3/1
+Version 3.6.6 beta
+
+1) Enhance Gateway.Save(obj) to accept objs in Entity status. What's the benefit? it is:
+   In previous version, run gateway.Save((Entity)obj) will raise generic type parameter conflicts with constraist exception.
+   In This version, gateway.Save((Entity)obj) is OK.
+
+2) Enhance EntityDesignToEntity and VsPlugin tool to support generating VB.NET entities code. 
+   To let VsPlugin generate VB.NET code instead of c#, the only thing you should do is to add a line in EntityDesignToEntityCOnfig.xml after <OutputNamespace /> line as below:
+
+   ...
+   <OutputNamespace>Entities</OutputNamespace>
+   <OutputLanguage>VB.NET</OutputLanguage>
+   ...
+
+3) New NBear Entity Designer VS2005 DSL Plugin (experimental version) provided by flyzb618, not providing source code yet.
+
+2007/2/14
+Version 3.6.5
+
+1) Add Selecting/Selected/Deleting/Deleted events to NBearDataSource control.
+
+2) Enhance NBearDataSource control's DataKeyNames support to allow user specify DataKeyNames in, for example, GridView.
+   This important when you do'nt want GridView to show ID values of your entity, but you want your entity to be able to update/delete.
+
+3) Enhance NBearDataSource control to support multi-column PrimaryKey entities.
+
+4) Enhance NBearDataSource control's DBConcurrency check. If you set the ConflictOptions = CompareAllValues and an entity is modified by otherbody after you select it and before you update/delete it, the DBConcurrencyException will be thrown.
+
+5) Added Build-in entities mapping to standard AspNetDb membership tables in namespace - NBear.Web.Data.AspNetDbEntities. The entities design interfaces are in namespace - NBear.Web.Data.AspNetDbEntitiesDesign.
+
+2007/2/12
+Version 3.6.4 build 2
+
+1) Fix type conversion bug in NBearDataSource. Thanks MK2 for reporting this bug.
+
+2007/2/11
+Version 3.6.4
+
+1) Enhance NBearDataSource's ViewState support.
+
+2) Add Saving and Saved events to NBearDataSource control.
+
+3) Add PagableDataList control in NBear.Web.Data assembly.
+
+4) Add new Master/Details CRUD sample page in tutorials\NBearDataSourceSample.
+
+2007/2/10
+Version 3.6.3
+
+1) Enhance NBearDataSource control to use traditional DbTransaction instead of System.Transactions transaction which releases dependency from the msdtc service.
+
+2) Add new PagableRepeater control in NBear.Web.Data and sample page for this new control in NBearDataSourceSample.
+   The PagableRepeater control supports paging not only with NBearDataSource control but also with any standard DataSource control such as SqlDataSource.
+
+3) New ImplementInterfaceAttribute in EntityDesign to support generated Entities with custom interfaces implementation.
+
+2007/2/9
+Version 3.6.2
+
+1) Add new NBear.Web.Data assembly with the new NBearDataSource Web Control. See tutorials\NBearDataSourceSample for usage.
+
+2) New CommentAttribute in EntityDesign. Comment content set in CommentAttribute will be generated into output Entities code as standard comments of entities and properties, which means the comments of entities can be popped up in IDE inteligense.
+
+3) Enhance default value support of entities. 
+   e.g. if a property type is nullable and set with default value by SqlTypeAttribute, when value of property is null and entity is being inserted. The value of the mapping column in database will be the default value set in SqlType.
+
+2007/2/5
+Version 3.6.1
+
+1) Enhance distributed NBear.IoC to use 7Zip compression instead of GZip compression when enabling compression, which reducing about 80% serialized data size and significantly enhances distributed IoC performance.
+
+2) Enhance ServiceFactory to support declarative ServiceContractAttribute as alternative to implementing IServiceInterface interface. Which means you can even deploy an WCF service interface in NBear and to be managed by ServiceFactory.
+   e.g. A service which can be managed by NBear's ServiceFactory must implement IServiceInterface before, but now you have an alternative choice: if your service interface is marked with any ServiceContractAttribute, for example, a WCF service sample code below, it will still works:
+
+  [ServiceContract(
+    Namespace="http://microsoft.wcf.documentation",
+    Name="SampleService"
+  )]
+  public interface ISampleService{
+    [OperationContract]
+    string SampleMethod(string msg);
+  }
+
+3) Enhance ServiceFactory to support service interface inheritence and generic service interface. (service interface can be generic, but method of generic interface cannot have additional generic type parameter.)
+
+4) New CaseByCase Tutorial in tutorials folder, demoing how to define and use One2One by Pk, One2One by Fk, One2Many, One2Many self and Many2Many relations. See tutorials\CaseByCase_Tutorial for details (detail Chinese description inside).
+
+2007/2/2
+Version 3.6.0 build 7
+
+1) Fix bug in BatchCommand.MergeCommands() and Gateway.ToFlatWhereClip() when parameter value contains '@' charactor. Thanks Lupin reporting this bug.
+
+2007/1/30
+Version 3.6.0 build 6
+
+1) Fix bug in generated entity config file when contract entity interface containing primary key property.
+
+2007/1/30
+Version 3.6.0 build 5
+
+1) Fix "deleting cache of related properties" bug of entities with contained fkquery and many to many properties again.
+
+2007/1/30
+Version 3.6.0 build 4
+
+1) Fix "deleting cache of related properties" bug of entities with contained fkquery and many to many properties.
+
+2007/1/29
+Version 3.6.0 build 3
+
+Updates:
+
+1) Fix code generating bug for entities with contract interfaces in v3.6.0 build 2 again.
+
+2007/1/29
+Version 3.6.0 build 2
+
+Updates:
+
+1) Fix MangToMany CascadeUpdate bug in v3.6.0 build 1
+2) Fix code generating bug for entities with contract interfaces of EntityDesignToEntities.exe in v3.6.0 build 1.
+
+2007/1/26
+Version 3.6.0
+
+Updates:
+
+1) Enhance VsPlugin to generate database script file (db.sql) even when SqlSync is disabled.
+2) Enhance && and || operators to Entity Query.
+3) Fix bug in Equal operator for not-isAttached entities.
+
+2007/1/25
+Version 3.5.12 build 2
+
+Updates:
+
+1) Fix bug brought from 3.5.12 build 1
+
+2007/1/24
+Version 3.5.12
+
+Updates:
+
+1) Enhance VsPlugin to support multi output files for Entity Config and Entity Code. Multiple file paths can be separated by ";".
+
+2) Add == operator and Equals() overrides to generated entities, returning true or false only when entity's pks' values are complete == or not. Now if two entities's pks equal but some other properties does n't equal, the return value of == operator on these two entities will be true. To enable this function, you must re-generate all entities using EntityDesignToEntity.exe tool.
+
+2007/1/23
+Version 3.5.11 build 2
+
+Updates:
+
+1) Fix bug brought from v3.5.11 build 1
+
+2) Enhance cascade delete performance of ManyToManyQuery properties.
+
+2007/1/23
+Version 3.5.11
+
+Updates:
+
+1) Simplify the providerName setting of ConnectionString node in configuration files.
+   Now you can easily set providerName as sqlserver, sqlserver2005, oracle, access, mysql or standard .net connection string providerNames (System.Data.SqlClient or System.Data.OracleClient). NBear can smartly use the correct provider. You can even not specify the providerName, when sqlserver provider will be used as default.
+
+2) Fix "could not mapping CompoundUnit property to nvarchar column" bug in sqlserver db provider.
+
+3) Fix the cascade deletion bug of BatchUpdatable entities with FkQuery property in Gateway.
+
+4) Fix a bug in generating entity configuration file for FkQuery properties by EntityDesignToEntiti.exe when the config file used in Oracle or MySql database.
+
+5) Enhance cascade delete performance of FkQuery properties when related FkQuery entity does not contain other cascade properties.
+
+2007/1/20
+Version 3.5.10
+
+Updates:
+
+1) Fix bug in Gateway.EndBatchGateway() which not catches and throws database exceptions.
+2) Add Gateway.RemoveCaches<EntityType>().
+3) Fix bug in EntityDesignToEntities.exe for entities marked with custom OutputNamespaceAttribute.
+
+2007/1/19
+Version 3.5.9
+
+Updates:
+
+1) Remove autopreload cache of Gateway.FindArray(sql, paramValues) overriden to prevent bugs.
+2) Make all internal cache reading with double check to enhance high concurrency performance.
+3) Fix bug in computing cache key when using 1+ connectionstrings and different database containing same entity data.
+4) Fix bug when condition contains string comparison in find from auto preloaded data and entity array strong type query.
+
+2007/1/18
+Version 3.5.8
+
+Updates:
+
+1) Add % ! BitwiseAnd BitwiseOr and BitwiseExclusiveOr operators to PropertyItem and PropertyItemParam.
+2) Enhance Computing column support to aggregation queries in Gateway.
+3) Add EntityArrayQuery class to support strong type query to strong type entity array, which means you can query an entity array like in linq.
+   sample usage:
+
+   Order[] orders = NBear.Data.Gateway.Default.FindArray<Order>();
+   EntityArrayQuery<Order> query = new EntityArrayQuery<Order>(orders);
+   Assert.AreEqual(orders.Length, query.FindArray().Length);
+   Assert.IsNotNull(query.Find(WhereClip.All));
+   Assert.AreEqual(orders.Length, query.FindArray(Order._.OrderID.Desc).Length);
+   Assert.AreEqual(orders.Length, query.FindArray(Order._.OrderID > 0).Length);
+   Assert.AreEqual(orders.Length, query.FindArray(Order._.OrderID > 0, Order._.OrderID.Desc).Length);
+   Assert.IsNotNull(query.Find(10248));
+   object avgResult = query.Avg(Order._.OrderID, Order._.OrderID > 0);
+   Assert.IsTrue(((int)avgResult) > 0);
+   object sumResult = query.Sum(Order._.OrderID, Order._.OrderID > 0);
+   Assert.IsTrue((Convert.ToDouble(sumResult)) > 0);
+   Assert.IsTrue((Convert.ToInt32(query.Count(Order._.OrderID, Order._.OrderID > 0, true))) > 0);
+
+2007/1/17
+Version 3.5.7
+
+Updates:
+
+1) Enhance NBear.Data to support non-primary key auto increment property/column.
+   to set a non primary key property as auto increment property/column easily defines the property as readonly:
+
+   int/short/long PropertyName { get; }
+
+2) Move PropertyItemParam class from NBear.Data to NBear.Common.
+
+3) Enhance Strong Typed Entity Query to support computing columns in Update Columns and WhereClips.
+   Sample queries:
+
+   //UPDATE [Orders] SET [Freight] = ([Freight] + 1) - 1 WHERE [Freight] = (([Freight] + 1) / 1) * 1
+   gateway.Update<Order>(new PropertyItem[] { Order._.Freight }, new object[] { Order._.Freight + 1 - 1 }, Order._.Freight == (Order._.Freight + 1) / 1 * 1);
+
+   //SELECT ... FROM [Orders] WHERE [RequiredDate] - [OrderDate] < 5 day
+   gateway.FindArray<Order>(Order._.RequiredDate - Order._.OrderDate < new TimeSpan(5, 0, 0, 0));
+
+   //SELECT ... FROM [Orders] WHERE [OrderDate] - '2006-1-1 0:00:00' < [RequiredDate] - '2007-1-2 0:00:00'
+   gateway.FindArray<Order>((Order._.OrderDate - DateTime.Parse("2006-1-1")) < (Order._.RequiredDate - DateTime.Parse("2007-1-2")));
+
+4) Add Gateway.FindArray(OrderByClip)/FindArray()/FindArray(WhereClips) to simplify common FindArray operations.
+
+5) Combine Gateway.BatchUpdate/BatchDelete to Gateway.Update/Delete methods to make them easier to understand by userly users. The old BatchXXX methods are marked as obsoleted.
+
+2007/1/15
+Version 3.5.6
+
+Updates:
+
+1) Enhance MsAccess and Oracle Db Provider to support mapping Guid property type to string type db column. The mapping db column type must be a string column with size >= 36.
+
+2) Enhance NBear.MVP to support Presenters with one view and zero or more models (services).
+
+3) Fix bug of inserting boolean type property in batch operation.
+
+4) Fix bug about db creation script and database sychronization of vsplugin.
+
+5) Enhance VsPlugin to alert error details when database sychronization raising any errors.
+
+2007/1/13
+Version 3.5.5
+
+Updates:
+
+1) Enhance NBear.Data to support sequence based autoincrement primary key. 
+   To enable autoincrement primary key for oracle, you must create sequence and trigger for each table like below:
+
+   CREATE SEQUENCE SEQ_TABLENAME;
+   
+   CREATE OR REPLACE TRIGGER TABLENAME_AUTOINCREMENT
+   BEFORE INSERT ON "TABLENAME"
+   FOR EACH ROW
+   WHEN (NEW.ID IS NULL)
+   BEGIN
+   SELECT SEQ_TABLENAME.CURRVAL INTO :NEW.ID FROM DUAL;
+   END;
+
+2) Add AdditionalSqlScriptAttribute in Entity Design to support adding custom additional sql script clips into sql script batch generated by EntityDesignToEntity.exe tool. You can add 0 or more [AddtionalSqlScript("sql", PreCleanSql="pre clean sql")] to entities. PreCleanSql is a sql used to do clean operations before the real sql to run. e.g. you can use this new attribute to add initiate table rows data or custom index or constraint sql script.
+
+3) Enhance Entity Design to support non-Entity base interfaces, which can used to add similar property list clip to different entities, which means you can reuse same property list definition in entity design. 
+   
+    e.g.
+
+    public interface SampleContract1
+    {
+        [PrimaryKey]
+        int ID { get; }
+        string Name { get; set; }
+    }
+
+    public interface SampleContract2
+    {
+        string Address { get; set; }
+    }
+
+    public interface SampleEntityWithContract : Entity, SampleContract1, SampleContract2
+    {
+    }
+
+    public interface SampleEntityWithContract2 : Entity, SampleContract1
+    {
+    }
+
+    -
+    Entities definition above equals entities definition below:
+    -
+
+    public interface SampleEntityWithContract : Entity
+    {
+        [PrimaryKey]
+        int ID { get; }
+        string Name { get; set; }
+        string Address { get; set; }
+    }
+
+    public interface SampleEntityWithContract2 : Entity
+    {
+        [PrimaryKey]
+        int ID { get; }
+        string Name { get; set; }
+    }
+
+
+2007/1/11
+Version 3.5.4
+
+Updates:
+
+1) Make all FindArrayXXX methods of Gateway return empty array consistently instead of unconsistent null or empty array.
+2) Make PropertyItem, StoredProcedureParamItem, OrderByClip and WhereClip classes serializable, which means you can use them as parameters directly in even distributed services.
+3) Fix bug of deleting cached objects on entities with hierachy.
+
+2007/1/5
+Version 3.5.3 build 4
+
+Updates:
+
+1) Updated deleting cache algorithm to enhance performance.
+
+2007/1/4
+Version 3.5.3 build 3
+
+Updates:
+
+1) Quick fix deleting cache bug again again.
+
+2007/1/4
+Version 3.5.3 build 2
+
+Updates:
+
+1) Quick fix deleting cache bug again.
+
+2007/1/4
+Version 3.5.3
+
+Updated:
+
+1) Enhanced NBear.IoC to support overriden methods with same method name and System.Void return value. Not supporting generic methods yet.
+2) Fixed bug in deleting cache brought from v3.5.1. Thanks SAPikachu reporting this bug.
+
+2007/1/4
+Version 3.5.2
+
+Updates:
+
+1) Ehanced AutoPreLoadAttribute to support specific expire time.
+2) Updated Cache Tutorial to describe detail usage of AutoPreLoadAttribute.
+3) Fixed bug in FkReverseQuery property's assignment with null value.
+
+2007/1/2
+Version 3.5.1
+
+Updates:
+
+1) Fixed Fk Constraist generating bug when one entity has 2+ Fk to same foreign table in EntityDesignToEntity.exe. 
+   Thanks Lupin reporting this bug.
+2) Fixed cached data not reload bug in cache of Gateway.
+2) Added new AutoPreLoadAttribute for EntityDesign to support preloading all instances of specific entity into memory to enhance performance.
+   Only write operations on the entity will cause reloading, or the loaded data in cache will never expired except manual removing.
+   Notice: Please use AutoPreLoad only when there is single database accessing gateway in your system. Using it in distributed hosts will cause unexpected results.
+
+2006/12/31
+Version 3.5.0
+
+Updates:
+
+1) Fixed bug in BatchCommander.EndBatch() when using outside DbTransaction.
+2) Fixed the insert statement construction bug of Oracle DbProvider.
+3) Fixed the too long param name bug of Oracle DbProvider.
+4) Added new "OutputNamespaceAttribute" in EntityDesign to support generating entities with different namespaces.
+   If not specifying OutputNamespaceAttribute on an entity, 
+   the default OutputNamespace will be applied on the entity.
+
+2006/12/29
+Version 3.4.10
+
+Updates:
+
+1) Fixed bug in Gateway.BatchUpdate and BatchDelete when using traditional DbTransaction.
+2) Refactored NBear.Common.Entity base class to enhance performance.
+3) Added new IndexPropertyAttribute(bool isDesc) constructor to support DESC index column generating.
+
+2006/12/28
+Version 3.4.9
+
+Updates:
+
+1) New DataBinding Tutorial in tutorial folder (No document, project source code only).
+2) New "Suggested NBear Framework Based FDD Development Steps" tutorial in tutorials folder. English only.
+3) Fixed the DataParameter Cache bug when using variaty number parameters of Gateway.XXXStoreProcedureXXX methods.
+
+2006/12/26
+Version 3.4.8
+
+Updates:
+
+1) Fixed the page split order by bug brought from v3.4.7.
+2) Enhanced Page Split performance of SqlServer 2005 db provider.
+3) Enhanced EntityDesignToEntity.exe to support "Generate Code for Selected Entities Only". 
+   To select entities, click the "Advanced Options" button in the main form.
+
+2006/12/26
+Version 3.4.7
+
+Updates:
+
+1) Fixed "page split result error when order by can-contain-duplicated-value-column" bug in SqlServer 2005 & oracle db provider.
+2) Added strong typed FindDataTable<>() method in Gateway.
+
+2006/12/25
+Version 3.4.6
+
+Updates:
+
+1) Fixed the "Mis-generating redundent nonclustered indexes for primary key column" - bug in EntityDesignToEntity.exe.
+2) Enhanced FindStoredProcedureXXX methodsof Gateway to support parameter names without parameter prefix token.
+3) Enhanced Gateway.FindArray<EntityType>(sql, paramValues) overriden to support "{XXX}" style column names in sql, 
+   XXX can be entity's property name instead of mapping column name.
+
+2006/12/22
+Version 3.4.5
+
+Updates:
+
+1) Fixed logger status bug in ServiceHost and ServiceMQServer.
+2) Fixed bug in read/write Float and Double type entity property.
+3) Added return value compression support for remoting ServiceFactory.
+   To enable return value compression for remoting service factory, 
+   add compress="true" attribute in service factory config like below:
+   <serviceFactory type="Remoting" name="testServiceFactory" ... debug="true" compress="true" />
+4) Added Newtonsoft.Json implementaion into NBear.Common.JSON. 
+   See http://www.newtonsoft.com/products/json/ for usage and details.
+
+2006/12/20
+Version 3.4.4
+
+Updates:
+
+1) Upgraded depending castle library to version 1.0 rc2
+2) Added Gateway.InSubQuery method to support Not In Sub Query WhereClip in strong typed query.
+3) Added new NBear.MVP project to support IoC based MVP pattern, which can be used in any type of apps(web, winform, web service...).
+   See MVP_Tutorial for details.
+4) New MVP_Tutorial with sample source code in tutorials folder. Chinese version only so far.
+
+2006/12/19
+Version 3.4.3
+
+Updates:
+
+1) Fixed bug in FkQuery Cascade save with dual references. Thanks try reporting this bug.
+2) Fixed the "could not disable in VsIDE Addins Manager after enable" bug of VsPlugin.
+   To disable nbear plugin temporary: in Vs IDE's Tools/Addins Manager menu, un-check the checkbox before nbear plugin.
+   To Uninstall nbear plugin from Vs IDE: run "SetupNBearVsPlugin.exe -u" in command line.
+
+2006/12/17
+Version 3.4.2
+
+Update:
+
+1) Enhanced cascade saving/deleting relation entity row in ManyToManyQuery, when Contained=false.
+2) Fixed Query bug when applying MappingName on a Relation entity. Thanks fredchan reporting this bug.
+
+2006/12/14
+Version 3.4.1 stable
+
+Updates:
+
+1) Make default query array property as an empty arraylist instance instead of null reference.
+2) Fixed bug in ManyToManyQuery property's cascade update.
+3) Fixed bug in Gateway.Save when obj type doesn't match generic parameter type. When these two types are different, the generic parameter type will be ignore now.
+
+2006/12/11
+Version 3.4.0 stable
+
+Updates:
+
+1) Enhanced Gateway.BatchUpdate to support "update table [column] = [otherColumn]" and "update table [column] = [operations combined with other columns and custom values]" style queries.
+2) Fixed "Not throwing db access error" bug when using System.Data.Common.DbTransaction instead of System.Transactions.TRansactionScope.
+
+2006/12/08
+Version 3.3.9 stable
+
+Updates:
+
+1) Fixed cache bug in Gateway.GetPageSelector.
+2) Added PropertyItem.Between and PropertyItem.In operations.
+
+2006/12/07
+Version 3.3.8 stable
+
+Updates:
+
+1) Fixed bug in Entity.EntityArrayToDataTable.
+2) Fixed bug in NBear.Web.UI.WebHelper.
+3) Refactored Strong Typed Entity Query Code.
+4) Added DraftAttribute in entity design which can use to ignore specific entities in code generating.
+5) Added generating nullable properties support(SqlServer only) to DbToEntityDesign.exe tool.
+
+2006/12/02
+Version 3.3.7 stable
+
+Updates:
+
+1) Added new VS 2005 EntityDesignToEntity Plugin. See VsPlugin tutorial in tutorials folder for details.
+2) New VsPlugin tutorial in tutorials folder. This tutorial document only contains Chinese version now, we'll provide English version later.
+3) Enhanced entity design to support "long" auto incremental primary key.
+4) Fixed "cascade property objects' not insert" bug in  entity's update operation.
+
+2006/11/21
+Version 3.3.6 stable
+
+Updates:
+
+1) Quick fixed bug in Gateway.FindArrayStoredProcedure with output parameters.
+
+2006/11/21
+Version 3.3.5 stable release
+
+Updates:
+
+1) Added FkQuery.AdditionalWhere and ManyToManyQuery.AdditionalWhere to support appending additional query conditions in these two knids of queries.
+2) New AnalysisPattern tutorial source code (incrementally appending content) in tutorials folder demoing ORM implementation of Martin Fowler's Analysis Patterns. 
+3) Released as the first stable release version.
+
+2006/11/19
+Version 3.3.4 internal test
+
+Updates:
+
+1) Fixed the bug when saving FkReverseQuery nullable property.
+2) Fixed the bug when saving Guid nullable property.
+
+2006/11/18
+Version 3.3.3 internal test
+
+Updates:
+
+1) Fixed the "could not insert nullable number columns" bug. Thanks MK2 for reporting this bug.
+
+2006/11/18
+Version 3.3.2 internal test
+
+Updates:
+
+1) Make write operations of gateway remove related existing cached objects automatically when gateway's cache is enable.
+2) Fixed bug in many to many relation when entity marked with MappingNameAttribute.
+3) Added new Cache & Config Encrypt tutorials in tutorials folder. These tutorial documents only contains Chinese version now, we'll provide English version later.
+
+2006/11/17
+Version 3.3.1 internal test
+
+Updates:
+
+1) Fixed bug in cache of gateway. Thanks goldpicker reporting this bug.
+2) Added Gateway.RemoveCaches() to support remove all cached objects related to specified table, view or stored procedure.
+3) Added Entity.DataTableToEntityArray() to support converting data table to entity array.
+
+2006/11/17
+Version 3.3.0 internal test
+
+Updates:
+
+1) Fixed bug in db script generating when a FK mapping to a diifferent-name column. Special thanks to Jason for reporting this bug.
+2) Fixed bug in db script generating about mis-adding Friend Key constrainst for FkReverseQuery property.
+3) Added entityConfig encrypt support.
+4) Added new NBear.Tools.ConfigurationEncrypter.exe tool project which can be used to encrypt/decrypt configuration files.
+5) Added relative path support for MsAccess database. Now we can use ~\ or .\ or |DataDirectory| prefix to access database path in connectionstring setting.
+6) Fixed other bugs in latest_fixed_bugs.txt.
+
+2006/11/16
+Version 3.2.5
+
+Updates:
+
+1) Fixed errors in tutorials.
+2) Filled more details in SDK document.
+
+2006/11/15
+Version 3.2.4
+
+Updates:
+
+1) Fixed bug in related property save when using auto imcremental primary key in hierachy entities. Special thanks to MK2 for testing and reporting this bug.
+
+2006/11/15
+Version 3.2.3
+
+Updates:
+
+1) Fixed bug in cascade insert.
+2) Fixed some error in tutorials documents.
+
+2006/11/15
+Version 3.2.2
+
+Updates:
+
+1) Added Entity.SetAllPropertiesAsModified() to support manually setting all entity's properties as modified.
+2) Enhanced full auto imcremental primary key type support. Now even hierachical entities can have auto imcremental primary key (In entity design, set the int ID property as readonly and primary key).
+3) Enhanced auto GUID primary key support, now if an entity has a GUID primary key, and you save it without explicit assigned a GUID value to it, NBear will automatically generate one for it, which also means you can use a GUID primary key entity just like an auto imcremental primary entity.
+
+2006/11/13
+Version 3.2.1
+
+Updates:
+
+1) Fixed bugs in latest_fixed_bugs.txt.
+
+2006/11/12
+Version 3.2.0
+
+Updates:
+
+1) Re-Designed Entity Design Attributes. See tutorials\Entity_Relation_Manual for details.
+2) Huge code refactor to support the re-designed entity design attributes.
+3) Fixed all known bugs.
+4) Added full database integration constainsts support in generated database creation scripts.
+5) Updated all tutorials in tutorials folder for all modifications.
+
+2006/11/10
+Version 3.1.8
+
+Updates:
+
+1) Added CustomDataAttribute for entity and property in entity design. User can use MetaDataManager.GetEntityConfiguration() and EntityConfiguration.GetPropertyConfiguration() to get runtime meta data of entity and properties, including the custom data.
+2) Added FriendKey Relation Constrainst in generated DB Creation SQL Script.
+3) Fixed cascade insert and delete sequences for cascade relation integrity.
+
+2006/11/10
+Version 3.1.7
+
+Updates:
+
+1) Mapping Entity[] of entity design to strong type entity collection type in actual entity code now. Updated all tutorials to reflect the change.
+2) All your entities and entitys'config code need to be re-generated to support strong type entity collection type.
+3) You should modify all your code related to query entity array property. for each entity, these is a EntityArrayList type generated for it which is used as the array of Entity. You can Add/Remove items directly with it.
+
+e.g. A former public Domain[] Domains...property now becomes public DomainArrayList Domains.
+You can new DomainArrayList() instance and assign it to Domains property, or add/remove item through DomainArrayList.Add/Remove now. The DomainArrayList is also serialzable by default.
+
+4) Entity.EntityArrayToDataTable() support null or empty input which causing empty table output.
+
+2006/11/9
+Version 3.1.6
+
+Updates:
+
+1) Quick fixed the bug in DbToEntitiesDesign.exe about "could not generate eneity design code from database view". Thanks rhsdebug and Lukiya reported this bug.
+
+2006/11/9
+Version 3.1.5
+
+Updates:
+
+1) Code clean in NBear.Common and NBear.Gateway.
+2) Added a simpler for one to one, one to many friendkey relation. see tutorials\Entity_Relation_Manual_CN.doc for details.
+3) Added new Entity_Relation_Manual in tutorials folder. The document of this tutorial only contains Chinese version now, we'll provide English version later.
+
+2006/11/8
+Version 3.1.4
+
+Updates:
+
+1) Quick fixed a sql error bug in Gateway.BatchUpdate(). Thanks Lukiya reported this bug.
+
+2006/11/8
+Version 3.1.3
+
+Updates:
+
+1) New NotNull and SerializationIgnore attributes which can be applied on to entitydesigns' property to explicitly set a property as NotNull in db or should not included in default XML Serialization.
+
+2006/11/7
+Version 3.1.2 Beta
+
+Updates:
+
+1) Fixed the check primarykey bug in NBear.Tools.DbToEntityDesign. Thanks lvchaoin pointed out the problem and given code to fix it.
+2) Removed SimpleHierachyDataSource.cs from NBear. Web because it is not so common to use.You can still freely use the source code of it in previous version of NBear.
+3) Added Web Tutorial for NBear.Web in tutorials folder. The document of this tutorial only contains Chinese version now, we'll provide English version later.
+
+2006/11/7
+Version 3.1.1 Beta
+
+Updates:
+
+1) Improved performance for non related entities' Save & Delete operation. A non related entity is an entity has no base/child entity and related entity properties.
+2) Added Gateway.BatchUpdate & Gateway.BatchDelete methods to support strong type batch update and delete. You can update a set of entities' specific properties now.
+3) Fixed bug in saving hierachy entities about not "saving parent entities".
+4) A little change in generate entity code. So please regenerate all entity code.
+5) Added IoC Adv Tutorial in tutorials folder, which demos Advanced uasge of NBearV3 distributed IoC. The document of this tutorial only contains Chinese version now, we'll provide English version later.
+
+2006/11/6
+Version 3.1.0 Beta
+
+Updates:
+
+1) Fixed a bug in Entity when a property type is byte[].
+2) Added the IoC tutorial in tutorials folder. The document of this tutorial only contains Chinese version now, we'll provide English version later.
+
+-2006/11/5
+Version 3.0.9 Beta
+
+Updates:
+
+1) Added Gateway.Exists methods.
+2) Fixed strong type equals comparision with db null value in PropertyItem.
+3) Fixed bug about "Find & FIndArray bug when mapping property to column with different name".
+4) Added Gateway.Count<>(WhereClip) overriden and changed return value of all Count() to int.
+
+-2006/11/5
+Version 3.0.8 Beta
+
+Updates:
+
+1) Fixed little bug in NBear.Tools.EntityDesignToEntity.exe about db script generating when support IndexPropertyAttribute.
+2) Added ORM Adv Tutorial in tutorials folder, which demos Advanced uasge of NBearV3 ORM and strong type query using NBear.Data.Gateway. The document of this tutorial only contains Chinese version now, we'll provide English version later.
+3) Fixed bug in Cascade delete property objects about "could delete array property objects".
+4) Fixed bug in BatchCommander about format enum type value.
+5) Fixed the sequence problem when insert or delete entities with hierachy. Thanks zml reported this bug.
+6) Added Entity.EntityArrayToDataTable() to support convert an entity array to a System.Data.DataTable.
+
+-2006/11/4
+Version 3.0.7 Beta
+
+Updates:
+
+1) Added DefaultValue property to SqlTypeAttribute, which you can use to set the default value for this property.
+2) Added IndexPropertyAttribute to support setting an entity design's property as to create index when create the table in database.
+3) Added BatchUpdateAttribute to set specific entity to save/delete all related property values in batch to improve performance.
+4) Fixed the "Entity could not be serialied bug" caused when brought new function in previous version. Thanks ailiang wu reported this bug.
+
+-2006/11/3
+Version 3.0.6 Beta
+
+Updates:
+
+1) Fixed a little bug in NBear.Tools.EntityDesignToEntity.exe to add nullable ability to database columns to support nullable entity property type.
+2) Added a Detail Step by Step ORM Tutorial with full code and instruction. The document of this tutorial only contains Chinese version now, we'll provide English version later.
+
+-2006/11/2
+Version 3.0.5 Beta
+
+Updates:
+
+1) Added SDK document and a "3 Minute Tutorial" in doc folder.
+2) Fixed bug in query property change which causes un-contained property objects to be updated or deleted.
+3) Added "Remember Output Namespace" ability to NBear.Tools.EntityDesignToEntity.exe tool.
+
+-2006/11/1
+Version 3.0.4 Preview
+
+Updates:
+
+1) Fixed bug in property cascade save when an entity has no base entities.
+2) Fixed bug in query property change which causes un-contained property objects to be deleted.
+3) Added entity meta data as entity static member to enhance strong typed query performance.
+
+-2006/11/1
+Version 3.0.3 Preview
+
+Updates:
+
+1) Added OnQueryOnePropertyChanged() & OnQueryPropertyChanged() protected method to entity base class and generated entitis to support more intelligent query property changing. Changed back the AddArrayItem & RemoveArrayItem from non-static to static from v3.0.2. You can now easily use AddArrayItem & RemoveArrayItem helper methods or use any manual approach to modify query property value, entities will automatically remember what is needed to delete and what is needed to create or update.
+
+-2006/11/1
+Version 3.0.2 Preview
+
+Updates:
+
+1) Changed The AddArrayItem & RemoveArrayItem from static to non-static and changed the param list to fix the bug - "when deleting a property related object, the relation info is not deleted automatically in the deletion."
+2) Supported "~/", "~\", "./" or ".\" suffix in entity config file path, which standing for the base directory of the running application.
+3) Enhanced NBear.Tools.DbToEntityDesign to support getting column's data type and size info (for SQL Server only).
+
+-2006/11/1
+Version 3.0.1 Preview
+
+Updates:
+
+1) Added full entity query property cascade save support.
+2) Combined Create & Update for entity into Save method in NBear.Data.Gateway.
+
+-2006/10/31
+Version 3.0.0 Preview
+
+Updates:
+
+1) Re-design of the entire ORM architecture to support full function ORM abilities.
+2) Re-write cases\simpleguestbook with V3 architecture and fixed all reported bugs.
+
+-2006/10/23
+Version 2.5.0
+
+Updates:
+
+1) Fixed null reference bug when not defining custom properties at the end of all entity properties. Thanks Lukiya reported this bug.
+2) Fixed EntityImpl.exe not generating code for custom properties bug.
+
+-2006/10/18
+Version 2.4.9
+
+Updates:
+
+1) Added NBear.Common.BaseEntityFactory.PreGenerateAllEntities() to enable pregsnerate all dynamic enties, which can be used to prevent imcrementally entity dynamicly generating.
+
+-2006/10/13
+Version: 2.4.8 stable 1.3
+
+Updates:
+
+1) Add stored procedure entity's external configuration support, use Configurator.exe to edit & generate configuration.
+2) Fixed always return selectmax bug for Gateway.selectmin and Gateway.selectsum.
+
+-2006/10/12
+Version 2.4.7 stable 1.2
+
+Updates:
+
+1) Try to fix the "defined multiple modules with same name" bug in EntityFactroy and ServiceFactory.
+2) Add MsBuild.bat command line build support to simplify build process.
+
+-2006/10/11
+Version 2.4.6
+
+Updates:
+
+1) Fixed dead loop bug in entities generated by EntityImpl.exe tool. Thanks xu da wei reporting this bug.
+
+-2006/10/10
+Version 2.4.5
+
+Updates:
+
+1) Refactored NBear.IoC for supporting extending Service Container.
+
+-2006/10/09
+Version 2.4.4 stable 1.1
+
+Updates:
+
+1) Enhanced StrongTyped Entity Query for transaparent supporting multi database provider.
+
+-2006/10/09
+Version 2.4.3 stable 1
+
+Updates:
+
+1) Rebuild all skeleton, sample and cases with latest version.
+2) Fixed all reported/known bugs.
+3) Release as the first stable version.
+
+-2006/10/09
+Version 2.4.2
+
+Updates:
+
+1) Quick fix bug brought from v2.3.8 again. Thanks Lukiya reporting this bug again.
+
+-2006/10/09
+Version 2.4.1
+
+Updates:
+
+1) Fixed bug in XXXDbProvider.BuildParamName().
+2) Fixed "ClientScriptFactory property returning null" bug in AjaxTemplate.
+3) New SimpleGuestbook case demostrates basic functions (XHTML/CSS Layout, Basic CRUD, Cryptography, AJAX Helper, Strong Type Query, IoC) of NBear, located in "NBear\cases\SimpleGuestbook" folder.
+
+-2006/10/08
+Version 2.4.0
+
+Updates:
+
+1) Quickly fixed bugs brought from v2.3.9.
+
+-2006/10/08
+Version 2.3.9
+
+Updates:
+
+1) Added batch read/write support to Gateway. Please see mannual for details.
+2) Fixed the Remoting Exception bug of ServiceHost just like which in Distributed Factory. Thanks jekeng for reporting this bug again.
+
+-2006/10/05
+Version 2.3.8
+
+Updates:
+
+1) Fixed the "Distributed ServiceFactory doesn't work after about 5 minutes from ServiceMQServer's beginning. Thanks jekeng for reporting this bug.
+
+-2006/09/27
+Version 2.3.7
+
+Updates:
+
+1) Fixed the "always return null" bug of Distributed Service Medthod. Thanks jekeng for reporting this bug.
+
+-2006/09/26
+Version 2.3.6
+
+Updates:
+
+1) Fixed little bug in Configurator.exe when saving existing config file.
+2) Fixed infinite loop bug in Gateway.CascadeDelete<IEntityType>(params object[] pkValues) method.
+3) Fixed Entity Cascade with custom implementation entities. Special thanks to xu da wei for reporting this bug.
+
+-2006/09/26
+Version 2.3.5
+
+Updates:
+
+1) Fixed an important bug in EntityFactory.CreateObject(). Special thanks to Lukiya for reporting this bug!
+
+-2006/09/25
+Version 2.3.4
+
+Updates:
+
+1) Fixed a little client script bug in build-in Ajax.Update() function.
+2) Added new StoreProcedure Entity Mapping support. See user manual for details.
+
+-2006/09/20
+Version 2.3.3
+
+Updates:
+
+1) Added Scrollbars to EntityImpl.exe's output Textbox.
+2) Added the service MQ Server and service Host as NBear standard assemblies to significently simplify distributed application development.
+3) A new Enterprise sample which is using the new build-in service mq server and service host, and demostrates exception handling and logging using MS EntLib 2.0's Exception Hanling APP Block.
+4) While added the new EnterpriseSample in skeleton, the old Distributed sample is removed out.
+
+-2006/09/19
+Version 2.3.2
+
+Updates:
+
+1) Add "Generate Set Method even for Readonly Property" option to EntityImpl.exe tool.
+
+-2006/09/19
+Version 2.3.1
+
+Updates:
+
+1) Fixed JST render bug of AjaxTemplate when designing JSON-AJAX-JST style application.
+2) Fixed the EntityImpl.exe's bug about when generating readonly properties, there always misses a end } or "End Property".
+
+-2006/09/18
+Version 2.3.0
+
+Updates:
+
+1) Add AutoComplete function to EntityGen.exe's Connection String TextBox.
+2) Add VB.NET Code Generation support to EntityImpl.exe tool.
+
+-2006/09/18
+Version 2.2.9
+
+Updates:
+
+1) New EntityFactory.ConvertToEntityArray() functions used to convert entities with different types.
+2) New SampleWS sample in NBear\sample\SampleWS folder demostrate a Web Service App using Custom Entities Implemented by Entity Impl tool and how to convert interface style entity array to conctete style entities.
+
+Update
+
+-2006/09/17
+Version 2.2.8
+
+Updates:
+
+1) Add includedInSqlGenerating property to Entity's meta data, enable to ignore some entities which not want to generate sql for.
+2) Add a new tool - NBear.Tools.EntityImpl.exe which can be used to generate the entity implementation source code for interface assembly.
+
+-2006/09/13
+Version 2.2.7
+
+Updates:
+
+1) Removed Page.ParseUrl() from NBear.Web (for MasterPage and UserControl, too), which can use the build-in Page.ResolveUrl() method instead.
+2) Added Gateway.SelectAvg (How can I miss this aggregate query in Gateway?).
+3) Fixed NBear.Web.UI.WebHelper's Globlization function to support resource file ased Multi-Language Web Application development.
+4) Removed NBear.Web.UI.WebHelper's Cryptography property to decouple NBear.Web from NBear.Common. You still can use Cryptography directly from NBear.Common.CryptographyHelper class.
+
+-2006/09/07
+Version 2.2.6
+
+Updates:
+
+1) Fixed bugs in NBear.Tools.Configurator.exe about generating database creation script.
+2) Added cascade delete/insert/update methods to NBear.Gateway.
+3) Fixed bugs in ActiveEntity.Delete and Insert for Hierachy Entities.
+
+-2006/09/06
+Version 2.2.5
+
+Updates:
+
+1) Fixed the Configurator tool's "Remove Assembly" menu disabling bug and menu becoming black under windows 2000 os bug.
+2) Fixed the EntityGen tool's radio box misselecting bug.
+3) Fixed "Constructor" bug of ActiveEntity.
+
+-2006/09/03
+Version 2.2.4
+
+Updates:
+
+1) Add IdFactory class to NBear.Data, used to generate global IDs.
+2) Add Database.SqlLogger and Gateway.SetSqlLogger() to support sql debugging.
+3) Enhanced EntityGen and Entity Configurator to support VB.NET Code Generating.
+
+-2006/08/30
+Version 2.2.3
+
+Updates:
+
+1) Add original version control to entity so now ActiveEntity can get original version info from entity-self, which means new ActiveEntity<IEntityType>(gateway, someEntity) makes the new ActiveEntity read original version info directly from someEntity rather than reseting every time.
+
+-2006/08/28
+Version 2.2.2
+
+Updates:
+
+1) Removed AutoCompleteTextBox and UploadProgressBar for their unstability.
+2) Added Gateway.SelectMax, Gateway.SelectMin and Gateway.SelectSum for simple aggregate querying.
+3) Move EntityQuery's Column and Column_Desc like order by as PropertyItem's properties to simplify EntityQuery Code.
+
+-2006/08/27
+Version 2.2.1
+
+Updates:
+
+1) New Strong Type Entity Query Format support. e.g.
+LocalUser[] users = gateway.Select<LocalUser>(_Entity.LocalUser.Id > 5 | _Entity.LocalUser.LoginId == "teddy", _Entity.LocalUser._OrderBy.Id_Desc & _Entity.LocalUser._OrderBy.LoginId); 
+
+- 2006/08/26
+Version 2.2.0
+
+Updates:
+
+1) Fixed the parameters cache bug of executing procedure brought from the outparameter support.
+
+- 2006/08/25
+Version 2.1.9
+
+Updates:
+
+1) Extended meta data properties.
+2) New Entity Configurator tool for configurating entity's meta data visually and generating database creation script according to entity configuration.
+
+- 2006/08/18
+Version 2.1.8
+
+Updates:
+
+1) New external configuration support to entity's meta data configuration.
+2) Fixed the Web Validator control bug.
+3) Fixed the specified columns Gateway.Update bug.
+4) Combined the Save support of entity to ActiveEntity class and removed those in Gateway class.
+
+- 2006/8/16
+Version 2.1.7
+
+Updates:
+
+1) Added RegisterCustomEntity/UnregisterCustomEntity to NBear.Common.BaseEntityFactory to support custom entity implementation.
+
+- 2006/8/15
+Version 2.1.6
+
+Updates:
+
+1) Gateway.ExecuteProcedureXXX supports store procedure output parameters now.
+2) Fixed the deadlock bug in Gateway.Save in transaction situation.
+3) New NBear.Data.ActiveEntity class is added to control an entity in a active object pattern.
+
+- 2006/8/13
+Version 2.1.5
+
+Updates:
+
+1) Fixed the insert return ID bug of SqlServer 2000 and SqlServer 2005 Db Providers.
+2) Add new AdditionalWhere and AdditionalInsert parameters to NBear.Common.TableAttribute, see manual for details.
+
+- 2006/8/12
+Version 2.1.4
+
+Updates:
+
+1) Add SelectRowCount method to Gateway for select sepcified table and creteria's row count.
+2) Fixed the insert return ID bug of MySql & MS Access Db Providers.
+
+- 2006/8/12
+Version 2.1.3
+
+Updates:
+
+1) Changed the NBear.Common.CustomProerty definition to support custom parameters.
+
+- 2006/8/11
+Version 2.1.2
+
+Updates:
+
+1) Inline view support to entity - you can use a query as a view name of an entity now.
+
+- 2006/8/9
+Version 2.1.1
+
+Updates:
+
+1) Enhanced the EntityFactory.CreateObject, CreateObjectList to support entity filling both by column name and column index
+2) Enhanced Gateway.Save() to return the newly inerted row's ID and save it to entity.PK when Entity uses auto increasing column as PK.
+3) New Custom Property Support to Entity Definition (See src\NBear.Test\UnitTests\TestCustomProperty.cs for details and usage).
+4) New Entity Inherit support (See src\NBear.Test\UnitTests\TestMultiInheritence.cs for details and usage).
+
+- 2006/8/7
+Version 2.1.0
+
+Updates:
+
+1) Fixed param missing bug when db parameter name contains numbers and underlines;
+2) Fixed db param caching bug when executing same procedure with different param list (Thanks Lukiya for reporting this bug.)
+3) New Oracle and MySql Db Providers.
+
+- 2006/7/28
+Version 2.0.1
+
+Updates:
+
+1) Several bugs fixed for json serialization.
+2) NBear.Web.UI.AjaxTemplate is enhanced for supporting loading JST templates defined in user control. 
+   (See sample - JST_JSON_AJAX_Website_Demo for usage of JST, JSON and AJAX together.)
+
+- 2006/7/18 
+The first version of NBear V2 - V2.0.0 released
+
+Updates:
+
+1) Rearranged namespaces/assembliess.
+2) New TableAttribute, PrimaryKeyAttribute and ColumnNameAttribute used to decorate Entities.
+3) Simplified Data Access Gateway. (Move from NBear.Data.Facade of v1 to NBear.Data v2.)
+4) Deleted NBear.MQ and add two new assemblies - NBear.IoC and NBear.Net.
+5) NBear.Ioc provides ServiceMQ, Service Factory and distributed service container.
+6) NBear.Net provides net utils, now contains remoting support only, in the further, 
+   more net utils will be added into it.
+7) Three skeletons which are suggested application architectures for applications with different 
+   complexities.
+   - Simple. One layer simple web application architecture.
+   - 3Layered. 3 Layer standard web application architecture based on service factory and local 
+     service IoC container.
+   - Distributed. 3 Layer distributed web application architecture based on service factory, 
+     service MQ and distributed service IoC container (Based on dynamic emiting and transparent 
+     service interface sharing).
+
+-----------------------------
+Release History of NBear V1
+-----------------------------
+
+- 2006/06/XX Version 1.8.1
+Update:
+1) Removed IPC channel support for NBear.MQ because of IPC's security problem
+2) Fixed the Gateway.Update(obj, id) duplicated except column bug
+
+- 2006/05/31 Versiob 1.8.0
+Update:
+1) New Nbear.MQ component, providing an extendable distributed application development support
+2) New TestServiceMQ sample domes the usage of NBear.MQ
+3) Rearrange NBear.Common and delete NBear.Utils assembly to release the dependency of NLog and MS Ent. Lib
+4) Little bug fix for NBear.Data
+
+- 2006/05/22 Version 1.7.2
+Update:
+1) Json & Xml Serialization Bug Fix
+
+- 2006/05/22 Version 1.7.1
+Update:
+1) Extract Logger, Exception Handle, Notify, Object Pooling from NBear.Common to NBear.Utils assembly
+2) Replace all "params object[]" param types with "object[]" to prevent mis-methods calling
+
+- 2006/05/19 Version 1.7.0
+Update:
+1) Merge NBear.Data.Facade assembly into NBear.Data assembly
+2) Delete DefaultGateway and DefauCachableGateway in NBear.Data.Facade and use Gateway.Default instead
+3) Add generic log(based on NLog),exception handle (based on MS Exception Handling Application Block), Notify (Email notify only now) function into NBear.Common
+4) Delete GatewayManager of NBear.Domain and use NBear.Data.Facade.Gateway.Default instead of the default gateway for domain model
+
+- 2006/05/18 Version 1.6.4
+Update:
+1) Add Guid(for SQLServer, it is uniqueidentifier typw) and Blob (for SQLServer, it is Binary, VarBinary, and Image type) data type support to entity
+
+- 2006/05/17 Version 1.6.3
+Update:
+1) Updated build-in full AjaxHelper in NBear.Web with full refreshable AJAX support
+2) Fix a datetime data fill bug, thanks lianghaihui's reporting this bug to me
+
+- 2006/05/12 Version 1.6.1
+Update:
+1) Some little code adjusting
+
+- 2006/05/05 Version 1.6.0
+Update:
+1) New assembly - NBear.Domain is added for ease domain logic layer development
+2) New Sample6 in samples demostrate the usage of NBear.Domain
+2) Move NBear.Data.Facade.DefaultGateway.DatabaseType to NBear.Data.Facade.DatabaseType
+3) Add some methods in DefaultGateway and Gateway for supporting NBear.Domain
+
+- 2006/04/27 Version 1.5.5
+Update:
+1) Add 3 classes in NBear.Common as serialization facade: EntitySerializer, OneToManyEntitySerializer, OntToOneEntitySerializer
+2) Fix the serialization bugs when member of array or entity is null
+3) Intergrated AjaxHelper to NBear as the extending of ASP.NET Callback to speed up Ajax development.
+
+- 2006/04/25 Version 1.5 - Rename as NBear
+Update:
+1) Entity/Entity Array to DataTable converting support
+2) SimpleDbHelper's threadsafe bug fixed.
+3) Rename as NBear.
+
+- 2006/04/19 Version 1.4.4 with new high performance enhanced JSON and Xml serialization support.
+
+- 2006/04/15 Version 1.4.1 with new Sample5 for serialization performance test camparision.
+
+-2006/04/14 Version 1.4.0 All In One
+Update:
+1) The second OneToMany Class: OneToMany<TypeofOne, TypeOfMany> which is a simplized version of the existed one.
+2) Some refactorings which made code more readable.
+3) New entity serialize support in SerializeHelper.cs which significiently enhanced the serialize performence for entities.
+4) Change the quick Get/Update gateways in Framework.Data.Facade from int type to object type so that they can now work with guid.
+5) New OneToManyEntity and OneToOneEntity class in Framework.Common help to describe related entities
+6) New high performence serialize support for OneToManyEntity and OneToOneEntity and their arrays in SerializeHelper class.
+
+- 2006/04/10 Version 1.3.0 and Sample4 About OneToMany¡¢Hierarchy and Tree structure mapping
+1) OneToMany Class
+2) Fix the DbNull Convert to null bug when create object from IDatareader or table column
+
+- 2006/04/08 Version 1.2.1 
+Update:
+1) Fixed the serialization problem in v1.2
+
+- 2006/04/07 Version 1.2 Build 0407 with all samples source code
+Update:
+1) Add a new Web Serial Number Validator Web Custom Control;
+2) Add an Entity Serialize Helper Class SerializeHelper under Framework.Common;
+3) Fix several little bugs.
+
+- 2006/04/05 Version 1.1 Build 0405 with Sample and Sample2 full source code all in one
+

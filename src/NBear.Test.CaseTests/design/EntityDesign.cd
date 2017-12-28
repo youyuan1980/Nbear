@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Interface Name="NBear.Test.CaseTests.design.User">
+    <Position X="4" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>design\EntityDesign.cs</FileName>
+      <HashCode>AAAAAEAEAAAAgAAAAAAAAAQAAAAAAAAAEBAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Profile" />
+      <Property Name="Groups" />
+      <Property Name="Team" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="NBear.Test.CaseTests.design.Group">
+    <Position X="6.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>design\EntityDesign.cs</FileName>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAQAACAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NBear.Test.CaseTests.design.AgentUser">
+    <Position X="4" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>design\EntityDesign.cs</FileName>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Domains" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="NBear.Test.CaseTests.design.LocalUser">
+    <Position X="4" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>design\EntityDesign.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NBear.Test.CaseTests.design.UserProfile">
+    <Position X="1.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>design\EntityDesign.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NBear.Test.CaseTests.design.UserGroup">
+    <Position X="6.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>design\EntityDesign.cs</FileName>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAgAACAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NBear.Test.CaseTests.design.AgentUserDomain">
+    <Position X="1.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>design\EntityDesign.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAEAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NBear.Test.CaseTests.design.Domain">
+    <Position X="1.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>design\EntityDesign.cs</FileName>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAQAAAAAAAAAAAAAQAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NBear.Test.CaseTests.design.Team">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>design\EntityDesign.cs</FileName>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NBear.Test.CaseTests.design.Master">
+    <Position X="2.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>design\EntityDesign.cs</FileName>
+      <HashCode>AAAAgAAAAAABAAAAAAAAAAAAAgAAAAAAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NBear.Test.CaseTests.design.Detail">
+    <Position X="5.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>design\EntityDesign.cs</FileName>
+      <HashCode>AAAAAAAAAAAAwAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>

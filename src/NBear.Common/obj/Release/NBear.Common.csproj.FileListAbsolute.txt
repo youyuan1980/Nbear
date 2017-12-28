@@ -1,0 +1,12 @@
+F:\soft\nbear3.6.6_src\src\NBear.Common\bin\Release\NBear.Common.dll
+F:\soft\nbear3.6.6_src\src\NBear.Common\bin\Release\NBear.Common.pdb
+F:\soft\nbear3.6.6_src\src\NBear.Common\obj\Release\ResolveAssemblyReference.cache
+F:\soft\nbear3.6.6_src\src\NBear.Common\obj\Release\NBear.Common.dll
+F:\soft\nbear3.6.6_src\src\NBear.Common\obj\Release\NBear.Common.pdb
+F:\soft\nbear3.6.6_src\src\NBear.Common\bin\Release\NBear.Common.XML
+F:\nbear3.6.6_src\src\NBear.Common\bin\Release\NBear.Common.XML
+F:\nbear3.6.6_src\src\NBear.Common\bin\Release\NBear.Common.dll
+F:\nbear3.6.6_src\src\NBear.Common\bin\Release\NBear.Common.pdb
+F:\nbear3.6.6_src\src\NBear.Common\obj\Release\ResolveAssemblyReference.cache
+F:\nbear3.6.6_src\src\NBear.Common\obj\Release\NBear.Common.dll
+F:\nbear3.6.6_src\src\NBear.Common\obj\Release\NBear.Common.pdb

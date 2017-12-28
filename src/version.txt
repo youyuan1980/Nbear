@@ -1,0 +1,4 @@
+3.6.6
+
+// This file is used only for setting the version for all assemblies. 
+// Please do not add any extra charactors in the first line.

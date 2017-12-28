@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NBear.Net</name>
+    </assembly>
+    <members>
+        <member name="T:NBear.Net.Remoting.RemotingChannelType">
+            <summary>
+            Remoting Channel Type
+            </summary>
+        </member>
+        <member name="F:NBear.Net.Remoting.RemotingChannelType.TCP">
+            <summary>
+            TCP
+            </summary>
+        </member>
+        <member name="F:NBear.Net.Remoting.RemotingChannelType.HTTP">
+            <summary>
+            HTTP
+            </summary>
+        </member>
+        <member name="T:NBear.Net.Remoting.RemotingServiceHelper">
+            <summary>
+            The Remoting Service Helper.
+            </summary>
+        </member>
+        <member name="M:NBear.Net.Remoting.RemotingServiceHelper.#ctor(NBear.Net.Remoting.RemotingChannelType,System.String,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Net.Remoting.RemotingServiceHelper"/> class.
+            </summary>
+            <param name="channelType">Type of the channel.</param>
+            <param name="serverAddress">The server address.</param>
+            <param name="serverPort">The server port.</param>
+        </member>
+        <member name="M:NBear.Net.Remoting.RemotingServiceHelper.PublishWellKnownServiceInstance(System.String,System.Type,System.MarshalByRefObject,System.Runtime.Remoting.WellKnownObjectMode)">
+            <summary>
+            Publishes the well known service instance.
+            </summary>
+            <param name="notifyName">Name of the notify.</param>
+            <param name="interfaceType">Type of the interface.</param>
+            <param name="instance">The instance.</param>
+            <param name="mode">The mode.</param>
+        </member>
+        <member name="M:NBear.Net.Remoting.RemotingServiceHelper.PublishActivatedService(System.Type)">
+            <summary>
+            Publishes the activated service.
+            </summary>
+            <param name="serviceType">Type of the service.</param>
+        </member>
+        <member name="M:NBear.Net.Remoting.RemotingServiceHelper.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="E:NBear.Net.Remoting.RemotingServiceHelper.OnLog">
+            <summary>
+            OnLog event.
+            </summary>
+        </member>
+        <member name="T:NBear.Net.Remoting.RemotingClientHelper">
+            <summary>
+            The Remoting Client Helper
+            </summary>
+        </member>
+        <member name="M:NBear.Net.Remoting.RemotingClientHelper.#ctor(NBear.Net.Remoting.RemotingChannelType,System.String,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Net.Remoting.RemotingClientHelper"/> class.
+            </summary>
+            <param name="channelType">Type of the channel.</param>
+            <param name="serverAddress">The server address.</param>
+            <param name="serverPort">The server port.</param>
+            <param name="callbackPort">The callback port.</param>
+        </member>
+        <member name="M:NBear.Net.Remoting.RemotingClientHelper.Init">
+            <summary>
+            Inits this instance.
+            </summary>
+        </member>
+        <member name="M:NBear.Net.Remoting.RemotingClientHelper.GetWellKnownClientInstance``1(System.String)">
+            <summary>
+            Gets the well known client instance.
+            </summary>
+            <param name="notifyName">Name of the notify.</param>
+            <returns>Te instance.</returns>
+        </member>
+        <member name="M:NBear.Net.Remoting.RemotingClientHelper.CreateActivatedClientInstance``1">
+            <summary>
+            Creates the activated client instance.
+            </summary>
+            <returns>Te instance.</returns>
+        </member>
+        <member name="M:NBear.Net.Remoting.RemotingClientHelper.IsClientTypeRegistered(System.Type)">
+            <summary>
+            Determines whether the specified client type is registered.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>
+            	<c>true</c> if is registered; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:NBear.Net.Remoting.RemotingClientHelper.RegisterActivatedClientType(System.Type)">
+            <summary>
+            Registers the type of the activated client.
+            </summary>
+            <param name="type">The type.</param>
+        </member>
+        <member name="M:NBear.Net.Remoting.RemotingClientHelper.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="E:NBear.Net.Remoting.RemotingClientHelper.OnLog">
+            <summary>
+            OnLog event.
+            </summary>
+        </member>
+    </members>
+</doc>

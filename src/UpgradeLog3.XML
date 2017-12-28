@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="NBearV3">
+</Property><Property Name="解决方案文件" Value="F:\soft\nbear3.6.6_src\src\NBearV3.sln">
+</Property><Property Name="Date" Value="2013年8月13日星期二">
+</Property><Property Name="Time" Value="11:41">
+</Property><Property Name="日志号" Value="3">
+</Property></Properties><Event ErrorLevel="0" Project="NBear.Common" Source="NBear.Common\NBear.Common.csproj" Description="项目文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="NBear.Common" Source="NBear.Common\NBear.Common.csproj" Description="无需转换">
+</Event><Event ErrorLevel="0" Project="NBear.Data" Source="NBear.Data\NBear.Data.csproj" Description="项目文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="NBear.Data" Source="NBear.Data\NBear.Data.csproj" Description="无需转换">
+</Event><Event ErrorLevel="0" Project="NBear.Test.UnitTests" Source="NBear.Test.UnitTests\NBear.Test.UnitTests.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="NBear.Test.UnitTests" Source="NBear.Test.UnitTests\NBear.Test.UnitTests.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="NBear.Common.Design" Source="NBear.Common.Design\NBear.Common.Design.csproj" Description="项目文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="NBear.Common.Design" Source="NBear.Common.Design\NBear.Common.Design.csproj" Description="无需转换">
+</Event><Event ErrorLevel="0" Project="NBear.Tools.DbToEntityDesign" Source="NBear.Tools.DbToEntityDesign\NBear.Tools.DbToEntityDesign.csproj" Description="项目文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="NBear.Tools.DbToEntityDesign" Source="NBear.Tools.DbToEntityDesign\NBear.Tools.DbToEntityDesign.csproj" Description="无需转换">
+</Event><Event ErrorLevel="0" Project="NBear.Net" Source="NBear.Net\NBear.Net.csproj" Description="项目文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="NBear.Net" Source="NBear.Net\NBear.Net.csproj" Description="无需转换">
+</Event><Event ErrorLevel="0" Project="NBear.IoC" Source="NBear.IoC\NBear.IoC.csproj" Description="项目文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="NBear.IoC" Source="NBear.IoC\NBear.IoC.csproj" Description="无需转换">
+</Event><Event ErrorLevel="0" Project="NBear.IoC.Hosts.ServiceHost" Source="NBear.IoC.Hosts.ServiceHost\NBear.IoC.Hosts.ServiceHost.csproj" Description="项目文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="NBear.IoC.Hosts.ServiceHost" Source="NBear.IoC.Hosts.ServiceHost\NBear.IoC.Hosts.ServiceHost.csproj" Description="无需转换">
+</Event><Event ErrorLevel="0" Project="NBear.IoC.Servers.ServiceMQServer" Source="NBear.IoC.Servers.ServiceMQServer\NBear.IoC.Servers.ServiceMQServer.csproj" Description="项目文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="NBear.IoC.Servers.ServiceMQServer" Source="NBear.IoC.Servers.ServiceMQServer\NBear.IoC.Servers.ServiceMQServer.csproj" Description="无需转换">
+</Event><Event ErrorLevel="0" Project="NBear.Web" Source="NBear.Web\NBear.Web.csproj" Description="项目文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="NBear.Web" Source="NBear.Web\NBear.Web.csproj" Description="无需转换">
+</Event><Event ErrorLevel="0" Project="NBear.Tools.EntityDesignToEntity" Source="NBear.Tools.EntityDesignToEntity\NBear.Tools.EntityDesignToEntity.csproj" Description="项目文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="NBear.Tools.EntityDesignToEntity" Source="NBear.Tools.EntityDesignToEntity\NBear.Tools.EntityDesignToEntity.csproj" Description="无需转换">
+</Event><Event ErrorLevel="0" Project="NBear.Tools.ConfigurationEncrypter" Source="NBear.Tools.ConfigurationEncrypter\NBear.Tools.ConfigurationEncrypter.csproj" Description="项目文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="NBear.Tools.ConfigurationEncrypter" Source="NBear.Tools.ConfigurationEncrypter\NBear.Tools.ConfigurationEncrypter.csproj" Description="无需转换">
+</Event><Event ErrorLevel="0" Project="NBear.Tools.EntityDesignToEntityVsPlugin" Source="NBear.Tools.EntityDesignToEntityVsPlugin\NBear.Tools.EntityDesignToEntityVsPlugin.csproj" Description="项目文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="NBear.Tools.EntityDesignToEntityVsPlugin" Source="NBear.Tools.EntityDesignToEntityVsPlugin\NBear.Tools.EntityDesignToEntityVsPlugin.csproj" Description="无需转换">
+</Event><Event ErrorLevel="0" Project="SetupNBearVsPlugin" Source="SetupNBearVsPlugin\SetupNBearVsPlugin.csproj" Description="项目文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="SetupNBearVsPlugin" Source="SetupNBearVsPlugin\SetupNBearVsPlugin.csproj" Description="无需转换">
+</Event><Event ErrorLevel="0" Project="NBear.Test.CaseTests" Source="NBear.Test.CaseTests\NBear.Test.CaseTests.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="NBear.Test.CaseTests" Source="NBear.Test.CaseTests\NBear.Test.CaseTests.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="NBear.MVP" Source="NBear.MVP\NBear.MVP.csproj" Description="项目文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="NBear.MVP" Source="NBear.MVP\NBear.MVP.csproj" Description="无需转换">
+</Event><Event ErrorLevel="0" Project="NBear.Web.Data" Source="NBear.Web.Data\NBear.Web.Data.csproj" Description="项目文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="NBear.Web.Data" Source="NBear.Web.Data\NBear.Web.Data.csproj" Description="无需转换">
+</Event><Event ErrorLevel="0" Project="" Source="NBearV3.sln" Description="解决方案文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="" Source="NBearV3.sln" Description="无需转换">
+</Event></UpgradeLog>

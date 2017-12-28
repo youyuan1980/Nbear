@@ -1,0 +1,5 @@
+F:\soft\nbear3.6.6_src\src\NBear.Common.Design\bin\Debug\NBear.Common.Design.dll
+F:\soft\nbear3.6.6_src\src\NBear.Common.Design\bin\Debug\NBear.Common.Design.pdb
+F:\soft\nbear3.6.6_src\src\NBear.Common.Design\obj\Debug\ResolveAssemblyReference.cache
+F:\soft\nbear3.6.6_src\src\NBear.Common.Design\obj\Debug\NBear.Common.Design.dll
+F:\soft\nbear3.6.6_src\src\NBear.Common.Design\obj\Debug\NBear.Common.Design.pdb

@@ -1,0 +1,8 @@
+F:\soft\nbear3.6.6_src\src\SetupNBearVsPlugin\bin\Debug\SetupNBearVsPlugin.exe
+F:\soft\nbear3.6.6_src\src\SetupNBearVsPlugin\bin\Debug\SetupNBearVsPlugin.pdb
+F:\soft\nbear3.6.6_src\src\SetupNBearVsPlugin\obj\Debug\ResolveAssemblyReference.cache
+F:\soft\nbear3.6.6_src\src\SetupNBearVsPlugin\obj\Debug\SetupNBearVsPlugin.Properties.Resources.resources
+F:\soft\nbear3.6.6_src\src\SetupNBearVsPlugin\obj\Debug\GenerateResource-ResGen.read.1.tlog
+F:\soft\nbear3.6.6_src\src\SetupNBearVsPlugin\obj\Debug\GenerateResource-ResGen.write.1.tlog
+F:\soft\nbear3.6.6_src\src\SetupNBearVsPlugin\obj\Debug\SetupNBearVsPlugin.exe
+F:\soft\nbear3.6.6_src\src\SetupNBearVsPlugin\obj\Debug\SetupNBearVsPlugin.pdb

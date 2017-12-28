@@ -1,0 +1,13 @@
+F:\soft\nbear3.6.6_src\src\NBear.Tools.DbToEntityDesign\bin\Debug\NBear.Tools.DbToEntityDesign.exe
+F:\soft\nbear3.6.6_src\src\NBear.Tools.DbToEntityDesign\bin\Debug\NBear.Tools.DbToEntityDesign.pdb
+F:\soft\nbear3.6.6_src\src\NBear.Tools.DbToEntityDesign\bin\Debug\NBear.Common.dll
+F:\soft\nbear3.6.6_src\src\NBear.Tools.DbToEntityDesign\bin\Debug\NBear.Data.dll
+F:\soft\nbear3.6.6_src\src\NBear.Tools.DbToEntityDesign\bin\Debug\NBear.Common.pdb
+F:\soft\nbear3.6.6_src\src\NBear.Tools.DbToEntityDesign\bin\Debug\NBear.Data.pdb
+F:\soft\nbear3.6.6_src\src\NBear.Tools.DbToEntityDesign\obj\Debug\ResolveAssemblyReference.cache
+F:\soft\nbear3.6.6_src\src\NBear.Tools.DbToEntityDesign\obj\Debug\NBear.Tools.EntityGen.Form1.resources
+F:\soft\nbear3.6.6_src\src\NBear.Tools.DbToEntityDesign\obj\Debug\NBear.Tools.DbToEntityDesign.Properties.Resources.resources
+F:\soft\nbear3.6.6_src\src\NBear.Tools.DbToEntityDesign\obj\Debug\GenerateResource-ResGen.read.1.tlog
+F:\soft\nbear3.6.6_src\src\NBear.Tools.DbToEntityDesign\obj\Debug\GenerateResource-ResGen.write.1.tlog
+F:\soft\nbear3.6.6_src\src\NBear.Tools.DbToEntityDesign\obj\Debug\NBear.Tools.DbToEntityDesign.exe
+F:\soft\nbear3.6.6_src\src\NBear.Tools.DbToEntityDesign\obj\Debug\NBear.Tools.DbToEntityDesign.pdb

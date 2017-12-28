@@ -1,0 +1,498 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NBear.MVP</name>
+    </assembly>
+    <members>
+        <member name="T:NBear.MVP.PresenterFactory">
+            <summary>
+            Presenter Factory
+            </summary>
+        </member>
+        <member name="M:NBear.MVP.PresenterFactory.Create">
+            <summary>
+            Creates this singleton instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.MVP.PresenterFactory.GetPresenter``1(System.Object)">
+            <summary>
+            Gets the presenter.
+            </summary>
+            <param name="view">The view.</param>
+            <returns></returns>
+        </member>
+        <member name="T:NBear.MVP.IPresenter">
+            <summary>
+            Interface of all presenters
+            </summary>
+        </member>
+        <member name="M:NBear.MVP.IPresenter.BindView(System.Object)">
+            <summary>
+            Binds the view.
+            </summary>
+            <param name="view">The view.</param>
+        </member>
+        <member name="M:NBear.MVP.IPresenter.BindModel(System.Object)">
+            <summary>
+            Binds the model.
+            </summary>
+            <param name="model">The model.</param>
+        </member>
+        <member name="P:NBear.MVP.IPresenter.TypeOfView">
+            <summary>
+            Gets the type of view.
+            </summary>
+            <value>The type of view.</value>
+        </member>
+        <member name="P:NBear.MVP.IPresenter.TypeOfModel">
+            <summary>
+            Gets the type of model.
+            </summary>
+            <value>The type of model.</value>
+        </member>
+        <member name="T:NBear.MVP.IPresenter2">
+            <summary>
+            The extended interface of all presenters
+            </summary>
+        </member>
+        <member name="M:NBear.MVP.IPresenter2.BindView(System.Object)">
+            <summary>
+            Binds the view.
+            </summary>
+            <param name="view">The view.</param>
+        </member>
+        <member name="M:NBear.MVP.IPresenter2.BindModels(System.Object[])">
+            <summary>
+            Binds the models.
+            </summary>
+            <param name="model">The models.</param>
+        </member>
+        <member name="P:NBear.MVP.IPresenter2.TypeOfView">
+            <summary>
+            Gets the type of view.
+            </summary>
+            <value>The type of view.</value>
+        </member>
+        <member name="P:NBear.MVP.IPresenter2.TypeOfModels">
+            <summary>
+            Gets the types of model.
+            </summary>
+            <value>The types of model.</value>
+        </member>
+        <member name="T:NBear.MVP.Presenter`1">
+            <summary>
+            Base class of all presenters
+            </summary>
+            <typeparam name="ViewType"></typeparam>
+        </member>
+        <member name="F:NBear.MVP.Presenter`1.view">
+            <summary>
+            The view
+            </summary>
+        </member>
+        <member name="M:NBear.MVP.Presenter`1.BindView(System.Object)">
+            <summary>
+            Binds the view.
+            </summary>
+            <param name="view">The view.</param>
+        </member>
+        <member name="M:NBear.MVP.Presenter`1.BindModels(System.Object[])">
+            <summary>
+            Binds the models.
+            </summary>
+            <param name="model">The models.</param>
+        </member>
+        <member name="P:NBear.MVP.Presenter`1.Initialized">
+            <summary>
+            Gets a value indicating whether this <see cref="T:NBear.MVP.Presenter`1"/> is initialized.
+            </summary>
+            <value><c>true</c> if initialized; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:NBear.MVP.Presenter`1.TypeOfView">
+            <summary>
+            Gets the type of the view.
+            </summary>
+            <value>The type of the view.</value>
+        </member>
+        <member name="P:NBear.MVP.Presenter`1.TypeOfModels">
+            <summary>
+            Gets the types of the model.
+            </summary>
+            <value>The types of the model.</value>
+        </member>
+        <member name="T:NBear.MVP.Presenter`2">
+            <summary>
+            Base class of all presenters
+            </summary>
+            <typeparam name="ViewType"></typeparam>
+            <typeparam name="IModelType"></typeparam>
+        </member>
+        <member name="F:NBear.MVP.Presenter`2.view">
+            <summary>
+            The view
+            </summary>
+        </member>
+        <member name="F:NBear.MVP.Presenter`2.model">
+            <summary>
+            The model
+            </summary>
+        </member>
+        <member name="M:NBear.MVP.Presenter`2.BindView(System.Object)">
+            <summary>
+            Binds the view.
+            </summary>
+            <param name="view">The view.</param>
+        </member>
+        <member name="M:NBear.MVP.Presenter`2.BindModel(System.Object)">
+            <summary>
+            Binds the model.
+            </summary>
+            <param name="model">The model.</param>
+        </member>
+        <member name="P:NBear.MVP.Presenter`2.Initialized">
+            <summary>
+            Gets a value indicating whether this <see cref="T:NBear.MVP.Presenter`2"/> is initialized.
+            Only when both view and model are binded, a presenter is initialized.
+            </summary>
+            <value><c>true</c> if initialized; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:NBear.MVP.Presenter`2.TypeOfView">
+            <summary>
+            Gets the type of the view.
+            </summary>
+            <value>The type of the view.</value>
+        </member>
+        <member name="P:NBear.MVP.Presenter`2.TypeOfModel">
+            <summary>
+            Gets the type of the model.
+            </summary>
+            <value>The type of the model.</value>
+        </member>
+        <member name="T:NBear.MVP.Presenter`3">
+            <summary>
+            Base class of all presenters
+            </summary>
+            <typeparam name="ViewType"></typeparam>
+            <typeparam name="IModelType1"></typeparam>
+            <typeparam name="IModelType2"></typeparam>
+        </member>
+        <member name="F:NBear.MVP.Presenter`3.view">
+            <summary>
+            The view
+            </summary>
+        </member>
+        <member name="F:NBear.MVP.Presenter`3.model1">
+            <summary>
+            The model 1
+            </summary>
+        </member>
+        <member name="F:NBear.MVP.Presenter`3.model2">
+            <summary>
+            The model 2
+            </summary>
+        </member>
+        <member name="M:NBear.MVP.Presenter`3.BindView(System.Object)">
+            <summary>
+            Binds the view.
+            </summary>
+            <param name="view">The view.</param>
+        </member>
+        <member name="M:NBear.MVP.Presenter`3.BindModels(System.Object[])">
+            <summary>
+            Binds the models.
+            </summary>
+            <param name="model">The models.</param>
+        </member>
+        <member name="P:NBear.MVP.Presenter`3.Initialized">
+            <summary>
+            Gets a value indicating whether this <see cref="T:NBear.MVP.Presenter`3"/> is initialized.
+            </summary>
+            <value><c>true</c> if initialized; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:NBear.MVP.Presenter`3.TypeOfView">
+            <summary>
+            Gets the type of the view.
+            </summary>
+            <value>The type of the view.</value>
+        </member>
+        <member name="P:NBear.MVP.Presenter`3.TypeOfModels">
+            <summary>
+            Gets the types of the model.
+            </summary>
+            <value>The types of the model.</value>
+        </member>
+        <member name="T:NBear.MVP.Presenter`4">
+            <summary>
+            Base class of all presenters
+            </summary>
+            <typeparam name="ViewType"></typeparam>
+            <typeparam name="IModelType1"></typeparam>
+            <typeparam name="IModelType2"></typeparam>
+            <typeparam name="IModelType3"></typeparam>
+        </member>
+        <member name="F:NBear.MVP.Presenter`4.view">
+            <summary>
+            The view
+            </summary>
+        </member>
+        <member name="F:NBear.MVP.Presenter`4.model1">
+            <summary>
+            The model 1
+            </summary>
+        </member>
+        <member name="F:NBear.MVP.Presenter`4.model2">
+            <summary>
+            The model 2
+            </summary>
+        </member>
+        <member name="F:NBear.MVP.Presenter`4.model3">
+            <summary>
+            The model 3
+            </summary>
+        </member>
+        <member name="M:NBear.MVP.Presenter`4.BindView(System.Object)">
+            <summary>
+            Binds the view.
+            </summary>
+            <param name="view">The view.</param>
+        </member>
+        <member name="M:NBear.MVP.Presenter`4.BindModels(System.Object[])">
+            <summary>
+            Binds the models.
+            </summary>
+            <param name="model">The models.</param>
+        </member>
+        <member name="P:NBear.MVP.Presenter`4.Initialized">
+            <summary>
+            Gets a value indicating whether this <see cref="T:NBear.MVP.Presenter`4"/> is initialized.
+            </summary>
+            <value><c>true</c> if initialized; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:NBear.MVP.Presenter`4.TypeOfView">
+            <summary>
+            Gets the type of the view.
+            </summary>
+            <value>The type of the view.</value>
+        </member>
+        <member name="P:NBear.MVP.Presenter`4.TypeOfModels">
+            <summary>
+            Gets the types of the model.
+            </summary>
+            <value>The types of the model.</value>
+        </member>
+        <member name="T:NBear.MVP.Presenter`5">
+            <summary>
+            Base class of all presenters
+            </summary>
+            <typeparam name="ViewType"></typeparam>
+            <typeparam name="IModelType1"></typeparam>
+            <typeparam name="IModelType2"></typeparam>
+            <typeparam name="IModelType3"></typeparam>
+            <typeparam name="IModelType4"></typeparam>
+        </member>
+        <member name="F:NBear.MVP.Presenter`5.view">
+            <summary>
+            The view
+            </summary>
+        </member>
+        <member name="F:NBear.MVP.Presenter`5.model1">
+            <summary>
+            The model 1
+            </summary>
+        </member>
+        <member name="F:NBear.MVP.Presenter`5.model2">
+            <summary>
+            The model 2
+            </summary>
+        </member>
+        <member name="F:NBear.MVP.Presenter`5.model3">
+            <summary>
+            The model 3
+            </summary>
+        </member>
+        <member name="F:NBear.MVP.Presenter`5.model4">
+            <summary>
+            The model 4
+            </summary>
+        </member>
+        <member name="M:NBear.MVP.Presenter`5.BindView(System.Object)">
+            <summary>
+            Binds the view.
+            </summary>
+            <param name="view">The view.</param>
+        </member>
+        <member name="M:NBear.MVP.Presenter`5.BindModels(System.Object[])">
+            <summary>
+            Binds the models.
+            </summary>
+            <param name="model">The models.</param>
+        </member>
+        <member name="P:NBear.MVP.Presenter`5.Initialized">
+            <summary>
+            Gets a value indicating whether this <see cref="T:NBear.MVP.Presenter`5"/> is initialized.
+            </summary>
+            <value><c>true</c> if initialized; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:NBear.MVP.Presenter`5.TypeOfView">
+            <summary>
+            Gets the type of the view.
+            </summary>
+            <value>The type of the view.</value>
+        </member>
+        <member name="P:NBear.MVP.Presenter`5.TypeOfModels">
+            <summary>
+            Gets the types of the model.
+            </summary>
+            <value>The types of the model.</value>
+        </member>
+        <member name="T:NBear.MVP.Presenter`6">
+            <summary>
+            Base class of all presenters
+            </summary>
+            <typeparam name="ViewType"></typeparam>
+            <typeparam name="IModelType1"></typeparam>
+            <typeparam name="IModelType2"></typeparam>
+            <typeparam name="IModelType3"></typeparam>
+            <typeparam name="IModelType4"></typeparam>
+            <typeparam name="IModelType5"></typeparam>
+        </member>
+        <member name="F:NBear.MVP.Presenter`6.view">
+            <summary>
+            The view
+            </summary>
+        </member>
+        <member name="F:NBear.MVP.Presenter`6.model1">
+            <summary>
+            The model 1
+            </summary>
+        </member>
+        <member name="F:NBear.MVP.Presenter`6.model2">
+            <summary>
+            The model 2
+            </summary>
+        </member>
+        <member name="F:NBear.MVP.Presenter`6.model3">
+            <summary>
+            The model 3
+            </summary>
+        </member>
+        <member name="F:NBear.MVP.Presenter`6.model4">
+            <summary>
+            The model 4
+            </summary>
+        </member>
+        <member name="F:NBear.MVP.Presenter`6.model5">
+            <summary>
+            The model 5
+            </summary>
+        </member>
+        <member name="M:NBear.MVP.Presenter`6.BindView(System.Object)">
+            <summary>
+            Binds the view.
+            </summary>
+            <param name="view">The view.</param>
+        </member>
+        <member name="M:NBear.MVP.Presenter`6.BindModels(System.Object[])">
+            <summary>
+            Binds the models.
+            </summary>
+            <param name="model">The models.</param>
+        </member>
+        <member name="P:NBear.MVP.Presenter`6.Initialized">
+            <summary>
+            Gets a value indicating whether this <see cref="T:NBear.MVP.Presenter`6"/> is initialized.
+            </summary>
+            <value><c>true</c> if initialized; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:NBear.MVP.Presenter`6.TypeOfView">
+            <summary>
+            Gets the type of the view.
+            </summary>
+            <value>The type of the view.</value>
+        </member>
+        <member name="P:NBear.MVP.Presenter`6.TypeOfModels">
+            <summary>
+            Gets the types of the model.
+            </summary>
+            <value>The types of the model.</value>
+        </member>
+        <member name="T:NBear.MVP.Presenter`7">
+            <summary>
+            Base class of all presenters
+            </summary>
+            <typeparam name="ViewType"></typeparam>
+            <typeparam name="IModelType1"></typeparam>
+            <typeparam name="IModelType2"></typeparam>
+            <typeparam name="IModelType3"></typeparam>
+            <typeparam name="IModelType4"></typeparam>
+            <typeparam name="IModelType5"></typeparam>
+            <typeparam name="IModelType6"></typeparam>
+        </member>
+        <member name="F:NBear.MVP.Presenter`7.view">
+            <summary>
+            The view
+            </summary>
+        </member>
+        <member name="F:NBear.MVP.Presenter`7.model1">
+            <summary>
+            The model 1
+            </summary>
+        </member>
+        <member name="F:NBear.MVP.Presenter`7.model2">
+            <summary>
+            The model 2
+            </summary>
+        </member>
+        <member name="F:NBear.MVP.Presenter`7.model3">
+            <summary>
+            The model 3
+            </summary>
+        </member>
+        <member name="F:NBear.MVP.Presenter`7.model4">
+            <summary>
+            The model 4
+            </summary>
+        </member>
+        <member name="F:NBear.MVP.Presenter`7.model5">
+            <summary>
+            The model 5
+            </summary>
+        </member>
+        <member name="F:NBear.MVP.Presenter`7.model6">
+            <summary>
+            The model 6
+            </summary>
+        </member>
+        <member name="M:NBear.MVP.Presenter`7.BindView(System.Object)">
+            <summary>
+            Binds the view.
+            </summary>
+            <param name="view">The view.</param>
+        </member>
+        <member name="M:NBear.MVP.Presenter`7.BindModels(System.Object[])">
+            <summary>
+            Binds the models.
+            </summary>
+            <param name="model">The models.</param>
+        </member>
+        <member name="P:NBear.MVP.Presenter`7.Initialized">
+            <summary>
+            Gets a value indicating whether this <see cref="T:NBear.MVP.Presenter`7"/> is initialized.
+            </summary>
+            <value><c>true</c> if initialized; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:NBear.MVP.Presenter`7.TypeOfView">
+            <summary>
+            Gets the type of the view.
+            </summary>
+            <value>The type of the view.</value>
+        </member>
+        <member name="P:NBear.MVP.Presenter`7.TypeOfModels">
+            <summary>
+            Gets the types of the model.
+            </summary>
+            <value>The types of the model.</value>
+        </member>
+    </members>
+</doc>

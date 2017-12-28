@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B71D2A5F-5E7D-4B16-B178-29DF6F7755C1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NBear.Data</RootNamespace>
+    <AssemblyName>NBear.Data</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>nbear.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/NBear.Data/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DBC_CHECK_PRECONDITION</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\NBear.Data.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BatchCommander.cs" />
+    <Compile Include="CacheConfiguration.cs" />
+    <Compile Include="DalBase.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="DbProvider.cs" />
+    <Compile Include="DbProviderFactory.cs" />
+    <Compile Include="Gateway.cs" />
+    <Compile Include="IPageSplit.cs" />
+    <Compile Include="IStatementFactory.cs" />
+    <Compile Include="MsAccess\AccessDbProvider.cs" />
+    <Compile Include="MsAccess\AccessPageSplit.cs" />
+    <Compile Include="MsAccess\AccessStatementFactory.cs" />
+    <Compile Include="MySql\MySqlDbProvider.cs" />
+    <Compile Include="MySql\MySqlPageSplit.cs" />
+    <Compile Include="MySql\MySqlStatementFactory.cs" />
+    <Compile Include="Oracle\OracleDbProvider.cs" />
+    <Compile Include="Oracle\OraclePageSplit.cs" />
+    <Compile Include="Oracle\OracleStatementFactory.cs" />
+    <Compile Include="PageSelector.cs" />
+    <Compile Include="PageSplit.cs" />
+    <Compile Include="ParameterCache.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DbHelper.cs" />
+    <Compile Include="SqlServer9\SqlDbProvider9.cs" />
+    <Compile Include="SqlServer9\SqlPageSplit9.cs" />
+    <Compile Include="SqlServer\SqlDbProvider.cs" />
+    <Compile Include="SqlServer\SqlPageSplit.cs" />
+    <Compile Include="SqlServer\SqlStatementFactory.cs" />
+    <Compile Include="StatementFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NBear.Common\NBear.Common.csproj">
+      <Project>{B8F80BEB-93A6-4966-842F-92E38E11082C}</Project>
+      <Name>NBear.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nbear.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
