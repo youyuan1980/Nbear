@@ -1,0 +1,3276 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NBear.Data</name>
+    </assembly>
+    <members>
+        <member name="T:NBear.Data.PageSelector`1">
+            <summary>
+            The strong typed page selector.
+            </summary>
+            <typeparam name="EntityType">the type of the entity.</typeparam>
+        </member>
+        <member name="M:NBear.Data.PageSelector`1.#ctor(NBear.Data.Gateway,NBear.Data.IPageSplit)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.PageSelector`1"/> class.
+            </summary>
+            <param name="gateway">The gateway.</param>
+            <param name="ps">The ps.</param>
+        </member>
+        <member name="M:NBear.Data.PageSelector`1.FindPage(System.Int32)">
+            <summary>
+            Finds the page.
+            </summary>
+            <param name="pageNo">The page no.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="P:NBear.Data.PageSelector`1.PageSize">
+            <summary>
+            Gets or sets the size of the page.
+            </summary>
+            <value>The size of the page.</value>
+        </member>
+        <member name="P:NBear.Data.PageSelector`1.PageCount">
+            <summary>
+            Gets the page count.
+            </summary>
+            <value>The page count.</value>
+        </member>
+        <member name="P:NBear.Data.PageSelector`1.RowCount">
+            <summary>
+            Gets the row count.
+            </summary>
+            <value>The row count.</value>
+        </member>
+        <member name="T:NBear.Data.MySql.MySqlStatementFactory">
+            <summary>
+            Common Factory to create SQL statements for SqlServer and MySql
+            </summary>
+        </member>
+        <member name="T:NBear.Data.StatementFactory">
+            <summary>
+            Base statement factory.
+            </summary>
+        </member>
+        <member name="T:NBear.Data.IStatementFactory">
+            <summary>
+            Interface of all statement factory
+            </summary>
+        </member>
+        <member name="M:NBear.Data.IStatementFactory.CreateInsertStatement(System.String,System.String[])">
+            <summary>
+            Creates the insert statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.IStatementFactory.CreateUpdateStatement(System.String,System.String,System.String[])">
+            <summary>
+            Creates the update statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The where STR.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.IStatementFactory.CreateDeleteStatement(System.String,System.String)">
+            <summary>
+            Creates the delete statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The where STR.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.IStatementFactory.CreateSelectStatement(System.String,System.String,System.String,System.String[])">
+            <summary>
+            Creates the select statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The where STR.</param>
+            <param name="orderByStr">The order by STR.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.StatementFactory.CreateInsertStatement(System.String,System.String[])">
+            <summary>
+            Creates the insert statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.StatementFactory.CreateUpdateStatement(System.String,System.String,System.String[])">
+            <summary>
+            Creates the update statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The where STR.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.StatementFactory.CreateDeleteStatement(System.String,System.String)">
+            <summary>
+            Creates the delete statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The where STR.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.StatementFactory.CreateSelectStatement(System.String,System.String,System.String,System.String[])">
+            <summary>
+            Creates the select statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The where STR.</param>
+            <param name="orderByStr">The order by STR.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.MySql.MySqlStatementFactory.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MySqlStatementFactory"/> class.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.MySql.MySqlStatementFactory.CreateInsertStatement(System.String,System.String[])">
+            <summary>
+            Creates the insert statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.MySql.MySqlStatementFactory.CreateUpdateStatement(System.String,System.String,System.String[])">
+            <summary>
+            Creates the update statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The sql STR.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.MySql.MySqlStatementFactory.CreateDeleteStatement(System.String,System.String)">
+            <summary>
+            Creates the delete statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The sql STR.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.MySql.MySqlStatementFactory.CreateSelectStatement(System.String,System.String,System.String,System.String[])">
+            <summary>
+            Creates the select statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The sql STR.</param>
+            <param name="orderByStr">The order by STR.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="T:NBear.Data.CacheConfigurationSection">
+            <summary>
+            cache config section
+            </summary>
+        </member>
+        <member name="F:NBear.Data.CacheConfigurationSection.DEFAULT_EXPIRE_SECONDS">
+            <summary>
+            The default entity cache expire seconds
+            </summary>
+        </member>
+        <member name="P:NBear.Data.CacheConfigurationSection.Enable">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:NBear.Data.CacheConfigurationSection"/> is enable.
+            </summary>
+            <value><c>true</c> if enable; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:NBear.Data.CacheConfigurationSection.CachingTables">
+            <summary>
+            Gets or sets the caching tables.
+            </summary>
+            <value>The caching tables.</value>
+        </member>
+        <member name="T:NBear.Data.MySql.MySqlPageSplit">
+            <summary>
+            MySql Page Splitter
+            </summary>
+        </member>
+        <member name="T:NBear.Data.PageSplit">
+            <summary>
+            PageSplit
+            </summary>
+        </member>
+        <member name="T:NBear.Data.IPageSplit">
+            <summary>
+            Interface of all PageSplits.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.IPageSplit.GetRowCount">
+            <summary>
+            Gets the row count.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.IPageSplit.GetPageCount">
+            <summary>
+            Gets the page count.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.IPageSplit.GetPage(System.Int32)">
+            <summary>
+            Gets the page.
+            </summary>
+            <param name="pageNo">The page no.</param>
+            <returns>DataSet</returns>
+        </member>
+        <member name="M:NBear.Data.IPageSplit.GetPageReadOnly(System.Int32)">
+            <summary>
+            Gets the page read only.
+            </summary>
+            <param name="pageNo">The page no.</param>
+            <returns>IDataReader</returns>
+        </member>
+        <member name="P:NBear.Data.IPageSplit.PageSize">
+            <summary>
+            Gets or sets the size of the page.
+            </summary>
+            <value>The size of the page.</value>
+        </member>
+        <member name="P:NBear.Data.IPageSplit.Db">
+            <summary>
+            Gets or sets the db.
+            </summary>
+            <value>The db.</value>
+        </member>
+        <member name="P:NBear.Data.IPageSplit.Where">
+            <summary>
+            Gets the where.
+            </summary>
+            <value>The where.</value>
+        </member>
+        <member name="P:NBear.Data.IPageSplit.OrderBy">
+            <summary>
+            Gets the order by.
+            </summary>
+            <value>The order by.</value>
+        </member>
+        <member name="P:NBear.Data.IPageSplit.ParamValues">
+            <summary>
+            Gets the param values.
+            </summary>
+            <value>The param values.</value>
+        </member>
+        <member name="F:NBear.Data.PageSplit.DEFAULT_PAGESIZE">
+            <summary>
+            The default page size.
+            </summary>
+        </member>
+        <member name="F:NBear.Data.PageSplit._SplitableStatementCache">
+            <summary>
+            the splittable statement cache.
+            </summary>
+        </member>
+        <member name="F:NBear.Data.PageSplit._PageSplitableSelectStatementForFirstPage">
+            <summary>
+            PageSplitableSelectStatementForFirstPage
+            </summary>
+        </member>
+        <member name="F:NBear.Data.PageSplit._PageSplitableSelectStatement">
+            <summary>
+            PageSplitableSelectStatement
+            </summary>
+        </member>
+        <member name="F:NBear.Data.PageSplit._SelectCountStatement">
+            <summary>
+            SelectCountStatement
+            </summary>
+        </member>
+        <member name="F:NBear.Data.PageSplit._PageSize">
+            <summary>
+            PageSize
+            </summary>
+        </member>
+        <member name="F:NBear.Data.PageSplit._RowCount">
+            <summary>
+            RowCount
+            </summary>
+        </member>
+        <member name="F:NBear.Data.PageSplit._DB">
+            <summary>
+            the db
+            </summary>
+        </member>
+        <member name="F:NBear.Data.PageSplit.paramValues">
+            <summary>
+            the param values
+            </summary>
+        </member>
+        <member name="F:NBear.Data.PageSplit.dbHelper">
+            <summary>
+            the related db helper.
+            </summary>
+        </member>
+        <member name="F:NBear.Data.PageSplit._Where">
+            <summary>
+            The where
+            </summary>
+        </member>
+        <member name="F:NBear.Data.PageSplit._OrderBy">
+            <summary>
+            The order by
+            </summary>
+        </member>
+        <member name="M:NBear.Data.PageSplit.PrepareCommand(System.Int32)">
+            <summary>
+            Prepares the command.
+            </summary>
+            <param name="pageNo">The page no.</param>
+            <returns>The prepared cmd.</returns>
+        </member>
+        <member name="M:NBear.Data.PageSplit.ConstructPageSplitableSelectStatement(System.String,System.String)">
+            <summary>
+            Constructs the page splitable select statement.
+            </summary>
+            <param name="sql">The SQL.</param>
+            <param name="keyColumn">The DEFAULT_KEY column.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.PageSplit.ConstructPageSplitableSelectStatementForFirstPage(System.String,System.String)">
+            <summary>
+            Constructs the page splitable select statement for first page.
+            </summary>
+            <param name="sql">The SQL.</param>
+            <param name="keyColumn">The DEFAULT_KEY column.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.PageSplit.ConstructSelectCountStatement(System.String)">
+            <summary>
+            Constructs the select count statement.
+            </summary>
+            <param name="sql">The SQL.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.PageSplit.#ctor(NBear.Data.Database,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.PageSplit"/> class.
+            </summary>
+            <param name="db">The db.</param>
+            <param name="selectStatement">The select statement.</param>
+            <param name="keyColumn">The DEFAULT_KEY column.</param>
+        </member>
+        <member name="M:NBear.Data.PageSplit.GetRowCount">
+            <summary>
+            Gets the row count.
+            </summary>
+            <returns>The row count</returns>
+        </member>
+        <member name="M:NBear.Data.PageSplit.GetPageCount">
+            <summary>
+            Gets the page count.
+            </summary>
+            <returns>The page count.</returns>
+        </member>
+        <member name="M:NBear.Data.PageSplit.GetPage(System.Int32)">
+            <summary>
+            Gets the page.
+            </summary>
+            <param name="pageNo">The page no.</param>
+            <returns>DataSet</returns>
+        </member>
+        <member name="M:NBear.Data.PageSplit.GetPageReadOnly(System.Int32)">
+            <summary>
+            Gets the page read only.
+            </summary>
+            <param name="pageNo">The page no.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="P:NBear.Data.PageSplit.PageSize">
+            <summary>
+            Gets or sets the size of the page.
+            </summary>
+            <value>The size of the page.</value>
+        </member>
+        <member name="P:NBear.Data.PageSplit.Db">
+            <summary>
+            Gets or sets the db.
+            </summary>
+            <value>The db.</value>
+        </member>
+        <member name="P:NBear.Data.PageSplit.Where">
+            <summary>
+            Gets the where.
+            </summary>
+            <value>The where.</value>
+        </member>
+        <member name="P:NBear.Data.PageSplit.OrderBy">
+            <summary>
+            Gets the order by.
+            </summary>
+            <value>The order by.</value>
+        </member>
+        <member name="M:NBear.Data.MySql.MySqlPageSplit.FormatInsideParams(System.String)">
+            <summary>
+            Formats the inside params.
+            </summary>
+            <param name="where"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.MySql.MySqlPageSplit.ConstructPageSplitableSelectStatement(System.String,System.String)">
+            <summary>
+            construct an page splitable select statement from a simple select statement like 
+            " select [columns] from [table_name] sql [condition] order by [order_list] "
+            </summary>
+        </member>
+        <member name="M:NBear.Data.MySql.MySqlPageSplit.ConstructPageSplitableSelectStatementForFirstPage(System.String,System.String)">
+            <summary>
+            ConstructPageSplitableSelectStatementForFirstPage
+            </summary>
+            <param name="sql">sql</param>
+            <param name="keyColumn">keyColumn</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.MySql.MySqlPageSplit.ConstructSelectCountStatement(System.String)">
+            <summary>
+            ConstructSelectCountStatement
+            </summary>
+            <param name="sql">sql</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.MySql.MySqlPageSplit.#ctor(NBear.Data.Database,System.String,System.String,System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:MySqlPageSplit"/> class.
+            </summary>
+            <param name="db">The db.</param>
+            <param name="selectStatement">The select statement.</param>
+            <param name="keyColumn">The DEFAULT_KEY column.</param>
+            <param name="paramValues">The param values.</param>
+        </member>
+        <member name="T:NBear.Data.MsAccess.AccessDbProvider">
+            <summary>
+            <para>Represents a Access Server Database Provider.</para>
+            </summary>
+            <remarks> 
+            <para>
+            Internally uses Access Server .NET Managed Provider from Microsoft (System.Data.OleDb) to connect to the database.
+            </para>  
+            </remarks>
+        </member>
+        <member name="T:NBear.Data.DbProvider">
+            <summary>
+            The base class of all db providers.
+            </summary>
+        </member>
+        <member name="F:NBear.Data.DbProvider.dbProviderFactory">
+            <summary>
+            The db provider factory.
+            </summary>
+        </member>
+        <member name="F:NBear.Data.DbProvider.dbConnStrBuilder">
+            <summary>
+            The db connection string builder
+            </summary>
+        </member>
+        <member name="M:NBear.Data.DbProvider.#ctor(System.String,System.Data.Common.DbProviderFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:DbProvider"/> class.
+            </summary>
+            <param name="connStr">The conn STR.</param>
+            <param name="dbProviderFactory">The db provider factory.</param>
+        </member>
+        <member name="M:NBear.Data.DbProvider.AdjustParameter(System.Data.Common.DbParameter)">
+            <summary>
+            Adjusts the parameter.
+            </summary>
+            <param name="param">The param.</param>
+        </member>
+        <member name="M:NBear.Data.DbProvider.CreatePageSplit(NBear.Data.Database,System.String,System.String,System.Object[])">
+            <summary>
+            Creates the page split.
+            </summary>
+            <param name="db">The db.</param>
+            <param name="selectStatement">The select statement.</param>
+            <param name="keyColumn">The DEFAULT_KEY column.</param>
+            <param name="paramValues">The param values.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.DbProvider.CreateStatementFactory">
+            <summary>
+            Creates the SQL statement factory.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.DbProvider.DiscoverParams(System.String)">
+            <summary>
+            Discovers params from SQL text.
+            </summary>
+            <param name="sql">The full or part of SQL text.</param>
+            <returns>The discovered params.</returns>
+        </member>
+        <member name="M:NBear.Data.DbProvider.BuildParameterName(System.String)">
+            <summary>
+            Builds the name of the parameter.
+            </summary>
+            <param name="name">The name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.DbProvider.BuildColumnName(System.String)">
+            <summary>
+            Builds the name of the column.
+            </summary>
+            <param name="name">The name.</param>
+            <returns></returns>
+        </member>
+        <member name="P:NBear.Data.DbProvider.ConnectionString">
+            <summary>
+            Gets the connection string.
+            </summary>
+            <value>The connection string.</value>
+        </member>
+        <member name="P:NBear.Data.DbProvider.DbProviderFactory">
+            <summary>
+            Gets the db provider factory.
+            </summary>
+            <value>The db provider factory.</value>
+        </member>
+        <member name="P:NBear.Data.DbProvider.SelectLastInsertedRowAutoIDStatement">
+            <summary>
+            Gets the select last inserted row auto ID statement.
+            </summary>
+            <value>The select last inserted row auto ID statement.</value>
+        </member>
+        <member name="P:NBear.Data.DbProvider.SupportADO20Transaction">
+            <summary>
+            Gets a value indicating whether [support AD o20 transaction].
+            </summary>
+            <value>
+            	<c>true</c> if [support AD o20 transaction]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:NBear.Data.DbProvider.ParamPrefix">
+            <summary>
+            Gets the param prefix.
+            </summary>
+            <value>The param prefix.</value>
+        </member>
+        <member name="P:NBear.Data.DbProvider.LeftToken">
+            <summary>
+            Gets the left token of table name or column name.
+            </summary>
+            <value>The left token.</value>
+        </member>
+        <member name="P:NBear.Data.DbProvider.RightToken">
+            <summary>
+            Gets the right token of table name or column name.
+            </summary>
+            <value>The right token.</value>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessDbProvider.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.MsAccess.AccessDbProvider"/> class.
+            </summary>
+            <param name="connStr">The conn STR.</param>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessDbProvider.DiscoverParams(System.String)">
+            <summary>
+            Discovers the params.
+            </summary>
+            <param name="sql">The sql.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessDbProvider.AdjustParameter(System.Data.Common.DbParameter)">
+            <summary>
+            Adjust Db Parameter value
+            </summary>
+            <param name="param"></param>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessDbProvider.CreatePageSplit(NBear.Data.Database,System.String,System.String,System.Object[])">
+            <summary>
+            When overridden in a derived class, creates an <see cref="T:NBear.Data.IPageSplit"/> for a SQL page splitable select query.
+            </summary>
+            <param name="db"></param>
+            <param name="selectStatement">The text of the basic select query for all rows.</param>
+            <param name="keyColumn">The sigle main DEFAULT_KEY of the query.</param>
+            <param name="paramValues">The param values of the query.</param>
+            <returns>
+            The <see cref="T:NBear.Data.IPageSplit"/> for the SQL query.
+            </returns>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessDbProvider.CreateStatementFactory">
+            <summary>
+            Creates the SQL statement factory.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessDbProvider.BuildParameterName(System.String)">
+            <summary>
+            Builds the name of the parameter.
+            </summary>
+            <param name="name">The name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessDbProvider.BuildColumnName(System.String)">
+            <summary>
+            Builds the name of the column.
+            </summary>
+            <param name="name">The name.</param>
+            <returns></returns>
+        </member>
+        <member name="P:NBear.Data.MsAccess.AccessDbProvider.SelectLastInsertedRowAutoIDStatement">
+            <summary>
+            Gets the select last inserted row auto ID statement.
+            </summary>
+            <value>The select last inserted row auto ID statement.</value>
+        </member>
+        <member name="P:NBear.Data.MsAccess.AccessDbProvider.SupportADO20Transaction">
+            <summary>
+            Gets a value indicating whether [support AD o20 transaction].
+            </summary>
+            <value>
+            	<c>true</c> if [support AD o20 transaction]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:NBear.Data.MsAccess.AccessDbProvider.LeftToken">
+            <summary>
+            Gets the left token of table name or column name.
+            </summary>
+            <value>The left token.</value>
+        </member>
+        <member name="P:NBear.Data.MsAccess.AccessDbProvider.RightToken">
+            <summary>
+            Gets the right token of table name or column name.
+            </summary>
+            <value>The right token.</value>
+        </member>
+        <member name="P:NBear.Data.MsAccess.AccessDbProvider.ParamPrefix">
+            <summary>
+            Gets the param prefix.
+            </summary>
+            <value>The param prefix.</value>
+        </member>
+        <member name="T:NBear.Data.Oracle.OracleStatementFactory">
+            <summary>
+            Common Factory to create SQL statements for SqlServer and MS Access
+            </summary>
+        </member>
+        <member name="M:NBear.Data.Oracle.OracleStatementFactory.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SqlStatementFactory"/> class.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.Oracle.OracleStatementFactory.CreateInsertStatement(System.String,System.String[])">
+            <summary>
+            Creates the insert statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.Oracle.OracleStatementFactory.CreateUpdateStatement(System.String,System.String,System.String[])">
+            <summary>
+            Creates the update statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The sql STR.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.Oracle.OracleStatementFactory.CreateDeleteStatement(System.String,System.String)">
+            <summary>
+            Creates the delete statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The sql STR.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.Oracle.OracleStatementFactory.CreateSelectStatement(System.String,System.String,System.String,System.String[])">
+            <summary>
+            Creates the select statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The sql STR.</param>
+            <param name="orderByStr">The order by STR.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="T:NBear.Data.MySql.MySqlDbProvider">
+            <summary>
+            <para>Represents a MySql Database Provider.</para>
+            </summary>
+            <remarks> 
+            <para>
+            Internally uses MySql Server .NET Managed Provider from Microsoft (System.Data.Odbc) to connect to the database.
+            </para>  
+            </remarks>
+        </member>
+        <member name="M:NBear.Data.MySql.MySqlDbProvider.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.MySql.MySqlDbProvider"/> class.
+            </summary>
+            <param name="connStr">The conn STR.</param>
+        </member>
+        <member name="M:NBear.Data.MySql.MySqlDbProvider.DiscoverParams(System.String)">
+            <summary>
+            Discovers the params.
+            </summary>
+            <param name="sql">The sql.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.MySql.MySqlDbProvider.AdjustParameter(System.Data.Common.DbParameter)">
+            <summary>
+            Adjust Db Parameter value
+            </summary>
+            <param name="param"></param>
+        </member>
+        <member name="M:NBear.Data.MySql.MySqlDbProvider.CreatePageSplit(NBear.Data.Database,System.String,System.String,System.Object[])">
+            <summary>
+            When overridden in a derived class, creates an <see cref="T:NBear.Data.IPageSplit"/> for a SQL page splitable select query.
+            </summary>
+            <param name="db"></param>
+            <param name="selectStatement">The text of the basic select query for all rows.</param>
+            <param name="keyColumn">The sigle main DEFAULT_KEY of the query.</param>
+            <param name="paramValues">The param values of the query.</param>
+            <returns>
+            The <see cref="T:NBear.Data.IPageSplit"/> for the SQL query.
+            </returns>
+        </member>
+        <member name="M:NBear.Data.MySql.MySqlDbProvider.CreateStatementFactory">
+            <summary>
+            Creates the SQL statement factory.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.MySql.MySqlDbProvider.BuildParameterName(System.String)">
+            <summary>
+            Builds the name of the parameter.
+            </summary>
+            <param name="name">The name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.MySql.MySqlDbProvider.BuildColumnName(System.String)">
+            <summary>
+            Builds the name of the column.
+            </summary>
+            <param name="name">The name.</param>
+            <returns></returns>
+        </member>
+        <member name="P:NBear.Data.MySql.MySqlDbProvider.SelectLastInsertedRowAutoIDStatement">
+            <summary>
+            Gets the select last inserted row auto ID statement.
+            </summary>
+            <value>The select last inserted row auto ID statement.</value>
+        </member>
+        <member name="P:NBear.Data.MySql.MySqlDbProvider.SupportADO20Transaction">
+            <summary>
+            Gets a value indicating whether [support AD o20 transaction].
+            </summary>
+            <value>
+            	<c>true</c> if [support AD o20 transaction]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:NBear.Data.MySql.MySqlDbProvider.LeftToken">
+            <summary>
+            Gets the left token of table name or column name.
+            </summary>
+            <value>The left token.</value>
+        </member>
+        <member name="P:NBear.Data.MySql.MySqlDbProvider.RightToken">
+            <summary>
+            Gets the right token of table name or column name.
+            </summary>
+            <value>The right token.</value>
+        </member>
+        <member name="P:NBear.Data.MySql.MySqlDbProvider.ParamPrefix">
+            <summary>
+            Gets the param prefix.
+            </summary>
+            <value>The param prefix.</value>
+        </member>
+        <member name="T:NBear.Data.SqlServer9.SqlPageSplit9">
+            <summary>
+            PageSplit implementation for SQL Server 9.x (2005)
+            </summary>
+        </member>
+        <member name="T:NBear.Data.SqlServer.SqlPageSplit">
+            <summary>
+            Sql Page Splitter
+            </summary>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlPageSplit.FormatInsideParams(System.String)">
+            <summary>
+            Formats the inside params.
+            </summary>
+            <param name="where">The where.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlPageSplit.ConstructPageSplitableSelectStatement(System.String,System.String)">
+            <summary>
+            construct an page splitable select statement from a simple select statement like 
+            " select [columns] from [table_name] sql [condition] order by [order_list] "
+            </summary>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlPageSplit.ConstructPageSplitableSelectStatementForFirstPage(System.String,System.String)">
+            <summary>
+            ConstructPageSplitableSelectStatementForFirstPage
+            </summary>
+            <param name="sql">sql</param>
+            <param name="keyColumn">keyColumn</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlPageSplit.ConstructSelectCountStatement(System.String)">
+            <summary>
+            ConstructSelectCountStatement
+            </summary>
+            <param name="sql">sql</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlPageSplit.#ctor(NBear.Data.Database,System.String,System.String,System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.SqlServer.SqlPageSplit"/> class.
+            </summary>
+            <param name="db">The db.</param>
+            <param name="selectStatement">The select statement.</param>
+            <param name="keyColumn">The DEFAULT_KEY column.</param>
+            <param name="paramValues">The param values.</param>
+        </member>
+        <member name="M:NBear.Data.SqlServer9.SqlPageSplit9.#ctor(NBear.Data.Database,System.String,System.String,System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:SqlPageSplit9"/> class.
+            </summary>
+            <param name="db"></param>
+            <param name="selectStatement"></param>
+            <param name="keyColumn"></param>
+            <param name="paramValues"></param>
+        </member>
+        <member name="M:NBear.Data.SqlServer9.SqlPageSplit9.ConstructPageSplitableSelectStatement(System.String,System.String)">
+            <summary>
+            construct an page splitable select statement from a simple select statement like 
+            " select [columns] from [table_name] sql [condition] order by [order_list] "
+            </summary>
+            <param name="sql"></param>
+            <param name="keyColumn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.SqlServer9.SqlPageSplit9.ConstructPageSplitableSelectStatementForFirstPage(System.String,System.String)">
+            <summary>
+            ConstructPageSplitableSelectStatementForFirstPage
+            </summary>
+            <param name="sql">sql</param>
+            <param name="keyColumn">keyColumn</param>
+            <returns></returns>
+        </member>
+        <member name="T:NBear.Data.MsAccess.AccessPageSplit">
+            <summary>
+            MS Access Page Splitter
+            </summary>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessPageSplit.FormatInsideParams(System.String)">
+            <summary>
+            Formats the inside params.
+            </summary>
+            <param name="where"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessPageSplit.ConstructPageSplitableSelectStatement(System.String,System.String)">
+            <summary>
+            construct an page splitable select statement from a simple select statement like 
+            " select [columns] from [table_name] sql [condition] order by [order_list] "
+            </summary>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessPageSplit.ConstructPageSplitableSelectStatementForFirstPage(System.String,System.String)">
+            <summary>
+            ConstructPageSplitableSelectStatementForFirstPage
+            </summary>
+            <param name="sql">sql</param>
+            <param name="keyColumn">keyColumn</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessPageSplit.ConstructSelectCountStatement(System.String)">
+            <summary>
+            ConstructSelectCountStatement
+            </summary>
+            <param name="sql">sql</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessPageSplit.#ctor(NBear.Data.Database,System.String,System.String,System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:AccessPageSplit"/> class.
+            </summary>
+            <param name="db">The db.</param>
+            <param name="selectStatement">The select statement.</param>
+            <param name="keyColumn">The DEFAULT_KEY column.</param>
+            <param name="paramValues">The param values.</param>
+        </member>
+        <member name="T:NBear.Data.DbProviderFactory">
+            <summary>
+            The db provider factory.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.DbProviderFactory.CreateDbProvider(System.String,System.String,System.String)">
+            <summary>
+            Creates the db provider.
+            </summary>
+            <param name="assemblyName">Name of the assembly.</param>
+            <param name="className">Name of the class.</param>
+            <param name="connStr">The conn STR.</param>
+            <returns>The db provider.</returns>
+        </member>
+        <member name="M:NBear.Data.DbProviderFactory.CreateDbProvider(System.String)">
+            <summary>
+            Creates the db provider.
+            </summary>
+            <param name="connStrName">Name of the conn STR.</param>
+            <returns>The db provider.</returns>
+        </member>
+        <member name="P:NBear.Data.DbProviderFactory.Default">
+            <summary>
+            Gets the default db provider.
+            </summary>
+            <value>The default.</value>
+        </member>
+        <member name="T:NBear.Data.SqlServer.SqlDbProvider">
+            <summary>
+            <para>Represents a Sql Server Database.</para>
+            </summary>
+            <remarks> 
+            <para>
+            Internally uses Sql Server .NET Managed Provider from Microsoft (System.Data.SqlClient) to connect to the database.
+            </para>  
+            </remarks>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlDbProvider.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.SqlServer.SqlDbProvider"/> class.
+            </summary>
+            <param name="connStr">The conn STR.</param>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlDbProvider.CreatePageSplit(NBear.Data.Database,System.String,System.String,System.Object[])">
+            <summary>
+            Creates the page split.
+            </summary>
+            <param name="db">The db.</param>
+            <param name="selectStatement">The select statement.</param>
+            <param name="keyColumn">The DEFAULT_KEY column.</param>
+            <param name="paramValues">The param values.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlDbProvider.DiscoverParams(System.String)">
+            <summary>
+            Discovers the params.
+            </summary>
+            <param name="sql">The sql.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlDbProvider.CreateStatementFactory">
+            <summary>
+            Creates the SQL statement factory.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlDbProvider.AdjustParameter(System.Data.Common.DbParameter)">
+            <summary>
+            Adjusts the parameter.
+            </summary>
+            <param name="param">The param.</param>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlDbProvider.BuildParameterName(System.String)">
+            <summary>
+            Builds the name of the parameter.
+            </summary>
+            <param name="name">The name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlDbProvider.BuildColumnName(System.String)">
+            <summary>
+            Builds the name of the column.
+            </summary>
+            <param name="name">The name.</param>
+            <returns></returns>
+        </member>
+        <member name="P:NBear.Data.SqlServer.SqlDbProvider.SelectLastInsertedRowAutoIDStatement">
+            <summary>
+            Gets the select last inserted row auto ID statement.
+            </summary>
+            <value>The select last inserted row auto ID statement.</value>
+        </member>
+        <member name="P:NBear.Data.SqlServer.SqlDbProvider.SupportADO20Transaction">
+            <summary>
+            Gets a value indicating whether [support AD o20 transaction].
+            </summary>
+            <value>
+            	<c>true</c> if [support AD o20 transaction]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:NBear.Data.SqlServer.SqlDbProvider.LeftToken">
+            <summary>
+            Gets the left token of table name or column name.
+            </summary>
+            <value>The left token.</value>
+        </member>
+        <member name="P:NBear.Data.SqlServer.SqlDbProvider.RightToken">
+            <summary>
+            Gets the right token of table name or column name.
+            </summary>
+            <value>The right token.</value>
+        </member>
+        <member name="P:NBear.Data.SqlServer.SqlDbProvider.ParamPrefix">
+            <summary>
+            Gets the param prefix.
+            </summary>
+            <value>The param prefix.</value>
+        </member>
+        <member name="T:NBear.Data.DatabaseType">
+            <summary>
+            Type of a database.
+            </summary>
+        </member>
+        <member name="F:NBear.Data.DatabaseType.SqlServer">
+            <summary>
+            Common SqlServer, including SQL Server 7.X, 8.X and 9.X
+            </summary>
+        </member>
+        <member name="F:NBear.Data.DatabaseType.MsAccess">
+            <summary>
+            Access
+            </summary>
+        </member>
+        <member name="F:NBear.Data.DatabaseType.Other">
+            <summary>
+            Other
+            </summary>
+        </member>
+        <member name="F:NBear.Data.DatabaseType.SqlServer9">
+            <summary>
+            SQL Server 9.X (2005) only
+            </summary>
+        </member>
+        <member name="F:NBear.Data.DatabaseType.Oracle">
+            <summary>
+            Oracle
+            </summary>
+        </member>
+        <member name="F:NBear.Data.DatabaseType.MySql">
+            <summary>
+            MySql
+            </summary>
+        </member>
+        <member name="T:NBear.Data.Gateway">
+            <summary>
+            The data access gateway.
+            </summary>
+        </member>
+        <member name="F:NBear.Data.Gateway.Default">
+            <summary>
+            Get the default gateway, which mapping to the default Database.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.Gateway.SetDefaultDatabase(NBear.Data.DatabaseType,System.String)">
+            <summary>
+            Sets the default database.
+            </summary>
+            <param name="dt">The dt.</param>
+            <param name="connStr">The conn STR.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.CreateDbProvider(NBear.Data.DatabaseType,System.String)">
+            <summary>
+            Creates the db provider.
+            </summary>
+            <param name="dt">The dt.</param>
+            <param name="connStr">The conn STR.</param>
+            <returns>The db provider.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.SetDefaultDatabase(System.String,System.String,System.String)">
+            <summary>
+            Sets the default database.
+            </summary>
+            <param name="assemblyName">Name of the assembly.</param>
+            <param name="className">Name of the class.</param>
+            <param name="connStr">The conn STR.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.SetDefaultDatabase(System.String)">
+            <summary>
+            Sets the default database.
+            </summary>
+            <param name="connStrName">Name of the conn STR.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.#cctor">
+            <summary>
+            Initializes the <see cref="T:NBear.Data.Gateway"/> class.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.Gateway.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.Gateway"/> class.
+            </summary>
+            <param name="connStrName">Name of the conn STR.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.#ctor(NBear.Data.Database)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.Gateway"/> class.
+            </summary>
+            <param name="db">The db.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.#ctor(NBear.Data.DatabaseType,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.Gateway"/> class.
+            </summary>
+            <param name="dt">The dt.</param>
+            <param name="connStr">The conn STR.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.Gateway"/> class.
+            </summary>
+            <param name="assemblyName">Name of the assembly.</param>
+            <param name="className">Name of the class.</param>
+            <param name="connStr">The conn STR.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.RegisterSqlLogger(NBear.Common.LogHandler)">
+            <summary>
+            Registers the SQL logger.
+            </summary>
+            <param name="handler">The handler.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.UnregisterSqlLogger(NBear.Common.LogHandler)">
+            <summary>
+            Unregisters the SQL logger.
+            </summary>
+            <param name="handler">The handler.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.BeginTransaction">
+            <summary>
+            Begins the transaction.
+            </summary>
+            <returns>The begined transaction.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.BeginTransaction(System.Data.IsolationLevel)">
+            <summary>
+            Begins the transaction.
+            </summary>
+            <param name="il">The il.</param>
+            <returns>The begined transaction.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.CloseTransaction(System.Data.Common.DbTransaction)">
+            <summary>
+            Closes the transaction.
+            </summary>
+            <param name="tran">The tran.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.BuildDbParamName(System.String)">
+            <summary>
+            Builds the name of the db param.
+            </summary>
+            <param name="name">The name.</param>
+            <returns>The name of the db param</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.BuildDbColumnName(System.String)">
+            <summary>
+            Builds the name of the db column.
+            </summary>
+            <param name="name">The name.</param>
+            <returns>The name of the db column</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.OnQueryHandler(System.Type,System.String,System.String,System.String,NBear.Common.Entity)">
+            <summary>
+            The query handler.
+            </summary>
+            <param name="returnEntityType">Type of the return entity.</param>
+            <param name="propertyName">Name of the property.</param>
+            <param name="where">The where.</param>
+            <param name="orderBy">The order by.</param>
+            <param name="baseEntity">The base entity.</param>
+            <returns>The query result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.CreateEntity``1">
+            <summary>
+            Creates and initiate an entity.
+            </summary>
+            <returns>The entity.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.BeginBatchGateway(System.Int32)">
+            <summary>
+            Begins the batch gateway.
+            </summary>
+            <param name="batchSize">Size of the batch.</param>
+            <returns>The begined batch gateway.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.BeginBatchGateway(System.Int32,System.Data.Common.DbTransaction)">
+            <summary>
+            Begins the batch gateway.
+            </summary>
+            <param name="batchSize">Size of the batch.</param>
+            <param name="tran">The tran.</param>
+            <returns>The begined batch gateway.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.BeginBatch(System.Int32)">
+            <summary>
+            Begins the gateway as a batch gateway.
+            </summary>
+            <param name="batchSize">Size of the batch.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.BeginBatch(System.Int32,System.Data.Common.DbTransaction)">
+            <summary>
+            Begins the gateway as a batch gateway.
+            </summary>
+            <param name="batchSize">Size of the batch.</param>
+            <param name="tran">The tran.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.EndBatch">
+            <summary>
+            Ends the batch.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.Gateway.ExecutePendingBatchOperations">
+            <summary>
+            Executes the pending batch operations.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.Gateway.SelectDataSet(System.String,System.Object[])">
+            <summary>
+            Selects the data set.
+            </summary>
+            <param name="cmdText">The CMD text.</param>
+            <param name="paramValues">The param values.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.SelectDataReader(System.String,System.Object[])">
+            <summary>
+            Selects the data reader.
+            </summary>
+            <param name="cmdText">The CMD text.</param>
+            <param name="paramValues">The param values.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.ExecuteNonQuery(System.String,System.Object[])">
+            <summary>
+            Executes the non query.
+            </summary>
+            <param name="cmdText">The CMD text.</param>
+            <param name="paramValues">The param values.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.ExecuteNonQuery(System.String,System.Data.Common.DbTransaction,System.Object[])">
+            <summary>
+            Executes the non query.
+            </summary>
+            <param name="cmdText">The CMD text.</param>
+            <param name="tran">The tran.</param>
+            <param name="paramValues">The param values.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.SelectScalar``1(System.String,System.Object[])">
+            <summary>
+            Selects the scalar.
+            </summary>
+            <param name="cmdText">The CMD text.</param>
+            <param name="paramValues">The param values.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.ExecuteStoredProcedure(System.String,System.String[],System.Object[])">
+            <summary>
+            Executes the stored procedure.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.ExecuteStoredProcedure(System.String,System.String[],System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            Executes the stored procedure.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="tran">The tran.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.ExecuteStoredProcedureReadOnly(System.String,System.String[],System.Object[])">
+            <summary>
+            Executes the stored procedure read only.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.ExecuteStoredProcedureReadOnly(System.String,System.String[],System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            Executes the stored procedure read only.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="tran">The tran.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.ExecuteStoredProcedureScalar(System.String,System.String[],System.Object[])">
+            <summary>
+            Executes the stored procedure scalar.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.ExecuteStoredProcedureScalar(System.String,System.String[],System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            Executes the stored procedure scalar.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="tran">The tran.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.ExecuteStoredProcedureNonQuery(System.String,System.String[],System.Object[])">
+            <summary>
+            Executes the stored procedure non query.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.ExecuteStoredProcedureNonQuery(System.String,System.String[],System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            Executes the stored procedure non query.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="tran">The tran.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.ExecuteStoredProcedure(System.String,System.String[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@)">
+            <summary>
+            Executes the stored procedure.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="outParamNames">The out param names.</param>
+            <param name="outParamTypes">The out param types.</param>
+            <param name="outParamResults">The out param results.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.ExecuteStoredProcedure(System.String,System.String[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@,System.Data.Common.DbTransaction)">
+            <summary>
+            Executes the stored procedure.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="outParamNames">The out param names.</param>
+            <param name="outParamTypes">The out param types.</param>
+            <param name="outParamResults">The out param results.</param>
+            <param name="tran">The tran.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.ExecuteStoredProcedureReadOnly(System.String,System.String[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@)">
+            <summary>
+            Executes the stored procedure read only.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="outParamNames">The out param names.</param>
+            <param name="outParamTypes">The out param types.</param>
+            <param name="outParamResults">The out param results.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.ExecuteStoredProcedureReadOnly(System.String,System.String[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@,System.Data.Common.DbTransaction)">
+            <summary>
+            Executes the stored procedure read only.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="outParamNames">The out param names.</param>
+            <param name="outParamTypes">The out param types.</param>
+            <param name="outParamResults">The out param results.</param>
+            <param name="tran">The tran.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.ExecuteStoredProcedureScalar(System.String,System.String[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@)">
+            <summary>
+            Executes the stored procedure scalar.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="outParamNames">The out param names.</param>
+            <param name="outParamTypes">The out param types.</param>
+            <param name="outParamResults">The out param results.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.ExecuteStoredProcedureScalar(System.String,System.String[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@,System.Data.Common.DbTransaction)">
+            <summary>
+            Executes the stored procedure scalar.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="outParamNames">The out param names.</param>
+            <param name="outParamTypes">The out param types.</param>
+            <param name="outParamResults">The out param results.</param>
+            <param name="tran">The tran.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.ExecuteStoredProcedureNonQuery(System.String,System.String[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@)">
+            <summary>
+            Executes the stored procedure non query.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="outParamNames">The out param names.</param>
+            <param name="outParamTypes">The out param types.</param>
+            <param name="outParamResults">The out param results.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.ExecuteStoredProcedureNonQuery(System.String,System.String[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@,System.Data.Common.DbTransaction)">
+            <summary>
+            Executes the stored procedure non query.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="outParamNames">The out param names.</param>
+            <param name="outParamTypes">The out param types.</param>
+            <param name="outParamResults">The out param results.</param>
+            <param name="tran">The tran.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.Find``1(System.Object[])">
+            <summary>
+            Finds the specified pk values.
+            </summary>
+            <param name="pkValues">The pk values.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.Find``1(NBear.Common.WhereClip)">
+            <summary>
+            Finds the specified where.
+            </summary>
+            <param name="where">The where.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.Exists``1(System.Object[])">
+            <summary>
+            Whether entity exists.
+            </summary>
+            <param name="pkValues">The pk values.</param>
+            <returns>Whether existing.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.Exists``1(NBear.Common.WhereClip)">
+            <summary>
+            Whether entity exists.
+            </summary>
+            <param name="where">The where.</param>
+            <returns>Whether existing.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.FindArray``1(System.String,System.Object[])">
+            <summary>
+            Finds the array.
+            </summary>
+            <param name="sql">The SQL.</param>
+            <param name="paramValues">The param values.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.FindArray``1(NBear.Common.WhereClip,NBear.Common.OrderByClip)">
+            <summary>
+            Finds the array.
+            </summary>
+            <param name="where">The where.</param>
+            <param name="orderBy">The order by.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.FindArray``1(NBear.Common.OrderByClip)">
+            <summary>
+            Finds the array.
+            </summary>
+            <param name="orderBy">The order by.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.FindArray``1(NBear.Common.WhereClip)">
+            <summary>
+            Finds the array.
+            </summary>
+            <param name="where">The where.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.FindArray``1">
+            <summary>
+            Finds the array.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.FindArray``1(NBear.Common.EntityConfiguration,System.String,NBear.Common.WhereClip,NBear.Common.OrderByClip)">
+            <summary>
+            Finds the array.
+            </summary>
+            <param name="ec">The ec.</param>
+            <param name="viewName">Name of the view.</param>
+            <param name="where">The where.</param>
+            <param name="orderBy">The order by.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.FindDataTable``1(NBear.Common.WhereClip,NBear.Common.OrderByClip)">
+            <summary>
+            Finds the data table.
+            </summary>
+            <param name="where">The where.</param>
+            <param name="orderBy">The order by.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.FindArrayByStoredProcedure``1(System.String,System.String[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@,System.Data.Common.DbTransaction)">
+            <summary>
+            Finds the array by stored procedure.
+            </summary>
+            <param name="storedProcName">Name of the stored proc.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="outParamNames">The out param names.</param>
+            <param name="outParamTypes">The out param types.</param>
+            <param name="outParamResults">The out param results.</param>
+            <param name="tran">The tran.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.FindArrayByStoredProcedure``1(System.String,System.String[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@)">
+            <summary>
+            Finds the array by stored procedure.
+            </summary>
+            <param name="storedProcName">Name of the stored proc.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="outParamNames">The out param names.</param>
+            <param name="outParamTypes">The out param types.</param>
+            <param name="outParamResults">The out param results.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.FindArrayByStoredProcedure``1(System.String,System.String[],System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            Finds the array by stored procedure.
+            </summary>
+            <param name="storedProcName">Name of the stored proc.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="tran">The tran.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.FindArrayByStoredProcedure``1(System.String,System.String[],System.Object[])">
+            <summary>
+            Finds the array by stored procedure.
+            </summary>
+            <param name="storedProcName">Name of the stored proc.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.GetPageSelector``1(NBear.Common.WhereClip,NBear.Common.OrderByClip,System.Int32)">
+            <summary>
+            Gets the page selector.
+            </summary>
+            <param name="where">The where.</param>
+            <param name="orderBy">The order by.</param>
+            <param name="pageSize">Size of the page.</param>
+            <returns>The page selector.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.Count``1(NBear.Common.WhereClip,NBear.Common.PropertyItem,System.Boolean)">
+            <summary>
+            Counts the specified where.
+            </summary>
+            <param name="where">The where.</param>
+            <param name="property">The property.</param>
+            <param name="isDistinct">if set to <c>true</c> [is distinct].</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.Count``1(NBear.Common.WhereClip)">
+            <summary>
+            Counts the specified where.
+            </summary>
+            <param name="where">The where.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.Max``1(NBear.Common.WhereClip,NBear.Common.PropertyItem)">
+            <summary>
+            Maxes the specified where.
+            </summary>
+            <param name="where">The where.</param>
+            <param name="property">The property.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.Max``1(NBear.Common.WhereClip,NBear.Common.PropertyItemParam)">
+            <summary>
+            Maxes the specified where.
+            </summary>
+            <param name="where">The where.</param>
+            <param name="property">The property.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.Min``1(NBear.Common.WhereClip,NBear.Common.PropertyItem)">
+            <summary>
+            Mins the specified where.
+            </summary>
+            <param name="where">The where.</param>
+            <param name="property">The property.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.Min``1(NBear.Common.WhereClip,NBear.Common.PropertyItemParam)">
+            <summary>
+            Mins the specified where.
+            </summary>
+            <param name="where">The where.</param>
+            <param name="property">The property.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.Sum``1(NBear.Common.WhereClip,NBear.Common.PropertyItem)">
+            <summary>
+            Sums the specified where.
+            </summary>
+            <param name="where">The where.</param>
+            <param name="property">The property.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.Sum``1(NBear.Common.WhereClip,NBear.Common.PropertyItemParam)">
+            <summary>
+            Sums the specified where.
+            </summary>
+            <param name="where">The where.</param>
+            <param name="property">The property.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.Avg``1(NBear.Common.WhereClip,NBear.Common.PropertyItem)">
+            <summary>
+            Avgs the specified where.
+            </summary>
+            <param name="where">The where.</param>
+            <param name="property">The property.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.Avg``1(NBear.Common.WhereClip,NBear.Common.PropertyItemParam)">
+            <summary>
+            Avgs the specified where.
+            </summary>
+            <param name="where">The where.</param>
+            <param name="property">The property.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.FindSinglePropertyArray``1(NBear.Common.WhereClip,NBear.Common.OrderByClip,NBear.Common.PropertyItem)">
+            <summary>
+            Finds the single property array.
+            </summary>
+            <param name="where">The where.</param>
+            <param name="orderBy">The order by.</param>
+            <param name="property">The property.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.FindScalar``1(NBear.Common.WhereClip,NBear.Common.OrderByClip,NBear.Common.PropertyItem)">
+            <summary>
+            Finds the scalar.
+            </summary>
+            <param name="where">The where.</param>
+            <param name="orderBy">The order by.</param>
+            <param name="property">The property.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.Create``1(``0,System.Data.Common.DbTransaction)">
+            <summary>
+            Creates the specified obj.
+            </summary>
+            <param name="obj">The obj.</param>
+            <param name="tran">The tran.</param>
+            <returns>The auto incrememtal column value. If there is no auto column, the value is 0.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.Create``1(``0)">
+            <summary>
+            Creates the specified obj.
+            </summary>
+            <param name="obj">The obj.</param>
+            <returns>The auto incrememtal column value. If there is no auto column, the value is 0.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.Update``1(``0,System.Data.Common.DbTransaction)">
+            <summary>
+            Updates the specified obj.
+            </summary>
+            <param name="obj">The obj.</param>
+            <param name="tran">The tran.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.Update``1(``0)">
+            <summary>
+            Updates the specified obj.
+            </summary>
+            <param name="obj">The obj.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.Save``1(``0,System.Data.Common.DbTransaction)">
+            <summary>
+            Saves the specified obj.
+            </summary>
+            <param name="obj">The obj.</param>
+            <param name="tran">The tran.</param>
+            <returns>The auto incrememtal column value. If there is no auto column or the entity is already persisted, the value is 0.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.Save``1(``0)">
+            <summary>
+            Saves the specified obj.
+            </summary>
+            <param name="obj">The obj.</param>
+            <returns>The auto incrememtal column value. If there is no auto column or the entity is already persisted, the value is 0.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.Delete``1(System.Data.Common.DbTransaction,System.Object[])">
+            <summary>
+            Deletes the specified tran.
+            </summary>
+            <param name="tran">The tran.</param>
+            <param name="pkValues">The pk values.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.Delete``1(System.Object[])">
+            <summary>
+            Deletes the specified pk values.
+            </summary>
+            <param name="pkValues">The pk values.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.Delete``1(``0,System.Data.Common.DbTransaction)">
+            <summary>
+            Deletes the specified obj.
+            </summary>
+            <param name="obj">The obj.</param>
+            <param name="tran">The tran.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.Delete``1(``0)">
+            <summary>
+            Deletes the specified obj.
+            </summary>
+            <param name="obj">The obj.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.Delete``1(NBear.Common.WhereClip,System.Data.Common.DbTransaction)">
+            <summary>
+            Batch delete.
+            </summary>
+            <param name="where">The where.</param>
+            <param name="tran">The tran.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.BatchDelete``1(NBear.Common.WhereClip,System.Data.Common.DbTransaction)">
+            <summary>
+            Batches the delete.
+            </summary>
+            <param name="where">The where.</param>
+            <param name="tran">The tran.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.BatchDelete``1(NBear.Common.WhereClip)">
+            <summary>
+            Batch delete.
+            </summary>
+            <param name="where">The where.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.Delete``1(NBear.Common.WhereClip)">
+            <summary>
+            Batch Deletes the specified where.
+            </summary>
+            <param name="where">The where.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.Update``1(NBear.Common.PropertyItem[],System.Object[],NBear.Common.WhereClip,System.Data.Common.DbTransaction)">
+            <summary>
+            Batch update.
+            </summary>
+            <param name="properties">The properties.</param>
+            <param name="values">The values.</param>
+            <param name="where">The where.</param>
+            <param name="tran">The tran.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.BatchUpdate``1(NBear.Common.PropertyItem[],System.Object[],NBear.Common.WhereClip,System.Data.Common.DbTransaction)">
+            <summary>
+            Batches the update.
+            </summary>
+            <param name="properties">The properties.</param>
+            <param name="values">The values.</param>
+            <param name="where">The where.</param>
+            <param name="tran">The tran.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.BatchUpdate``1(NBear.Common.PropertyItem[],System.Object[],NBear.Common.WhereClip)">
+            <summary>
+            Batch update.
+            </summary>
+            <param name="properties">The properties.</param>
+            <param name="values">The values.</param>
+            <param name="where">The where.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.Update``1(NBear.Common.PropertyItem[],System.Object[],NBear.Common.WhereClip)">
+            <summary>
+            Batches the update.
+            </summary>
+            <param name="properties">The properties.</param>
+            <param name="values">The values.</param>
+            <param name="where">The where.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.ComputeCacheKey(System.String,NBear.Common.WhereClip)">
+            <summary>
+            Computes the cache key.
+            </summary>
+            <param name="customPrefix">The custom prefix.</param>
+            <param name="where">The where.</param>
+            <returns>The cache key.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.ComputeCacheKey(System.String,NBear.Common.WhereClip,NBear.Common.OrderByClip)">
+            <summary>
+            Computes the cache key.
+            </summary>
+            <param name="customPrefix">The custom prefix.</param>
+            <param name="where">The where.</param>
+            <param name="orderBy">The order by.</param>
+            <returns>The cache key.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.ComputeCacheKey(System.String,System.String[],System.Object[])">
+            <summary>
+            Computes the cache key.
+            </summary>
+            <param name="storedProcedureName">Name of the stored procedure.</param>
+            <param name="inParamNames">The in param names.</param>
+            <param name="inParamValues">The in param values.</param>
+            <returns>The cache key.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.GetTableCacheExpireSeconds(System.String)">
+            <summary>
+            Gets the table cache expire seconds.
+            </summary>
+            <param name="tableOrViewName">Name of the table or view.</param>
+            <returns>The cache key.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.TurnOnCache">
+            <summary>
+            Turns on the cache of this gateway.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.Gateway.TurnOffCache">
+            <summary>
+            Turns off the cache of this gateway.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.Gateway.AddCache(System.String,System.Object,System.Int32)">
+            <summary>
+            Adds object into the cache.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+            <param name="expireAfterSeconds">The expire after seconds.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.GetCache(System.String)">
+            <summary>
+            Gets the cache.
+            </summary>
+            <param name="key">The key.</param>
+            <returns>The cached object, if not exists, return null.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.RemoveCache(System.String)">
+            <summary>
+            Removes the cache.
+            </summary>
+            <param name="key">The key.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.RemoveCaches(System.String)">
+            <summary>
+            Removes all the caches related to specified table, view or stored procedure.
+            </summary>
+            <param name="keyPrefix">Name of the table view or stored proc.</param>
+        </member>
+        <member name="M:NBear.Data.Gateway.RemoveCaches``1">
+            <summary>
+            Removes the caches.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.Gateway.InSubQuery``1(NBear.Common.PropertyItem,NBear.Common.PropertyItem,NBear.Common.WhereClip)">
+            <summary>
+            Ins the sub query.
+            </summary>
+            <param name="leftProperty">The left property.</param>
+            <param name="rightProperty">The right property.</param>
+            <param name="where">The where condition.</param>
+            <returns>The In Sub Query Where Clip.</returns>
+        </member>
+        <member name="M:NBear.Data.Gateway.ToFlatWhereClip(NBear.Common.WhereClip,NBear.Common.EntityConfiguration)">
+            <summary>
+            To flat where clip.
+            </summary>
+            <param name="where">The where.</param>
+            <param name="ec">The ec.</param>
+            <returns></returns>
+        </member>
+        <member name="P:NBear.Data.Gateway.Db">
+            <summary>
+            Gets the db.
+            </summary>
+            <value>The db.</value>
+        </member>
+        <member name="P:NBear.Data.Gateway.DbHelper">
+            <summary>
+            Gets the db helper.
+            </summary>
+            <value>The db helper.</value>
+        </member>
+        <member name="P:NBear.Data.Gateway.IsCacheTurnedOn">
+            <summary>
+            Gets a value indicating whether this instance is cache turned on.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is cache turned on; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:NBear.Data.DbParameterCache">
+            <summary>
+            The db param cache.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.DbParameterCache.#ctor(NBear.Data.Database)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.DbParameterCache"/> class.
+            </summary>
+            <param name="db">The db.</param>
+        </member>
+        <member name="M:NBear.Data.DbParameterCache.IsCached(System.String)">
+            <summary>
+            Determines whether the specified key is cached.
+            </summary>
+            <param name="key">The key.</param>
+            <returns>
+            	<c>true</c> if the specified key is cached; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:NBear.Data.DbParameterCache.AddParametersFromCache(System.String,System.Data.Common.DbCommand,System.Data.DbType[],System.Object[])">
+            <summary>
+            Adds the parameters from cache.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="cmd">The CMD.</param>
+            <param name="types">The types.</param>
+            <param name="values">The values.</param>
+        </member>
+        <member name="M:NBear.Data.DbParameterCache.CreateAndCacheParameters(System.String,System.Data.Common.DbCommand,System.String[],System.Data.DbType[],System.Object[])">
+            <summary>
+            Creates the and cache parameters.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="cmd">The CMD.</param>
+            <param name="names">The names.</param>
+            <param name="types">The types.</param>
+            <param name="values">The values.</param>
+        </member>
+        <member name="T:NBear.Data.Database">
+            <summary>
+            As a DAAB like database object.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.Database.ParseParamNames(System.String)">
+            <summary>
+            Parses the param names.
+            </summary>
+            <param name="sql">The SQL.</param>
+            <returns></returns>
+        </member>
+        <member name="F:NBear.Data.Database.Default">
+            <summary>
+            Get the default database, a default database is mapping the last connection string in config file, and can be modified manually.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.Database.#cctor">
+            <summary>
+            Initializes the <see cref="T:Database"/> class.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.Database.CloseConnection(System.Data.Common.DbCommand)">
+            <summary>
+            Closes the connection.
+            </summary>
+            <param name="command">The command.</param>
+        </member>
+        <member name="M:NBear.Data.Database.CloseConnection(System.Data.Common.DbConnection)">
+            <summary>
+            Closes the connection.
+            </summary>
+            <param name="conn">The conn.</param>
+        </member>
+        <member name="M:NBear.Data.Database.CloseConnection(System.Data.Common.DbTransaction)">
+            <summary>
+            Closes the connection.
+            </summary>
+            <param name="tran">The tran.</param>
+        </member>
+        <member name="M:NBear.Data.Database.#ctor(NBear.Data.DbProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.Database"/> class.
+            </summary>
+            <param name="dbProvider">The db provider.</param>
+        </member>
+        <member name="M:NBear.Data.Database.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.Database"/> class.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.Database.GetConnection">
+            <summary>
+            Gets the connection.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.Database.GetConnection(System.Boolean)">
+            <summary>
+            Gets the connection.
+            </summary>
+            <param name="tryOpen">if set to <c>true</c> [try open].</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.Database.CreateConnection">
+            <summary>
+            <para>When overridden in a derived class, gets the connection for this database.</para>
+            <seealso cref="T:System.Data.Common.DbConnection"/>        
+            </summary>
+            <returns>
+            <para>The <see cref="T:System.Data.Common.DbConnection"/> for this database.</para>
+            </returns>
+        </member>
+        <member name="M:NBear.Data.Database.CreateConnection(System.Boolean)">
+            <summary>
+            <para>When overridden in a derived class, gets the connection for this database.</para>
+            <seealso cref="T:System.Data.Common.DbConnection"/>        
+            </summary>
+            <returns>
+            <para>The <see cref="T:System.Data.Common.DbConnection"/> for this database.</para>
+            </returns>
+        </member>
+        <member name="M:NBear.Data.Database.GetStoredProcCommand(System.String)">
+            <summary>
+            <para>When overridden in a derived class, creates a <see cref="T:System.Data.Common.DbCommand"/> for a stored procedure.</para>
+            </summary>
+            <param name="storedProcedureName"><para>The name of the stored procedure.</para></param>
+            <returns><para>The <see cref="T:System.Data.Common.DbCommand"/> for the stored procedure.</para></returns>       
+        </member>
+        <member name="M:NBear.Data.Database.GetSqlStringCommand(System.String)">
+            <summary>
+            <para>When overridden in a derived class, creates an <see cref="T:System.Data.Common.DbCommand"/> for a SQL query.</para>
+            </summary>
+            <param name="query"><para>The text of the query.</para></param>        
+            <returns><para>The <see cref="T:System.Data.Common.DbCommand"/> for the SQL query.</para></returns>        
+        </member>
+        <member name="M:NBear.Data.Database.GetDataAdapter">
+            <summary>
+            Gets a DbDataAdapter with Standard update behavior.
+            </summary>
+            <returns>A <see cref="T:System.Data.Common.DbDataAdapter"/>.</returns>
+            <seealso cref="T:System.Data.Common.DbDataAdapter"/>
+        </member>
+        <member name="M:NBear.Data.Database.GetPageSplit(System.String,System.String,System.Object[])">
+            <summary>
+            <para>Creates an <see cref="T:NBear.Data.IPageSplit"/> for a SQL page splitable select query.</para>
+            </summary>
+            <param name="selectStatement"><para>The text of the basic select query for all rows.</para></param>        
+            <param name="keyColumn"><para>The sigle main DEFAULT_KEY of the query.</para></param>        
+            <param name="paramValues"><para>The param values of the query.</para></param>        
+            <returns><para>The <see cref="T:NBear.Data.IPageSplit"/> for the SQL query.</para></returns>        
+        </member>
+        <member name="M:NBear.Data.Database.GetStatementFactory">
+            <summary>
+            Gets the statement factory.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.Database.LoadDataSet(System.Data.Common.DbTransaction,System.Data.CommandType,System.String,System.Data.DataSet,System.String[])">
+            <summary>
+            <para>Loads a <see cref="T:System.Data.DataSet"/> from command text in a transaction.</para>
+            </summary>
+            <param name="transaction">
+            <para>The <see cref="T:System.Data.IDbTransaction"/> to execute the command in.</para>
+            </param>
+            <param name="commandType">
+            <para>One of the <see cref="T:System.Data.CommandType"/> values.</para>
+            </param>
+            <param name="commandText">
+            <para>The command text to execute.</para>
+            </param>
+            <param name="dataSet">
+            <para>The <see cref="T:System.Data.DataSet"/> to fill.</para>
+            </param>
+            <param name="tableNames">
+            <para>An array of table name mappings for the <see cref="T:System.Data.DataSet"/>.</para>
+            </param>
+        </member>
+        <member name="M:NBear.Data.Database.ExecuteReader(System.Data.CommandType,System.String)">
+            <summary>
+            <para>Executes the <paramref name="commandText"/> interpreted as specified by the <paramref name="commandType"/> and returns an <see cref="T:System.Data.IDataReader"></see> through which the result can be read.
+            It is the responsibility of the caller to close the connection and reader when finished.</para>
+            </summary>
+            <param name="commandType">
+            <para>One of the <see cref="T:System.Data.CommandType"/> values.</para>
+            </param>
+            <param name="commandText">
+            <para>The command text to execute.</para>
+            </param>
+            <returns>
+            <para>An <see cref="T:System.Data.IDataReader"/> object.</para>
+            </returns>        
+        </member>
+        <member name="M:NBear.Data.Database.ExecuteReader(System.Data.Common.DbTransaction,System.Data.CommandType,System.String)">
+            <summary>
+            <para>Executes the <paramref name="commandText"/> interpreted as specified by the <paramref name="commandType"/> within the given 
+            <paramref name="transaction"/> and returns an <see cref="T:System.Data.IDataReader"></see> through which the result can be read.
+            It is the responsibility of the caller to close the connection and reader when finished.</para>
+            </summary>
+            <param name="transaction">
+            <para>The <see cref="T:System.Data.IDbTransaction"/> to execute the command within.</para>
+            </param>
+            <param name="commandType">
+            <para>One of the <see cref="T:System.Data.CommandType"/> values.</para>
+            </param>
+            <param name="commandText">
+            <para>The command text to execute.</para>
+            </param>
+            <returns>
+            <para>An <see cref="T:System.Data.IDataReader"/> object.</para>
+            </returns>        
+        </member>
+        <member name="M:NBear.Data.Database.LoadDataSet(System.Data.Common.DbCommand,System.Data.DataSet,System.String)">
+            <summary>
+            <para>Executes the <paramref name="command"/> and adds a new <see cref="T:System.Data.DataTable"></see> to the existing <see cref="T:System.Data.DataSet"></see>.</para>
+            </summary>
+            <param name="command">
+            <para>The <see cref="T:System.Data.Common.DbCommand"/> to execute.</para>
+            </param>
+            <param name="dataSet">
+            <para>The <see cref="T:System.Data.DataSet"/> to load.</para>
+            </param>
+            <param name="tableName">
+            <para>The name for the new <see cref="T:System.Data.DataTable"/> to add to the <see cref="T:System.Data.DataSet"/>.</para>
+            </param>        
+            <exception cref="T:System.ArgumentNullException">Any input parameter was <see langword="null"/> (<b>Nothing</b> in Visual Basic)</exception>
+            <exception cref="T:System.ArgumentException">tableName was an empty string</exception>
+        </member>
+        <member name="M:NBear.Data.Database.LoadDataSet(System.Data.Common.DbCommand,System.Data.DataSet,System.String,System.Data.Common.DbTransaction)">
+            <summary>
+            <para>Executes the <paramref name="command"/> within the given <paramref name="transaction"/> and adds a new <see cref="T:System.Data.DataTable"></see> to the existing <see cref="T:System.Data.DataSet"></see>.</para>
+            </summary>
+            <param name="command">
+            <para>The <see cref="T:System.Data.Common.DbCommand"/> to execute.</para>
+            </param>
+            <param name="dataSet">
+            <para>The <see cref="T:System.Data.DataSet"/> to load.</para>
+            </param>
+            <param name="tableName">
+            <para>The name for the new <see cref="T:System.Data.DataTable"/> to add to the <see cref="T:System.Data.DataSet"/>.</para>
+            </param>
+            <param name="transaction">
+            <para>The <see cref="T:System.Data.IDbTransaction"/> to execute the command within.</para>
+            </param>        
+            <exception cref="T:System.ArgumentNullException">Any input parameter was <see langword="null"/> (<b>Nothing</b> in Visual Basic).</exception>
+            <exception cref="T:System.ArgumentException">tableName was an empty string.</exception>
+        </member>
+        <member name="M:NBear.Data.Database.LoadDataSet(System.Data.Common.DbCommand,System.Data.DataSet,System.String[])">
+            <summary>
+            <para>Loads a <see cref="T:System.Data.DataSet"/> from a <see cref="T:System.Data.Common.DbCommand"/>.</para>
+            </summary>
+            <param name="command">
+            <para>The command to execute to fill the <see cref="T:System.Data.DataSet"/>.</para>
+            </param>
+            <param name="dataSet">
+            <para>The <see cref="T:System.Data.DataSet"/> to fill.</para>
+            </param>
+            <param name="tableNames">
+            <para>An array of table name mappings for the <see cref="T:System.Data.DataSet"/>.</para>
+            </param>
+        </member>
+        <member name="M:NBear.Data.Database.LoadDataSet(System.Data.Common.DbCommand,System.Data.DataSet,System.String[],System.Data.Common.DbTransaction)">
+            <summary>
+            <para>Loads a <see cref="T:System.Data.DataSet"/> from a <see cref="T:System.Data.Common.DbCommand"/> in  a transaction.</para>
+            </summary>
+            <param name="command">
+            <para>The command to execute to fill the <see cref="T:System.Data.DataSet"/>.</para>
+            </param>
+            <param name="dataSet">
+            <para>The <see cref="T:System.Data.DataSet"/> to fill.</para>
+            </param>
+            <param name="tableNames">
+            <para>An array of table name mappings for the <see cref="T:System.Data.DataSet"/>.</para>
+            </param>
+            <param name="transaction">
+            <para>The <see cref="T:System.Data.IDbTransaction"/> to execute the command in.</para>
+            </param>
+        </member>
+        <member name="M:NBear.Data.Database.LoadDataSet(System.Data.CommandType,System.String,System.Data.DataSet,System.String[])">
+            <summary>
+            <para>Loads a <see cref="T:System.Data.DataSet"/> from command text.</para>
+            </summary>
+            <param name="commandType">
+            <para>One of the <see cref="T:System.Data.CommandType"/> values.</para>
+            </param>
+            <param name="commandText">
+            <para>The command text to execute.</para>
+            </param>
+            <param name="dataSet">
+            <para>The <see cref="T:System.Data.DataSet"/> to fill.</para>
+            </param>
+            <param name="tableNames">
+            <para>An array of table name mappings for the <see cref="T:System.Data.DataSet"/>.</para>
+            </param>
+        </member>
+        <member name="M:NBear.Data.Database.ExecuteDataSet(System.Data.Common.DbCommand)">
+            <summary>
+            <para>Executes the <paramref name="command"/> and returns the results in a new <see cref="T:System.Data.DataSet"/>.</para>
+            </summary>
+            <param name="command"><para>The <see cref="T:System.Data.Common.DbCommand"/> to execute.</para></param>
+            <returns>A <see cref="T:System.Data.DataSet"/> with the results of the <paramref name="command"/>.</returns>        
+        </member>
+        <member name="M:NBear.Data.Database.ExecuteDataSet(System.Data.Common.DbCommand,System.Data.Common.DbTransaction)">
+            <summary>
+            <para>Executes the <paramref name="command"/> as part of the <paramref name="transaction"/> and returns the results in a new <see cref="T:System.Data.DataSet"/>.</para>
+            </summary>
+            <param name="command"><para>The <see cref="T:System.Data.Common.DbCommand"/> to execute.</para></param>
+            <param name="transaction">
+            <para>The <see cref="T:System.Data.IDbTransaction"/> to execute the command within.</para>
+            </param>
+            <returns>A <see cref="T:System.Data.DataSet"/> with the results of the <paramref name="command"/>.</returns>        
+        </member>
+        <member name="M:NBear.Data.Database.ExecuteDataSet(System.Data.CommandType,System.String)">
+            <summary>
+            <para>Executes the <paramref name="commandText"/> interpreted as specified by the <paramref name="commandType"/> and returns the results in a new <see cref="T:System.Data.DataSet"/>.</para>
+            </summary>
+            <param name="commandType">
+            <para>One of the <see cref="T:System.Data.CommandType"/> values.</para>
+            </param>
+            <param name="commandText">
+            <para>The command text to execute.</para>
+            </param>
+            <returns>
+            <para>A <see cref="T:System.Data.DataSet"/> with the results of the <paramref name="commandText"/>.</para>
+            </returns>
+        </member>
+        <member name="M:NBear.Data.Database.ExecuteDataSet(System.Data.Common.DbTransaction,System.Data.CommandType,System.String)">
+            <summary>
+            <para>Executes the <paramref name="commandText"/> as part of the given <paramref name="transaction"/> and returns the results in a new <see cref="T:System.Data.DataSet"/>.</para>
+            </summary>
+            <param name="transaction">
+            <para>The <see cref="T:System.Data.IDbTransaction"/> to execute the command within.</para>
+            </param>
+            <param name="commandType">
+            <para>One of the <see cref="T:System.Data.CommandType"/> values.</para>
+            </param>
+            <param name="commandText">
+            <para>The command text to execute.</para>
+            </param>
+            <returns>
+            <para>A <see cref="T:System.Data.DataSet"/> with the results of the <paramref name="commandText"/>.</para>
+            </returns>
+        </member>
+        <member name="M:NBear.Data.Database.ExecuteScalar(System.Data.Common.DbCommand)">
+            <summary>
+            <para>Executes the <paramref name="command"/> and returns the first column of the first row in the result set returned by the query. Extra columns or rows are ignored.</para>
+            </summary>
+            <param name="command">
+            <para>The command that contains the query to execute.</para>
+            </param>
+            <returns>
+            <para>The first column of the first row in the result set.</para>
+            </returns>
+            <seealso cref="M:System.Data.IDbCommand.ExecuteScalar"/>
+        </member>
+        <member name="M:NBear.Data.Database.ExecuteScalar(System.Data.Common.DbCommand,System.Data.Common.DbTransaction)">
+            <summary>
+            <para>Executes the <paramref name="command"/> within a <paramref name="transaction"/>, and returns the first column of the first row in the result set returned by the query. Extra columns or rows are ignored.</para>
+            </summary>
+            <param name="command">
+            <para>The command that contains the query to execute.</para>
+            </param>
+            <param name="transaction">
+            <para>The <see cref="T:System.Data.IDbTransaction"/> to execute the command within.</para>
+            </param>
+            <returns>
+            <para>The first column of the first row in the result set.</para>
+            </returns>
+            <seealso cref="M:System.Data.IDbCommand.ExecuteScalar"/>
+        </member>
+        <member name="M:NBear.Data.Database.ExecuteScalar(System.Data.CommandType,System.String)">
+            <summary>
+            <para>Executes the <paramref name="commandText"/> interpreted as specified by the <paramref name="commandType"/>  and returns the first column of the first row in the result set returned by the query. Extra columns or rows are ignored.</para>
+            </summary>
+            <param name="commandType">
+            <para>One of the <see cref="T:System.Data.CommandType"/> values.</para>
+            </param>
+            <param name="commandText">
+            <para>The command text to execute.</para>
+            </param>
+            <returns>
+            <para>The first column of the first row in the result set.</para>
+            </returns>
+            <seealso cref="M:System.Data.IDbCommand.ExecuteScalar"/>
+        </member>
+        <member name="M:NBear.Data.Database.ExecuteScalar(System.Data.Common.DbTransaction,System.Data.CommandType,System.String)">
+            <summary>
+            <para>Executes the <paramref name="commandText"/> interpreted as specified by the <paramref name="commandType"/> 
+            within the given <paramref name="transaction"/> and returns the first column of the first row in the result set returned by the query. Extra columns or rows are ignored.</para>
+            </summary>
+            <param name="transaction">
+            <para>The <see cref="T:System.Data.IDbTransaction"/> to execute the command within.</para>
+            </param>
+            <param name="commandType">
+            <para>One of the <see cref="T:System.Data.CommandType"/> values.</para>
+            </param>
+            <param name="commandText">
+            <para>The command text to execute.</para>
+            </param>
+            <returns>
+            <para>The first column of the first row in the result set.</para>
+            </returns>
+            <seealso cref="M:System.Data.IDbCommand.ExecuteScalar"/>
+        </member>
+        <member name="M:NBear.Data.Database.ExecuteNonQuery(System.Data.Common.DbCommand)">
+            <summary>
+            <para>Executes the <paramref name="command"/> and returns the number of rows affected.</para>
+            </summary>
+            <param name="command">
+            <para>The command that contains the query to execute.</para>
+            </param>       
+            <seealso cref="M:System.Data.IDbCommand.ExecuteScalar"/>
+        </member>
+        <member name="M:NBear.Data.Database.ExecuteNonQuery(System.Data.Common.DbCommand,System.Data.Common.DbTransaction)">
+            <summary>
+            <para>Executes the <paramref name="command"/> within the given <paramref name="transaction"/>, and returns the number of rows affected.</para>
+            </summary>
+            <param name="command">
+            <para>The command that contains the query to execute.</para>
+            </param>
+            <param name="transaction">
+            <para>The <see cref="T:System.Data.IDbTransaction"/> to execute the command within.</para>
+            </param>
+            <seealso cref="M:System.Data.IDbCommand.ExecuteScalar"/>
+        </member>
+        <member name="M:NBear.Data.Database.ExecuteNonQuery(System.Data.CommandType,System.String)">
+            <summary>
+            <para>Executes the <paramref name="commandText"/> interpreted as specified by the <paramref name="commandType"/> and returns the number of rows affected.</para>
+            </summary>
+            <param name="commandType">
+            <para>One of the <see cref="T:System.Data.CommandType"/> values.</para>
+            </param>
+            <param name="commandText">
+            <para>The command text to execute.</para>
+            </param>
+            <returns>
+            <para>The number of rows affected.</para>
+            </returns>
+            <seealso cref="M:System.Data.IDbCommand.ExecuteScalar"/>
+        </member>
+        <member name="M:NBear.Data.Database.ExecuteNonQuery(System.Data.Common.DbTransaction,System.Data.CommandType,System.String)">
+            <summary>
+            <para>Executes the <paramref name="commandText"/> interpreted as specified by the <paramref name="commandType"/> as part of the given <paramref name="transaction"/> and returns the number of rows affected.</para>
+            </summary>
+            <param name="transaction">
+            <para>The <see cref="T:System.Data.IDbTransaction"/> to execute the command within.</para>
+            </param>
+            <param name="commandType">
+            <para>One of the <see cref="T:System.Data.CommandType"/> values.</para>
+            </param>
+            <param name="commandText">
+            <para>The command text to execute.</para>
+            </param>
+            <returns>
+            <para>The number of rows affected</para>
+            </returns>
+            <seealso cref="M:System.Data.IDbCommand.ExecuteScalar"/>
+        </member>
+        <member name="M:NBear.Data.Database.ExecuteReader(System.Data.Common.DbCommand)">
+            <summary>
+            <para>Executes the <paramref name="command"/> and returns an <see cref="T:System.Data.IDataReader"></see> through which the result can be read.
+            It is the responsibility of the caller to close the connection and reader when finished.</para>
+            </summary>
+            <param name="command">
+            <para>The command that contains the query to execute.</para>
+            </param>
+            <returns>
+            <para>An <see cref="T:System.Data.IDataReader"/> object.</para>
+            </returns>        
+        </member>
+        <member name="M:NBear.Data.Database.ExecuteReader(System.Data.Common.DbCommand,System.Data.Common.DbTransaction)">
+            <summary>
+            <para>Executes the <paramref name="command"/> within a transaction and returns an <see cref="T:System.Data.IDataReader"></see> through which the result can be read.
+            It is the responsibility of the caller to close the connection and reader when finished.</para>
+            </summary>
+            <param name="command">
+            <para>The command that contains the query to execute.</para>
+            </param>
+            <param name="transaction">
+            <para>The <see cref="T:System.Data.IDbTransaction"/> to execute the command within.</para>
+            </param>
+            <returns>
+            <para>An <see cref="T:System.Data.IDataReader"/> object.</para>
+            </returns>        
+        </member>
+        <member name="M:NBear.Data.Database.BeginTransaction">
+            <summary>
+            Begins the transaction.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.Database.BeginTransaction(System.Data.IsolationLevel)">
+            <summary>
+            Begins the transaction.
+            </summary>
+            <param name="il">The il.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.Database.AddParameter(System.Data.Common.DbCommand,System.String,System.Data.DbType,System.Int32,System.Data.ParameterDirection,System.Boolean,System.Byte,System.Byte,System.String,System.Data.DataRowVersion,System.Object)">
+            <summary>
+            Adds a new In <see cref="T:System.Data.Common.DbParameter"/> object to the given <paramref name="command"/>.
+            </summary>
+            <param name="command">The command to add the parameter.</param>
+            <param name="name"><para>The name of the parameter.</para></param>
+            <param name="dbType"><para>One of the <see cref="T:System.Data.DbType"/> values.</para></param>
+            <param name="size"><para>The maximum size of the data within the column.</para></param>
+            <param name="direction"><para>One of the <see cref="T:System.Data.ParameterDirection"/> values.</para></param>
+            <param name="nullable"><para>Avalue indicating whether the parameter accepts <see langword="null"/> (<b>Nothing</b> in Visual Basic) values.</para></param>
+            <param name="precision"><para>The maximum number of digits used to represent the <paramref name="value"/>.</para></param>
+            <param name="scale"><para>The number of decimal places to which <paramref name="value"/> is resolved.</para></param>
+            <param name="sourceColumn"><para>The name of the source column mapped to the DataSet and used for loading or returning the <paramref name="value"/>.</para></param>
+            <param name="sourceVersion"><para>One of the <see cref="T:System.Data.DataRowVersion"/> values.</para></param>
+            <param name="value"><para>The value of the parameter.</para></param>       
+        </member>
+        <member name="M:NBear.Data.Database.AddParameter(System.Data.Common.DbCommand,System.String,System.Data.DbType,System.Data.ParameterDirection,System.String,System.Data.DataRowVersion,System.Object)">
+            <summary>
+            <para>Adds a new instance of a <see cref="T:System.Data.Common.DbParameter"/> object to the command.</para>
+            </summary>
+            <param name="command">The command to add the parameter.</param>
+            <param name="name"><para>The name of the parameter.</para></param>
+            <param name="dbType"><para>One of the <see cref="T:System.Data.DbType"/> values.</para></param>        
+            <param name="direction"><para>One of the <see cref="T:System.Data.ParameterDirection"/> values.</para></param>                
+            <param name="sourceColumn"><para>The name of the source column mapped to the DataSet and used for loading or returning the <paramref name="value"/>.</para></param>
+            <param name="sourceVersion"><para>One of the <see cref="T:System.Data.DataRowVersion"/> values.</para></param>
+            <param name="value"><para>The value of the parameter.</para></param>    
+        </member>
+        <member name="M:NBear.Data.Database.AddOutParameter(System.Data.Common.DbCommand,System.String,System.Data.DbType,System.Int32)">
+            <summary>
+            Adds a new Out <see cref="T:System.Data.Common.DbParameter"/> object to the given <paramref name="command"/>.
+            </summary>
+            <param name="command">The command to add the out parameter.</param>
+            <param name="name"><para>The name of the parameter.</para></param>
+            <param name="dbType"><para>One of the <see cref="T:System.Data.DbType"/> values.</para></param>        
+            <param name="size"><para>The maximum size of the data within the column.</para></param>        
+        </member>
+        <member name="M:NBear.Data.Database.AddInParameter(System.Data.Common.DbCommand,System.String,System.Data.DbType)">
+            <summary>
+            Adds a new In <see cref="T:System.Data.Common.DbParameter"/> object to the given <paramref name="command"/>.
+            </summary>
+            <param name="command">The command to add the in parameter.</param>
+            <param name="name"><para>The name of the parameter.</para></param>
+            <param name="dbType"><para>One of the <see cref="T:System.Data.DbType"/> values.</para></param>                
+            <remarks>
+            <para>This version of the method is used when you can have the same parameter object multiple times with different values.</para>
+            </remarks>        
+        </member>
+        <member name="M:NBear.Data.Database.AddInParameter(System.Data.Common.DbCommand,System.String,System.Data.DbType,System.Object)">
+            <summary>
+            Adds a new In <see cref="T:System.Data.Common.DbParameter"/> object to the given <paramref name="command"/>.
+            </summary>
+            <param name="command">The commmand to add the parameter.</param>
+            <param name="name"><para>The name of the parameter.</para></param>
+            <param name="dbType"><para>One of the <see cref="T:System.Data.DbType"/> values.</para></param>                
+            <param name="value"><para>The value of the parameter.</para></param>      
+        </member>
+        <member name="M:NBear.Data.Database.AddInParameter(System.Data.Common.DbCommand,System.String,System.Object)">
+            <summary>
+            Adds a new In <see cref="T:System.Data.Common.DbParameter"/> object to the given <paramref name="command"/>.
+            </summary>
+            <param name="command">The commmand to add the parameter.</param>
+            <param name="name"><para>The name of the parameter.</para></param>
+            <param name="value"><para>The value of the parameter.</para></param>      
+        </member>
+        <member name="M:NBear.Data.Database.AddInParameter(System.Data.Common.DbCommand,System.String,System.Data.DbType,System.String,System.Data.DataRowVersion)">
+            <summary>
+            Adds a new In <see cref="T:System.Data.Common.DbParameter"/> object to the given <paramref name="command"/>.
+            </summary>
+            <param name="command">The command to add the parameter.</param>
+            <param name="name"><para>The name of the parameter.</para></param>
+            <param name="dbType"><para>One of the <see cref="T:System.Data.DbType"/> values.</para></param>                
+            <param name="sourceColumn"><para>The name of the source column mapped to the DataSet and used for loading or returning the value.</para></param>
+            <param name="sourceVersion"><para>One of the <see cref="T:System.Data.DataRowVersion"/> values.</para></param>
+        </member>
+        <member name="M:NBear.Data.Database.DiscoverParams(System.String)">
+            <summary>
+            Discovers params from SQL text.
+            </summary>
+            <param name="sql">The full or part of SQL text.</param>
+            <returns>The discovered params.</returns>
+        </member>
+        <member name="M:NBear.Data.Database.WriteLog(System.Data.Common.DbCommand)">
+            <summary>
+            Writes the log.
+            </summary>
+            <param name="command">The command.</param>
+        </member>
+        <member name="M:NBear.Data.Database.WriteLog(System.String)">
+            <summary>
+            Writes the log.
+            </summary>
+            <param name="logMsg">The log MSG.</param>
+        </member>
+        <member name="M:NBear.Data.Database.BeginBatchConnection(System.Int32)">
+            <summary>
+            Begins the batch connection.
+            </summary>
+            <param name="batchSize">Size of the batch.</param>
+        </member>
+        <member name="M:NBear.Data.Database.BeginBatchConnection(System.Int32,System.Data.Common.DbTransaction)">
+            <summary>
+            Begins the batch connection.
+            </summary>
+            <param name="batchSize">Size of the batch.</param>
+            <param name="tran">The tran.</param>
+        </member>
+        <member name="M:NBear.Data.Database.BeginBatchConnection(System.Int32,System.Data.IsolationLevel)">
+            <summary>
+            Begins the batch connection.
+            </summary>
+            <param name="batchSize">Size of the batch.</param>
+            <param name="il">The il.</param>
+        </member>
+        <member name="M:NBear.Data.Database.EndBatchConnection">
+            <summary>
+            Ends the batch connection.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.Database.ExecutePendingBatchOperations">
+            <summary>
+            Executes the pending batch operations.
+            </summary>
+        </member>
+        <member name="P:NBear.Data.Database.ParameterCache">
+            <summary>
+            Gets the parameter cache.
+            </summary>
+            <value>The parameter cache.</value>
+        </member>
+        <member name="P:NBear.Data.Database.ParameterNameCache">
+            <summary>
+            Gets the parameter name cache.
+            </summary>
+            <value>The parameter name cache.</value>
+        </member>
+        <member name="P:NBear.Data.Database.ConnectionString">
+            <summary>
+            Gets the connect string.
+            </summary>
+            <value>The connect string.</value>
+        </member>
+        <member name="P:NBear.Data.Database.DbProvider">
+            <summary>
+            Gets the db provider.
+            </summary>
+            <value>The db provider.</value>
+        </member>
+        <member name="P:NBear.Data.Database.IsBatchConnection">
+            <summary>
+            Gets a value indicating whether this instance is batch connection.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is batch connection; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="E:NBear.Data.Database.OnLog">
+            <summary>
+            OnLog event.
+            </summary>
+        </member>
+        <member name="T:NBear.Data.MsAccess.AccessStatementFactory">
+            <summary>
+            Common Factory to create SQL statements for SqlServer and MS Access
+            </summary>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessStatementFactory.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AccessStatementFactory"/> class.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessStatementFactory.CreateInsertStatement(System.String,System.String[])">
+            <summary>
+            Creates the insert statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessStatementFactory.CreateUpdateStatement(System.String,System.String,System.String[])">
+            <summary>
+            Creates the update statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The sql STR.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessStatementFactory.CreateDeleteStatement(System.String,System.String)">
+            <summary>
+            Creates the delete statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The sql STR.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessStatementFactory.CreateSelectStatement(System.String,System.String,System.String,System.String[])">
+            <summary>
+            Creates the select statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The sql STR.</param>
+            <param name="orderByStr">The order by STR.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="T:NBear.Data.SqlServer.SqlStatementFactory">
+            <summary>
+            Common Factory to create SQL statements for SqlServer and MS Access
+            </summary>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlStatementFactory.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SqlStatementFactory"/> class.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlStatementFactory.CreateInsertStatement(System.String,System.String[])">
+            <summary>
+            Creates the insert statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlStatementFactory.CreateUpdateStatement(System.String,System.String,System.String[])">
+            <summary>
+            Creates the update statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The sql STR.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlStatementFactory.CreateDeleteStatement(System.String,System.String)">
+            <summary>
+            Creates the delete statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The sql STR.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlStatementFactory.CreateSelectStatement(System.String,System.String,System.String,System.String[])">
+            <summary>
+            Creates the select statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The sql STR.</param>
+            <param name="orderByStr">The order by STR.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="T:NBear.Data.DbHelper">
+            <summary>
+            The DbHelper.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.DbHelper.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.DbHelper"/> class.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.DbHelper.#ctor(NBear.Data.Database)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.DbHelper"/> class.
+            </summary>
+            <param name="db">The db.</param>
+        </member>
+        <member name="M:NBear.Data.DbHelper.Insert(System.String,System.String[],System.Object[],System.String)">
+            <summary>
+            Inserts the specified table.
+            </summary>
+            <param name="table">The table.</param>
+            <param name="columns">The columns.</param>
+            <param name="values">The values.</param>
+            <param name="identyColumn">The identy column.</param>
+            <returns>The auto incremental column value generate by databse. If there is no auto id column, the return value is 0.</returns>
+        </member>
+        <member name="M:NBear.Data.DbHelper.Insert(System.String,System.String[],System.Object[],System.Data.Common.DbTransaction,System.String)">
+            <summary>
+            Inserts the specified table.
+            </summary>
+            <param name="table">The table.</param>
+            <param name="columns">The columns.</param>
+            <param name="values">The values.</param>
+            <param name="tran">The tran.</param>
+            <param name="identyColumn">The identy column.</param>
+            <returns>The auto incremental column value generate by databse. If there is no auto id column, the return value is 0.</returns>
+        </member>
+        <member name="M:NBear.Data.DbHelper.Insert(System.String,System.String[],System.Data.DbType[],System.Object[],System.String)">
+            <summary>
+            Inserts the specified table.
+            </summary>
+            <param name="table">The table.</param>
+            <param name="columns">The columns.</param>
+            <param name="types">The types.</param>
+            <param name="values">The values.</param>
+            <param name="identyColumn">The identy column.</param>
+            <returns>The auto incremental column value generate by databse. If there is no auto id column, the return value is 0.</returns>
+        </member>
+        <member name="M:NBear.Data.DbHelper.Insert(System.String,System.String[],System.Data.DbType[],System.Object[],System.Data.Common.DbTransaction,System.String)">
+            <summary>
+            Inserts the specified table.
+            </summary>
+            <param name="table">The table.</param>
+            <param name="columns">The columns.</param>
+            <param name="types">The types.</param>
+            <param name="values">The values.</param>
+            <param name="tran">The tran.</param>
+            <param name="identyColumn">The identy column.</param>
+            <returns>The auto incremental column value generate by databse. If there is no auto id column, the return value is 0.</returns>
+        </member>
+        <member name="M:NBear.Data.DbHelper.Update(System.String,System.String[],System.Object[],System.String,System.Object[])">
+            <summary>
+            Updates the specified table.
+            </summary>
+            <param name="table">The table.</param>
+            <param name="columns">The columns.</param>
+            <param name="values">The values.</param>
+            <param name="where">The where.</param>
+            <param name="whereValues">The where values.</param>
+        </member>
+        <member name="M:NBear.Data.DbHelper.Update(System.String,System.String[],System.Object[],System.String,System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            Updates the specified table.
+            </summary>
+            <param name="table">The table.</param>
+            <param name="columns">The columns.</param>
+            <param name="values">The values.</param>
+            <param name="where">The where.</param>
+            <param name="whereValues">The where values.</param>
+            <param name="tran">The tran.</param>
+        </member>
+        <member name="M:NBear.Data.DbHelper.Update(System.String,System.String[],System.Data.DbType[],System.Object[],System.String,System.Data.DbType[],System.Object[])">
+            <summary>
+            Updates the specified table.
+            </summary>
+            <param name="table">The table.</param>
+            <param name="columns">The columns.</param>
+            <param name="types">The types.</param>
+            <param name="values">The values.</param>
+            <param name="where">The where.</param>
+            <param name="whereTypes">The where types.</param>
+            <param name="whereValues">The where values.</param>
+        </member>
+        <member name="M:NBear.Data.DbHelper.Update(System.String,System.String[],System.Data.DbType[],System.Object[],System.String,System.Data.DbType[],System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            Updates the specified table.
+            </summary>
+            <param name="table">The table.</param>
+            <param name="columns">The columns.</param>
+            <param name="types">The types.</param>
+            <param name="values">The values.</param>
+            <param name="where">The where.</param>
+            <param name="whereTypes">The where types.</param>
+            <param name="whereValues">The where values.</param>
+            <param name="tran">The tran.</param>
+        </member>
+        <member name="M:NBear.Data.DbHelper.Delete(System.String,System.String,System.Object[])">
+            <summary>
+            Deletes the specified table.
+            </summary>
+            <param name="table">The table.</param>
+            <param name="where">The where.</param>
+            <param name="whereValues">The where values.</param>
+        </member>
+        <member name="M:NBear.Data.DbHelper.Delete(System.String,System.String,System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            Deletes the specified table.
+            </summary>
+            <param name="table">The table.</param>
+            <param name="where">The where.</param>
+            <param name="whereValues">The where values.</param>
+            <param name="tran">The tran.</param>
+        </member>
+        <member name="M:NBear.Data.DbHelper.Delete(System.String,System.String,System.Data.DbType[],System.Object[])">
+            <summary>
+            Deletes the specified table.
+            </summary>
+            <param name="table">The table.</param>
+            <param name="where">The where.</param>
+            <param name="whereTypes">The where types.</param>
+            <param name="whereValues">The where values.</param>
+        </member>
+        <member name="M:NBear.Data.DbHelper.Delete(System.String,System.String,System.Data.DbType[],System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            Deletes the specified table.
+            </summary>
+            <param name="table">The table.</param>
+            <param name="where">The where.</param>
+            <param name="whereTypes">The where types.</param>
+            <param name="whereValues">The where values.</param>
+            <param name="tran">The tran.</param>
+        </member>
+        <member name="M:NBear.Data.DbHelper.Select(System.String,System.String[],System.String,System.Object[],System.String)">
+            <summary>
+            Selects the specified table.
+            </summary>
+            <param name="table">The table.</param>
+            <param name="columns">The columns.</param>
+            <param name="where">The where.</param>
+            <param name="whereValues">The where values.</param>
+            <param name="orderBy">The order by.</param>
+            <returns>The select result.</returns>
+        </member>
+        <member name="M:NBear.Data.DbHelper.SelectReadOnly(System.String,System.String[],System.String,System.Object[],System.String)">
+            <summary>
+            Selects the read only.
+            </summary>
+            <param name="table">The table.</param>
+            <param name="columns">The columns.</param>
+            <param name="where">The where.</param>
+            <param name="whereValues">The where values.</param>
+            <param name="orderBy">The order by.</param>
+            <returns>The select result.</returns>
+        </member>
+        <member name="M:NBear.Data.DbHelper.Select(System.String,System.String[],System.String,System.Data.DbType[],System.Object[],System.String)">
+            <summary>
+            Selects the specified table.
+            </summary>
+            <param name="table">The table.</param>
+            <param name="columns">The columns.</param>
+            <param name="where">The where.</param>
+            <param name="whereTypes">The where types.</param>
+            <param name="whereValues">The where values.</param>
+            <param name="orderBy">The order by.</param>
+            <returns>The select result.</returns>
+        </member>
+        <member name="M:NBear.Data.DbHelper.SelectReadOnly(System.String,System.String[],System.String,System.Data.DbType[],System.Object[],System.String)">
+            <summary>
+            Selects the read only.
+            </summary>
+            <param name="table">The table.</param>
+            <param name="columns">The columns.</param>
+            <param name="where">The where.</param>
+            <param name="whereTypes">The where types.</param>
+            <param name="whereValues">The where values.</param>
+            <param name="orderBy">The order by.</param>
+            <returns>The select result.</returns>
+        </member>
+        <member name="M:NBear.Data.DbHelper.SelectPageSplit(System.String,System.String[],System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Selects the page split.
+            </summary>
+            <param name="table">The table.</param>
+            <param name="columns">The columns.</param>
+            <param name="where">The where.</param>
+            <param name="orderBy">The order by.</param>
+            <param name="keyColumn">The DEFAULT_KEY column.</param>
+            <param name="paramValues">The param values.</param>
+            <returns>The select result.</returns>
+        </member>
+        <member name="M:NBear.Data.DbHelper.Select(System.String,System.Object[])">
+            <summary>
+            Selects the specified CMD text.
+            </summary>
+            <param name="cmdText">The CMD text.</param>
+            <param name="paramValues">The param values.</param>
+            <returns>The select result.</returns>
+        </member>
+        <member name="M:NBear.Data.DbHelper.SelectReadOnly(System.String,System.Object[])">
+            <summary>
+            Selects the read only.
+            </summary>
+            <param name="cmdText">The CMD text.</param>
+            <param name="paramValues">The param values.</param>
+            <returns>The select result.</returns>
+        </member>
+        <member name="M:NBear.Data.DbHelper.SelectScalar(System.String,System.Object[])">
+            <summary>
+            Selects the scalar.
+            </summary>
+            <param name="cmdText">The CMD text.</param>
+            <param name="paramValues">The param values.</param>
+            <returns>The select result.</returns>
+        </member>
+        <member name="M:NBear.Data.DbHelper.ExecuteNonQuery(System.String,System.Object[])">
+            <summary>
+            Executes the non query.
+            </summary>
+            <param name="cmdText">The CMD text.</param>
+            <param name="paramValues">The param values.</param>
+        </member>
+        <member name="M:NBear.Data.DbHelper.ExecuteNonQuery(System.String,System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            Executes the non query.
+            </summary>
+            <param name="cmdText">The CMD text.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="tran">The tran.</param>
+        </member>
+        <member name="M:NBear.Data.DbHelper.ExecuteStoredProcedure(System.String,System.String[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@)">
+            <summary>
+            Executes the stored procedure.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="outParamNames">The out param names.</param>
+            <param name="outParamTypes">The out param types.</param>
+            <param name="outParamResults">The out param results.</param>
+            <returns>The select result.</returns>
+        </member>
+        <member name="M:NBear.Data.DbHelper.ExecuteStoredProcedure(System.String,System.String[],System.Object[])">
+            <summary>
+            Executes the stored procedure.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <returns>The select result.</returns>
+        </member>
+        <member name="M:NBear.Data.DbHelper.ExecuteStoredProcedure(System.String,System.String[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@,System.Data.Common.DbTransaction)">
+            <summary>
+            Executes the stored procedure.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="outParamNames">The out param names.</param>
+            <param name="outParamTypes">The out param types.</param>
+            <param name="outParamResults">The out param results.</param>
+            <param name="tran">The tran.</param>
+            <returns>The select result.</returns>
+        </member>
+        <member name="M:NBear.Data.DbHelper.ExecuteStoredProcedure(System.String,System.String[],System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            Executes the stored procedure.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="tran">The tran.</param>
+            <returns>The select result.</returns>
+        </member>
+        <member name="M:NBear.Data.DbHelper.ExecuteStoredProcedureReadOnly(System.String,System.String[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@)">
+            <summary>
+            Executes the stored procedure read only.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="outParamNames">The out param names.</param>
+            <param name="outParamTypes">The out param types.</param>
+            <param name="outParamResults">The out param results.</param>
+            <returns>The select result.</returns>
+        </member>
+        <member name="M:NBear.Data.DbHelper.ExecuteStoredProcedureReadOnly(System.String,System.String[],System.Object[])">
+            <summary>
+            Executes the stored procedure read only.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <returns>The select result.</returns>
+        </member>
+        <member name="M:NBear.Data.DbHelper.ExecuteStoredProcedureReadOnly(System.String,System.String[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@,System.Data.Common.DbTransaction)">
+            <summary>
+            Executes the stored procedure read only.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="outParamNames">The out param names.</param>
+            <param name="outParamTypes">The out param types.</param>
+            <param name="outParamResults">The out param results.</param>
+            <param name="tran">The tran.</param>
+            <returns>The select result.</returns>
+        </member>
+        <member name="M:NBear.Data.DbHelper.ExecuteStoredProcedureReadOnly(System.String,System.String[],System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            Executes the stored procedure read only.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="tran">The tran.</param>
+            <returns>The select result.</returns>
+        </member>
+        <member name="M:NBear.Data.DbHelper.ExecuteStoredProcedureScalar(System.String,System.String[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@)">
+            <summary>
+            Executes the stored procedure scalar.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="outParamNames">The out param names.</param>
+            <param name="outParamTypes">The out param types.</param>
+            <param name="outParamResults">The out param results.</param>
+            <returns>The select result.</returns>
+        </member>
+        <member name="M:NBear.Data.DbHelper.ExecuteStoredProcedureScalar(System.String,System.String[],System.Object[])">
+            <summary>
+            Executes the stored procedure scalar.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <returns>The select result.</returns>
+        </member>
+        <member name="M:NBear.Data.DbHelper.ExecuteStoredProcedureScalar(System.String,System.String[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@,System.Data.Common.DbTransaction)">
+            <summary>
+            Executes the stored procedure scalar.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="outParamNames">The out param names.</param>
+            <param name="outParamTypes">The out param types.</param>
+            <param name="outParamResults">The out param results.</param>
+            <param name="tran">The tran.</param>
+            <returns>The select result.</returns>
+        </member>
+        <member name="M:NBear.Data.DbHelper.ExecuteStoredProcedureScalar(System.String,System.String[],System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            Executes the stored procedure scalar.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="tran">The tran.</param>
+            <returns>The select result.</returns>
+        </member>
+        <member name="M:NBear.Data.DbHelper.ExecuteStoredProcedureNonQuery(System.String,System.String[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@)">
+            <summary>
+            Executes the stored procedure non query.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="outParamNames">The out param names.</param>
+            <param name="outParamTypes">The out param types.</param>
+            <param name="outParamResults">The out param results.</param>
+        </member>
+        <member name="M:NBear.Data.DbHelper.ExecuteStoredProcedureNonQuery(System.String,System.String[],System.Object[])">
+            <summary>
+            Executes the stored procedure non query.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+        </member>
+        <member name="M:NBear.Data.DbHelper.ExecuteStoredProcedureNonQuery(System.String,System.String[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@,System.Data.Common.DbTransaction)">
+            <summary>
+            Executes the stored procedure non query.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="outParamNames">The out param names.</param>
+            <param name="outParamTypes">The out param types.</param>
+            <param name="outParamResults">The out param results.</param>
+            <param name="tran">The tran.</param>
+        </member>
+        <member name="M:NBear.Data.DbHelper.ExecuteStoredProcedureNonQuery(System.String,System.String[],System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            Executes the stored procedure non query.
+            </summary>
+            <param name="procedureName">Name of the procedure.</param>
+            <param name="paramNames">The param names.</param>
+            <param name="paramValues">The param values.</param>
+            <param name="tran">The tran.</param>
+        </member>
+        <member name="M:NBear.Data.DbHelper.FormatParamVal(System.Object)">
+            <summary>
+            Formats the param val.
+            </summary>
+            <param name="val">The val.</param>
+            <returns></returns>
+        </member>
+        <member name="T:NBear.Data.Oracle.OraclePageSplit">
+            <summary>
+            Oracle Page Splitter
+            </summary>
+        </member>
+        <member name="M:NBear.Data.Oracle.OraclePageSplit.FormatInsideParams(System.String)">
+            <summary>
+            Formats the inside params.
+            </summary>
+            <param name="where">The where.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.Oracle.OraclePageSplit.ConstructPageSplitableSelectStatement(System.String,System.String)">
+            <summary>
+            construct an page splitable select statement from a simple select statement like 
+            " select [columns] from [table_name] sql [condition] order by [order_list] "
+            </summary>
+        </member>
+        <member name="M:NBear.Data.Oracle.OraclePageSplit.ConstructPageSplitableSelectStatementForFirstPage(System.String,System.String)">
+            <summary>
+            ConstructPageSplitableSelectStatementForFirstPage
+            </summary>
+            <param name="sql">sql</param>
+            <param name="keyColumn">keyColumn</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.Oracle.OraclePageSplit.ConstructSelectCountStatement(System.String)">
+            <summary>
+            ConstructSelectCountStatement
+            </summary>
+            <param name="sql">sql</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.Oracle.OraclePageSplit.#ctor(NBear.Data.Database,System.String,System.String,System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.Oracle.OraclePageSplit"/> class.
+            </summary>
+            <param name="db">The db.</param>
+            <param name="selectStatement">The select statement.</param>
+            <param name="keyColumn">The DEFAULT_KEY column.</param>
+            <param name="paramValues">The param values.</param>
+        </member>
+        <member name="T:NBear.Data.SqlServer9.SqlDbProvider9">
+            <summary>
+            Db provider implementation for SQL Server 9.X (2005)
+            </summary>
+        </member>
+        <member name="M:NBear.Data.SqlServer9.SqlDbProvider9.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SqlDatabase"/> class.
+            </summary>
+            <param name="connStr"></param>
+        </member>
+        <member name="M:NBear.Data.SqlServer9.SqlDbProvider9.CreatePageSplit(NBear.Data.Database,System.String,System.String,System.Object[])">
+            <summary>
+            When overridden in a derived class, creates an <see cref="T:NBear.Data.IPageSplit"/> for a basic SQL select query.
+            </summary>
+            <param name="db"></param>
+            <param name="selectStatement">The text of the query.</param>
+            <param name="keyColumn">The sigle main DEFAULT_KEY of the query.</param>
+            <param name="paramValues">The param values of the query.</param>
+            <returns>
+            The <see cref="T:NBear.Data.IPageSplit"/> for the SQL query.
+            </returns>
+        </member>
+        <member name="T:NBear.Data.Oracle.OracleDbProvider">
+            <summary>
+            <para>Represents an Oracle Database.</para>
+            </summary>
+            <remarks> 
+            <para>
+            Internally uses Oracle .NET Managed Provider from Microsoft (System.Data.OracleClient) to connect to the database.
+            </para>  
+            </remarks>
+        </member>
+        <member name="M:NBear.Data.Oracle.OracleDbProvider.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.Oracle.OracleDbProvider"/> class.
+            </summary>
+            <param name="connStr">The conn STR.</param>
+        </member>
+        <member name="M:NBear.Data.Oracle.OracleDbProvider.CreatePageSplit(NBear.Data.Database,System.String,System.String,System.Object[])">
+            <summary>
+            When overridden in a derived class, creates an <see cref="T:NBear.Data.IPageSplit"/> for a SQL page splitable select query.
+            </summary>
+            <param name="db"></param>
+            <param name="selectStatement">The text of the basic select query for all rows.</param>
+            <param name="keyColumn">The sigle main DEFAULT_KEY of the query.</param>
+            <param name="paramValues">The param values of the query.</param>
+            <returns>
+            The <see cref="T:NBear.Data.IPageSplit"/> for the SQL query.
+            </returns>
+        </member>
+        <member name="M:NBear.Data.Oracle.OracleDbProvider.DiscoverParams(System.String)">
+            <summary>
+            Discovers the params.
+            </summary>
+            <param name="sql">The sql.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.Oracle.OracleDbProvider.CreateStatementFactory">
+            <summary>
+            Creates the SQL statement factory.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.Oracle.OracleDbProvider.AdjustParameter(System.Data.Common.DbParameter)">
+            <summary>
+            Adjusts the parameter.
+            </summary>
+            <param name="param">The param.</param>
+        </member>
+        <member name="M:NBear.Data.Oracle.OracleDbProvider.BuildParameterName(System.String)">
+            <summary>
+            Builds the name of the parameter.
+            </summary>
+            <param name="name">The name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.Oracle.OracleDbProvider.BuildColumnName(System.String)">
+            <summary>
+            Builds the name of the column.
+            </summary>
+            <param name="name">The name.</param>
+            <returns></returns>
+        </member>
+        <member name="P:NBear.Data.Oracle.OracleDbProvider.SelectLastInsertedRowAutoIDStatement">
+            <summary>
+            Gets the select last inserted row auto ID statement.
+            </summary>
+            <value>The select last inserted row auto ID statement.</value>
+        </member>
+        <member name="P:NBear.Data.Oracle.OracleDbProvider.SupportADO20Transaction">
+            <summary>
+            Gets a value indicating whether [support AD o20 transaction].
+            </summary>
+            <value>
+            	<c>true</c> if [support AD o20 transaction]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:NBear.Data.Oracle.OracleDbProvider.LeftToken">
+            <summary>
+            Gets the left token of table name or column name.
+            </summary>
+            <value>The left token.</value>
+        </member>
+        <member name="P:NBear.Data.Oracle.OracleDbProvider.RightToken">
+            <summary>
+            Gets the right token of table name or column name.
+            </summary>
+            <value>The right token.</value>
+        </member>
+        <member name="P:NBear.Data.Oracle.OracleDbProvider.ParamPrefix">
+            <summary>
+            Gets the param prefix.
+            </summary>
+            <value>The param prefix.</value>
+        </member>
+        <member name="T:NBear.Data.BatchCommander">
+            <summary>
+            BatchCommander is used to execute batch queries.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.BatchCommander.#ctor(NBear.Data.Database,System.Int32,System.Data.IsolationLevel)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.BatchCommander"/> class.
+            </summary>
+            <param name="db">The db.</param>
+            <param name="batchSize">Size of the batch.</param>
+            <param name="il">The il.</param>
+        </member>
+        <member name="M:NBear.Data.BatchCommander.#ctor(NBear.Data.Database,System.Int32,System.Data.Common.DbTransaction)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.BatchCommander"/> class.
+            </summary>
+            <param name="db">The db.</param>
+            <param name="batchSize">Size of the batch.</param>
+            <param name="tran">The tran.</param>
+        </member>
+        <member name="M:NBear.Data.BatchCommander.#ctor(NBear.Data.Database,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.BatchCommander"/> class.
+            </summary>
+            <param name="db">The db.</param>
+            <param name="batchSize">Size of the batch.</param>
+        </member>
+        <member name="M:NBear.Data.BatchCommander.Process(System.Data.Common.DbCommand)">
+            <summary>
+            Processes the specified CMD.
+            </summary>
+            <param name="cmd">The CMD.</param>
+        </member>
+        <member name="M:NBear.Data.BatchCommander.Close">
+            <summary>
+            Closes this instance.
+            </summary>
+        </member>
+    </members>
+</doc>

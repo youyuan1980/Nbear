@@ -1,0 +1,5 @@
+uid=htbaimg;pwd=123;datasource=yzcqtest
+Data Source=yzcqtest;User ID=htbaimg;Password=123
+data Source=yzcqtest;User ID=htbaimg;Password=123
+uid=wyzfzm;pwd=123;datasource=yzcqtest
+data Source=yzcqtest;User ID=wyzfzm;Password=123
