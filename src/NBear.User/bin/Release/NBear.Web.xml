@@ -4,145 +4,6 @@
         <name>NBear.Web</name>
     </assembly>
     <members>
-        <member name="T:WebValidates.SerialNumberValidator">
-            <summary>
-            The SerialNumberValidator control.
-            </summary>
-        </member>
-        <member name="M:WebValidates.SerialNumberValidator.Render(System.Web.UI.HtmlTextWriter)">
-            <summary>
-            Renders the specified output.
-            </summary>
-            <param name="output">The output.</param>
-        </member>
-        <member name="M:WebValidates.SerialNumberValidator.OnInit(System.EventArgs)">
-            <summary>
-            Raises the <see cref="E:System.Web.UI.Control.Init"></see> event.
-            </summary>
-            <param name="e">An <see cref="T:System.EventArgs"></see> object that contains the event data.</param>
-        </member>
-        <member name="M:WebValidates.SerialNumberValidator.Create">
-            <summary>
-            Creates this instance.
-            </summary>
-        </member>
-        <member name="M:WebValidates.SerialNumberValidator.CheckSN(System.String)">
-            <summary>
-            Checks the SN.
-            </summary>
-            <param name="sn">The sn.</param>
-            <returns>Whether sn is correct.</returns>
-        </member>
-        <member name="M:WebValidates.SerialNumberValidator.SaveViewState">
-            <summary>
-            Saves any server control view-state changes that have occurred since the time the page was posted back to the server.
-            </summary>
-            <returns>
-            Returns the server control's current view state. If there is no view state associated with the control, this method returns null.
-            </returns>
-        </member>
-        <member name="M:WebValidates.SerialNumberValidator.LoadViewState(System.Object)">
-            <summary>
-            Restores view-state information from a previous page request that was saved by the <see cref="M:System.Web.UI.Control.SaveViewState"></see> method.
-            </summary>
-            <param name="savedState">An <see cref="T:System.Object"></see> that represents the control state to be restored.</param>
-        </member>
-        <member name="P:WebValidates.SerialNumberValidator.CharType">
-            <summary>
-            Gets or sets the type of the char.
-            </summary>
-            <value>The type of the char.</value>
-        </member>
-        <member name="P:WebValidates.SerialNumberValidator.MinCharCount">
-            <summary>
-            Gets or sets the min char count.
-            </summary>
-            <value>The min char count.</value>
-        </member>
-        <member name="P:WebValidates.SerialNumberValidator.MaxCharCount">
-            <summary>
-            Gets or sets the max char count.
-            </summary>
-            <value>The max char count.</value>
-        </member>
-        <member name="P:WebValidates.SerialNumberValidator.Images">
-            <summary>
-            Gets the images.
-            </summary>
-            <value>The images.</value>
-        </member>
-        <member name="P:WebValidates.SerialNumberValidator.SN">
-            <summary>
-            Gets the SN.
-            </summary>
-            <value>The SN.</value>
-        </member>
-        <member name="P:WebValidates.SerialNumberValidator.Seed">
-            <summary>
-            Gets the seed.
-            </summary>
-            <value>The seed.</value>
-        </member>
-        <member name="T:WebValidates.SerialNumberValidator.SerialNumberType">
-            <summary>
-            The serial num type.
-            </summary>
-        </member>
-        <member name="F:WebValidates.SerialNumberValidator.SerialNumberType.NumberOnly">
-            <summary>
-            NumberOnly
-            </summary>
-        </member>
-        <member name="F:WebValidates.SerialNumberValidator.SerialNumberType.AlphabetOnly">
-            <summary>
-            AlphabetOnly
-            </summary>
-        </member>
-        <member name="F:WebValidates.SerialNumberValidator.SerialNumberType.NumberAndAlphabet">
-            <summary>
-            NumberAndAlphabet
-            </summary>
-        </member>
-        <member name="T:WebValidates.Crypto">
-            <summary>
-            Crypto helper class.
-            </summary>
-        </member>
-        <member name="M:WebValidates.Crypto.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:WebValidates.Crypto"/> class.
-            </summary>
-        </member>
-        <member name="M:WebValidates.Crypto.Encrypt">
-            <summary>
-            Encrypts this instance.
-            </summary>
-            <returns>The encrypted str.</returns>
-        </member>
-        <member name="M:WebValidates.Crypto.Decrypt">
-            <summary>
-            Decrypts this instance.
-            </summary>
-            <returns>The decrypt string.</returns>
-        </member>
-        <member name="P:WebValidates.Crypto.CryptText">
-            <summary>
-            Gets or sets the crypt text.
-            </summary>
-            <value>The crypt text.</value>
-        </member>
-        <member name="P:WebValidates.Crypto.CryptKey">
-            <summary>
-            Gets or sets the crypt key.
-            </summary>
-            <value>The crypt key.</value>
-        </member>
-        <member name="P:WebValidates.Crypto.CryptIV">
-            <summary>
-            Gets or sets the crypt IV.
-            </summary>
-            <value>The crypt IV.</value>
-        </member>
         <member name="T:NBear.Web.UI.UserControl">
             <summary>
             User Control base class.
@@ -582,118 +443,26 @@
             <param name="validators">The validators.</param>
             <returns>The client side script.</returns>
         </member>
-        <member name="T:NBear.Web.UI.MasterPage">
+        <member name="M:NBear.Web.NBearPageBase.MessageBox(System.String,System.String,System.Boolean)">
             <summary>
-            The MasterPage base class.
+            显示对话框
             </summary>
+            <param name="Text">显示文本</param>
+            <param name="Url">跳转的URL</param>
         </member>
-        <member name="M:NBear.Web.UI.MasterPage.GetStringParam(System.String,System.String)">
+        <member name="M:NBear.Web.NBearPageBase.MessageBox(System.String,System.String)">
             <summary>
-            Gets the string param.
+            显示对话框
             </summary>
-            <param name="paramName">Name of the param.</param>
-            <param name="errorReturn">The error return.</param>
-            <returns>The param value.</returns>
+            <param name="Text">显示文本</param>
+            <param name="Url">跳转的URL</param>
         </member>
-        <member name="M:NBear.Web.UI.MasterPage.GetIntParam(System.String,System.Int32)">
+        <member name="M:NBear.Web.NBearPageBase.MessageBox(System.String)">
             <summary>
-            Gets the int param.
+            显示对话框
             </summary>
-            <param name="paramName">Name of the param.</param>
-            <param name="errorReturn">The error return.</param>
-            <returns>The param value.</returns>
-        </member>
-        <member name="M:NBear.Web.UI.MasterPage.GetDateTimeParam(System.String,System.DateTime)">
-            <summary>
-            Gets the date time param.
-            </summary>
-            <param name="paramName">Name of the param.</param>
-            <param name="errorReturn">The error return.</param>
-            <returns>The param value.</returns>
-        </member>
-        <member name="M:NBear.Web.UI.MasterPage.StrongTyped``1(System.Object)">
-            <summary>
-            Strongs the typed.
-            </summary>
-            <param name="obj">The obj.</param>
-            <returns>The strong typed instance.</returns>
-        </member>
-        <member name="M:NBear.Web.UI.MasterPage.ToJsSingleQuoteSafeString(System.String)">
-            <summary>
-            Toes the js single quote safe string.
-            </summary>
-            <param name="str">The STR.</param>
-            <returns>The formated str.</returns>
-        </member>
-        <member name="M:NBear.Web.UI.MasterPage.ToJsDoubleQuoteSafeString(System.String)">
-            <summary>
-            Toes the js double quote safe string.
-            </summary>
-            <param name="str">The STR.</param>
-            <returns>The formated str.</returns>
-        </member>
-        <member name="M:NBear.Web.UI.MasterPage.ToVbsQuoteSafeString(System.String)">
-            <summary>
-            Toes the VBS quote safe string.
-            </summary>
-            <param name="str">The STR.</param>
-            <returns>The formated str.</returns>
-        </member>
-        <member name="M:NBear.Web.UI.MasterPage.ToSqlQuoteSafeString(System.String)">
-            <summary>
-            Toes the SQL quote safe string.
-            </summary>
-            <param name="str">The STR.</param>
-            <returns>The formated str.</returns>
-        </member>
-        <member name="M:NBear.Web.UI.MasterPage.TextToHtml(System.String)">
-            <summary>
-            Texts to HTML.
-            </summary>
-            <param name="txtStr">The TXT STR.</param>
-            <returns>The formated str.</returns>
-        </member>
-        <member name="F:NBear.Web.UI.MasterPage.ClientScriptFactory">
-            <summary>
-            A ClientScriptFactory instance.
-            </summary>
-        </member>
-        <member name="M:NBear.Web.UI.MasterPage.GetString(System.String)">
-            <summary>
-            Gets the string.
-            </summary>
-            <param name="key">The key.</param>
-            <returns>The resource value.</returns>
-        </member>
-        <member name="M:NBear.Web.UI.MasterPage.GetString(System.String,System.Globalization.CultureInfo)">
-            <summary>
-            Gets the string.
-            </summary>
-            <param name="key">The key.</param>
-            <param name="ci">The ci.</param>
-            <returns>The resource value.</returns>
-        </member>
-        <member name="F:NBear.Web.UI.MasterPage.Ajax">
-            <summary>
-            An AjaxManager Instance.
-            </summary>
-        </member>
-        <member name="T:NBear.Web.UI.MasterPage.MasterPageClientScriptFactory">
-            <summary>
-            MasterPageClientScriptFactory
-            </summary>
-        </member>
-        <member name="M:NBear.Web.UI.MasterPage.MasterPageClientScriptFactory.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:MasterPageClientScriptFactory"/> class.
-            </summary>
-        </member>
-        <member name="M:NBear.Web.UI.MasterPage.MasterPageClientScriptFactory.CallClientValidator(System.Web.UI.WebControls.BaseValidator[])">
-            <summary>
-            Calls the client validator.
-            </summary>
-            <param name="validators">The validators.</param>
-            <returns>The client side script.</returns>
+            <param name="Text">显示文本</param>
+            <param name="Url">跳转的URL</param>
         </member>
         <member name="T:NBear.Web.UI.Page">
             <summary>
@@ -895,6 +664,258 @@
             </summary>
             <returns>The client side script.</returns>
         </member>
+        <member name="T:NBear.Web.UI.MasterPage">
+            <summary>
+            The MasterPage base class.
+            </summary>
+        </member>
+        <member name="M:NBear.Web.UI.MasterPage.GetStringParam(System.String,System.String)">
+            <summary>
+            Gets the string param.
+            </summary>
+            <param name="paramName">Name of the param.</param>
+            <param name="errorReturn">The error return.</param>
+            <returns>The param value.</returns>
+        </member>
+        <member name="M:NBear.Web.UI.MasterPage.GetIntParam(System.String,System.Int32)">
+            <summary>
+            Gets the int param.
+            </summary>
+            <param name="paramName">Name of the param.</param>
+            <param name="errorReturn">The error return.</param>
+            <returns>The param value.</returns>
+        </member>
+        <member name="M:NBear.Web.UI.MasterPage.GetDateTimeParam(System.String,System.DateTime)">
+            <summary>
+            Gets the date time param.
+            </summary>
+            <param name="paramName">Name of the param.</param>
+            <param name="errorReturn">The error return.</param>
+            <returns>The param value.</returns>
+        </member>
+        <member name="M:NBear.Web.UI.MasterPage.StrongTyped``1(System.Object)">
+            <summary>
+            Strongs the typed.
+            </summary>
+            <param name="obj">The obj.</param>
+            <returns>The strong typed instance.</returns>
+        </member>
+        <member name="M:NBear.Web.UI.MasterPage.ToJsSingleQuoteSafeString(System.String)">
+            <summary>
+            Toes the js single quote safe string.
+            </summary>
+            <param name="str">The STR.</param>
+            <returns>The formated str.</returns>
+        </member>
+        <member name="M:NBear.Web.UI.MasterPage.ToJsDoubleQuoteSafeString(System.String)">
+            <summary>
+            Toes the js double quote safe string.
+            </summary>
+            <param name="str">The STR.</param>
+            <returns>The formated str.</returns>
+        </member>
+        <member name="M:NBear.Web.UI.MasterPage.ToVbsQuoteSafeString(System.String)">
+            <summary>
+            Toes the VBS quote safe string.
+            </summary>
+            <param name="str">The STR.</param>
+            <returns>The formated str.</returns>
+        </member>
+        <member name="M:NBear.Web.UI.MasterPage.ToSqlQuoteSafeString(System.String)">
+            <summary>
+            Toes the SQL quote safe string.
+            </summary>
+            <param name="str">The STR.</param>
+            <returns>The formated str.</returns>
+        </member>
+        <member name="M:NBear.Web.UI.MasterPage.TextToHtml(System.String)">
+            <summary>
+            Texts to HTML.
+            </summary>
+            <param name="txtStr">The TXT STR.</param>
+            <returns>The formated str.</returns>
+        </member>
+        <member name="F:NBear.Web.UI.MasterPage.ClientScriptFactory">
+            <summary>
+            A ClientScriptFactory instance.
+            </summary>
+        </member>
+        <member name="M:NBear.Web.UI.MasterPage.GetString(System.String)">
+            <summary>
+            Gets the string.
+            </summary>
+            <param name="key">The key.</param>
+            <returns>The resource value.</returns>
+        </member>
+        <member name="M:NBear.Web.UI.MasterPage.GetString(System.String,System.Globalization.CultureInfo)">
+            <summary>
+            Gets the string.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="ci">The ci.</param>
+            <returns>The resource value.</returns>
+        </member>
+        <member name="F:NBear.Web.UI.MasterPage.Ajax">
+            <summary>
+            An AjaxManager Instance.
+            </summary>
+        </member>
+        <member name="T:NBear.Web.UI.MasterPage.MasterPageClientScriptFactory">
+            <summary>
+            MasterPageClientScriptFactory
+            </summary>
+        </member>
+        <member name="M:NBear.Web.UI.MasterPage.MasterPageClientScriptFactory.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MasterPageClientScriptFactory"/> class.
+            </summary>
+        </member>
+        <member name="M:NBear.Web.UI.MasterPage.MasterPageClientScriptFactory.CallClientValidator(System.Web.UI.WebControls.BaseValidator[])">
+            <summary>
+            Calls the client validator.
+            </summary>
+            <param name="validators">The validators.</param>
+            <returns>The client side script.</returns>
+        </member>
+        <member name="T:WebValidates.SerialNumberValidator">
+            <summary>
+            The SerialNumberValidator control.
+            </summary>
+        </member>
+        <member name="M:WebValidates.SerialNumberValidator.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Renders the specified output.
+            </summary>
+            <param name="output">The output.</param>
+        </member>
+        <member name="M:WebValidates.SerialNumberValidator.OnInit(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Web.UI.Control.Init"></see> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"></see> object that contains the event data.</param>
+        </member>
+        <member name="M:WebValidates.SerialNumberValidator.Create">
+            <summary>
+            Creates this instance.
+            </summary>
+        </member>
+        <member name="M:WebValidates.SerialNumberValidator.CheckSN(System.String)">
+            <summary>
+            Checks the SN.
+            </summary>
+            <param name="sn">The sn.</param>
+            <returns>Whether sn is correct.</returns>
+        </member>
+        <member name="M:WebValidates.SerialNumberValidator.SaveViewState">
+            <summary>
+            Saves any server control view-state changes that have occurred since the time the page was posted back to the server.
+            </summary>
+            <returns>
+            Returns the server control's current view state. If there is no view state associated with the control, this method returns null.
+            </returns>
+        </member>
+        <member name="M:WebValidates.SerialNumberValidator.LoadViewState(System.Object)">
+            <summary>
+            Restores view-state information from a previous page request that was saved by the <see cref="M:System.Web.UI.Control.SaveViewState"></see> method.
+            </summary>
+            <param name="savedState">An <see cref="T:System.Object"></see> that represents the control state to be restored.</param>
+        </member>
+        <member name="P:WebValidates.SerialNumberValidator.CharType">
+            <summary>
+            Gets or sets the type of the char.
+            </summary>
+            <value>The type of the char.</value>
+        </member>
+        <member name="P:WebValidates.SerialNumberValidator.MinCharCount">
+            <summary>
+            Gets or sets the min char count.
+            </summary>
+            <value>The min char count.</value>
+        </member>
+        <member name="P:WebValidates.SerialNumberValidator.MaxCharCount">
+            <summary>
+            Gets or sets the max char count.
+            </summary>
+            <value>The max char count.</value>
+        </member>
+        <member name="P:WebValidates.SerialNumberValidator.Images">
+            <summary>
+            Gets the images.
+            </summary>
+            <value>The images.</value>
+        </member>
+        <member name="P:WebValidates.SerialNumberValidator.SN">
+            <summary>
+            Gets the SN.
+            </summary>
+            <value>The SN.</value>
+        </member>
+        <member name="P:WebValidates.SerialNumberValidator.Seed">
+            <summary>
+            Gets the seed.
+            </summary>
+            <value>The seed.</value>
+        </member>
+        <member name="T:WebValidates.SerialNumberValidator.SerialNumberType">
+            <summary>
+            The serial num type.
+            </summary>
+        </member>
+        <member name="F:WebValidates.SerialNumberValidator.SerialNumberType.NumberOnly">
+            <summary>
+            NumberOnly
+            </summary>
+        </member>
+        <member name="F:WebValidates.SerialNumberValidator.SerialNumberType.AlphabetOnly">
+            <summary>
+            AlphabetOnly
+            </summary>
+        </member>
+        <member name="F:WebValidates.SerialNumberValidator.SerialNumberType.NumberAndAlphabet">
+            <summary>
+            NumberAndAlphabet
+            </summary>
+        </member>
+        <member name="T:WebValidates.Crypto">
+            <summary>
+            Crypto helper class.
+            </summary>
+        </member>
+        <member name="M:WebValidates.Crypto.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:WebValidates.Crypto"/> class.
+            </summary>
+        </member>
+        <member name="M:WebValidates.Crypto.Encrypt">
+            <summary>
+            Encrypts this instance.
+            </summary>
+            <returns>The encrypted str.</returns>
+        </member>
+        <member name="M:WebValidates.Crypto.Decrypt">
+            <summary>
+            Decrypts this instance.
+            </summary>
+            <returns>The decrypt string.</returns>
+        </member>
+        <member name="P:WebValidates.Crypto.CryptText">
+            <summary>
+            Gets or sets the crypt text.
+            </summary>
+            <value>The crypt text.</value>
+        </member>
+        <member name="P:WebValidates.Crypto.CryptKey">
+            <summary>
+            Gets or sets the crypt key.
+            </summary>
+            <value>The crypt key.</value>
+        </member>
+        <member name="P:WebValidates.Crypto.CryptIV">
+            <summary>
+            Gets or sets the crypt IV.
+            </summary>
+            <value>The crypt IV.</value>
+        </member>
         <member name="T:NBear.Web.UI.AjaxTemplate">
             <summary>
             The UserCOntrol base class.
@@ -918,27 +939,6 @@
             Raises the <see cref="E:System.Web.UI.Control.Init"></see> event.
             </summary>
             <param name="e">An <see cref="T:System.EventArgs"></see> object that contains the event data.</param>
-        </member>
-        <member name="M:NBear.Web.NBearPageBase.MessageBox(System.String,System.String,System.Boolean)">
-            <summary>
-            显示对话框
-            </summary>
-            <param name="Text">显示文本</param>
-            <param name="Url">跳转的URL</param>
-        </member>
-        <member name="M:NBear.Web.NBearPageBase.MessageBox(System.String,System.String)">
-            <summary>
-            显示对话框
-            </summary>
-            <param name="Text">显示文本</param>
-            <param name="Url">跳转的URL</param>
-        </member>
-        <member name="M:NBear.Web.NBearPageBase.MessageBox(System.String)">
-            <summary>
-            显示对话框
-            </summary>
-            <param name="Text">显示文本</param>
-            <param name="Url">跳转的URL</param>
         </member>
     </members>
 </doc>

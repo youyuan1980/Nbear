@@ -10,3 +10,9 @@ F:\nbear3.6.6_src\src\NBear.Web\bin\Release\NBear.Web.pdb
 F:\nbear3.6.6_src\src\NBear.Web\obj\Release\ResolveAssemblyReference.cache
 F:\nbear3.6.6_src\src\NBear.Web\obj\Release\NBear.Web.dll
 F:\nbear3.6.6_src\src\NBear.Web\obj\Release\NBear.Web.pdb
+F:\nbear\Nbear\src\NBear.Web\bin\Release\NBear.Web.XML
+F:\nbear\Nbear\src\NBear.Web\bin\Release\NBear.Web.dll
+F:\nbear\Nbear\src\NBear.Web\bin\Release\NBear.Web.pdb
+F:\nbear\Nbear\src\NBear.Web\obj\Release\ResolveAssemblyReference.cache
+F:\nbear\Nbear\src\NBear.Web\obj\Release\NBear.Web.dll
+F:\nbear\Nbear\src\NBear.Web\obj\Release\NBear.Web.pdb

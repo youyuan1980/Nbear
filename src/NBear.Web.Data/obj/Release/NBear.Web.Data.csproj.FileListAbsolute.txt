@@ -26,3 +26,17 @@ F:\nbear3.6.6_src\src\NBear.Web.Data\bin\Release\NBear.Data.xml
 F:\nbear3.6.6_src\src\NBear.Web.Data\obj\Release\ResolveAssemblyReference.cache
 F:\nbear3.6.6_src\src\NBear.Web.Data\obj\Release\NBear.Web.Data.dll
 F:\nbear3.6.6_src\src\NBear.Web.Data\obj\Release\NBear.Web.Data.pdb
+F:\nbear\Nbear\src\NBear.Web.Data\bin\Release\NBear.Web.Data.dll
+F:\nbear\Nbear\src\NBear.Web.Data\bin\Release\NBear.Web.Data.pdb
+F:\nbear\Nbear\src\NBear.Web.Data\bin\Release\NBear.Common.Design.dll
+F:\nbear\Nbear\src\NBear.Web.Data\bin\Release\NBear.Common.dll
+F:\nbear\Nbear\src\NBear.Web.Data\bin\Release\NBear.Data.dll
+F:\nbear\Nbear\src\NBear.Web.Data\bin\Release\NBear.Common.Design.pdb
+F:\nbear\Nbear\src\NBear.Web.Data\bin\Release\NBear.Common.Design.xml
+F:\nbear\Nbear\src\NBear.Web.Data\bin\Release\NBear.Common.pdb
+F:\nbear\Nbear\src\NBear.Web.Data\bin\Release\NBear.Common.xml
+F:\nbear\Nbear\src\NBear.Web.Data\bin\Release\NBear.Data.pdb
+F:\nbear\Nbear\src\NBear.Web.Data\bin\Release\NBear.Data.xml
+F:\nbear\Nbear\src\NBear.Web.Data\obj\Release\ResolveAssemblyReference.cache
+F:\nbear\Nbear\src\NBear.Web.Data\obj\Release\NBear.Web.Data.dll
+F:\nbear\Nbear\src\NBear.Web.Data\obj\Release\NBear.Web.Data.pdb

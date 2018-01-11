@@ -22,3 +22,15 @@ F:\nbear3.6.6_src\src\NBear.Tools.ConfigurationEncrypter\obj\Release\GenerateRes
 F:\nbear3.6.6_src\src\NBear.Tools.ConfigurationEncrypter\obj\Release\GenerateResource-ResGen.write.1.tlog
 F:\nbear3.6.6_src\src\NBear.Tools.ConfigurationEncrypter\obj\Release\NBear.Tools.ConfigurationEncrypter.exe
 F:\nbear3.6.6_src\src\NBear.Tools.ConfigurationEncrypter\obj\Release\NBear.Tools.ConfigurationEncrypter.pdb
+F:\nbear\Nbear\src\NBear.Tools.ConfigurationEncrypter\bin\Release\NBear.Tools.ConfigurationEncrypter.exe
+F:\nbear\Nbear\src\NBear.Tools.ConfigurationEncrypter\bin\Release\NBear.Tools.ConfigurationEncrypter.pdb
+F:\nbear\Nbear\src\NBear.Tools.ConfigurationEncrypter\bin\Release\NBear.Common.dll
+F:\nbear\Nbear\src\NBear.Tools.ConfigurationEncrypter\bin\Release\NBear.Common.pdb
+F:\nbear\Nbear\src\NBear.Tools.ConfigurationEncrypter\bin\Release\NBear.Common.xml
+F:\nbear\Nbear\src\NBear.Tools.ConfigurationEncrypter\obj\Release\ResolveAssemblyReference.cache
+F:\nbear\Nbear\src\NBear.Tools.ConfigurationEncrypter\obj\Release\NBear.Tools.ConfigurationEncrypter.Form1.resources
+F:\nbear\Nbear\src\NBear.Tools.ConfigurationEncrypter\obj\Release\NBear.Tools.ConfigurationEncrypter.Properties.Resources.resources
+F:\nbear\Nbear\src\NBear.Tools.ConfigurationEncrypter\obj\Release\GenerateResource-ResGen.read.1.tlog
+F:\nbear\Nbear\src\NBear.Tools.ConfigurationEncrypter\obj\Release\GenerateResource-ResGen.write.1.tlog
+F:\nbear\Nbear\src\NBear.Tools.ConfigurationEncrypter\obj\Release\NBear.Tools.ConfigurationEncrypter.exe
+F:\nbear\Nbear\src\NBear.Tools.ConfigurationEncrypter\obj\Release\NBear.Tools.ConfigurationEncrypter.pdb

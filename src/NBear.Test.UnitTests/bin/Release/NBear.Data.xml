@@ -4,201 +4,6 @@
         <name>NBear.Data</name>
     </assembly>
     <members>
-        <member name="T:NBear.Data.PageSelector`1">
-            <summary>
-            The strong typed page selector.
-            </summary>
-            <typeparam name="EntityType">the type of the entity.</typeparam>
-        </member>
-        <member name="M:NBear.Data.PageSelector`1.#ctor(NBear.Data.Gateway,NBear.Data.IPageSplit)">
-            <summary>
-            Initializes a new instance of the <see cref="T:NBear.Data.PageSelector`1"/> class.
-            </summary>
-            <param name="gateway">The gateway.</param>
-            <param name="ps">The ps.</param>
-        </member>
-        <member name="M:NBear.Data.PageSelector`1.FindPage(System.Int32)">
-            <summary>
-            Finds the page.
-            </summary>
-            <param name="pageNo">The page no.</param>
-            <returns>The result.</returns>
-        </member>
-        <member name="P:NBear.Data.PageSelector`1.PageSize">
-            <summary>
-            Gets or sets the size of the page.
-            </summary>
-            <value>The size of the page.</value>
-        </member>
-        <member name="P:NBear.Data.PageSelector`1.PageCount">
-            <summary>
-            Gets the page count.
-            </summary>
-            <value>The page count.</value>
-        </member>
-        <member name="P:NBear.Data.PageSelector`1.RowCount">
-            <summary>
-            Gets the row count.
-            </summary>
-            <value>The row count.</value>
-        </member>
-        <member name="T:NBear.Data.MySql.MySqlStatementFactory">
-            <summary>
-            Common Factory to create SQL statements for SqlServer and MySql
-            </summary>
-        </member>
-        <member name="T:NBear.Data.StatementFactory">
-            <summary>
-            Base statement factory.
-            </summary>
-        </member>
-        <member name="T:NBear.Data.IStatementFactory">
-            <summary>
-            Interface of all statement factory
-            </summary>
-        </member>
-        <member name="M:NBear.Data.IStatementFactory.CreateInsertStatement(System.String,System.String[])">
-            <summary>
-            Creates the insert statement.
-            </summary>
-            <param name="tableName">Name of the table.</param>
-            <param name="includeColumns">The include columns.</param>
-            <returns>The sql.</returns>
-        </member>
-        <member name="M:NBear.Data.IStatementFactory.CreateUpdateStatement(System.String,System.String,System.String[])">
-            <summary>
-            Creates the update statement.
-            </summary>
-            <param name="tableName">Name of the table.</param>
-            <param name="whereStr">The where STR.</param>
-            <param name="includeColumns">The include columns.</param>
-            <returns>The sql.</returns>
-        </member>
-        <member name="M:NBear.Data.IStatementFactory.CreateDeleteStatement(System.String,System.String)">
-            <summary>
-            Creates the delete statement.
-            </summary>
-            <param name="tableName">Name of the table.</param>
-            <param name="whereStr">The where STR.</param>
-            <returns>The sql.</returns>
-        </member>
-        <member name="M:NBear.Data.IStatementFactory.CreateSelectStatement(System.String,System.String,System.String,System.String[])">
-            <summary>
-            Creates the select statement.
-            </summary>
-            <param name="tableName">Name of the table.</param>
-            <param name="whereStr">The where STR.</param>
-            <param name="orderByStr">The order by STR.</param>
-            <param name="includeColumns">The include columns.</param>
-            <returns>The sql.</returns>
-        </member>
-        <member name="M:NBear.Data.StatementFactory.CreateInsertStatement(System.String,System.String[])">
-            <summary>
-            Creates the insert statement.
-            </summary>
-            <param name="tableName">Name of the table.</param>
-            <param name="includeColumns">The include columns.</param>
-            <returns>The sql.</returns>
-        </member>
-        <member name="M:NBear.Data.StatementFactory.CreateUpdateStatement(System.String,System.String,System.String[])">
-            <summary>
-            Creates the update statement.
-            </summary>
-            <param name="tableName">Name of the table.</param>
-            <param name="whereStr">The where STR.</param>
-            <param name="includeColumns">The include columns.</param>
-            <returns>The sql.</returns>
-        </member>
-        <member name="M:NBear.Data.StatementFactory.CreateDeleteStatement(System.String,System.String)">
-            <summary>
-            Creates the delete statement.
-            </summary>
-            <param name="tableName">Name of the table.</param>
-            <param name="whereStr">The where STR.</param>
-            <returns>The sql.</returns>
-        </member>
-        <member name="M:NBear.Data.StatementFactory.CreateSelectStatement(System.String,System.String,System.String,System.String[])">
-            <summary>
-            Creates the select statement.
-            </summary>
-            <param name="tableName">Name of the table.</param>
-            <param name="whereStr">The where STR.</param>
-            <param name="orderByStr">The order by STR.</param>
-            <param name="includeColumns">The include columns.</param>
-            <returns>The sql.</returns>
-        </member>
-        <member name="M:NBear.Data.MySql.MySqlStatementFactory.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:MySqlStatementFactory"/> class.
-            </summary>
-        </member>
-        <member name="M:NBear.Data.MySql.MySqlStatementFactory.CreateInsertStatement(System.String,System.String[])">
-            <summary>
-            Creates the insert statement.
-            </summary>
-            <param name="tableName">Name of the table.</param>
-            <param name="includeColumns">The include columns.</param>
-            <returns>The sql.</returns>
-        </member>
-        <member name="M:NBear.Data.MySql.MySqlStatementFactory.CreateUpdateStatement(System.String,System.String,System.String[])">
-            <summary>
-            Creates the update statement.
-            </summary>
-            <param name="tableName">Name of the table.</param>
-            <param name="whereStr">The sql STR.</param>
-            <param name="includeColumns">The include columns.</param>
-            <returns>The sql.</returns>
-        </member>
-        <member name="M:NBear.Data.MySql.MySqlStatementFactory.CreateDeleteStatement(System.String,System.String)">
-            <summary>
-            Creates the delete statement.
-            </summary>
-            <param name="tableName">Name of the table.</param>
-            <param name="whereStr">The sql STR.</param>
-            <returns>The sql.</returns>
-        </member>
-        <member name="M:NBear.Data.MySql.MySqlStatementFactory.CreateSelectStatement(System.String,System.String,System.String,System.String[])">
-            <summary>
-            Creates the select statement.
-            </summary>
-            <param name="tableName">Name of the table.</param>
-            <param name="whereStr">The sql STR.</param>
-            <param name="orderByStr">The order by STR.</param>
-            <param name="includeColumns">The include columns.</param>
-            <returns>The sql.</returns>
-        </member>
-        <member name="T:NBear.Data.CacheConfigurationSection">
-            <summary>
-            cache config section
-            </summary>
-        </member>
-        <member name="F:NBear.Data.CacheConfigurationSection.DEFAULT_EXPIRE_SECONDS">
-            <summary>
-            The default entity cache expire seconds
-            </summary>
-        </member>
-        <member name="P:NBear.Data.CacheConfigurationSection.Enable">
-            <summary>
-            Gets or sets a value indicating whether this <see cref="T:NBear.Data.CacheConfigurationSection"/> is enable.
-            </summary>
-            <value><c>true</c> if enable; otherwise, <c>false</c>.</value>
-        </member>
-        <member name="P:NBear.Data.CacheConfigurationSection.CachingTables">
-            <summary>
-            Gets or sets the caching tables.
-            </summary>
-            <value>The caching tables.</value>
-        </member>
-        <member name="T:NBear.Data.MySql.MySqlPageSplit">
-            <summary>
-            MySql Page Splitter
-            </summary>
-        </member>
-        <member name="T:NBear.Data.PageSplit">
-            <summary>
-            PageSplit
-            </summary>
-        </member>
         <member name="T:NBear.Data.IPageSplit">
             <summary>
             Interface of all PageSplits.
@@ -259,6 +64,60 @@
             Gets the param values.
             </summary>
             <value>The param values.</value>
+        </member>
+        <member name="T:NBear.Data.BatchCommander">
+            <summary>
+            BatchCommander is used to execute batch queries.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.BatchCommander.#ctor(NBear.Data.Database,System.Int32,System.Data.IsolationLevel)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.BatchCommander"/> class.
+            </summary>
+            <param name="db">The db.</param>
+            <param name="batchSize">Size of the batch.</param>
+            <param name="il">The il.</param>
+        </member>
+        <member name="M:NBear.Data.BatchCommander.#ctor(NBear.Data.Database,System.Int32,System.Data.Common.DbTransaction)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.BatchCommander"/> class.
+            </summary>
+            <param name="db">The db.</param>
+            <param name="batchSize">Size of the batch.</param>
+            <param name="tran">The tran.</param>
+        </member>
+        <member name="M:NBear.Data.BatchCommander.#ctor(NBear.Data.Database,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.BatchCommander"/> class.
+            </summary>
+            <param name="db">The db.</param>
+            <param name="batchSize">Size of the batch.</param>
+        </member>
+        <member name="M:NBear.Data.BatchCommander.Process(System.Data.Common.DbCommand)">
+            <summary>
+            Processes the specified CMD.
+            </summary>
+            <param name="cmd">The CMD.</param>
+        </member>
+        <member name="M:NBear.Data.BatchCommander.Close">
+            <summary>
+            Closes this instance.
+            </summary>
+        </member>
+        <member name="T:NBear.Data.SqlServer9.SqlPageSplit9">
+            <summary>
+            PageSplit implementation for SQL Server 9.x (2005)
+            </summary>
+        </member>
+        <member name="T:NBear.Data.SqlServer.SqlPageSplit">
+            <summary>
+            Sql Page Splitter
+            </summary>
+        </member>
+        <member name="T:NBear.Data.PageSplit">
+            <summary>
+            PageSplit
+            </summary>
         </member>
         <member name="F:NBear.Data.PageSplit.DEFAULT_PAGESIZE">
             <summary>
@@ -408,6 +267,74 @@
             </summary>
             <value>The order by.</value>
         </member>
+        <member name="M:NBear.Data.SqlServer.SqlPageSplit.FormatInsideParams(System.String)">
+            <summary>
+            Formats the inside params.
+            </summary>
+            <param name="where">The where.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlPageSplit.ConstructPageSplitableSelectStatement(System.String,System.String)">
+            <summary>
+            construct an page splitable select statement from a simple select statement like 
+            " select [columns] from [table_name] sql [condition] order by [order_list] "
+            </summary>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlPageSplit.ConstructPageSplitableSelectStatementForFirstPage(System.String,System.String)">
+            <summary>
+            ConstructPageSplitableSelectStatementForFirstPage
+            </summary>
+            <param name="sql">sql</param>
+            <param name="keyColumn">keyColumn</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlPageSplit.ConstructSelectCountStatement(System.String)">
+            <summary>
+            ConstructSelectCountStatement
+            </summary>
+            <param name="sql">sql</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlPageSplit.#ctor(NBear.Data.Database,System.String,System.String,System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.SqlServer.SqlPageSplit"/> class.
+            </summary>
+            <param name="db">The db.</param>
+            <param name="selectStatement">The select statement.</param>
+            <param name="keyColumn">The DEFAULT_KEY column.</param>
+            <param name="paramValues">The param values.</param>
+        </member>
+        <member name="M:NBear.Data.SqlServer9.SqlPageSplit9.#ctor(NBear.Data.Database,System.String,System.String,System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:SqlPageSplit9"/> class.
+            </summary>
+            <param name="db"></param>
+            <param name="selectStatement"></param>
+            <param name="keyColumn"></param>
+            <param name="paramValues"></param>
+        </member>
+        <member name="M:NBear.Data.SqlServer9.SqlPageSplit9.ConstructPageSplitableSelectStatement(System.String,System.String)">
+            <summary>
+            construct an page splitable select statement from a simple select statement like 
+            " select [columns] from [table_name] sql [condition] order by [order_list] "
+            </summary>
+            <param name="sql"></param>
+            <param name="keyColumn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.SqlServer9.SqlPageSplit9.ConstructPageSplitableSelectStatementForFirstPage(System.String,System.String)">
+            <summary>
+            ConstructPageSplitableSelectStatementForFirstPage
+            </summary>
+            <param name="sql">sql</param>
+            <param name="keyColumn">keyColumn</param>
+            <returns></returns>
+        </member>
+        <member name="T:NBear.Data.MySql.MySqlPageSplit">
+            <summary>
+            MySql Page Splitter
+            </summary>
+        </member>
         <member name="M:NBear.Data.MySql.MySqlPageSplit.FormatInsideParams(System.String)">
             <summary>
             Formats the inside params.
@@ -445,13 +372,55 @@
             <param name="keyColumn">The DEFAULT_KEY column.</param>
             <param name="paramValues">The param values.</param>
         </member>
-        <member name="T:NBear.Data.MsAccess.AccessDbProvider">
+        <member name="T:NBear.Data.MsAccess.AccessPageSplit">
             <summary>
-            <para>Represents a Access Server Database Provider.</para>
+            MS Access Page Splitter
+            </summary>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessPageSplit.FormatInsideParams(System.String)">
+            <summary>
+            Formats the inside params.
+            </summary>
+            <param name="where"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessPageSplit.ConstructPageSplitableSelectStatement(System.String,System.String)">
+            <summary>
+            construct an page splitable select statement from a simple select statement like 
+            " select [columns] from [table_name] sql [condition] order by [order_list] "
+            </summary>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessPageSplit.ConstructPageSplitableSelectStatementForFirstPage(System.String,System.String)">
+            <summary>
+            ConstructPageSplitableSelectStatementForFirstPage
+            </summary>
+            <param name="sql">sql</param>
+            <param name="keyColumn">keyColumn</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessPageSplit.ConstructSelectCountStatement(System.String)">
+            <summary>
+            ConstructSelectCountStatement
+            </summary>
+            <param name="sql">sql</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessPageSplit.#ctor(NBear.Data.Database,System.String,System.String,System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:AccessPageSplit"/> class.
+            </summary>
+            <param name="db">The db.</param>
+            <param name="selectStatement">The select statement.</param>
+            <param name="keyColumn">The DEFAULT_KEY column.</param>
+            <param name="paramValues">The param values.</param>
+        </member>
+        <member name="T:NBear.Data.Oracle.OracleDbProvider">
+            <summary>
+            <para>Represents an Oracle Database.</para>
             </summary>
             <remarks> 
             <para>
-            Internally uses Access Server .NET Managed Provider from Microsoft (System.Data.OleDb) to connect to the database.
+            Internally uses Oracle .NET Managed Provider from Microsoft (System.Data.OracleClient) to connect to the database.
             </para>  
             </remarks>
         </member>
@@ -564,26 +533,13 @@
             </summary>
             <value>The right token.</value>
         </member>
-        <member name="M:NBear.Data.MsAccess.AccessDbProvider.#ctor(System.String)">
+        <member name="M:NBear.Data.Oracle.OracleDbProvider.#ctor(System.String)">
             <summary>
-            Initializes a new instance of the <see cref="T:NBear.Data.MsAccess.AccessDbProvider"/> class.
+            Initializes a new instance of the <see cref="T:NBear.Data.Oracle.OracleDbProvider"/> class.
             </summary>
             <param name="connStr">The conn STR.</param>
         </member>
-        <member name="M:NBear.Data.MsAccess.AccessDbProvider.DiscoverParams(System.String)">
-            <summary>
-            Discovers the params.
-            </summary>
-            <param name="sql">The sql.</param>
-            <returns></returns>
-        </member>
-        <member name="M:NBear.Data.MsAccess.AccessDbProvider.AdjustParameter(System.Data.Common.DbParameter)">
-            <summary>
-            Adjust Db Parameter value
-            </summary>
-            <param name="param"></param>
-        </member>
-        <member name="M:NBear.Data.MsAccess.AccessDbProvider.CreatePageSplit(NBear.Data.Database,System.String,System.String,System.Object[])">
+        <member name="M:NBear.Data.Oracle.OracleDbProvider.CreatePageSplit(NBear.Data.Database,System.String,System.String,System.Object[])">
             <summary>
             When overridden in a derived class, creates an <see cref="T:NBear.Data.IPageSplit"/> for a SQL page splitable select query.
             </summary>
@@ -595,171 +551,46 @@
             The <see cref="T:NBear.Data.IPageSplit"/> for the SQL query.
             </returns>
         </member>
-        <member name="M:NBear.Data.MsAccess.AccessDbProvider.CreateStatementFactory">
-            <summary>
-            Creates the SQL statement factory.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:NBear.Data.MsAccess.AccessDbProvider.BuildParameterName(System.String)">
-            <summary>
-            Builds the name of the parameter.
-            </summary>
-            <param name="name">The name.</param>
-            <returns></returns>
-        </member>
-        <member name="M:NBear.Data.MsAccess.AccessDbProvider.BuildColumnName(System.String)">
-            <summary>
-            Builds the name of the column.
-            </summary>
-            <param name="name">The name.</param>
-            <returns></returns>
-        </member>
-        <member name="P:NBear.Data.MsAccess.AccessDbProvider.SelectLastInsertedRowAutoIDStatement">
-            <summary>
-            Gets the select last inserted row auto ID statement.
-            </summary>
-            <value>The select last inserted row auto ID statement.</value>
-        </member>
-        <member name="P:NBear.Data.MsAccess.AccessDbProvider.SupportADO20Transaction">
-            <summary>
-            Gets a value indicating whether [support AD o20 transaction].
-            </summary>
-            <value>
-            	<c>true</c> if [support AD o20 transaction]; otherwise, <c>false</c>.
-            </value>
-        </member>
-        <member name="P:NBear.Data.MsAccess.AccessDbProvider.LeftToken">
-            <summary>
-            Gets the left token of table name or column name.
-            </summary>
-            <value>The left token.</value>
-        </member>
-        <member name="P:NBear.Data.MsAccess.AccessDbProvider.RightToken">
-            <summary>
-            Gets the right token of table name or column name.
-            </summary>
-            <value>The right token.</value>
-        </member>
-        <member name="P:NBear.Data.MsAccess.AccessDbProvider.ParamPrefix">
-            <summary>
-            Gets the param prefix.
-            </summary>
-            <value>The param prefix.</value>
-        </member>
-        <member name="T:NBear.Data.Oracle.OracleStatementFactory">
-            <summary>
-            Common Factory to create SQL statements for SqlServer and MS Access
-            </summary>
-        </member>
-        <member name="M:NBear.Data.Oracle.OracleStatementFactory.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:SqlStatementFactory"/> class.
-            </summary>
-        </member>
-        <member name="M:NBear.Data.Oracle.OracleStatementFactory.CreateInsertStatement(System.String,System.String[])">
-            <summary>
-            Creates the insert statement.
-            </summary>
-            <param name="tableName">Name of the table.</param>
-            <param name="includeColumns">The include columns.</param>
-            <returns>The sql.</returns>
-        </member>
-        <member name="M:NBear.Data.Oracle.OracleStatementFactory.CreateUpdateStatement(System.String,System.String,System.String[])">
-            <summary>
-            Creates the update statement.
-            </summary>
-            <param name="tableName">Name of the table.</param>
-            <param name="whereStr">The sql STR.</param>
-            <param name="includeColumns">The include columns.</param>
-            <returns>The sql.</returns>
-        </member>
-        <member name="M:NBear.Data.Oracle.OracleStatementFactory.CreateDeleteStatement(System.String,System.String)">
-            <summary>
-            Creates the delete statement.
-            </summary>
-            <param name="tableName">Name of the table.</param>
-            <param name="whereStr">The sql STR.</param>
-            <returns>The sql.</returns>
-        </member>
-        <member name="M:NBear.Data.Oracle.OracleStatementFactory.CreateSelectStatement(System.String,System.String,System.String,System.String[])">
-            <summary>
-            Creates the select statement.
-            </summary>
-            <param name="tableName">Name of the table.</param>
-            <param name="whereStr">The sql STR.</param>
-            <param name="orderByStr">The order by STR.</param>
-            <param name="includeColumns">The include columns.</param>
-            <returns>The sql.</returns>
-        </member>
-        <member name="T:NBear.Data.MySql.MySqlDbProvider">
-            <summary>
-            <para>Represents a MySql Database Provider.</para>
-            </summary>
-            <remarks> 
-            <para>
-            Internally uses MySql Server .NET Managed Provider from Microsoft (System.Data.Odbc) to connect to the database.
-            </para>  
-            </remarks>
-        </member>
-        <member name="M:NBear.Data.MySql.MySqlDbProvider.#ctor(System.String)">
-            <summary>
-            Initializes a new instance of the <see cref="T:NBear.Data.MySql.MySqlDbProvider"/> class.
-            </summary>
-            <param name="connStr">The conn STR.</param>
-        </member>
-        <member name="M:NBear.Data.MySql.MySqlDbProvider.DiscoverParams(System.String)">
+        <member name="M:NBear.Data.Oracle.OracleDbProvider.DiscoverParams(System.String)">
             <summary>
             Discovers the params.
             </summary>
             <param name="sql">The sql.</param>
             <returns></returns>
         </member>
-        <member name="M:NBear.Data.MySql.MySqlDbProvider.AdjustParameter(System.Data.Common.DbParameter)">
-            <summary>
-            Adjust Db Parameter value
-            </summary>
-            <param name="param"></param>
-        </member>
-        <member name="M:NBear.Data.MySql.MySqlDbProvider.CreatePageSplit(NBear.Data.Database,System.String,System.String,System.Object[])">
-            <summary>
-            When overridden in a derived class, creates an <see cref="T:NBear.Data.IPageSplit"/> for a SQL page splitable select query.
-            </summary>
-            <param name="db"></param>
-            <param name="selectStatement">The text of the basic select query for all rows.</param>
-            <param name="keyColumn">The sigle main DEFAULT_KEY of the query.</param>
-            <param name="paramValues">The param values of the query.</param>
-            <returns>
-            The <see cref="T:NBear.Data.IPageSplit"/> for the SQL query.
-            </returns>
-        </member>
-        <member name="M:NBear.Data.MySql.MySqlDbProvider.CreateStatementFactory">
+        <member name="M:NBear.Data.Oracle.OracleDbProvider.CreateStatementFactory">
             <summary>
             Creates the SQL statement factory.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:NBear.Data.MySql.MySqlDbProvider.BuildParameterName(System.String)">
+        <member name="M:NBear.Data.Oracle.OracleDbProvider.AdjustParameter(System.Data.Common.DbParameter)">
+            <summary>
+            Adjusts the parameter.
+            </summary>
+            <param name="param">The param.</param>
+        </member>
+        <member name="M:NBear.Data.Oracle.OracleDbProvider.BuildParameterName(System.String)">
             <summary>
             Builds the name of the parameter.
             </summary>
             <param name="name">The name.</param>
             <returns></returns>
         </member>
-        <member name="M:NBear.Data.MySql.MySqlDbProvider.BuildColumnName(System.String)">
+        <member name="M:NBear.Data.Oracle.OracleDbProvider.BuildColumnName(System.String)">
             <summary>
             Builds the name of the column.
             </summary>
             <param name="name">The name.</param>
             <returns></returns>
         </member>
-        <member name="P:NBear.Data.MySql.MySqlDbProvider.SelectLastInsertedRowAutoIDStatement">
+        <member name="P:NBear.Data.Oracle.OracleDbProvider.SelectLastInsertedRowAutoIDStatement">
             <summary>
             Gets the select last inserted row auto ID statement.
             </summary>
             <value>The select last inserted row auto ID statement.</value>
         </member>
-        <member name="P:NBear.Data.MySql.MySqlDbProvider.SupportADO20Transaction">
+        <member name="P:NBear.Data.Oracle.OracleDbProvider.SupportADO20Transaction">
             <summary>
             Gets a value indicating whether [support AD o20 transaction].
             </summary>
@@ -767,165 +598,50 @@
             	<c>true</c> if [support AD o20 transaction]; otherwise, <c>false</c>.
             </value>
         </member>
-        <member name="P:NBear.Data.MySql.MySqlDbProvider.LeftToken">
+        <member name="P:NBear.Data.Oracle.OracleDbProvider.LeftToken">
             <summary>
             Gets the left token of table name or column name.
             </summary>
             <value>The left token.</value>
         </member>
-        <member name="P:NBear.Data.MySql.MySqlDbProvider.RightToken">
+        <member name="P:NBear.Data.Oracle.OracleDbProvider.RightToken">
             <summary>
             Gets the right token of table name or column name.
             </summary>
             <value>The right token.</value>
         </member>
-        <member name="P:NBear.Data.MySql.MySqlDbProvider.ParamPrefix">
+        <member name="P:NBear.Data.Oracle.OracleDbProvider.ParamPrefix">
             <summary>
             Gets the param prefix.
             </summary>
             <value>The param prefix.</value>
         </member>
-        <member name="T:NBear.Data.SqlServer9.SqlPageSplit9">
+        <member name="T:NBear.Data.CacheConfigurationSection">
             <summary>
-            PageSplit implementation for SQL Server 9.x (2005)
+            cache config section
             </summary>
         </member>
-        <member name="T:NBear.Data.SqlServer.SqlPageSplit">
+        <member name="F:NBear.Data.CacheConfigurationSection.DEFAULT_EXPIRE_SECONDS">
             <summary>
-            Sql Page Splitter
+            The default entity cache expire seconds
             </summary>
         </member>
-        <member name="M:NBear.Data.SqlServer.SqlPageSplit.FormatInsideParams(System.String)">
+        <member name="P:NBear.Data.CacheConfigurationSection.Enable">
             <summary>
-            Formats the inside params.
+            Gets or sets a value indicating whether this <see cref="T:NBear.Data.CacheConfigurationSection"/> is enable.
             </summary>
-            <param name="where">The where.</param>
-            <returns></returns>
+            <value><c>true</c> if enable; otherwise, <c>false</c>.</value>
         </member>
-        <member name="M:NBear.Data.SqlServer.SqlPageSplit.ConstructPageSplitableSelectStatement(System.String,System.String)">
+        <member name="P:NBear.Data.CacheConfigurationSection.CachingTables">
             <summary>
-            construct an page splitable select statement from a simple select statement like 
-            " select [columns] from [table_name] sql [condition] order by [order_list] "
+            Gets or sets the caching tables.
             </summary>
+            <value>The caching tables.</value>
         </member>
-        <member name="M:NBear.Data.SqlServer.SqlPageSplit.ConstructPageSplitableSelectStatementForFirstPage(System.String,System.String)">
+        <member name="T:NBear.Data.SqlServer9.SqlDbProvider9">
             <summary>
-            ConstructPageSplitableSelectStatementForFirstPage
+            Db provider implementation for SQL Server 9.X (2005)
             </summary>
-            <param name="sql">sql</param>
-            <param name="keyColumn">keyColumn</param>
-            <returns></returns>
-        </member>
-        <member name="M:NBear.Data.SqlServer.SqlPageSplit.ConstructSelectCountStatement(System.String)">
-            <summary>
-            ConstructSelectCountStatement
-            </summary>
-            <param name="sql">sql</param>
-            <returns></returns>
-        </member>
-        <member name="M:NBear.Data.SqlServer.SqlPageSplit.#ctor(NBear.Data.Database,System.String,System.String,System.Object[])">
-            <summary>
-            Initializes a new instance of the <see cref="T:NBear.Data.SqlServer.SqlPageSplit"/> class.
-            </summary>
-            <param name="db">The db.</param>
-            <param name="selectStatement">The select statement.</param>
-            <param name="keyColumn">The DEFAULT_KEY column.</param>
-            <param name="paramValues">The param values.</param>
-        </member>
-        <member name="M:NBear.Data.SqlServer9.SqlPageSplit9.#ctor(NBear.Data.Database,System.String,System.String,System.Object[])">
-            <summary>
-            Initializes a new instance of the <see cref="T:SqlPageSplit9"/> class.
-            </summary>
-            <param name="db"></param>
-            <param name="selectStatement"></param>
-            <param name="keyColumn"></param>
-            <param name="paramValues"></param>
-        </member>
-        <member name="M:NBear.Data.SqlServer9.SqlPageSplit9.ConstructPageSplitableSelectStatement(System.String,System.String)">
-            <summary>
-            construct an page splitable select statement from a simple select statement like 
-            " select [columns] from [table_name] sql [condition] order by [order_list] "
-            </summary>
-            <param name="sql"></param>
-            <param name="keyColumn"></param>
-            <returns></returns>
-        </member>
-        <member name="M:NBear.Data.SqlServer9.SqlPageSplit9.ConstructPageSplitableSelectStatementForFirstPage(System.String,System.String)">
-            <summary>
-            ConstructPageSplitableSelectStatementForFirstPage
-            </summary>
-            <param name="sql">sql</param>
-            <param name="keyColumn">keyColumn</param>
-            <returns></returns>
-        </member>
-        <member name="T:NBear.Data.MsAccess.AccessPageSplit">
-            <summary>
-            MS Access Page Splitter
-            </summary>
-        </member>
-        <member name="M:NBear.Data.MsAccess.AccessPageSplit.FormatInsideParams(System.String)">
-            <summary>
-            Formats the inside params.
-            </summary>
-            <param name="where"></param>
-            <returns></returns>
-        </member>
-        <member name="M:NBear.Data.MsAccess.AccessPageSplit.ConstructPageSplitableSelectStatement(System.String,System.String)">
-            <summary>
-            construct an page splitable select statement from a simple select statement like 
-            " select [columns] from [table_name] sql [condition] order by [order_list] "
-            </summary>
-        </member>
-        <member name="M:NBear.Data.MsAccess.AccessPageSplit.ConstructPageSplitableSelectStatementForFirstPage(System.String,System.String)">
-            <summary>
-            ConstructPageSplitableSelectStatementForFirstPage
-            </summary>
-            <param name="sql">sql</param>
-            <param name="keyColumn">keyColumn</param>
-            <returns></returns>
-        </member>
-        <member name="M:NBear.Data.MsAccess.AccessPageSplit.ConstructSelectCountStatement(System.String)">
-            <summary>
-            ConstructSelectCountStatement
-            </summary>
-            <param name="sql">sql</param>
-            <returns></returns>
-        </member>
-        <member name="M:NBear.Data.MsAccess.AccessPageSplit.#ctor(NBear.Data.Database,System.String,System.String,System.Object[])">
-            <summary>
-            Initializes a new instance of the <see cref="T:AccessPageSplit"/> class.
-            </summary>
-            <param name="db">The db.</param>
-            <param name="selectStatement">The select statement.</param>
-            <param name="keyColumn">The DEFAULT_KEY column.</param>
-            <param name="paramValues">The param values.</param>
-        </member>
-        <member name="T:NBear.Data.DbProviderFactory">
-            <summary>
-            The db provider factory.
-            </summary>
-        </member>
-        <member name="M:NBear.Data.DbProviderFactory.CreateDbProvider(System.String,System.String,System.String)">
-            <summary>
-            Creates the db provider.
-            </summary>
-            <param name="assemblyName">Name of the assembly.</param>
-            <param name="className">Name of the class.</param>
-            <param name="connStr">The conn STR.</param>
-            <returns>The db provider.</returns>
-        </member>
-        <member name="M:NBear.Data.DbProviderFactory.CreateDbProvider(System.String)">
-            <summary>
-            Creates the db provider.
-            </summary>
-            <param name="connStrName">Name of the conn STR.</param>
-            <returns>The db provider.</returns>
-        </member>
-        <member name="P:NBear.Data.DbProviderFactory.Default">
-            <summary>
-            Gets the default db provider.
-            </summary>
-            <value>The default.</value>
         </member>
         <member name="T:NBear.Data.SqlServer.SqlDbProvider">
             <summary>
@@ -1017,6 +733,187 @@
             Gets the param prefix.
             </summary>
             <value>The param prefix.</value>
+        </member>
+        <member name="M:NBear.Data.SqlServer9.SqlDbProvider9.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SqlDatabase"/> class.
+            </summary>
+            <param name="connStr"></param>
+        </member>
+        <member name="M:NBear.Data.SqlServer9.SqlDbProvider9.CreatePageSplit(NBear.Data.Database,System.String,System.String,System.Object[])">
+            <summary>
+            When overridden in a derived class, creates an <see cref="T:NBear.Data.IPageSplit"/> for a basic SQL select query.
+            </summary>
+            <param name="db"></param>
+            <param name="selectStatement">The text of the query.</param>
+            <param name="keyColumn">The sigle main DEFAULT_KEY of the query.</param>
+            <param name="paramValues">The param values of the query.</param>
+            <returns>
+            The <see cref="T:NBear.Data.IPageSplit"/> for the SQL query.
+            </returns>
+        </member>
+        <member name="T:NBear.Data.Oracle.OracleStatementFactory">
+            <summary>
+            Common Factory to create SQL statements for SqlServer and MS Access
+            </summary>
+        </member>
+        <member name="T:NBear.Data.StatementFactory">
+            <summary>
+            Base statement factory.
+            </summary>
+        </member>
+        <member name="T:NBear.Data.IStatementFactory">
+            <summary>
+            Interface of all statement factory
+            </summary>
+        </member>
+        <member name="M:NBear.Data.IStatementFactory.CreateInsertStatement(System.String,System.String[])">
+            <summary>
+            Creates the insert statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.IStatementFactory.CreateUpdateStatement(System.String,System.String,System.String[])">
+            <summary>
+            Creates the update statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The where STR.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.IStatementFactory.CreateDeleteStatement(System.String,System.String)">
+            <summary>
+            Creates the delete statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The where STR.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.IStatementFactory.CreateSelectStatement(System.String,System.String,System.String,System.String[])">
+            <summary>
+            Creates the select statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The where STR.</param>
+            <param name="orderByStr">The order by STR.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.StatementFactory.CreateInsertStatement(System.String,System.String[])">
+            <summary>
+            Creates the insert statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.StatementFactory.CreateUpdateStatement(System.String,System.String,System.String[])">
+            <summary>
+            Creates the update statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The where STR.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.StatementFactory.CreateDeleteStatement(System.String,System.String)">
+            <summary>
+            Creates the delete statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The where STR.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.StatementFactory.CreateSelectStatement(System.String,System.String,System.String,System.String[])">
+            <summary>
+            Creates the select statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The where STR.</param>
+            <param name="orderByStr">The order by STR.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.Oracle.OracleStatementFactory.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SqlStatementFactory"/> class.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.Oracle.OracleStatementFactory.CreateInsertStatement(System.String,System.String[])">
+            <summary>
+            Creates the insert statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.Oracle.OracleStatementFactory.CreateUpdateStatement(System.String,System.String,System.String[])">
+            <summary>
+            Creates the update statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The sql STR.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.Oracle.OracleStatementFactory.CreateDeleteStatement(System.String,System.String)">
+            <summary>
+            Creates the delete statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The sql STR.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.Oracle.OracleStatementFactory.CreateSelectStatement(System.String,System.String,System.String,System.String[])">
+            <summary>
+            Creates the select statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The sql STR.</param>
+            <param name="orderByStr">The order by STR.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="T:NBear.Data.PageSelector`1">
+            <summary>
+            The strong typed page selector.
+            </summary>
+            <typeparam name="EntityType">the type of the entity.</typeparam>
+        </member>
+        <member name="M:NBear.Data.PageSelector`1.#ctor(NBear.Data.Gateway,NBear.Data.IPageSplit)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.PageSelector`1"/> class.
+            </summary>
+            <param name="gateway">The gateway.</param>
+            <param name="ps">The ps.</param>
+        </member>
+        <member name="M:NBear.Data.PageSelector`1.FindPage(System.Int32)">
+            <summary>
+            Finds the page.
+            </summary>
+            <param name="pageNo">The page no.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="P:NBear.Data.PageSelector`1.PageSize">
+            <summary>
+            Gets or sets the size of the page.
+            </summary>
+            <value>The size of the page.</value>
+        </member>
+        <member name="P:NBear.Data.PageSelector`1.PageCount">
+            <summary>
+            Gets the page count.
+            </summary>
+            <value>The page count.</value>
+        </member>
+        <member name="P:NBear.Data.PageSelector`1.RowCount">
+            <summary>
+            Gets the row count.
+            </summary>
+            <value>The row count.</value>
         </member>
         <member name="T:NBear.Data.DatabaseType">
             <summary>
@@ -1909,45 +1806,6 @@
             	<c>true</c> if this instance is cache turned on; otherwise, <c>false</c>.
             </value>
         </member>
-        <member name="T:NBear.Data.DbParameterCache">
-            <summary>
-            The db param cache.
-            </summary>
-        </member>
-        <member name="M:NBear.Data.DbParameterCache.#ctor(NBear.Data.Database)">
-            <summary>
-            Initializes a new instance of the <see cref="T:NBear.Data.DbParameterCache"/> class.
-            </summary>
-            <param name="db">The db.</param>
-        </member>
-        <member name="M:NBear.Data.DbParameterCache.IsCached(System.String)">
-            <summary>
-            Determines whether the specified key is cached.
-            </summary>
-            <param name="key">The key.</param>
-            <returns>
-            	<c>true</c> if the specified key is cached; otherwise, <c>false</c>.
-            </returns>
-        </member>
-        <member name="M:NBear.Data.DbParameterCache.AddParametersFromCache(System.String,System.Data.Common.DbCommand,System.Data.DbType[],System.Object[])">
-            <summary>
-            Adds the parameters from cache.
-            </summary>
-            <param name="key">The key.</param>
-            <param name="cmd">The CMD.</param>
-            <param name="types">The types.</param>
-            <param name="values">The values.</param>
-        </member>
-        <member name="M:NBear.Data.DbParameterCache.CreateAndCacheParameters(System.String,System.Data.Common.DbCommand,System.String[],System.Data.DbType[],System.Object[])">
-            <summary>
-            Creates the and cache parameters.
-            </summary>
-            <param name="key">The key.</param>
-            <param name="cmd">The CMD.</param>
-            <param name="names">The names.</param>
-            <param name="types">The types.</param>
-            <param name="values">The values.</param>
-        </member>
         <member name="T:NBear.Data.Database">
             <summary>
             As a DAAB like database object.
@@ -2567,96 +2425,6 @@
             OnLog event.
             </summary>
         </member>
-        <member name="T:NBear.Data.MsAccess.AccessStatementFactory">
-            <summary>
-            Common Factory to create SQL statements for SqlServer and MS Access
-            </summary>
-        </member>
-        <member name="M:NBear.Data.MsAccess.AccessStatementFactory.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:AccessStatementFactory"/> class.
-            </summary>
-        </member>
-        <member name="M:NBear.Data.MsAccess.AccessStatementFactory.CreateInsertStatement(System.String,System.String[])">
-            <summary>
-            Creates the insert statement.
-            </summary>
-            <param name="tableName">Name of the table.</param>
-            <param name="includeColumns">The include columns.</param>
-            <returns>The sql.</returns>
-        </member>
-        <member name="M:NBear.Data.MsAccess.AccessStatementFactory.CreateUpdateStatement(System.String,System.String,System.String[])">
-            <summary>
-            Creates the update statement.
-            </summary>
-            <param name="tableName">Name of the table.</param>
-            <param name="whereStr">The sql STR.</param>
-            <param name="includeColumns">The include columns.</param>
-            <returns>The sql.</returns>
-        </member>
-        <member name="M:NBear.Data.MsAccess.AccessStatementFactory.CreateDeleteStatement(System.String,System.String)">
-            <summary>
-            Creates the delete statement.
-            </summary>
-            <param name="tableName">Name of the table.</param>
-            <param name="whereStr">The sql STR.</param>
-            <returns>The sql.</returns>
-        </member>
-        <member name="M:NBear.Data.MsAccess.AccessStatementFactory.CreateSelectStatement(System.String,System.String,System.String,System.String[])">
-            <summary>
-            Creates the select statement.
-            </summary>
-            <param name="tableName">Name of the table.</param>
-            <param name="whereStr">The sql STR.</param>
-            <param name="orderByStr">The order by STR.</param>
-            <param name="includeColumns">The include columns.</param>
-            <returns>The sql.</returns>
-        </member>
-        <member name="T:NBear.Data.SqlServer.SqlStatementFactory">
-            <summary>
-            Common Factory to create SQL statements for SqlServer and MS Access
-            </summary>
-        </member>
-        <member name="M:NBear.Data.SqlServer.SqlStatementFactory.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:SqlStatementFactory"/> class.
-            </summary>
-        </member>
-        <member name="M:NBear.Data.SqlServer.SqlStatementFactory.CreateInsertStatement(System.String,System.String[])">
-            <summary>
-            Creates the insert statement.
-            </summary>
-            <param name="tableName">Name of the table.</param>
-            <param name="includeColumns">The include columns.</param>
-            <returns>The sql.</returns>
-        </member>
-        <member name="M:NBear.Data.SqlServer.SqlStatementFactory.CreateUpdateStatement(System.String,System.String,System.String[])">
-            <summary>
-            Creates the update statement.
-            </summary>
-            <param name="tableName">Name of the table.</param>
-            <param name="whereStr">The sql STR.</param>
-            <param name="includeColumns">The include columns.</param>
-            <returns>The sql.</returns>
-        </member>
-        <member name="M:NBear.Data.SqlServer.SqlStatementFactory.CreateDeleteStatement(System.String,System.String)">
-            <summary>
-            Creates the delete statement.
-            </summary>
-            <param name="tableName">Name of the table.</param>
-            <param name="whereStr">The sql STR.</param>
-            <returns>The sql.</returns>
-        </member>
-        <member name="M:NBear.Data.SqlServer.SqlStatementFactory.CreateSelectStatement(System.String,System.String,System.String,System.String[])">
-            <summary>
-            Creates the select statement.
-            </summary>
-            <param name="tableName">Name of the table.</param>
-            <param name="whereStr">The sql STR.</param>
-            <param name="orderByStr">The order by STR.</param>
-            <param name="includeColumns">The include columns.</param>
-            <returns>The sql.</returns>
-        </member>
         <member name="T:NBear.Data.DbHelper">
             <summary>
             The DbHelper.
@@ -3117,46 +2885,81 @@
             <param name="keyColumn">The DEFAULT_KEY column.</param>
             <param name="paramValues">The param values.</param>
         </member>
-        <member name="T:NBear.Data.SqlServer9.SqlDbProvider9">
+        <member name="T:NBear.Data.MySql.MySqlStatementFactory">
             <summary>
-            Db provider implementation for SQL Server 9.X (2005)
+            Common Factory to create SQL statements for SqlServer and MySql
             </summary>
         </member>
-        <member name="M:NBear.Data.SqlServer9.SqlDbProvider9.#ctor(System.String)">
+        <member name="M:NBear.Data.MySql.MySqlStatementFactory.#ctor">
             <summary>
-            Initializes a new instance of the <see cref="T:SqlDatabase"/> class.
+            Initializes a new instance of the <see cref="T:MySqlStatementFactory"/> class.
             </summary>
-            <param name="connStr"></param>
         </member>
-        <member name="M:NBear.Data.SqlServer9.SqlDbProvider9.CreatePageSplit(NBear.Data.Database,System.String,System.String,System.Object[])">
+        <member name="M:NBear.Data.MySql.MySqlStatementFactory.CreateInsertStatement(System.String,System.String[])">
             <summary>
-            When overridden in a derived class, creates an <see cref="T:NBear.Data.IPageSplit"/> for a basic SQL select query.
+            Creates the insert statement.
             </summary>
-            <param name="db"></param>
-            <param name="selectStatement">The text of the query.</param>
-            <param name="keyColumn">The sigle main DEFAULT_KEY of the query.</param>
-            <param name="paramValues">The param values of the query.</param>
-            <returns>
-            The <see cref="T:NBear.Data.IPageSplit"/> for the SQL query.
-            </returns>
+            <param name="tableName">Name of the table.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
         </member>
-        <member name="T:NBear.Data.Oracle.OracleDbProvider">
+        <member name="M:NBear.Data.MySql.MySqlStatementFactory.CreateUpdateStatement(System.String,System.String,System.String[])">
             <summary>
-            <para>Represents an Oracle Database.</para>
+            Creates the update statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The sql STR.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.MySql.MySqlStatementFactory.CreateDeleteStatement(System.String,System.String)">
+            <summary>
+            Creates the delete statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The sql STR.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.MySql.MySqlStatementFactory.CreateSelectStatement(System.String,System.String,System.String,System.String[])">
+            <summary>
+            Creates the select statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The sql STR.</param>
+            <param name="orderByStr">The order by STR.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="T:NBear.Data.MySql.MySqlDbProvider">
+            <summary>
+            <para>Represents a MySql Database Provider.</para>
             </summary>
             <remarks> 
             <para>
-            Internally uses Oracle .NET Managed Provider from Microsoft (System.Data.OracleClient) to connect to the database.
+            Internally uses MySql Server .NET Managed Provider from Microsoft (System.Data.Odbc) to connect to the database.
             </para>  
             </remarks>
         </member>
-        <member name="M:NBear.Data.Oracle.OracleDbProvider.#ctor(System.String)">
+        <member name="M:NBear.Data.MySql.MySqlDbProvider.#ctor(System.String)">
             <summary>
-            Initializes a new instance of the <see cref="T:NBear.Data.Oracle.OracleDbProvider"/> class.
+            Initializes a new instance of the <see cref="T:NBear.Data.MySql.MySqlDbProvider"/> class.
             </summary>
             <param name="connStr">The conn STR.</param>
         </member>
-        <member name="M:NBear.Data.Oracle.OracleDbProvider.CreatePageSplit(NBear.Data.Database,System.String,System.String,System.Object[])">
+        <member name="M:NBear.Data.MySql.MySqlDbProvider.DiscoverParams(System.String)">
+            <summary>
+            Discovers the params.
+            </summary>
+            <param name="sql">The sql.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.MySql.MySqlDbProvider.AdjustParameter(System.Data.Common.DbParameter)">
+            <summary>
+            Adjust Db Parameter value
+            </summary>
+            <param name="param"></param>
+        </member>
+        <member name="M:NBear.Data.MySql.MySqlDbProvider.CreatePageSplit(NBear.Data.Database,System.String,System.String,System.Object[])">
             <summary>
             When overridden in a derived class, creates an <see cref="T:NBear.Data.IPageSplit"/> for a SQL page splitable select query.
             </summary>
@@ -3168,46 +2971,33 @@
             The <see cref="T:NBear.Data.IPageSplit"/> for the SQL query.
             </returns>
         </member>
-        <member name="M:NBear.Data.Oracle.OracleDbProvider.DiscoverParams(System.String)">
-            <summary>
-            Discovers the params.
-            </summary>
-            <param name="sql">The sql.</param>
-            <returns></returns>
-        </member>
-        <member name="M:NBear.Data.Oracle.OracleDbProvider.CreateStatementFactory">
+        <member name="M:NBear.Data.MySql.MySqlDbProvider.CreateStatementFactory">
             <summary>
             Creates the SQL statement factory.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:NBear.Data.Oracle.OracleDbProvider.AdjustParameter(System.Data.Common.DbParameter)">
-            <summary>
-            Adjusts the parameter.
-            </summary>
-            <param name="param">The param.</param>
-        </member>
-        <member name="M:NBear.Data.Oracle.OracleDbProvider.BuildParameterName(System.String)">
+        <member name="M:NBear.Data.MySql.MySqlDbProvider.BuildParameterName(System.String)">
             <summary>
             Builds the name of the parameter.
             </summary>
             <param name="name">The name.</param>
             <returns></returns>
         </member>
-        <member name="M:NBear.Data.Oracle.OracleDbProvider.BuildColumnName(System.String)">
+        <member name="M:NBear.Data.MySql.MySqlDbProvider.BuildColumnName(System.String)">
             <summary>
             Builds the name of the column.
             </summary>
             <param name="name">The name.</param>
             <returns></returns>
         </member>
-        <member name="P:NBear.Data.Oracle.OracleDbProvider.SelectLastInsertedRowAutoIDStatement">
+        <member name="P:NBear.Data.MySql.MySqlDbProvider.SelectLastInsertedRowAutoIDStatement">
             <summary>
             Gets the select last inserted row auto ID statement.
             </summary>
             <value>The select last inserted row auto ID statement.</value>
         </member>
-        <member name="P:NBear.Data.Oracle.OracleDbProvider.SupportADO20Transaction">
+        <member name="P:NBear.Data.MySql.MySqlDbProvider.SupportADO20Transaction">
             <summary>
             Gets a value indicating whether [support AD o20 transaction].
             </summary>
@@ -3215,62 +3005,272 @@
             	<c>true</c> if [support AD o20 transaction]; otherwise, <c>false</c>.
             </value>
         </member>
-        <member name="P:NBear.Data.Oracle.OracleDbProvider.LeftToken">
+        <member name="P:NBear.Data.MySql.MySqlDbProvider.LeftToken">
             <summary>
             Gets the left token of table name or column name.
             </summary>
             <value>The left token.</value>
         </member>
-        <member name="P:NBear.Data.Oracle.OracleDbProvider.RightToken">
+        <member name="P:NBear.Data.MySql.MySqlDbProvider.RightToken">
             <summary>
             Gets the right token of table name or column name.
             </summary>
             <value>The right token.</value>
         </member>
-        <member name="P:NBear.Data.Oracle.OracleDbProvider.ParamPrefix">
+        <member name="P:NBear.Data.MySql.MySqlDbProvider.ParamPrefix">
             <summary>
             Gets the param prefix.
             </summary>
             <value>The param prefix.</value>
         </member>
-        <member name="T:NBear.Data.BatchCommander">
+        <member name="T:NBear.Data.DbProviderFactory">
             <summary>
-            BatchCommander is used to execute batch queries.
+            The db provider factory.
             </summary>
         </member>
-        <member name="M:NBear.Data.BatchCommander.#ctor(NBear.Data.Database,System.Int32,System.Data.IsolationLevel)">
+        <member name="M:NBear.Data.DbProviderFactory.CreateDbProvider(System.String,System.String,System.String)">
             <summary>
-            Initializes a new instance of the <see cref="T:NBear.Data.BatchCommander"/> class.
+            Creates the db provider.
+            </summary>
+            <param name="assemblyName">Name of the assembly.</param>
+            <param name="className">Name of the class.</param>
+            <param name="connStr">The conn STR.</param>
+            <returns>The db provider.</returns>
+        </member>
+        <member name="M:NBear.Data.DbProviderFactory.CreateDbProvider(System.String)">
+            <summary>
+            Creates the db provider.
+            </summary>
+            <param name="connStrName">Name of the conn STR.</param>
+            <returns>The db provider.</returns>
+        </member>
+        <member name="P:NBear.Data.DbProviderFactory.Default">
+            <summary>
+            Gets the default db provider.
+            </summary>
+            <value>The default.</value>
+        </member>
+        <member name="T:NBear.Data.MsAccess.AccessDbProvider">
+            <summary>
+            <para>Represents a Access Server Database Provider.</para>
+            </summary>
+            <remarks> 
+            <para>
+            Internally uses Access Server .NET Managed Provider from Microsoft (System.Data.OleDb) to connect to the database.
+            </para>  
+            </remarks>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessDbProvider.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.MsAccess.AccessDbProvider"/> class.
+            </summary>
+            <param name="connStr">The conn STR.</param>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessDbProvider.DiscoverParams(System.String)">
+            <summary>
+            Discovers the params.
+            </summary>
+            <param name="sql">The sql.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessDbProvider.AdjustParameter(System.Data.Common.DbParameter)">
+            <summary>
+            Adjust Db Parameter value
+            </summary>
+            <param name="param"></param>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessDbProvider.CreatePageSplit(NBear.Data.Database,System.String,System.String,System.Object[])">
+            <summary>
+            When overridden in a derived class, creates an <see cref="T:NBear.Data.IPageSplit"/> for a SQL page splitable select query.
+            </summary>
+            <param name="db"></param>
+            <param name="selectStatement">The text of the basic select query for all rows.</param>
+            <param name="keyColumn">The sigle main DEFAULT_KEY of the query.</param>
+            <param name="paramValues">The param values of the query.</param>
+            <returns>
+            The <see cref="T:NBear.Data.IPageSplit"/> for the SQL query.
+            </returns>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessDbProvider.CreateStatementFactory">
+            <summary>
+            Creates the SQL statement factory.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessDbProvider.BuildParameterName(System.String)">
+            <summary>
+            Builds the name of the parameter.
+            </summary>
+            <param name="name">The name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessDbProvider.BuildColumnName(System.String)">
+            <summary>
+            Builds the name of the column.
+            </summary>
+            <param name="name">The name.</param>
+            <returns></returns>
+        </member>
+        <member name="P:NBear.Data.MsAccess.AccessDbProvider.SelectLastInsertedRowAutoIDStatement">
+            <summary>
+            Gets the select last inserted row auto ID statement.
+            </summary>
+            <value>The select last inserted row auto ID statement.</value>
+        </member>
+        <member name="P:NBear.Data.MsAccess.AccessDbProvider.SupportADO20Transaction">
+            <summary>
+            Gets a value indicating whether [support AD o20 transaction].
+            </summary>
+            <value>
+            	<c>true</c> if [support AD o20 transaction]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:NBear.Data.MsAccess.AccessDbProvider.LeftToken">
+            <summary>
+            Gets the left token of table name or column name.
+            </summary>
+            <value>The left token.</value>
+        </member>
+        <member name="P:NBear.Data.MsAccess.AccessDbProvider.RightToken">
+            <summary>
+            Gets the right token of table name or column name.
+            </summary>
+            <value>The right token.</value>
+        </member>
+        <member name="P:NBear.Data.MsAccess.AccessDbProvider.ParamPrefix">
+            <summary>
+            Gets the param prefix.
+            </summary>
+            <value>The param prefix.</value>
+        </member>
+        <member name="T:NBear.Data.SqlServer.SqlStatementFactory">
+            <summary>
+            Common Factory to create SQL statements for SqlServer and MS Access
+            </summary>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlStatementFactory.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SqlStatementFactory"/> class.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlStatementFactory.CreateInsertStatement(System.String,System.String[])">
+            <summary>
+            Creates the insert statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlStatementFactory.CreateUpdateStatement(System.String,System.String,System.String[])">
+            <summary>
+            Creates the update statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The sql STR.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlStatementFactory.CreateDeleteStatement(System.String,System.String)">
+            <summary>
+            Creates the delete statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The sql STR.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.SqlServer.SqlStatementFactory.CreateSelectStatement(System.String,System.String,System.String,System.String[])">
+            <summary>
+            Creates the select statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The sql STR.</param>
+            <param name="orderByStr">The order by STR.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="T:NBear.Data.DbParameterCache">
+            <summary>
+            The db param cache.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.DbParameterCache.#ctor(NBear.Data.Database)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Data.DbParameterCache"/> class.
             </summary>
             <param name="db">The db.</param>
-            <param name="batchSize">Size of the batch.</param>
-            <param name="il">The il.</param>
         </member>
-        <member name="M:NBear.Data.BatchCommander.#ctor(NBear.Data.Database,System.Int32,System.Data.Common.DbTransaction)">
+        <member name="M:NBear.Data.DbParameterCache.IsCached(System.String)">
             <summary>
-            Initializes a new instance of the <see cref="T:NBear.Data.BatchCommander"/> class.
+            Determines whether the specified key is cached.
             </summary>
-            <param name="db">The db.</param>
-            <param name="batchSize">Size of the batch.</param>
-            <param name="tran">The tran.</param>
+            <param name="key">The key.</param>
+            <returns>
+            	<c>true</c> if the specified key is cached; otherwise, <c>false</c>.
+            </returns>
         </member>
-        <member name="M:NBear.Data.BatchCommander.#ctor(NBear.Data.Database,System.Int32)">
+        <member name="M:NBear.Data.DbParameterCache.AddParametersFromCache(System.String,System.Data.Common.DbCommand,System.Data.DbType[],System.Object[])">
             <summary>
-            Initializes a new instance of the <see cref="T:NBear.Data.BatchCommander"/> class.
+            Adds the parameters from cache.
             </summary>
-            <param name="db">The db.</param>
-            <param name="batchSize">Size of the batch.</param>
-        </member>
-        <member name="M:NBear.Data.BatchCommander.Process(System.Data.Common.DbCommand)">
-            <summary>
-            Processes the specified CMD.
-            </summary>
+            <param name="key">The key.</param>
             <param name="cmd">The CMD.</param>
+            <param name="types">The types.</param>
+            <param name="values">The values.</param>
         </member>
-        <member name="M:NBear.Data.BatchCommander.Close">
+        <member name="M:NBear.Data.DbParameterCache.CreateAndCacheParameters(System.String,System.Data.Common.DbCommand,System.String[],System.Data.DbType[],System.Object[])">
             <summary>
-            Closes this instance.
+            Creates the and cache parameters.
             </summary>
+            <param name="key">The key.</param>
+            <param name="cmd">The CMD.</param>
+            <param name="names">The names.</param>
+            <param name="types">The types.</param>
+            <param name="values">The values.</param>
+        </member>
+        <member name="T:NBear.Data.MsAccess.AccessStatementFactory">
+            <summary>
+            Common Factory to create SQL statements for SqlServer and MS Access
+            </summary>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessStatementFactory.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AccessStatementFactory"/> class.
+            </summary>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessStatementFactory.CreateInsertStatement(System.String,System.String[])">
+            <summary>
+            Creates the insert statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessStatementFactory.CreateUpdateStatement(System.String,System.String,System.String[])">
+            <summary>
+            Creates the update statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The sql STR.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessStatementFactory.CreateDeleteStatement(System.String,System.String)">
+            <summary>
+            Creates the delete statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The sql STR.</param>
+            <returns>The sql.</returns>
+        </member>
+        <member name="M:NBear.Data.MsAccess.AccessStatementFactory.CreateSelectStatement(System.String,System.String,System.String,System.String[])">
+            <summary>
+            Creates the select statement.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="whereStr">The sql STR.</param>
+            <param name="orderByStr">The order by STR.</param>
+            <param name="includeColumns">The include columns.</param>
+            <returns>The sql.</returns>
         </member>
     </members>
 </doc>

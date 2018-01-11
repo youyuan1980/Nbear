@@ -14,3 +14,11 @@ F:\nbear3.6.6_src\src\SetupNBearVsPlugin\obj\Release\GenerateResource-ResGen.rea
 F:\nbear3.6.6_src\src\SetupNBearVsPlugin\obj\Release\GenerateResource-ResGen.write.1.tlog
 F:\nbear3.6.6_src\src\SetupNBearVsPlugin\obj\Release\SetupNBearVsPlugin.exe
 F:\nbear3.6.6_src\src\SetupNBearVsPlugin\obj\Release\SetupNBearVsPlugin.pdb
+F:\nbear\Nbear\src\SetupNBearVsPlugin\bin\Release\SetupNBearVsPlugin.exe
+F:\nbear\Nbear\src\SetupNBearVsPlugin\bin\Release\SetupNBearVsPlugin.pdb
+F:\nbear\Nbear\src\SetupNBearVsPlugin\obj\Release\ResolveAssemblyReference.cache
+F:\nbear\Nbear\src\SetupNBearVsPlugin\obj\Release\SetupNBearVsPlugin.Properties.Resources.resources
+F:\nbear\Nbear\src\SetupNBearVsPlugin\obj\Release\GenerateResource-ResGen.read.1.tlog
+F:\nbear\Nbear\src\SetupNBearVsPlugin\obj\Release\GenerateResource-ResGen.write.1.tlog
+F:\nbear\Nbear\src\SetupNBearVsPlugin\obj\Release\SetupNBearVsPlugin.exe
+F:\nbear\Nbear\src\SetupNBearVsPlugin\obj\Release\SetupNBearVsPlugin.pdb

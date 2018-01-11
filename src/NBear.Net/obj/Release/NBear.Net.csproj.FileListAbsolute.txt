@@ -16,3 +16,12 @@ F:\nbear3.6.6_src\src\NBear.Net\bin\Release\NBear.Common.xml
 F:\nbear3.6.6_src\src\NBear.Net\obj\Release\ResolveAssemblyReference.cache
 F:\nbear3.6.6_src\src\NBear.Net\obj\Release\NBear.Net.dll
 F:\nbear3.6.6_src\src\NBear.Net\obj\Release\NBear.Net.pdb
+F:\nbear\Nbear\src\NBear.Net\bin\Release\NBear.Net.XML
+F:\nbear\Nbear\src\NBear.Net\bin\Release\NBear.Net.dll
+F:\nbear\Nbear\src\NBear.Net\bin\Release\NBear.Net.pdb
+F:\nbear\Nbear\src\NBear.Net\bin\Release\NBear.Common.dll
+F:\nbear\Nbear\src\NBear.Net\bin\Release\NBear.Common.pdb
+F:\nbear\Nbear\src\NBear.Net\bin\Release\NBear.Common.xml
+F:\nbear\Nbear\src\NBear.Net\obj\Release\ResolveAssemblyReference.cache
+F:\nbear\Nbear\src\NBear.Net\obj\Release\NBear.Net.dll
+F:\nbear\Nbear\src\NBear.Net\obj\Release\NBear.Net.pdb

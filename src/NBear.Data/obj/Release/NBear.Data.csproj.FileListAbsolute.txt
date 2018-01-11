@@ -16,3 +16,12 @@ F:\nbear3.6.6_src\src\NBear.Data\bin\Release\NBear.Common.xml
 F:\nbear3.6.6_src\src\NBear.Data\obj\Release\ResolveAssemblyReference.cache
 F:\nbear3.6.6_src\src\NBear.Data\obj\Release\NBear.Data.dll
 F:\nbear3.6.6_src\src\NBear.Data\obj\Release\NBear.Data.pdb
+F:\nbear\Nbear\src\NBear.Data\bin\Release\NBear.Data.XML
+F:\nbear\Nbear\src\NBear.Data\bin\Release\NBear.Data.dll
+F:\nbear\Nbear\src\NBear.Data\bin\Release\NBear.Data.pdb
+F:\nbear\Nbear\src\NBear.Data\bin\Release\NBear.Common.dll
+F:\nbear\Nbear\src\NBear.Data\bin\Release\NBear.Common.pdb
+F:\nbear\Nbear\src\NBear.Data\bin\Release\NBear.Common.xml
+F:\nbear\Nbear\src\NBear.Data\obj\Release\ResolveAssemblyReference.cache
+F:\nbear\Nbear\src\NBear.Data\obj\Release\NBear.Data.dll
+F:\nbear\Nbear\src\NBear.Data\obj\Release\NBear.Data.pdb

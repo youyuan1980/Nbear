@@ -3,3 +3,4 @@ Data Source=yzcqtest;User ID=htbaimg;Password=123
 data Source=yzcqtest;User ID=htbaimg;Password=123
 uid=wyzfzm;pwd=123;datasource=yzcqtest
 data Source=yzcqtest;User ID=wyzfzm;Password=123
+data Source=192.168.50.148;User ID=wwdydj;Password=123

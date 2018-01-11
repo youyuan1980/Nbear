@@ -4,6 +4,592 @@
         <name>NBear.Common</name>
     </assembly>
     <members>
+        <member name="T:Newtonsoft.Json.JsonReaderException">
+            <summary>
+            The exception thrown when an error occurs while reading Json text.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonReaderException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonReaderException"/> class.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonReaderException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonReaderException"/> class
+            with a specified error message.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonReaderException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonReaderException"/> class
+            with a specified error message and a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified.</param>
+        </member>
+        <member name="T:Newtonsoft.Json.JavaScriptObject">
+            <summary>
+            Represents a JavaScript object.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptObject.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JavaScriptObject"/> class.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptObject.#ctor(Newtonsoft.Json.JavaScriptObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JavaScriptObject"/> class that
+            contains values copied from the specified <see cref="T:Newtonsoft.Json.JavaScriptObject"/>.
+            </summary>
+            <param name="javaScriptObject">The <see cref="T:Newtonsoft.Json.JavaScriptObject"/> whose elements are copied to the new object.</param>
+        </member>
+        <member name="T:Newtonsoft.Json.JavaScriptConvert">
+            <summary>
+            Provides methods for converting between common language runtime types and JavaScript types.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.JavaScriptConvert.True">
+            <summary>
+            Represents JavaScript's boolean value true as a string. This field is read-only.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.JavaScriptConvert.False">
+            <summary>
+            Represents JavaScript's boolean value false as a string. This field is read-only.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.JavaScriptConvert.Null">
+            <summary>
+            Represents JavaScript's null as a string. This field is read-only.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.JavaScriptConvert.Undefined">
+            <summary>
+            Represents JavaScript's undefined as a string. This field is read-only.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.DateTime)">
+            <summary>
+            Converts the <see cref="T:System.DateTime"/> to it's JavaScript string representation.
+            </summary>
+            <param name="value">The value to convert.</param>
+            <returns>A Json string representation of the <see cref="T:System.DateTime"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.Boolean)">
+            <summary>
+            Converts the <see cref="T:System.Boolean"/> to it's JavaScript string representation.
+            </summary>
+            <param name="value">The value to convert.</param>
+            <returns>A Json string representation of the <see cref="T:System.Boolean"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.Char)">
+            <summary>
+            Converts the <see cref="T:System.Char"/> to it's JavaScript string representation.
+            </summary>
+            <param name="value">The value to convert.</param>
+            <returns>A Json string representation of the <see cref="T:System.Char"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.Enum)">
+            <summary>
+            Converts the <see cref="T:System.Enum"/> to it's JavaScript string representation.
+            </summary>
+            <param name="value">The value to convert.</param>
+            <returns>A Json string representation of the <see cref="T:System.Enum"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.Int32)">
+            <summary>
+            Converts the <see cref="T:System.Int32"/> to it's JavaScript string representation.
+            </summary>
+            <param name="value">The value to convert.</param>
+            <returns>A Json string representation of the <see cref="T:System.Int32"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.Int16)">
+            <summary>
+            Converts the <see cref="T:System.Int16"/> to it's JavaScript string representation.
+            </summary>
+            <param name="value">The value to convert.</param>
+            <returns>A Json string representation of the <see cref="T:System.Int16"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.UInt16)">
+            <summary>
+            Converts the <see cref="T:System.UInt16"/> to it's JavaScript string representation.
+            </summary>
+            <param name="value">The value to convert.</param>
+            <returns>A Json string representation of the <see cref="T:System.UInt16"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.UInt32)">
+            <summary>
+            Converts the <see cref="T:System.UInt32"/> to it's JavaScript string representation.
+            </summary>
+            <param name="value">The value to convert.</param>
+            <returns>A Json string representation of the <see cref="T:System.UInt32"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.Int64)">
+            <summary>
+            Converts the <see cref="T:System.Int64"/>  to it's JavaScript string representation.
+            </summary>
+            <param name="value">The value to convert.</param>
+            <returns>A Json string representation of the <see cref="T:System.Int64"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.UInt64)">
+            <summary>
+            Converts the <see cref="T:System.UInt64"/> to it's JavaScript string representation.
+            </summary>
+            <param name="value">The value to convert.</param>
+            <returns>A Json string representation of the <see cref="T:System.UInt64"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.Single)">
+            <summary>
+            Converts the <see cref="T:System.Single"/> to it's JavaScript string representation.
+            </summary>
+            <param name="value">The value to convert.</param>
+            <returns>A Json string representation of the <see cref="T:System.Single"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.Double)">
+            <summary>
+            Converts the <see cref="T:System.Double"/> to it's JavaScript string representation.
+            </summary>
+            <param name="value">The value to convert.</param>
+            <returns>A Json string representation of the <see cref="T:System.Double"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.Byte)">
+            <summary>
+            Converts the <see cref="T:System.Byte"/> to it's JavaScript string representation.
+            </summary>
+            <param name="value">The value to convert.</param>
+            <returns>A Json string representation of the <see cref="T:System.Byte"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.SByte)">
+            <summary>
+            Converts the <see cref="T:System.SByte"/> to it's JavaScript string representation.
+            </summary>
+            <param name="value">The value to convert.</param>
+            <returns>A Json string representation of the <see cref="T:System.SByte"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.Decimal)">
+            <summary>
+            Converts the <see cref="T:System.Decimal"/> to it's JavaScript string representation.
+            </summary>
+            <param name="value">The value to convert.</param>
+            <returns>A Json string representation of the <see cref="T:System.SByte"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.Guid)">
+            <summary>
+            Converts the <see cref="T:System.Guid"/> to it's JavaScript string representation.
+            </summary>
+            <param name="value">The value to convert.</param>
+            <returns>A Json string representation of the <see cref="T:System.Guid"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.String)">
+            <summary>
+            Converts the <see cref="T:System.String"/> to it's JavaScript string representation.
+            </summary>
+            <param name="value">The value to convert.</param>
+            <returns>A Json string representation of the <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.String,System.Char)">
+            <summary>
+            Converts the <see cref="T:System.String"/> to it's JavaScript string representation.
+            </summary>
+            <param name="value">The value to convert.</param>
+            <param name="delimter">The string delimiter character.</param>
+            <returns>A Json string representation of the <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.Object)">
+            <summary>
+            Converts the <see cref="T:System.Object"/> to it's JavaScript string representation.
+            </summary>
+            <param name="value">The value to convert.</param>
+            <returns>A Json string representation of the <see cref="T:System.Object"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptConvert.SerializeObject(System.Object)">
+            <summary>
+            Serializes the specified object to a Json object.
+            </summary>
+            <param name="value">The object to serialize.</param>
+            <returns>A Json string representation of the object.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptConvert.DeserializeObject(System.String)">
+            <summary>
+            Deserializes the specified object to a Json object.
+            </summary>
+            <param name="value">The object to deserialize.</param>
+            <returns>The deserialized object from the Json string.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptConvert.DeserializeObject(System.String,System.Type)">
+            <summary>
+            Deserializes the specified object to a Json object.
+            </summary>
+            <param name="value">The object to deserialize.</param>
+            <param name="type">The <see cref="T:System.Type"/> of object being deserialized.</param>
+            <returns>The deserialized object from the Json string.</returns>
+        </member>
+        <member name="T:NBear.Common.MetaDataManager">
+            <summary>
+            The entity meta data manager.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.MetaDataManager.#cctor">
+            <summary>
+            Initializes the <see cref="T:NBear.Common.MetaDataManager"/> class.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.MetaDataManager.GetEntityConfiguration(System.String)">
+            <summary>
+            Gets the entity configuration.
+            </summary>
+            <param name="typeName">Name of the type.</param>
+            <returns>The entity configuration</returns>
+        </member>
+        <member name="M:NBear.Common.MetaDataManager.GetChildEntityConfigurations(System.String)">
+            <summary>
+            Gets the child entity configurations.
+            </summary>
+            <param name="baseTypeName">Name of the base type.</param>
+            <returns>The entity configurations.</returns>
+        </member>
+        <member name="M:NBear.Common.MetaDataManager.IsLazyLoad(System.String,System.String)">
+            <summary>
+            Determines whether a specified property of an entity is lazyload.
+            </summary>
+            <param name="entityName">Name of the entity.</param>
+            <param name="propertyName">Name of the property.</param>
+            <returns>
+            	<c>true</c> if is lazy load ; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:NBear.Common.MetaDataManager.IsNonRelatedEntity(System.String)">
+            <summary>
+            Determines whether the specified entity is non related entity, a non related entity is an entity without base/child entities and related contained query properties.
+            </summary>
+            <param name="entityName">Name of the entity.</param>
+            <returns>Wthether true.</returns>
+        </member>
+        <member name="M:NBear.Common.MetaDataManager.GetEntityAutoId(System.String)">
+            <summary>
+            Gets name of the entity's auto id column.
+            </summary>
+            <param name="entityName">Name of the entity.</param>
+            <returns>The auto id column name.</returns>
+        </member>
+        <member name="M:NBear.Common.MetaDataManager.GetByteArrayColumns(System.String)">
+            <summary>
+            Gets the byte array type columns.
+            </summary>
+            <param name="entityName">Name of the entity.</param>
+            <returns>The columns.</returns>
+        </member>
+        <member name="M:NBear.Common.MetaDataManager.GetNullableNumberColumns(System.String)">
+            <summary>
+            Gets the nullable number columns.
+            </summary>
+            <param name="entityName">Name of the entity.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Common.MetaDataManager.GetSqlTypeWithDefaultValueColumns(System.String)">
+            <summary>
+            Gets the sqltype with default value columns.
+            </summary>
+            <param name="entityName">Name of the entity.</param>
+            <returns></returns>
+        </member>
+        <member name="T:NBear.Common.EntityConfigurationSection">
+            <summary>
+            The entity configuration section.
+            </summary>
+        </member>
+        <member name="P:NBear.Common.EntityConfigurationSection.Encrpyt">
+            <summary>
+            Whether encrpyted entity config file.
+            </summary>
+        </member>
+        <member name="P:NBear.Common.EntityConfigurationSection.Key">
+            <summary>
+            The encrpyt/decrypt key.
+            </summary>
+        </member>
+        <member name="P:NBear.Common.EntityConfigurationSection.Includes">
+            <summary>
+            Gets or sets the includes.
+            </summary>
+            <value>The includes.</value>
+        </member>
+        <member name="T:NBear.Common.EntityConfiguration">
+            <summary>
+            An entity configuration
+            </summary>
+        </member>
+        <member name="F:NBear.Common.EntityConfiguration.Name">
+            <summary>
+            Name of entity.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.EntityConfiguration.Commnet">
+            <summary>
+            Commnet of entity
+            </summary>
+        </member>
+        <member name="F:NBear.Common.EntityConfiguration.IsReadOnly">
+            <summary>
+            Whether the entity is readonly.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.EntityConfiguration.IsAutoPreLoad">
+            <summary>
+            Whether instances of the entity are automatically preloaded.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.EntityConfiguration.IsBatchUpdate">
+            <summary>
+            Whether the entity is save all property related values in a batch to improve performance.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.EntityConfiguration.IsRelation">
+            <summary>
+            Whether the entity is a relation type.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.EntityConfiguration.BaseEntity">
+            <summary>
+            Base entity of this entity.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.EntityConfiguration.CustomData">
+            <summary>
+            Custom data.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.EntityConfiguration.AdditionalSqlScript">
+            <summary>
+            Combined additional sql script clips which will be included into the sql script batch.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.EntityConfiguration.GetPropertyConfiguration(System.String)">
+            <summary>
+            Gets the property configuration.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+            <returns>The property configuration</returns>
+        </member>
+        <member name="M:NBear.Common.EntityConfiguration.Add(NBear.Common.PropertyConfiguration)">
+            <summary>
+            Adds the specified item.
+            </summary>
+            <param name="item">The item.</param>
+        </member>
+        <member name="M:NBear.Common.EntityConfiguration.GetMappingColumnNames(System.String[])">
+            <summary>
+            Gets the mapping column names.
+            </summary>
+            <param name="propertyNames">The property names.</param>
+            <returns>The column names.</returns>
+        </member>
+        <member name="M:NBear.Common.EntityConfiguration.GetMappingColumnName(System.String)">
+            <summary>
+            Gets the name of the mapping column.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+            <returns>The column names.</returns>
+        </member>
+        <member name="P:NBear.Common.EntityConfiguration.MappingName">
+            <summary>
+            Gets or sets the name of the mapping.
+            </summary>
+            <value>The name of the mapping.</value>
+        </member>
+        <member name="P:NBear.Common.EntityConfiguration.ViewName">
+            <summary>
+            Gets the name of the view to select data.
+            </summary>
+            <value>The name of the view.</value>
+        </member>
+        <member name="P:NBear.Common.EntityConfiguration.BatchSize">
+            <summary>
+            The batch size when an entity is marked as IsBatchUpdate.
+            </summary>
+        </member>
+        <member name="P:NBear.Common.EntityConfiguration.Properties">
+            <summary>
+            Gets or sets the properties configuration.
+            </summary>
+            <value>The properties.</value>
+        </member>
+        <member name="T:NBear.Common.PropertyConfiguration">
+            <summary>
+            A property configuration.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.PropertyConfiguration.Name">
+            <summary>
+            Name of the property.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.PropertyConfiguration.Commnet">
+            <summary>
+            Commnet of entity
+            </summary>
+        </member>
+        <member name="F:NBear.Common.PropertyConfiguration.PropertyType">
+            <summary>
+            Type of the property.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.PropertyConfiguration.IsInherited">
+            <summary>
+            Whether the property is inherited from a base entity.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.PropertyConfiguration.SqlDefaultValue">
+            <summary>
+            The sql default value
+            </summary>
+        </member>
+        <member name="F:NBear.Common.PropertyConfiguration.IsReadOnly">
+            <summary>
+            Whether the property is readonly.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.PropertyConfiguration.IsCompoundUnit">
+            <summary>
+            Whether the property is a CompoundUnit.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.PropertyConfiguration.IsContained">
+            <summary>
+            Whether the property is a contained property, which means if the entity saved or deleted, all contained property will be included in update object list.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.PropertyConfiguration.IsQueryProperty">
+            <summary>
+            Whether this property is a query property.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.PropertyConfiguration.IsFriendKey">
+            <summary>
+            Whether a property is a friend DEFAULT_KEY.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.PropertyConfiguration.IsLazyLoad">
+            <summary>
+            Whether the property is a lazyload query property. It is only used by query entity.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.PropertyConfiguration.QueryWhere">
+            <summary>
+            The where condition used by query property.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.PropertyConfiguration.QueryType">
+            <summary>
+            The type of the query property.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.PropertyConfiguration.QueryOrderBy">
+            <summary>
+            The order by condition used by query property.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.PropertyConfiguration.IsRelationKey">
+            <summary>
+            Whether the property is a relationkey. It is only used by relation entity.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.PropertyConfiguration.RelatedType">
+            <summary>
+            The related entity type of this relationkey. It is only used by relation entity.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.PropertyConfiguration.RelationType">
+            <summary>
+            The relation type of the query property.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.PropertyConfiguration.RelatedForeignKey">
+            <summary>
+            The related entity type's foreignkey relating to this relationkey. It is only used by relation entity.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.PropertyConfiguration.IsIndexProperty">
+            <summary>
+            Whether need to add index for the property when creating the table in database.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.PropertyConfiguration.IsIndexPropertyDesc">
+            <summary>
+            Whether the index property is desc.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.PropertyConfiguration.IsSerializationIgnore">
+            <summary>
+            Whether this property should not included in default XML serialization.
+            </summary>
+        </member>
+        <member name="F:NBear.Common.PropertyConfiguration.CustomData">
+            <summary>
+            Custom data.
+            </summary>
+        </member>
+        <member name="P:NBear.Common.PropertyConfiguration.MappingName">
+            <summary>
+            Gets or sets the name of the mapping.
+            </summary>
+            <value>The name of the mapping.</value>
+        </member>
+        <member name="P:NBear.Common.PropertyConfiguration.PropertyMappingColumnType">
+            <summary>
+            Gets or sets the type of the property mapping column.
+            </summary>
+            <value>The type of the property mapping column.</value>
+        </member>
+        <member name="P:NBear.Common.PropertyConfiguration.SqlType">
+            <summary>
+            Gets or sets the mapping sql type.
+            </summary>
+            <value>The type of the SQL.</value>
+        </member>
+        <member name="P:NBear.Common.PropertyConfiguration.IsPrimaryKey">
+            <summary>
+            Gets or sets a value indicating whether this instance is primary DEFAULT_KEY.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is primary DEFAULT_KEY; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:NBear.Common.PropertyConfiguration.IsNotNull">
+            <summary>
+            whether the property could not be NULL.
+            </summary>
+        </member>
+        <member name="T:NBear.Common.CouldNotLoadEntityConfigurationException">
+            <summary>
+            CouldNotLoadEntityConfigurationException
+            </summary>
+        </member>
+        <member name="M:NBear.Common.CouldNotLoadEntityConfigurationException.#ctor(System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.CouldNotLoadEntityConfigurationException"/> class.
+            </summary>
+            <param name="inner">The inner.</param>
+        </member>
+        <member name="T:NBear.Common.TypeIsNotASubClassOfEntityException">
+            <summary>
+            TypeIsNotASubClassOfEntityException
+            </summary>
+        </member>
+        <member name="T:NBear.Common.CouldNotFoundEntityConfigurationOfEntityException">
+            <summary>
+            CouldNotFoundEntityConfigurationOfEntityException
+            </summary>
+        </member>
+        <member name="M:NBear.Common.CouldNotFoundEntityConfigurationOfEntityException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.CouldNotFoundEntityConfigurationOfEntityException"/> class.
+            </summary>
+            <param name="entityName">Name of the entity.</param>
+        </member>
         <member name="T:NBear.Common.JSON.JSONUtils">
             <summary>
              Public Domain 2002 JSON.org
@@ -19,214 +605,106 @@
             <param name="s">A String</param>
             <returns>A String correctly formatted for insertion in a JSON message.</returns>
         </member>
-        <member name="T:NBear.Common.CryptographyManager">
+        <member name="T:Newtonsoft.Json.JsonSerializationException">
             <summary>
-            Common CryptographyManager
+            The exception thrown when an error occurs during Json serialization or deserialization.
             </summary>
         </member>
-        <member name="F:NBear.Common.CryptographyManager.DEFAULT_KEY">
+        <member name="M:Newtonsoft.Json.JsonSerializationException.#ctor">
             <summary>
-            The default encrypt key.
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonSerializationException"/> class.
             </summary>
         </member>
-        <member name="M:NBear.Common.CryptographyManager.#ctor">
+        <member name="M:Newtonsoft.Json.JsonSerializationException.#ctor(System.String)">
             <summary>
-            Initializes a new instance of the <see cref="T:NBear.Common.CryptographyManager"/> class.
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonSerializationException"/> class
+            with a specified error message.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonSerializationException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonSerializationException"/> class
+            with a specified error message and a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified.</param>
+        </member>
+        <member name="T:NBear.Common.Util">
+            <summary>
+            The Util class.
             </summary>
         </member>
-        <member name="M:NBear.Common.CryptographyManager.#ctor(System.String)">
+        <member name="M:NBear.Common.Util.DefaultValue``1">
             <summary>
-            Initializes a new instance of the <see cref="T:NBear.Common.CryptographyManager"/> class.
+            Gets the default value of a specified Type.
             </summary>
-            <param name="legalIVKey">The legal IV key.</param>
+            <returns>The default value.</returns>
         </member>
-        <member name="M:NBear.Common.CryptographyManager.SymmetricEncrpyt(System.String,System.Security.Cryptography.SymmetricAlgorithm,System.String)">
+        <member name="M:NBear.Common.Util.DefaultValue(System.Type)">
             <summary>
-            Symmetrics encrpyt.
+            Gets the default value of a specified Type.
             </summary>
-            <param name="str">The STR to encrpyt.</param>
-            <param name="mobjCryptoService">A concrete symmetric algorithm.</param>
-            <param name="key">The key.</param>
-            <returns>The encrpyt str.</returns>
-        </member>
-        <member name="M:NBear.Common.CryptographyManager.SymmetricDecrpyt(System.String,System.Security.Cryptography.SymmetricAlgorithm,System.String)">
-            <summary>
-            Symmetrics decrpyt.
-            </summary>
-            <param name="str">The STR to decrpyt.</param>
-            <param name="mobjCryptoService">A concrete symmetric algorithm.</param>
-            <param name="key">The key.</param>
-            <returns>The decrpyted str.</returns>
-        </member>
-        <member name="M:NBear.Common.CryptographyManager.ComputeHash(System.String)">
-            <summary>
-            Computes the hash.
-            </summary>
-            <param name="str">The STR to compute hash value.</param>
-            <returns>The hash value.</returns>
-        </member>
-        <member name="T:Newtonsoft.Json.JavaScriptArray">
-            <summary>
-            Represents a JavaScript array.
-            </summary>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptArray.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JavaScriptObject"/> class.
-            </summary>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptArray.#ctor(System.Collections.Generic.IEnumerable{System.Object})">
-            <summary>
-            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JavaScriptArray"/> class that
-            contains elements copied from the specified collection.
-            </summary>
-            <param name="collection">The collection whose elements are copied to the new array.</param>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptArray.#ctor(System.Int32)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JavaScriptArray"/> class that
-            is empty and has the specified initial capacity.
-            </summary>
-            <param name="capacity">The number of elements that the new array can initially store.</param>
-        </member>
-        <member name="T:NBear.Common.Types.NodeCollection`1">
-            <summary>
-            Node Collection of a Tree.
-            </summary>
-            <typeparam name="Element"></typeparam>
-        </member>
-        <member name="M:NBear.Common.Types.NodeCollection`1.Add(NBear.Common.Types.Node{`0})">
-            <summary>
-            Adds the specified node to collection.
-            </summary>
-            <param name="rhs">The RHS.</param>
-        </member>
-        <member name="M:NBear.Common.Types.NodeCollection`1.Remove(NBear.Common.Types.Node{`0})">
-            <summary>
-            Removes the specified node from collection.
-            </summary>
-            <param name="rhs">The RHS.</param>
-        </member>
-        <member name="M:NBear.Common.Types.NodeCollection`1.Contains(NBear.Common.Types.Node{`0})">
-            <summary>
-            Determines whether [contains] [the specified node].
-            </summary>
-            <param name="rhs">The RHS.</param>
-            <returns>
-            	<c>true</c> if [contains] [the specified RHS]; otherwise, <c>false</c>.
-            </returns>
-        </member>
-        <member name="M:NBear.Common.Types.NodeCollection`1.Clear">
-            <summary>
-            Clears this collection.
-            </summary>
-        </member>
-        <member name="M:NBear.Common.Types.NodeCollection`1.GetEnumerator">
-            <summary>
-            Returns an enumerator that iterates through the collection.
-            </summary>
-            <returns>
-            A <see cref="T:System.Collections.Generic.IEnumerator`1"></see> that can be used to iterate through the collection.
-            </returns>
-        </member>
-        <member name="M:NBear.Common.Types.NodeCollection`1.System#Collections#IEnumerable#GetEnumerator">
-            <summary>
-            Returns an enumerator that iterates through a collection.
-            </summary>
-            <returns>
-            An <see cref="T:System.Collections.IEnumerator"></see> object that can be used to iterate through the collection.
-            </returns>
-        </member>
-        <member name="P:NBear.Common.Types.NodeCollection`1.Count">
-            <summary>
-            Gets the node count.
-            </summary>
-            <value>The count.</value>
-        </member>
-        <member name="P:NBear.Common.Types.NodeCollection`1.Owner">
-            <summary>
-            Gets the owner of this node.
-            </summary>
-            <value>The owner.</value>
-        </member>
-        <member name="P:NBear.Common.Types.NodeCollection`1.Item(System.Int32)">
-            <summary>
-            Gets the <see cref="T:NBear.Common.Types.Node`1"/> at the specified index.
-            </summary>
-            <value></value>
-        </member>
-        <member name="T:NBear.Common.Types.Node`1">
-            <summary>
-            A node of a Tree.
-            </summary>
-            <typeparam name="Element">The related data type of the tree node.</typeparam>
-        </member>
-        <member name="M:NBear.Common.Types.Node`1.#ctor(`0)">
-            <summary>
-            Initializes a new instance of the <see cref="T:NBear.Common.Types.Node`1"/> class.
-            </summary>
-            <param name="nodedata">The nodedata.</param>
-        </member>
-        <member name="M:NBear.Common.Types.Node`1.IsAncestorOf(NBear.Common.Types.Node{`0})">
-            <summary>
-            Determines whether [is ancestor of] [the specified node].
-            </summary>
-            <param name="rhs">The node.</param>
-            <returns>
-            	<c>true</c> if [is ancestor of] [the specified node]; otherwise, <c>false</c>.
-            </returns>
-        </member>
-        <member name="M:NBear.Common.Types.Node`1.IsDescendantOf(NBear.Common.Types.Node{`0})">
-            <summary>
-            Determines whether [is descendant of] [the specified node].
-            </summary>
-            <param name="rhs">The node.</param>
-            <returns>
-            	<c>true</c> if [is descendant of] [the specified node]; otherwise, <c>false</c>.
-            </returns>
-        </member>
-        <member name="M:NBear.Common.Types.Node`1.DoesShareHierarchyWith(NBear.Common.Types.Node{`0})">
-            <summary>
-            Doeses the share hierarchy with.
-            </summary>
-            <param name="rhs">The node.</param>
+            <param name="type">The type.</param>
             <returns></returns>
         </member>
-        <member name="M:NBear.Common.Types.Node`1.GetDepthFirstEnumerator">
+        <member name="M:NBear.Common.Util.DeepGetProperties(System.Type[])">
             <summary>
-            Gets the depth first enumerator.
+            Deeply gets property infos.
             </summary>
+            <param name="types">The types.</param>
+            <returns>Property infos of all the types and there base classes/interfaces</returns>
+        </member>
+        <member name="M:NBear.Common.Util.GetOriginalTypeOfArrayType(System.Type)">
+            <summary>
+            Gets the type of the original type of array.
+            </summary>
+            <param name="returnType">Type of the return.</param>
             <returns></returns>
         </member>
-        <member name="M:NBear.Common.Types.Node`1.GetBreadthFirstEnumerator">
+        <member name="M:NBear.Common.Util.GetType(System.String)">
             <summary>
-            Gets the breadth first enumerator.
+            Gets a type in all loaded assemblies of current app domain.
             </summary>
+            <param name="fullName">The full name.</param>
             <returns></returns>
         </member>
-        <member name="P:NBear.Common.Types.Node`1.Parent">
+        <member name="M:NBear.Common.Util.DeepGetProperty(System.Type,System.String)">
             <summary>
-            Gets or sets the parent.
+            Deeply get property info from specified type.
             </summary>
-            <value>The parent.</value>
+            <param name="type">The type.</param>
+            <param name="propertyName">Name of the property.</param>
+            <returns></returns>
         </member>
-        <member name="P:NBear.Common.Types.Node`1.Children">
+        <member name="M:NBear.Common.Util.DeepGetField(System.Type,System.String,System.Boolean)">
             <summary>
-            Gets the children.
+            Deeps the get field from specific type.
             </summary>
-            <value>The children.</value>
+            <param name="type">The type.</param>
+            <param name="name">The name.</param>
+            <param name="isPublic">if is public.</param>
+            <returns>The field info</returns>
         </member>
-        <member name="P:NBear.Common.Types.Node`1.Root">
+        <member name="M:NBear.Common.Util.ParseRelativePath(System.String,System.String)">
             <summary>
-            Gets the root.
+            Parses the relative path to absolute path.
             </summary>
-            <value>The root.</value>
+            <param name="basePath">The base path.</param>
+            <param name="relativePath">The relative path.</param>
+            <returns></returns>
         </member>
-        <member name="P:NBear.Common.Types.Node`1.Data">
+        <member name="M:NBear.Common.Util.FormatParamVal(System.Object)">
             <summary>
-            Gets the data of the node.
+            Formats the param val.
             </summary>
-            <value>The data.</value>
+            <param name="val">The val.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Newtonsoft.Json.StringBuffer">
+            <summary>
+            Builds a string. Unlike StringBuilder this class lets you reuse it's internal buffer.
+            </summary>
         </member>
         <member name="T:NBear.Common.JSON.JSONTokener">
             <summary>
@@ -381,6 +859,163 @@
             </summary>
             <param name="s">A string that may contain plus and %hh sequences.</param>
             <returns>The unescaped string.</returns>
+        </member>
+        <member name="T:NBear.Common.CryptographyManager">
+            <summary>
+            Common CryptographyManager
+            </summary>
+        </member>
+        <member name="F:NBear.Common.CryptographyManager.DEFAULT_KEY">
+            <summary>
+            The default encrypt key.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.CryptographyManager.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.CryptographyManager"/> class.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.CryptographyManager.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.CryptographyManager"/> class.
+            </summary>
+            <param name="legalIVKey">The legal IV key.</param>
+        </member>
+        <member name="M:NBear.Common.CryptographyManager.SymmetricEncrpyt(System.String,System.Security.Cryptography.SymmetricAlgorithm,System.String)">
+            <summary>
+            Symmetrics encrpyt.
+            </summary>
+            <param name="str">The STR to encrpyt.</param>
+            <param name="mobjCryptoService">A concrete symmetric algorithm.</param>
+            <param name="key">The key.</param>
+            <returns>The encrpyt str.</returns>
+        </member>
+        <member name="M:NBear.Common.CryptographyManager.SymmetricDecrpyt(System.String,System.Security.Cryptography.SymmetricAlgorithm,System.String)">
+            <summary>
+            Symmetrics decrpyt.
+            </summary>
+            <param name="str">The STR to decrpyt.</param>
+            <param name="mobjCryptoService">A concrete symmetric algorithm.</param>
+            <param name="key">The key.</param>
+            <returns>The decrpyted str.</returns>
+        </member>
+        <member name="M:NBear.Common.CryptographyManager.ComputeHash(System.String)">
+            <summary>
+            Computes the hash.
+            </summary>
+            <param name="str">The STR to compute hash value.</param>
+            <returns>The hash value.</returns>
+        </member>
+        <member name="M:SevenZip.ICoder.Code(System.IO.Stream,System.IO.Stream,System.Int64,System.Int64,SevenZip.ICodeProgress)">
+            <summary>
+            Codes streams.
+            </summary>
+            <param name="inStream">
+            input Stream.
+            </param>
+            <param name="outStream">
+            output Stream.
+            </param>
+            <param name="inSize">
+            input Size. -1 if unknown.
+            </param>
+            <param name="outSize">
+            output Size. -1 if unknown.
+            </param>
+            <param name="progress">
+            callback progress reference.
+            </param>
+            <exception cref="T:SevenZip.DataErrorException">
+            if input stream is not valid
+            </exception>
+        </member>
+        <member name="T:Newtonsoft.Json.JsonToken">
+            <summary>
+            Specifies the type of Json token.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.JsonToken.None">
+            <summary>
+            This is returned by the <see cref="T:Newtonsoft.Json.JsonReader"/> if a <see cref="M:Newtonsoft.Json.JsonReader.Read"/> method has not been called. 
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.JsonToken.StartObject">
+            <summary>
+            An object start token.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.JsonToken.StartArray">
+            <summary>
+            An array start token.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.JsonToken.PropertyName">
+            <summary>
+            An object property name.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.JsonToken.Comment">
+            <summary>
+            A comment.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.JsonToken.Integer">
+            <summary>
+            An interger.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.JsonToken.Float">
+            <summary>
+            A float.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.JsonToken.String">
+            <summary>
+            A string.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.JsonToken.Boolean">
+            <summary>
+            A boolean.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.JsonToken.Null">
+            <summary>
+            A null token.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.JsonToken.Undefined">
+            <summary>
+            An undefined token.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.JsonToken.EndObject">
+            <summary>
+            An object end token.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.JsonToken.EndArray">
+            <summary>
+            An array end token.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.JsonToken.Constructor">
+            <summary>
+            A JavaScript object constructor.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.JsonToken.Date">
+            <summary>
+            A Date.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Converters.XmlNodeConverter.IsNamespaceAttribute(System.String,System.String@)">
+            <summary>
+            Checks if the attributeName is a namespace attribute.
+            </summary>
+            <param name="attributeName">Attribute name to test.</param>
+            <param name="prefix">The attribute name prefix if it has one, otherwise an empty string.</param>
+            <returns>True if attribute name is for a namespace attribute, otherwise false.</returns>
         </member>
         <member name="T:NBear.Common.JSON.JSONObject">
              <summary>
@@ -723,878 +1358,6 @@
             Overriden to return "null"
             </summary>
             <returns>null</returns>
-        </member>
-        <member name="T:NBear.Common.JSON.JSONArray">
-             <summary>
-             <para>
-             A JSONArray is an ordered sequence of values. Its external form is a string
-             wrapped in square brackets with commas between the values. The internal form
-             is an object having get() and opt() methods for accessing the values by
-             index, and put() methods for adding or replacing values. The values can be
-             any of these types: Boolean, JSONArray, JSONObject, Number, String, or the
-             JSONObject.NULL object.
-             </para>
-             <para>
-             The constructor can convert a JSON external form string into an
-             internal form Java object. The toString() method creates an external
-             form string.
-             </para>
-             <para>
-             A get() method returns a value if one can be found, and throws an exception
-             if one cannot be found. An opt() method returns a default value instead of
-             throwing an exception, and so is useful for obtaining optional values.
-             </para>
-             <para>
-             The generic get() and opt() methods return an object which you can cast or
-             query for type. There are also typed get() and opt() methods that do typing
-             checking and type coersion for you.
-            </para>
-             <para>
-             The texts produced by the toString() methods are very strict.
-             The constructors are more forgiving in the texts they will accept.
-             </para>
-             <para>
-             <list type="bullet">
-             <item><description>An extra comma may appear just before the closing bracket.</description></item>
-             <item><description>Strings may be quoted with single quotes.</description></item>
-             <item><description>Strings do not need to be quoted at all if they do not contain leading
-                 or trailing spaces, and if they do not contain any of these characters:
-                 { } [ ] / \ : , </description></item>
-             <item><description>Numbers may have the 0- (octal) or 0x- (hex) prefix.</description></item>
-             </list>
-             </para>
-             <para>
-             Public Domain 2002 JSON.org
-             @author JSON.org
-             @version 0.1
-            </para>
-             Ported to C# by Are Bjolseth, teleplan.no
-             TODO:
-             1. Implement Custom exceptions
-             2. Add indexer JSONObject[i] = object,     and object = JSONObject[i];
-             3. Add indexer JSONObject["DEFAULT_KEY"] = object, and object = JSONObject["DEFAULT_KEY"]
-             4. Add unit testing
-             5. Add log4net
-             6. Make get/put methods private, to force use of indexer instead?
-             </summary>
-        </member>
-        <member name="F:NBear.Common.JSON.JSONArray.myArrayList">
-            <summary>The ArrayList where the JSONArray's properties are kept.</summary>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.#ctor">
-            <summary>
-            Construct an empty JSONArray
-            </summary>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.#ctor(NBear.Common.JSON.JSONTokener)">
-            <summary>
-            Construct a JSONArray from a JSONTokener.
-            </summary>
-            <param name="x">A JSONTokener</param>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.#ctor(System.String)">
-            <summary>
-            Construct a JSONArray from a source string.
-            </summary>
-            <param name="s">A string that begins with '[' and ends with ']'.</param>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.#ctor(System.Collections.ICollection)">
-            <summary>
-            Construct a JSONArray from a Collection.
-            </summary>
-            <param name="collection">A Collection.</param>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.getValue(System.Int32)">
-            <summary>
-            Get the object value associated with an index.
-            Use indexer instead!!! Added to be true to the original Java implementation
-            </summary>
-            <param name="i">index subscript. The index must be between 0 and length()-1</param>
-            <returns>An object value.</returns>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.getArrayList">
-            <summary>
-            Get the ArrayList which is holding the elements of the JSONArray.
-            Use the indexer instead!! Added to be true to the orignal Java src
-            </summary>
-            <returns>The ArrayList</returns>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.getJSONArray(System.Int32)">
-            <summary>
-            Get the JSONArray associated with an index.
-            </summary>
-            <param name="i">index subscript</param>
-            <returns>A JSONArray value</returns>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.getJSONObject(System.Int32)">
-            <summary>
-            Get the JSONObject associated with an index.
-            </summary>
-            <param name="i">index subscript</param>
-            <returns>A JSONObject value</returns>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.getString(System.Int32)">
-            <summary>
-            Get the string associated with an index.
-            </summary>
-            <param name="i">index subscript</param>
-            <returns>A string value.</returns>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.isNull(System.Int32)">
-            <summary>
-            Determine if the value is null.
-            </summary>
-            <param name="i">index subscript</param>
-            <returns>true if the value at the index is null, or if there is no value.</returns>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.join(System.String)">
-            <summary>
-            Make a string from the contents of this JSONArray. The separator string
-            is inserted between each element.
-            Warning: This method assumes that the data structure is acyclical.
-            </summary>
-            <param name="separator">separator A string that will be inserted between the elements.</param>
-            <returns>A string.</returns>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.Length">
-            <summary>
-            Get the length of the JSONArray.
-            Added to be true to the original Java implementation
-            </summary>
-            <returns>Number of JSONObjects in array</returns>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.opt(System.Int32)">
-            <summary>
-            Get the optional object value associated with an index.
-            </summary>
-            <param name="i">index subscript</param>
-            <returns>object at that index.</returns>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.optBoolean(System.Int32)">
-            <summary>
-            Get the optional boolean value associated with an index.
-            </summary>
-            <param name="i">index subscript</param>
-            <returns>The truth</returns>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.optBoolean(System.Int32,System.Boolean)">
-            <summary>
-            Get the optional boolean value associated with an index.
-            It returns the defaultValue if there is no value at that index or if it is not
-            a Boolean or the String "true" or "false".
-            </summary>
-            <param name="i">index subscript</param>
-            <param name="defaultValue"></param>
-            <returns>The truth.</returns>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.optDouble(System.Int32)">
-            <summary>
-            Get the optional double value associated with an index.
-            NaN is returned if the index is not found,
-            or if the value is not a number and cannot be converted to a number.
-            </summary>
-            <param name="i">index subscript</param>
-            <returns>The double value object</returns>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.optDouble(System.Int32,System.Double)">
-            <summary>
-            Get the optional double value associated with an index.
-            NaN is returned if the index is not found,
-            or if the value is not a number and cannot be converted to a number.
-            </summary>
-            <param name="i">index subscript</param>
-            <param name="defaultValue"></param>
-            <returns>The double value object</returns>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.optInt(System.Int32)">
-            <summary>
-            Get the optional int value associated with an index.
-            Zero is returned if the index is not found,
-            or if the value is not a number and cannot be converted to a number.
-            </summary>
-            <param name="i">index subscript</param>
-            <returns>The int value object</returns>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.optInt(System.Int32,System.Int32)">
-            <summary>
-            Get the optional int value associated with an index.
-            The defaultValue is returned if the index is not found,
-            or if the value is not a number and cannot be converted to a number.
-            </summary>
-            <param name="i">index subscript</param>
-            <param name="defaultValue">The default value</param>
-            <returns>The int value object</returns>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.optJSONArray(System.Int32)">
-            <summary>
-            Get the optional JSONArray associated with an index.
-            </summary>
-            <param name="i">index subscript</param>
-            <returns>A JSONArray value, or null if the index has no value, or if the value is not a JSONArray.</returns>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.optJSONObject(System.Int32)">
-            <summary>
-            Get the optional JSONObject associated with an index.
-            Null is returned if the DEFAULT_KEY is not found, or null if the index has
-            no value, or if the value is not a JSONObject.
-            </summary>
-            <param name="i">index subscript</param>
-            <returns>A JSONObject value</returns>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.optString(System.Int32)">
-            <summary>
-            Get the optional string value associated with an index. It returns an
-            empty string if there is no value at that index. If the value
-            is not a string and is not null, then it is coverted to a string.
-            </summary>
-            <param name="i">index subscript</param>
-            <returns>A String value</returns>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.optString(System.Int32,System.String)">
-            <summary>
-            Get the optional string associated with an index.
-            The defaultValue is returned if the DEFAULT_KEY is not found.
-            </summary>
-            <param name="i">index subscript</param>
-            <param name="defaultValue">The default value</param>
-            <returns>A string value</returns>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.put(System.Object)">
-            OMITTED:
-            public JSONArray put(bool val)
-            public JSONArray put(double val)
-            public JSONArray put(int val)		
-            <summary>
-            Append an object value.
-            </summary>
-            <param name="val">An object value.  The value should be a Boolean, Double, Integer, JSONArray, JSObject, or String, or the JSONObject.NULL object</param>
-            <returns>this (JSONArray)</returns>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.put(System.Int32,System.Object)">
-            <summary>
-            Put or replace a boolean value in the JSONArray.
-            </summary>
-            <param name="i">
-            The subscript. If the index is greater than the length of
-            the JSONArray, then null elements will be added as necessary to pad it out.
-            </param>
-            <param name="val">An object value.</param>
-            <returns>this (JSONArray)</returns>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.toJSONObject(NBear.Common.JSON.JSONArray)">
-            <summary>
-            Produce a JSONObject by combining a JSONArray of names with the values
-            of this JSONArray.
-            </summary>
-            <param name="names">
-            A JSONArray containing a list of DEFAULT_KEY strings. These will be paired with the values.
-            </param>
-            <returns>A JSONObject, or null if there are no names or if this JSONArray</returns>
-        </member>
-        <member name="M:NBear.Common.JSON.JSONArray.ToString">
-            <summary>
-            Make an JSON external form string of this JSONArray. For compactness, no
-            unnecessary whitespace is added.
-            </summary>
-            <returns>a printable, displayable, transmittable representation of the array.</returns>
-        </member>
-        <member name="P:NBear.Common.JSON.JSONArray.Item(System.Int32)">
-            <summary>
-            Alternate to Java get/put method, by using indexer
-            </summary>
-        </member>
-        <member name="P:NBear.Common.JSON.JSONArray.List">
-            <summary>
-            Alternativ to Java, getArrayList, by using propery
-            </summary>
-        </member>
-        <member name="P:NBear.Common.JSON.JSONArray.Count">
-            <summary>
-            Get the length of the JSONArray.
-            Using a propery instead of method
-            </summary>
-        </member>
-        <member name="T:NBear.Common.Caching.Cache">
-            <summary>
-            The Cache class is the traffic cop that prevents 
-            resource contention among the different threads in the system. 
-            </summary>	
-        </member>
-        <member name="M:NBear.Common.Caching.Cache.Contains(System.String)">
-            <summary>
-            Determines whether contains the specified key.
-            </summary>
-            <param name="key">The key.</param>
-            <returns>
-            	<c>true</c> if contains the specified key; otherwise, <c>false</c>.
-            </returns>
-        </member>
-        <member name="M:NBear.Common.Caching.Cache.Add(System.String,System.Object)">
-            <summary>
-            Adds cache with specified key.
-            </summary>
-            <param name="key">The key.</param>
-            <param name="value">The obj.</param>
-        </member>
-        <member name="M:NBear.Common.Caching.Cache.Add(System.String,System.Object,NBear.Common.Caching.ICacheItemExpiration[])">
-            <summary>
-            Adds cache with specified key.
-            </summary>
-            <param name="key">The key.</param>
-            <param name="value">The obj.</param>
-            <param name="expirations">The expiration strategy.</param>
-        </member>
-        <member name="M:NBear.Common.Caching.Cache.Remove(System.String)">
-            <summary>
-            Removes cached object with specified key.
-            </summary>
-            <param name="key">The key.</param>
-        </member>
-        <member name="M:NBear.Common.Caching.Cache.RemoveByKeyPrefix(System.String)">
-            <summary>
-            Remove cached objects with specified key prefix.
-            </summary>
-            <param name="keyPrefix">The key prefix.</param>
-        </member>
-        <member name="M:NBear.Common.Caching.Cache.Get(System.String)">
-            <summary>
-            Gets cached obj with specified key.
-            </summary>
-            <param name="key">The key.</param>
-            <returns>the obj</returns>
-        </member>
-        <member name="M:NBear.Common.Caching.Cache.Clear">
-            <summary>
-            Flush the cache.
-            </summary>
-        </member>
-        <member name="P:NBear.Common.Caching.Cache.Count">
-            <summary>
-            Gets the count of cached objects.
-            </summary>
-            <value>
-            The count of cached objects.
-            </value>
-        </member>
-        <member name="T:NBear.Common.Caching.CacheItem">
-            <summary>
-            This class contains all data important to define an item stored in the cache. It holds both the DEFAULT_KEY and 
-            value specified by the user, as well as housekeeping information used internally by this block. It is public, 
-            rather than internal, to allow block extenders access to it inside their own implementations of IBackingStore.
-            </summary>
-        </member>
-        <member name="M:NBear.Common.Caching.CacheItem.#ctor(System.String,System.Object,NBear.Common.Caching.ICacheItemExpiration[])">
-            <summary>
-            Initializes a new instance of the <see cref="T:NBear.Common.Caching.CacheItem"/> class.
-            </summary>
-            <param name="key">The key.</param>
-            <param name="value">The value.</param>
-            <param name="expirations">The expirations.</param>
-        </member>
-        <member name="M:NBear.Common.Caching.CacheItem.Replace(System.Object,NBear.Common.Caching.ICacheItemExpiration[])">
-            <summary>
-            Replaces the internals of the current cache item with the given new values. This is strictly used in the Cache
-            class when adding a new item into the cache. By replacing the item's contents, rather than replacing the item
-            itself, it allows us to keep a single reference in the cache, simplifying locking.
-            </summary>
-            <param name="cacheItemData">Value to be stored. May be null.</param>
-            <param name="cacheItemExpirations">Param array of ICacheItemExpiration objects. May provide 0 or more of these.</param>
-        </member>
-        <member name="M:NBear.Common.Caching.CacheItem.GetExpirations">
-            <summary>
-            Returns array of <see cref="T:NBear.Common.Caching.ICacheItemExpiration"/> objects for this instance.
-            </summary>
-            <returns>
-            An array of <see cref="T:NBear.Common.Caching.ICacheItemExpiration"/> objects.
-            </returns>
-        </member>
-        <member name="M:NBear.Common.Caching.CacheItem.HasExpired">
-            <summary>
-            Evaluates all cacheItemExpirations associated with this cache item to determine if it 
-            should be considered expired. Evaluation stops as soon as any expiration returns true. 
-            </summary>
-            <returns>True if item should be considered expired, according to policies
-            defined in this item's cacheItemExpirations.</returns>
-        </member>
-        <member name="M:NBear.Common.Caching.CacheItem.TouchedByUserAction(System.Boolean)">
-            <summary>
-            Intended to be used internally only. This method is called whenever a CacheItem is touched through the action of a user. It
-            prevents this CacheItem from being expired or scavenged during an in-progress expiration or scavenging process. It has no effect
-            on subsequent expiration or scavenging processes.
-            </summary>
-        </member>
-        <member name="M:NBear.Common.Caching.CacheItem.TouchedByUserAction(System.Boolean,System.DateTime)">
-            <summary>
-            Intended to be used internally only. This method is called whenever a CacheItem is touched through the action of a user. It
-            prevents this CacheItem from being expired or scavenged during an in-progress expiration or scavenging process. It has no effect
-            on subsequent expiration or scavenging processes.
-            </summary>
-        </member>
-        <member name="P:NBear.Common.Caching.CacheItem.WillBeExpired">
-            <summary>
-            Intended to be used internally only. The value should be true when an item is eligible to be expired.
-            </summary>
-        </member>
-        <member name="P:NBear.Common.Caching.CacheItem.Value">
-            <summary>
-            Returns the cached value of this CacheItem
-            </summary>
-        </member>
-        <member name="P:NBear.Common.Caching.CacheItem.Key">
-            <summary>
-            Returns the DEFAULT_KEY associated with this CacheItem
-            </summary>
-        </member>
-        <member name="T:NBear.Common.Caching.ICacheItemExpiration">
-            <summary>
-            Allows end users to implement their own cache item expiration schema.
-            </summary>
-        </member>
-        <member name="M:NBear.Common.Caching.ICacheItemExpiration.HasExpired">
-            <summary>
-            Specifies if item has expired or not.
-            </summary>
-            <returns>Returns true if the item has expired, otherwise false.</returns>
-        </member>
-        <member name="M:NBear.Common.Caching.ICacheItemExpiration.Initialize(NBear.Common.Caching.CacheItem)">
-            <summary>
-            Called to give the instance the opportunity to initialize itself from information contained in the CacheItem.
-            </summary>
-            <param name="owningCacheItem">CacheItem that owns this expiration object</param>
-        </member>
-        <member name="T:NBear.Common.Caching.NeverExpired">
-            <summary>
-            This class reflects an expiration policy of never being expired.
-            </summary>
-        </member>
-        <member name="M:NBear.Common.Caching.NeverExpired.HasExpired">
-            <summary>
-            Always returns false
-            </summary>
-            <returns>False always</returns>
-        </member>
-        <member name="M:NBear.Common.Caching.NeverExpired.Initialize(NBear.Common.Caching.CacheItem)">
-            <summary>
-            Not used
-            </summary>
-            <param name="owningCacheItem">Not used</param>
-        </member>
-        <member name="T:NBear.Common.Caching.AbsoluteTime">
-            <summary>
-            This class tests if a data item was expired using a absolute time 
-            schema.
-            </summary>
-        </member>
-        <member name="M:NBear.Common.Caching.AbsoluteTime.#ctor(System.DateTime)">
-            <summary>
-            Create an instance of the class with a time value as input and 
-            convert it to UTC.
-            </summary>
-            <param name="absoluteTime">
-            The time to be checked for expiration
-            </param>
-        </member>
-        <member name="M:NBear.Common.Caching.AbsoluteTime.#ctor(System.TimeSpan)">
-            <summary>
-            Creates an instance based on a time interval starting from now.
-            </summary>
-            <param name="timeFromNow">Time interval</param>
-        </member>
-        <member name="M:NBear.Common.Caching.AbsoluteTime.HasExpired">
-            <summary>
-            Specifies if item has expired or not.
-            </summary>
-            <remarks>
-            bool isExpired = ICacheItemExpiration.HasExpired();
-            </remarks>
-            <returns>
-            "True", if the data item has expired or "false", if the data item 
-            has not expired
-            </returns>
-        </member>
-        <member name="M:NBear.Common.Caching.AbsoluteTime.Initialize(NBear.Common.Caching.CacheItem)">
-            <summary>
-            Called to give this object an opportunity to initialize itself from data inside a CacheItem
-            </summary>
-            <param name="owningCacheItem">CacheItem provided to read initialization information from. Will never be null.</param>
-        </member>
-        <member name="P:NBear.Common.Caching.AbsoluteTime.AbsoluteExpirationTime">
-            <summary>
-            Gets the absolute expiration time.
-            </summary>
-            <value>
-            The absolute expiration time.
-            </value>
-        </member>
-        <member name="M:SevenZip.ICoder.Code(System.IO.Stream,System.IO.Stream,System.Int64,System.Int64,SevenZip.ICodeProgress)">
-            <summary>
-            Codes streams.
-            </summary>
-            <param name="inStream">
-            input Stream.
-            </param>
-            <param name="outStream">
-            output Stream.
-            </param>
-            <param name="inSize">
-            input Size. -1 if unknown.
-            </param>
-            <param name="outSize">
-            output Size. -1 if unknown.
-            </param>
-            <param name="progress">
-            callback progress reference.
-            </param>
-            <exception cref="T:SevenZip.DataErrorException">
-            if input stream is not valid
-            </exception>
-        </member>
-        <member name="T:NBear.Common.LogHandler">
-            <summary>
-            A delegate used for log.
-            </summary>
-            <param name="logMsg">The msg to write to log.</param>
-        </member>
-        <member name="T:NBear.Common.ILogable">
-            <summary>
-            Mark a implementing class as loggable.
-            </summary>
-        </member>
-        <member name="E:NBear.Common.ILogable.OnLog">
-            <summary>
-            OnLog event.
-            </summary>
-        </member>
-        <member name="T:NBear.Common.Util">
-            <summary>
-            The Util class.
-            </summary>
-        </member>
-        <member name="M:NBear.Common.Util.DefaultValue``1">
-            <summary>
-            Gets the default value of a specified Type.
-            </summary>
-            <returns>The default value.</returns>
-        </member>
-        <member name="M:NBear.Common.Util.DefaultValue(System.Type)">
-            <summary>
-            Gets the default value of a specified Type.
-            </summary>
-            <param name="type">The type.</param>
-            <returns></returns>
-        </member>
-        <member name="M:NBear.Common.Util.DeepGetProperties(System.Type[])">
-            <summary>
-            Deeply gets property infos.
-            </summary>
-            <param name="types">The types.</param>
-            <returns>Property infos of all the types and there base classes/interfaces</returns>
-        </member>
-        <member name="M:NBear.Common.Util.GetOriginalTypeOfArrayType(System.Type)">
-            <summary>
-            Gets the type of the original type of array.
-            </summary>
-            <param name="returnType">Type of the return.</param>
-            <returns></returns>
-        </member>
-        <member name="M:NBear.Common.Util.GetType(System.String)">
-            <summary>
-            Gets a type in all loaded assemblies of current app domain.
-            </summary>
-            <param name="fullName">The full name.</param>
-            <returns></returns>
-        </member>
-        <member name="M:NBear.Common.Util.DeepGetProperty(System.Type,System.String)">
-            <summary>
-            Deeply get property info from specified type.
-            </summary>
-            <param name="type">The type.</param>
-            <param name="propertyName">Name of the property.</param>
-            <returns></returns>
-        </member>
-        <member name="M:NBear.Common.Util.DeepGetField(System.Type,System.String,System.Boolean)">
-            <summary>
-            Deeps the get field from specific type.
-            </summary>
-            <param name="type">The type.</param>
-            <param name="name">The name.</param>
-            <param name="isPublic">if is public.</param>
-            <returns>The field info</returns>
-        </member>
-        <member name="M:NBear.Common.Util.ParseRelativePath(System.String,System.String)">
-            <summary>
-            Parses the relative path to absolute path.
-            </summary>
-            <param name="basePath">The base path.</param>
-            <param name="relativePath">The relative path.</param>
-            <returns></returns>
-        </member>
-        <member name="M:NBear.Common.Util.FormatParamVal(System.Object)">
-            <summary>
-            Formats the param val.
-            </summary>
-            <param name="val">The val.</param>
-            <returns></returns>
-        </member>
-        <member name="T:SevenZip.DataErrorException">
-            <summary>
-            The exception that is thrown when an error in input stream occurs during decoding.
-            </summary>
-        </member>
-        <member name="T:SevenZip.InvalidParamException">
-            <summary>
-            The exception that is thrown when the value of an argument is outside the allowable range.
-            </summary>
-        </member>
-        <member name="M:SevenZip.ICodeProgress.SetProgress(System.Int64,System.Int64)">
-            <summary>
-            Callback progress.
-            </summary>
-            <param name="inSize">
-            input size. -1 if unknown.
-            </param>
-            <param name="outSize">
-            output size. -1 if unknown.
-            </param>
-        </member>
-        <member name="T:SevenZip.CoderPropID">
-            <summary>
-            Provides the fields that represent properties idenitifiers for compressing.
-            </summary>
-        </member>
-        <member name="F:SevenZip.CoderPropID.DictionarySize">
-            <summary>
-            Specifies size of dictionary.
-            </summary>
-        </member>
-        <member name="F:SevenZip.CoderPropID.UsedMemorySize">
-            <summary>
-            Specifies size of memory for PPM*.
-            </summary>
-        </member>
-        <member name="F:SevenZip.CoderPropID.Order">
-            <summary>
-            Specifies order for PPM methods.
-            </summary>
-        </member>
-        <!-- 对于成员“F:SevenZip.CoderPropID.PosStateBits”忽略有格式错误的 XML 注释 -->
-        <!-- 对于成员“F:SevenZip.CoderPropID.LitContextBits”忽略有格式错误的 XML 注释 -->
-        <!-- 对于成员“F:SevenZip.CoderPropID.LitPosBits”忽略有格式错误的 XML 注释 -->
-        <member name="F:SevenZip.CoderPropID.NumFastBytes">
-            <summary>
-            Specifies number of fast bytes for LZ*.
-            </summary>
-        </member>
-        <member name="F:SevenZip.CoderPropID.MatchFinder">
-            <summary>
-            Specifies match finder. LZMA: "BT2", "BT4" or "BT4B".
-            </summary>
-        </member>
-        <member name="F:SevenZip.CoderPropID.NumPasses">
-            <summary>
-            Specifies number of passes.
-            </summary>
-        </member>
-        <member name="F:SevenZip.CoderPropID.Algorithm">
-            <summary>
-            Specifies number of algorithm.
-            </summary>
-        </member>
-        <member name="F:SevenZip.CoderPropID.MultiThread">
-            <summary>
-            Specifies multithread mode.
-            </summary>
-        </member>
-        <member name="F:SevenZip.CoderPropID.EndMarker">
-            <summary>
-            Specifies mode with end marker.
-            </summary>
-        </member>
-        <member name="T:Newtonsoft.Json.JavaScriptConvert">
-            <summary>
-            Provides methods for converting between common language runtime types and JavaScript types.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.JavaScriptConvert.True">
-            <summary>
-            Represents JavaScript's boolean value true as a string. This field is read-only.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.JavaScriptConvert.False">
-            <summary>
-            Represents JavaScript's boolean value false as a string. This field is read-only.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.JavaScriptConvert.Null">
-            <summary>
-            Represents JavaScript's null as a string. This field is read-only.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.JavaScriptConvert.Undefined">
-            <summary>
-            Represents JavaScript's undefined as a string. This field is read-only.
-            </summary>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.DateTime)">
-            <summary>
-            Converts the <see cref="T:System.DateTime"/> to it's JavaScript string representation.
-            </summary>
-            <param name="value">The value to convert.</param>
-            <returns>A Json string representation of the <see cref="T:System.DateTime"/>.</returns>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.Boolean)">
-            <summary>
-            Converts the <see cref="T:System.Boolean"/> to it's JavaScript string representation.
-            </summary>
-            <param name="value">The value to convert.</param>
-            <returns>A Json string representation of the <see cref="T:System.Boolean"/>.</returns>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.Char)">
-            <summary>
-            Converts the <see cref="T:System.Char"/> to it's JavaScript string representation.
-            </summary>
-            <param name="value">The value to convert.</param>
-            <returns>A Json string representation of the <see cref="T:System.Char"/>.</returns>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.Enum)">
-            <summary>
-            Converts the <see cref="T:System.Enum"/> to it's JavaScript string representation.
-            </summary>
-            <param name="value">The value to convert.</param>
-            <returns>A Json string representation of the <see cref="T:System.Enum"/>.</returns>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.Int32)">
-            <summary>
-            Converts the <see cref="T:System.Int32"/> to it's JavaScript string representation.
-            </summary>
-            <param name="value">The value to convert.</param>
-            <returns>A Json string representation of the <see cref="T:System.Int32"/>.</returns>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.Int16)">
-            <summary>
-            Converts the <see cref="T:System.Int16"/> to it's JavaScript string representation.
-            </summary>
-            <param name="value">The value to convert.</param>
-            <returns>A Json string representation of the <see cref="T:System.Int16"/>.</returns>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.UInt16)">
-            <summary>
-            Converts the <see cref="T:System.UInt16"/> to it's JavaScript string representation.
-            </summary>
-            <param name="value">The value to convert.</param>
-            <returns>A Json string representation of the <see cref="T:System.UInt16"/>.</returns>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.UInt32)">
-            <summary>
-            Converts the <see cref="T:System.UInt32"/> to it's JavaScript string representation.
-            </summary>
-            <param name="value">The value to convert.</param>
-            <returns>A Json string representation of the <see cref="T:System.UInt32"/>.</returns>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.Int64)">
-            <summary>
-            Converts the <see cref="T:System.Int64"/>  to it's JavaScript string representation.
-            </summary>
-            <param name="value">The value to convert.</param>
-            <returns>A Json string representation of the <see cref="T:System.Int64"/>.</returns>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.UInt64)">
-            <summary>
-            Converts the <see cref="T:System.UInt64"/> to it's JavaScript string representation.
-            </summary>
-            <param name="value">The value to convert.</param>
-            <returns>A Json string representation of the <see cref="T:System.UInt64"/>.</returns>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.Single)">
-            <summary>
-            Converts the <see cref="T:System.Single"/> to it's JavaScript string representation.
-            </summary>
-            <param name="value">The value to convert.</param>
-            <returns>A Json string representation of the <see cref="T:System.Single"/>.</returns>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.Double)">
-            <summary>
-            Converts the <see cref="T:System.Double"/> to it's JavaScript string representation.
-            </summary>
-            <param name="value">The value to convert.</param>
-            <returns>A Json string representation of the <see cref="T:System.Double"/>.</returns>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.Byte)">
-            <summary>
-            Converts the <see cref="T:System.Byte"/> to it's JavaScript string representation.
-            </summary>
-            <param name="value">The value to convert.</param>
-            <returns>A Json string representation of the <see cref="T:System.Byte"/>.</returns>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.SByte)">
-            <summary>
-            Converts the <see cref="T:System.SByte"/> to it's JavaScript string representation.
-            </summary>
-            <param name="value">The value to convert.</param>
-            <returns>A Json string representation of the <see cref="T:System.SByte"/>.</returns>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.Decimal)">
-            <summary>
-            Converts the <see cref="T:System.Decimal"/> to it's JavaScript string representation.
-            </summary>
-            <param name="value">The value to convert.</param>
-            <returns>A Json string representation of the <see cref="T:System.SByte"/>.</returns>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.Guid)">
-            <summary>
-            Converts the <see cref="T:System.Guid"/> to it's JavaScript string representation.
-            </summary>
-            <param name="value">The value to convert.</param>
-            <returns>A Json string representation of the <see cref="T:System.Guid"/>.</returns>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.String)">
-            <summary>
-            Converts the <see cref="T:System.String"/> to it's JavaScript string representation.
-            </summary>
-            <param name="value">The value to convert.</param>
-            <returns>A Json string representation of the <see cref="T:System.String"/>.</returns>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.String,System.Char)">
-            <summary>
-            Converts the <see cref="T:System.String"/> to it's JavaScript string representation.
-            </summary>
-            <param name="value">The value to convert.</param>
-            <param name="delimter">The string delimiter character.</param>
-            <returns>A Json string representation of the <see cref="T:System.String"/>.</returns>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptConvert.ToString(System.Object)">
-            <summary>
-            Converts the <see cref="T:System.Object"/> to it's JavaScript string representation.
-            </summary>
-            <param name="value">The value to convert.</param>
-            <returns>A Json string representation of the <see cref="T:System.Object"/>.</returns>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptConvert.SerializeObject(System.Object)">
-            <summary>
-            Serializes the specified object to a Json object.
-            </summary>
-            <param name="value">The object to serialize.</param>
-            <returns>A Json string representation of the object.</returns>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptConvert.DeserializeObject(System.String)">
-            <summary>
-            Deserializes the specified object to a Json object.
-            </summary>
-            <param name="value">The object to deserialize.</param>
-            <returns>The deserialized object from the Json string.</returns>
-        </member>
-        <member name="M:Newtonsoft.Json.JavaScriptConvert.DeserializeObject(System.String,System.Type)">
-            <summary>
-            Deserializes the specified object to a Json object.
-            </summary>
-            <param name="value">The object to deserialize.</param>
-            <param name="type">The <see cref="T:System.Type"/> of object being deserialized.</param>
-            <returns>The deserialized object from the Json string.</returns>
-        </member>
-        <member name="T:Newtonsoft.Json.JavaScriptConstructor">
-            <summary>
-            Represents a JavaScript constructor.
-            </summary>
         </member>
         <member name="T:NBear.Common.Entity">
             <summary>
@@ -1944,125 +1707,320 @@
             <param name="baseEntity">instance of the owner entity.</param>
             <returns>The query result.</returns>
         </member>
-        <member name="T:Newtonsoft.Json.ReferenceLoopHandling">
-            <summary>
-            Specifies reference loop handling options for the <see cref="T:Newtonsoft.Json.JsonWriter"/>.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.ReferenceLoopHandling.Error">
-            <summary>
-            Throw a <see cref="T:Newtonsoft.Json.JsonSerializationException"/> when a loop is encountered.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.ReferenceLoopHandling.Ignore">
-            <summary>
-            Ignore loop references and do not serialize.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.ReferenceLoopHandling.Serialize">
-            <summary>
-            Serialize loop references.
-            </summary>
-        </member>
-        <member name="T:Newtonsoft.Json.JsonSerializer">
-            <summary>
-            Serializes and deserializes objects into and from the Json format.
-            The <see cref="T:Newtonsoft.Json.JsonSerializer"/> enables you to control how objects are encoded into Json.
-            </summary>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonSerializer.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonSerializer"/> class.
-            </summary>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonSerializer.Deserialize(Newtonsoft.Json.JsonReader)">
-            <summary>
-            Deserializes the Json structure contained by the specified <see cref="T:Newtonsoft.Json.JsonReader"/>.
-            </summary>
-            <param name="reader">The <see cref="T:Newtonsoft.Json.JsonReader"/> that contains the Json structure to deserialize.</param>
-            <returns>The <see cref="T:System.Object"/> being deserialized.</returns>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonSerializer.Deserialize(Newtonsoft.Json.JsonReader,System.Type)">
-            <summary>
-            Deserializes the Json structure contained by the specified <see cref="T:Newtonsoft.Json.JsonReader"/>
-            into an instance of the specified type.
-            </summary>
-            <param name="reader">The type of object to create.</param>
-            <param name="objectType">The <see cref="T:System.Type"/> of object being deserialized.</param>
-            <returns>The instance of <paramref name="objectType"/> being deserialized.</returns>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonSerializer.Serialize(System.IO.TextWriter,System.Object)">
-            <summary>
-            Serializes the specified <see cref="T:System.Object"/> and writes the Json structure
-            to a <c>Stream</c> using the specified <see cref="T:System.IO.TextWriter"/>. 
-            </summary>
-            <param name="textWriter">The <see cref="T:System.IO.TextWriter"/> used to write the Json structure.</param>
-            <param name="value">The <see cref="T:System.Object"/> to serialize.</param>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonSerializer.Serialize(Newtonsoft.Json.JsonWriter,System.Object)">
-            <summary>
-            Serializes the specified <see cref="T:System.Object"/> and writes the Json structure
-            to a <c>Stream</c> using the specified <see cref="T:Newtonsoft.Json.JsonWriter"/>. 
-            </summary>
-            <param name="jsonWriter">The <see cref="T:Newtonsoft.Json.JsonWriter"/> used to write the Json structure.</param>
-            <param name="value">The <see cref="T:System.Object"/> to serialize.</param>
-        </member>
-        <member name="P:Newtonsoft.Json.JsonSerializer.ReferenceLoopHandling">
-            <summary>
-            Get or set how reference loops (e.g. a class referencing itself) is handled.
-            </summary>
-        </member>
-        <member name="T:Newtonsoft.Json.JsonReaderException">
+        <member name="T:Newtonsoft.Json.JsonWriterException">
             <summary>
             The exception thrown when an error occurs while reading Json text.
             </summary>
         </member>
-        <member name="M:Newtonsoft.Json.JsonReaderException.#ctor">
+        <member name="M:Newtonsoft.Json.JsonWriterException.#ctor">
             <summary>
-            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonReaderException"/> class.
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonWriterException"/> class.
             </summary>
         </member>
-        <member name="M:Newtonsoft.Json.JsonReaderException.#ctor(System.String)">
+        <member name="M:Newtonsoft.Json.JsonWriterException.#ctor(System.String)">
             <summary>
-            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonReaderException"/> class
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonWriterException"/> class
             with a specified error message.
             </summary>
             <param name="message">The error message that explains the reason for the exception.</param>
         </member>
-        <member name="M:Newtonsoft.Json.JsonReaderException.#ctor(System.String,System.Exception)">
+        <member name="M:Newtonsoft.Json.JsonWriterException.#ctor(System.String,System.Exception)">
             <summary>
-            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonReaderException"/> class
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonWriterException"/> class
             with a specified error message and a reference to the inner exception that is the cause of this exception.
             </summary>
             <param name="message">The error message that explains the reason for the exception.</param>
             <param name="innerException">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified.</param>
         </member>
-        <member name="M:Newtonsoft.Json.Converters.XmlNodeConverter.IsNamespaceAttribute(System.String,System.String@)">
-            <summary>
-            Checks if the attributeName is a namespace attribute.
-            </summary>
-            <param name="attributeName">Attribute name to test.</param>
-            <param name="prefix">The attribute name prefix if it has one, otherwise an empty string.</param>
-            <returns>True if attribute name is for a namespace attribute, otherwise false.</returns>
+        <member name="T:NBear.Common.JSON.JSONArray">
+             <summary>
+             <para>
+             A JSONArray is an ordered sequence of values. Its external form is a string
+             wrapped in square brackets with commas between the values. The internal form
+             is an object having get() and opt() methods for accessing the values by
+             index, and put() methods for adding or replacing values. The values can be
+             any of these types: Boolean, JSONArray, JSONObject, Number, String, or the
+             JSONObject.NULL object.
+             </para>
+             <para>
+             The constructor can convert a JSON external form string into an
+             internal form Java object. The toString() method creates an external
+             form string.
+             </para>
+             <para>
+             A get() method returns a value if one can be found, and throws an exception
+             if one cannot be found. An opt() method returns a default value instead of
+             throwing an exception, and so is useful for obtaining optional values.
+             </para>
+             <para>
+             The generic get() and opt() methods return an object which you can cast or
+             query for type. There are also typed get() and opt() methods that do typing
+             checking and type coersion for you.
+            </para>
+             <para>
+             The texts produced by the toString() methods are very strict.
+             The constructors are more forgiving in the texts they will accept.
+             </para>
+             <para>
+             <list type="bullet">
+             <item><description>An extra comma may appear just before the closing bracket.</description></item>
+             <item><description>Strings may be quoted with single quotes.</description></item>
+             <item><description>Strings do not need to be quoted at all if they do not contain leading
+                 or trailing spaces, and if they do not contain any of these characters:
+                 { } [ ] / \ : , </description></item>
+             <item><description>Numbers may have the 0- (octal) or 0x- (hex) prefix.</description></item>
+             </list>
+             </para>
+             <para>
+             Public Domain 2002 JSON.org
+             @author JSON.org
+             @version 0.1
+            </para>
+             Ported to C# by Are Bjolseth, teleplan.no
+             TODO:
+             1. Implement Custom exceptions
+             2. Add indexer JSONObject[i] = object,     and object = JSONObject[i];
+             3. Add indexer JSONObject["DEFAULT_KEY"] = object, and object = JSONObject["DEFAULT_KEY"]
+             4. Add unit testing
+             5. Add log4net
+             6. Make get/put methods private, to force use of indexer instead?
+             </summary>
         </member>
-        <member name="T:NBear.Common.JSON.JsonFacade">
+        <member name="F:NBear.Common.JSON.JSONArray.myArrayList">
+            <summary>The ArrayList where the JSONArray's properties are kept.</summary>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.#ctor">
             <summary>
-            Summary description for JsonFacade.
+            Construct an empty JSONArray
             </summary>
         </member>
-        <member name="M:NBear.Common.JSON.JsonFacade.toJSON(System.Collections.IDictionary)">
+        <member name="M:NBear.Common.JSON.JSONArray.#ctor(NBear.Common.JSON.JSONTokener)">
             <summary>
-            Parse a Hashtable and return a JSON formatted string
+            Construct a JSONArray from a JSONTokener.
             </summary>
-            <param name="idict"></param>
-            <returns></returns>
+            <param name="x">A JSONTokener</param>
         </member>
-        <member name="M:NBear.Common.JSON.JsonFacade.fromJSON(System.String)">
+        <member name="M:NBear.Common.JSON.JSONArray.#ctor(System.String)">
             <summary>
-            Parse JSON formatted string and return a Hashtable
+            Construct a JSONArray from a source string.
             </summary>
-            <param name="sJSON"></param>
-            <returns></returns>
+            <param name="s">A string that begins with '[' and ends with ']'.</param>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.#ctor(System.Collections.ICollection)">
+            <summary>
+            Construct a JSONArray from a Collection.
+            </summary>
+            <param name="collection">A Collection.</param>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.getValue(System.Int32)">
+            <summary>
+            Get the object value associated with an index.
+            Use indexer instead!!! Added to be true to the original Java implementation
+            </summary>
+            <param name="i">index subscript. The index must be between 0 and length()-1</param>
+            <returns>An object value.</returns>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.getArrayList">
+            <summary>
+            Get the ArrayList which is holding the elements of the JSONArray.
+            Use the indexer instead!! Added to be true to the orignal Java src
+            </summary>
+            <returns>The ArrayList</returns>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.getJSONArray(System.Int32)">
+            <summary>
+            Get the JSONArray associated with an index.
+            </summary>
+            <param name="i">index subscript</param>
+            <returns>A JSONArray value</returns>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.getJSONObject(System.Int32)">
+            <summary>
+            Get the JSONObject associated with an index.
+            </summary>
+            <param name="i">index subscript</param>
+            <returns>A JSONObject value</returns>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.getString(System.Int32)">
+            <summary>
+            Get the string associated with an index.
+            </summary>
+            <param name="i">index subscript</param>
+            <returns>A string value.</returns>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.isNull(System.Int32)">
+            <summary>
+            Determine if the value is null.
+            </summary>
+            <param name="i">index subscript</param>
+            <returns>true if the value at the index is null, or if there is no value.</returns>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.join(System.String)">
+            <summary>
+            Make a string from the contents of this JSONArray. The separator string
+            is inserted between each element.
+            Warning: This method assumes that the data structure is acyclical.
+            </summary>
+            <param name="separator">separator A string that will be inserted between the elements.</param>
+            <returns>A string.</returns>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.Length">
+            <summary>
+            Get the length of the JSONArray.
+            Added to be true to the original Java implementation
+            </summary>
+            <returns>Number of JSONObjects in array</returns>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.opt(System.Int32)">
+            <summary>
+            Get the optional object value associated with an index.
+            </summary>
+            <param name="i">index subscript</param>
+            <returns>object at that index.</returns>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.optBoolean(System.Int32)">
+            <summary>
+            Get the optional boolean value associated with an index.
+            </summary>
+            <param name="i">index subscript</param>
+            <returns>The truth</returns>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.optBoolean(System.Int32,System.Boolean)">
+            <summary>
+            Get the optional boolean value associated with an index.
+            It returns the defaultValue if there is no value at that index or if it is not
+            a Boolean or the String "true" or "false".
+            </summary>
+            <param name="i">index subscript</param>
+            <param name="defaultValue"></param>
+            <returns>The truth.</returns>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.optDouble(System.Int32)">
+            <summary>
+            Get the optional double value associated with an index.
+            NaN is returned if the index is not found,
+            or if the value is not a number and cannot be converted to a number.
+            </summary>
+            <param name="i">index subscript</param>
+            <returns>The double value object</returns>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.optDouble(System.Int32,System.Double)">
+            <summary>
+            Get the optional double value associated with an index.
+            NaN is returned if the index is not found,
+            or if the value is not a number and cannot be converted to a number.
+            </summary>
+            <param name="i">index subscript</param>
+            <param name="defaultValue"></param>
+            <returns>The double value object</returns>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.optInt(System.Int32)">
+            <summary>
+            Get the optional int value associated with an index.
+            Zero is returned if the index is not found,
+            or if the value is not a number and cannot be converted to a number.
+            </summary>
+            <param name="i">index subscript</param>
+            <returns>The int value object</returns>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.optInt(System.Int32,System.Int32)">
+            <summary>
+            Get the optional int value associated with an index.
+            The defaultValue is returned if the index is not found,
+            or if the value is not a number and cannot be converted to a number.
+            </summary>
+            <param name="i">index subscript</param>
+            <param name="defaultValue">The default value</param>
+            <returns>The int value object</returns>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.optJSONArray(System.Int32)">
+            <summary>
+            Get the optional JSONArray associated with an index.
+            </summary>
+            <param name="i">index subscript</param>
+            <returns>A JSONArray value, or null if the index has no value, or if the value is not a JSONArray.</returns>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.optJSONObject(System.Int32)">
+            <summary>
+            Get the optional JSONObject associated with an index.
+            Null is returned if the DEFAULT_KEY is not found, or null if the index has
+            no value, or if the value is not a JSONObject.
+            </summary>
+            <param name="i">index subscript</param>
+            <returns>A JSONObject value</returns>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.optString(System.Int32)">
+            <summary>
+            Get the optional string value associated with an index. It returns an
+            empty string if there is no value at that index. If the value
+            is not a string and is not null, then it is coverted to a string.
+            </summary>
+            <param name="i">index subscript</param>
+            <returns>A String value</returns>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.optString(System.Int32,System.String)">
+            <summary>
+            Get the optional string associated with an index.
+            The defaultValue is returned if the DEFAULT_KEY is not found.
+            </summary>
+            <param name="i">index subscript</param>
+            <param name="defaultValue">The default value</param>
+            <returns>A string value</returns>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.put(System.Object)">
+            OMITTED:
+            public JSONArray put(bool val)
+            public JSONArray put(double val)
+            public JSONArray put(int val)		
+            <summary>
+            Append an object value.
+            </summary>
+            <param name="val">An object value.  The value should be a Boolean, Double, Integer, JSONArray, JSObject, or String, or the JSONObject.NULL object</param>
+            <returns>this (JSONArray)</returns>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.put(System.Int32,System.Object)">
+            <summary>
+            Put or replace a boolean value in the JSONArray.
+            </summary>
+            <param name="i">
+            The subscript. If the index is greater than the length of
+            the JSONArray, then null elements will be added as necessary to pad it out.
+            </param>
+            <param name="val">An object value.</param>
+            <returns>this (JSONArray)</returns>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.toJSONObject(NBear.Common.JSON.JSONArray)">
+            <summary>
+            Produce a JSONObject by combining a JSONArray of names with the values
+            of this JSONArray.
+            </summary>
+            <param name="names">
+            A JSONArray containing a list of DEFAULT_KEY strings. These will be paired with the values.
+            </param>
+            <returns>A JSONObject, or null if there are no names or if this JSONArray</returns>
+        </member>
+        <member name="M:NBear.Common.JSON.JSONArray.ToString">
+            <summary>
+            Make an JSON external form string of this JSONArray. For compactness, no
+            unnecessary whitespace is added.
+            </summary>
+            <returns>a printable, displayable, transmittable representation of the array.</returns>
+        </member>
+        <member name="P:NBear.Common.JSON.JSONArray.Item(System.Int32)">
+            <summary>
+            Alternate to Java get/put method, by using indexer
+            </summary>
+        </member>
+        <member name="P:NBear.Common.JSON.JSONArray.List">
+            <summary>
+            Alternativ to Java, getArrayList, by using propery
+            </summary>
+        </member>
+        <member name="P:NBear.Common.JSON.JSONArray.Count">
+            <summary>
+            Get the length of the JSONArray.
+            Using a propery instead of method
+            </summary>
         </member>
         <member name="T:NBear.Common.PropertyItem">
             <summary>
@@ -3413,54 +3371,883 @@
             <param name="str">The STR.</param>
             <returns></returns>
         </member>
-        <member name="T:Newtonsoft.Json.StringBuffer">
+        <member name="T:NBear.Common.Types.NodeCollection`1">
             <summary>
-            Builds a string. Unlike StringBuilder this class lets you reuse it's internal buffer.
+            Node Collection of a Tree.
+            </summary>
+            <typeparam name="Element"></typeparam>
+        </member>
+        <member name="M:NBear.Common.Types.NodeCollection`1.Add(NBear.Common.Types.Node{`0})">
+            <summary>
+            Adds the specified node to collection.
+            </summary>
+            <param name="rhs">The RHS.</param>
+        </member>
+        <member name="M:NBear.Common.Types.NodeCollection`1.Remove(NBear.Common.Types.Node{`0})">
+            <summary>
+            Removes the specified node from collection.
+            </summary>
+            <param name="rhs">The RHS.</param>
+        </member>
+        <member name="M:NBear.Common.Types.NodeCollection`1.Contains(NBear.Common.Types.Node{`0})">
+            <summary>
+            Determines whether [contains] [the specified node].
+            </summary>
+            <param name="rhs">The RHS.</param>
+            <returns>
+            	<c>true</c> if [contains] [the specified RHS]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:NBear.Common.Types.NodeCollection`1.Clear">
+            <summary>
+            Clears this collection.
             </summary>
         </member>
-        <member name="T:Newtonsoft.Json.JavaScriptObject">
+        <member name="M:NBear.Common.Types.NodeCollection`1.GetEnumerator">
             <summary>
-            Represents a JavaScript object.
+            Returns an enumerator that iterates through the collection.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.IEnumerator`1"></see> that can be used to iterate through the collection.
+            </returns>
+        </member>
+        <member name="M:NBear.Common.Types.NodeCollection`1.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through a collection.
+            </summary>
+            <returns>
+            An <see cref="T:System.Collections.IEnumerator"></see> object that can be used to iterate through the collection.
+            </returns>
+        </member>
+        <member name="P:NBear.Common.Types.NodeCollection`1.Count">
+            <summary>
+            Gets the node count.
+            </summary>
+            <value>The count.</value>
+        </member>
+        <member name="P:NBear.Common.Types.NodeCollection`1.Owner">
+            <summary>
+            Gets the owner of this node.
+            </summary>
+            <value>The owner.</value>
+        </member>
+        <member name="P:NBear.Common.Types.NodeCollection`1.Item(System.Int32)">
+            <summary>
+            Gets the <see cref="T:NBear.Common.Types.Node`1"/> at the specified index.
+            </summary>
+            <value></value>
+        </member>
+        <member name="T:NBear.Common.Types.Node`1">
+            <summary>
+            A node of a Tree.
+            </summary>
+            <typeparam name="Element">The related data type of the tree node.</typeparam>
+        </member>
+        <member name="M:NBear.Common.Types.Node`1.#ctor(`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.Types.Node`1"/> class.
+            </summary>
+            <param name="nodedata">The nodedata.</param>
+        </member>
+        <member name="M:NBear.Common.Types.Node`1.IsAncestorOf(NBear.Common.Types.Node{`0})">
+            <summary>
+            Determines whether [is ancestor of] [the specified node].
+            </summary>
+            <param name="rhs">The node.</param>
+            <returns>
+            	<c>true</c> if [is ancestor of] [the specified node]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:NBear.Common.Types.Node`1.IsDescendantOf(NBear.Common.Types.Node{`0})">
+            <summary>
+            Determines whether [is descendant of] [the specified node].
+            </summary>
+            <param name="rhs">The node.</param>
+            <returns>
+            	<c>true</c> if [is descendant of] [the specified node]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:NBear.Common.Types.Node`1.DoesShareHierarchyWith(NBear.Common.Types.Node{`0})">
+            <summary>
+            Doeses the share hierarchy with.
+            </summary>
+            <param name="rhs">The node.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Common.Types.Node`1.GetDepthFirstEnumerator">
+            <summary>
+            Gets the depth first enumerator.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Common.Types.Node`1.GetBreadthFirstEnumerator">
+            <summary>
+            Gets the breadth first enumerator.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:NBear.Common.Types.Node`1.Parent">
+            <summary>
+            Gets or sets the parent.
+            </summary>
+            <value>The parent.</value>
+        </member>
+        <member name="P:NBear.Common.Types.Node`1.Children">
+            <summary>
+            Gets the children.
+            </summary>
+            <value>The children.</value>
+        </member>
+        <member name="P:NBear.Common.Types.Node`1.Root">
+            <summary>
+            Gets the root.
+            </summary>
+            <value>The root.</value>
+        </member>
+        <member name="P:NBear.Common.Types.Node`1.Data">
+            <summary>
+            Gets the data of the node.
+            </summary>
+            <value>The data.</value>
+        </member>
+        <member name="T:SevenZip.DataErrorException">
+            <summary>
+            The exception that is thrown when an error in input stream occurs during decoding.
             </summary>
         </member>
-        <member name="M:Newtonsoft.Json.JavaScriptObject.#ctor">
+        <member name="T:SevenZip.InvalidParamException">
+            <summary>
+            The exception that is thrown when the value of an argument is outside the allowable range.
+            </summary>
+        </member>
+        <member name="M:SevenZip.ICodeProgress.SetProgress(System.Int64,System.Int64)">
+            <summary>
+            Callback progress.
+            </summary>
+            <param name="inSize">
+            input size. -1 if unknown.
+            </param>
+            <param name="outSize">
+            output size. -1 if unknown.
+            </param>
+        </member>
+        <member name="T:SevenZip.CoderPropID">
+            <summary>
+            Provides the fields that represent properties idenitifiers for compressing.
+            </summary>
+        </member>
+        <member name="F:SevenZip.CoderPropID.DictionarySize">
+            <summary>
+            Specifies size of dictionary.
+            </summary>
+        </member>
+        <member name="F:SevenZip.CoderPropID.UsedMemorySize">
+            <summary>
+            Specifies size of memory for PPM*.
+            </summary>
+        </member>
+        <member name="F:SevenZip.CoderPropID.Order">
+            <summary>
+            Specifies order for PPM methods.
+            </summary>
+        </member>
+        <!-- 对于成员“F:SevenZip.CoderPropID.PosStateBits”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:SevenZip.CoderPropID.LitContextBits”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:SevenZip.CoderPropID.LitPosBits”忽略有格式错误的 XML 注释 -->
+        <member name="F:SevenZip.CoderPropID.NumFastBytes">
+            <summary>
+            Specifies number of fast bytes for LZ*.
+            </summary>
+        </member>
+        <member name="F:SevenZip.CoderPropID.MatchFinder">
+            <summary>
+            Specifies match finder. LZMA: "BT2", "BT4" or "BT4B".
+            </summary>
+        </member>
+        <member name="F:SevenZip.CoderPropID.NumPasses">
+            <summary>
+            Specifies number of passes.
+            </summary>
+        </member>
+        <member name="F:SevenZip.CoderPropID.Algorithm">
+            <summary>
+            Specifies number of algorithm.
+            </summary>
+        </member>
+        <member name="F:SevenZip.CoderPropID.MultiThread">
+            <summary>
+            Specifies multithread mode.
+            </summary>
+        </member>
+        <member name="F:SevenZip.CoderPropID.EndMarker">
+            <summary>
+            Specifies mode with end marker.
+            </summary>
+        </member>
+        <member name="T:NBear.Common.SerializationManager">
+            <summary>
+            The serialization manager.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.SerializationManager.Serialize(System.Object)">
+            <summary>
+            Serializes the specified obj.
+            </summary>
+            <param name="obj">The obj.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Common.SerializationManager.Deserialize(System.Type,System.String)">
+            <summary>
+            Deserializes the specified return type.
+            </summary>
+            <param name="returnType">Type of the return.</param>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Common.SerializationManager.RegisterSerializeHandler(System.Type,NBear.Common.SerializationManager.TypeSerializeHandler,NBear.Common.SerializationManager.TypeDeserializeHandler)">
+            <summary>
+            Registers the serialize handler.
+            </summary>
+            <param name="type">The type.</param>
+            <param name="serializeHandler">The serialize handler.</param>
+            <param name="deserializeHandler">The deserialize handler.</param>
+        </member>
+        <member name="M:NBear.Common.SerializationManager.UnregisterSerializeHandler(System.Type)">
+            <summary>
+            Unregisters the serialize handler.
+            </summary>
+            <param name="type">The type.</param>
+        </member>
+        <member name="T:NBear.Common.SerializationManager.TypeSerializeHandler">
+            <summary>
+            The serialize delegate.
+            </summary>
+            <param name="obj">obj to be serialized.</param>
+            <returns></returns>
+        </member>
+        <member name="T:NBear.Common.SerializationManager.TypeDeserializeHandler">
+            <summary>
+            The deserialize delegate.
+            </summary>
+            <param name="data">the data to be deserialied.</param>
+            <returns></returns>
+        </member>
+        <member name="T:NBear.Common.Caching.Cache">
+            <summary>
+            The Cache class is the traffic cop that prevents 
+            resource contention among the different threads in the system. 
+            </summary>	
+        </member>
+        <member name="M:NBear.Common.Caching.Cache.Contains(System.String)">
+            <summary>
+            Determines whether contains the specified key.
+            </summary>
+            <param name="key">The key.</param>
+            <returns>
+            	<c>true</c> if contains the specified key; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:NBear.Common.Caching.Cache.Add(System.String,System.Object)">
+            <summary>
+            Adds cache with specified key.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The obj.</param>
+        </member>
+        <member name="M:NBear.Common.Caching.Cache.Add(System.String,System.Object,NBear.Common.Caching.ICacheItemExpiration[])">
+            <summary>
+            Adds cache with specified key.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The obj.</param>
+            <param name="expirations">The expiration strategy.</param>
+        </member>
+        <member name="M:NBear.Common.Caching.Cache.Remove(System.String)">
+            <summary>
+            Removes cached object with specified key.
+            </summary>
+            <param name="key">The key.</param>
+        </member>
+        <member name="M:NBear.Common.Caching.Cache.RemoveByKeyPrefix(System.String)">
+            <summary>
+            Remove cached objects with specified key prefix.
+            </summary>
+            <param name="keyPrefix">The key prefix.</param>
+        </member>
+        <member name="M:NBear.Common.Caching.Cache.Get(System.String)">
+            <summary>
+            Gets cached obj with specified key.
+            </summary>
+            <param name="key">The key.</param>
+            <returns>the obj</returns>
+        </member>
+        <member name="M:NBear.Common.Caching.Cache.Clear">
+            <summary>
+            Flush the cache.
+            </summary>
+        </member>
+        <member name="P:NBear.Common.Caching.Cache.Count">
+            <summary>
+            Gets the count of cached objects.
+            </summary>
+            <value>
+            The count of cached objects.
+            </value>
+        </member>
+        <member name="T:NBear.Common.Caching.CacheItem">
+            <summary>
+            This class contains all data important to define an item stored in the cache. It holds both the DEFAULT_KEY and 
+            value specified by the user, as well as housekeeping information used internally by this block. It is public, 
+            rather than internal, to allow block extenders access to it inside their own implementations of IBackingStore.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Caching.CacheItem.#ctor(System.String,System.Object,NBear.Common.Caching.ICacheItemExpiration[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.Caching.CacheItem"/> class.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+            <param name="expirations">The expirations.</param>
+        </member>
+        <member name="M:NBear.Common.Caching.CacheItem.Replace(System.Object,NBear.Common.Caching.ICacheItemExpiration[])">
+            <summary>
+            Replaces the internals of the current cache item with the given new values. This is strictly used in the Cache
+            class when adding a new item into the cache. By replacing the item's contents, rather than replacing the item
+            itself, it allows us to keep a single reference in the cache, simplifying locking.
+            </summary>
+            <param name="cacheItemData">Value to be stored. May be null.</param>
+            <param name="cacheItemExpirations">Param array of ICacheItemExpiration objects. May provide 0 or more of these.</param>
+        </member>
+        <member name="M:NBear.Common.Caching.CacheItem.GetExpirations">
+            <summary>
+            Returns array of <see cref="T:NBear.Common.Caching.ICacheItemExpiration"/> objects for this instance.
+            </summary>
+            <returns>
+            An array of <see cref="T:NBear.Common.Caching.ICacheItemExpiration"/> objects.
+            </returns>
+        </member>
+        <member name="M:NBear.Common.Caching.CacheItem.HasExpired">
+            <summary>
+            Evaluates all cacheItemExpirations associated with this cache item to determine if it 
+            should be considered expired. Evaluation stops as soon as any expiration returns true. 
+            </summary>
+            <returns>True if item should be considered expired, according to policies
+            defined in this item's cacheItemExpirations.</returns>
+        </member>
+        <member name="M:NBear.Common.Caching.CacheItem.TouchedByUserAction(System.Boolean)">
+            <summary>
+            Intended to be used internally only. This method is called whenever a CacheItem is touched through the action of a user. It
+            prevents this CacheItem from being expired or scavenged during an in-progress expiration or scavenging process. It has no effect
+            on subsequent expiration or scavenging processes.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Caching.CacheItem.TouchedByUserAction(System.Boolean,System.DateTime)">
+            <summary>
+            Intended to be used internally only. This method is called whenever a CacheItem is touched through the action of a user. It
+            prevents this CacheItem from being expired or scavenged during an in-progress expiration or scavenging process. It has no effect
+            on subsequent expiration or scavenging processes.
+            </summary>
+        </member>
+        <member name="P:NBear.Common.Caching.CacheItem.WillBeExpired">
+            <summary>
+            Intended to be used internally only. The value should be true when an item is eligible to be expired.
+            </summary>
+        </member>
+        <member name="P:NBear.Common.Caching.CacheItem.Value">
+            <summary>
+            Returns the cached value of this CacheItem
+            </summary>
+        </member>
+        <member name="P:NBear.Common.Caching.CacheItem.Key">
+            <summary>
+            Returns the DEFAULT_KEY associated with this CacheItem
+            </summary>
+        </member>
+        <member name="T:NBear.Common.Caching.ICacheItemExpiration">
+            <summary>
+            Allows end users to implement their own cache item expiration schema.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Caching.ICacheItemExpiration.HasExpired">
+            <summary>
+            Specifies if item has expired or not.
+            </summary>
+            <returns>Returns true if the item has expired, otherwise false.</returns>
+        </member>
+        <member name="M:NBear.Common.Caching.ICacheItemExpiration.Initialize(NBear.Common.Caching.CacheItem)">
+            <summary>
+            Called to give the instance the opportunity to initialize itself from information contained in the CacheItem.
+            </summary>
+            <param name="owningCacheItem">CacheItem that owns this expiration object</param>
+        </member>
+        <member name="T:NBear.Common.Caching.NeverExpired">
+            <summary>
+            This class reflects an expiration policy of never being expired.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Caching.NeverExpired.HasExpired">
+            <summary>
+            Always returns false
+            </summary>
+            <returns>False always</returns>
+        </member>
+        <member name="M:NBear.Common.Caching.NeverExpired.Initialize(NBear.Common.Caching.CacheItem)">
+            <summary>
+            Not used
+            </summary>
+            <param name="owningCacheItem">Not used</param>
+        </member>
+        <member name="T:NBear.Common.Caching.AbsoluteTime">
+            <summary>
+            This class tests if a data item was expired using a absolute time 
+            schema.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Caching.AbsoluteTime.#ctor(System.DateTime)">
+            <summary>
+            Create an instance of the class with a time value as input and 
+            convert it to UTC.
+            </summary>
+            <param name="absoluteTime">
+            The time to be checked for expiration
+            </param>
+        </member>
+        <member name="M:NBear.Common.Caching.AbsoluteTime.#ctor(System.TimeSpan)">
+            <summary>
+            Creates an instance based on a time interval starting from now.
+            </summary>
+            <param name="timeFromNow">Time interval</param>
+        </member>
+        <member name="M:NBear.Common.Caching.AbsoluteTime.HasExpired">
+            <summary>
+            Specifies if item has expired or not.
+            </summary>
+            <remarks>
+            bool isExpired = ICacheItemExpiration.HasExpired();
+            </remarks>
+            <returns>
+            "True", if the data item has expired or "false", if the data item 
+            has not expired
+            </returns>
+        </member>
+        <member name="M:NBear.Common.Caching.AbsoluteTime.Initialize(NBear.Common.Caching.CacheItem)">
+            <summary>
+            Called to give this object an opportunity to initialize itself from data inside a CacheItem
+            </summary>
+            <param name="owningCacheItem">CacheItem provided to read initialization information from. Will never be null.</param>
+        </member>
+        <member name="P:NBear.Common.Caching.AbsoluteTime.AbsoluteExpirationTime">
+            <summary>
+            Gets the absolute expiration time.
+            </summary>
+            <value>
+            The absolute expiration time.
+            </value>
+        </member>
+        <member name="T:Newtonsoft.Json.ReferenceLoopHandling">
+            <summary>
+            Specifies reference loop handling options for the <see cref="T:Newtonsoft.Json.JsonWriter"/>.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.ReferenceLoopHandling.Error">
+            <summary>
+            Throw a <see cref="T:Newtonsoft.Json.JsonSerializationException"/> when a loop is encountered.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.ReferenceLoopHandling.Ignore">
+            <summary>
+            Ignore loop references and do not serialize.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.ReferenceLoopHandling.Serialize">
+            <summary>
+            Serialize loop references.
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.JsonSerializer">
+            <summary>
+            Serializes and deserializes objects into and from the Json format.
+            The <see cref="T:Newtonsoft.Json.JsonSerializer"/> enables you to control how objects are encoded into Json.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonSerializer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonSerializer"/> class.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonSerializer.Deserialize(Newtonsoft.Json.JsonReader)">
+            <summary>
+            Deserializes the Json structure contained by the specified <see cref="T:Newtonsoft.Json.JsonReader"/>.
+            </summary>
+            <param name="reader">The <see cref="T:Newtonsoft.Json.JsonReader"/> that contains the Json structure to deserialize.</param>
+            <returns>The <see cref="T:System.Object"/> being deserialized.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonSerializer.Deserialize(Newtonsoft.Json.JsonReader,System.Type)">
+            <summary>
+            Deserializes the Json structure contained by the specified <see cref="T:Newtonsoft.Json.JsonReader"/>
+            into an instance of the specified type.
+            </summary>
+            <param name="reader">The type of object to create.</param>
+            <param name="objectType">The <see cref="T:System.Type"/> of object being deserialized.</param>
+            <returns>The instance of <paramref name="objectType"/> being deserialized.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonSerializer.Serialize(System.IO.TextWriter,System.Object)">
+            <summary>
+            Serializes the specified <see cref="T:System.Object"/> and writes the Json structure
+            to a <c>Stream</c> using the specified <see cref="T:System.IO.TextWriter"/>. 
+            </summary>
+            <param name="textWriter">The <see cref="T:System.IO.TextWriter"/> used to write the Json structure.</param>
+            <param name="value">The <see cref="T:System.Object"/> to serialize.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonSerializer.Serialize(Newtonsoft.Json.JsonWriter,System.Object)">
+            <summary>
+            Serializes the specified <see cref="T:System.Object"/> and writes the Json structure
+            to a <c>Stream</c> using the specified <see cref="T:Newtonsoft.Json.JsonWriter"/>. 
+            </summary>
+            <param name="jsonWriter">The <see cref="T:Newtonsoft.Json.JsonWriter"/> used to write the Json structure.</param>
+            <param name="value">The <see cref="T:System.Object"/> to serialize.</param>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonSerializer.ReferenceLoopHandling">
+            <summary>
+            Get or set how reference loops (e.g. a class referencing itself) is handled.
+            </summary>
+        </member>
+        <member name="T:NBear.Common.JSON.JsonFacade">
+            <summary>
+            Summary description for JsonFacade.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.JSON.JsonFacade.toJSON(System.Collections.IDictionary)">
+            <summary>
+            Parse a Hashtable and return a JSON formatted string
+            </summary>
+            <param name="idict"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NBear.Common.JSON.JsonFacade.fromJSON(System.String)">
+            <summary>
+            Parse JSON formatted string and return a Hashtable
+            </summary>
+            <param name="sJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Newtonsoft.Json.JavaScriptArray">
+            <summary>
+            Represents a JavaScript array.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JavaScriptArray.#ctor">
             <summary>
             Initializes a new instance of the <see cref="T:Newtonsoft.Json.JavaScriptObject"/> class.
             </summary>
         </member>
-        <member name="M:Newtonsoft.Json.JavaScriptObject.#ctor(Newtonsoft.Json.JavaScriptObject)">
+        <member name="M:Newtonsoft.Json.JavaScriptArray.#ctor(System.Collections.Generic.IEnumerable{System.Object})">
             <summary>
-            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JavaScriptObject"/> class that
-            contains values copied from the specified <see cref="T:Newtonsoft.Json.JavaScriptObject"/>.
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JavaScriptArray"/> class that
+            contains elements copied from the specified collection.
             </summary>
-            <param name="javaScriptObject">The <see cref="T:Newtonsoft.Json.JavaScriptObject"/> whose elements are copied to the new object.</param>
+            <param name="collection">The collection whose elements are copied to the new array.</param>
         </member>
-        <member name="T:NBear.Common.CouldNotLoadEntityConfigurationException">
+        <member name="M:Newtonsoft.Json.JavaScriptArray.#ctor(System.Int32)">
             <summary>
-            CouldNotLoadEntityConfigurationException
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JavaScriptArray"/> class that
+            is empty and has the specified initial capacity.
             </summary>
+            <param name="capacity">The number of elements that the new array can initially store.</param>
         </member>
-        <member name="M:NBear.Common.CouldNotLoadEntityConfigurationException.#ctor(System.Exception)">
+        <member name="T:Newtonsoft.Json.WriteState">
             <summary>
-            Initializes a new instance of the <see cref="T:NBear.Common.CouldNotLoadEntityConfigurationException"/> class.
-            </summary>
-            <param name="inner">The inner.</param>
-        </member>
-        <member name="T:NBear.Common.TypeIsNotASubClassOfEntityException">
-            <summary>
-            TypeIsNotASubClassOfEntityException
+            Specifies the state of the <see cref="T:Newtonsoft.Json.JsonWriter"/>.
             </summary>
         </member>
-        <member name="T:NBear.Common.CouldNotFoundEntityConfigurationOfEntityException">
+        <member name="F:Newtonsoft.Json.WriteState.Error">
             <summary>
-            CouldNotFoundEntityConfigurationOfEntityException
+            An exception has been thrown, which has left the <see cref="T:Newtonsoft.Json.JsonWriter"/> in an invalid state.
+            You may call the <see cref="M:Newtonsoft.Json.JsonWriter.Close"/> method to put the <see cref="T:Newtonsoft.Json.JsonWriter"/> in the <c>Closed</c> state.
+            Any other <see cref="T:Newtonsoft.Json.JsonWriter"/> method calls results in an <see cref="T:System.InvalidOperationException"/> being thrown. 
             </summary>
         </member>
-        <member name="M:NBear.Common.CouldNotFoundEntityConfigurationOfEntityException.#ctor(System.String)">
+        <member name="F:Newtonsoft.Json.WriteState.Closed">
             <summary>
-            Initializes a new instance of the <see cref="T:NBear.Common.CouldNotFoundEntityConfigurationOfEntityException"/> class.
+            The <see cref="M:Newtonsoft.Json.JsonWriter.Close"/> method has been called. 
             </summary>
-            <param name="entityName">Name of the entity.</param>
+        </member>
+        <member name="F:Newtonsoft.Json.WriteState.Object">
+            <summary>
+            An object is being written. 
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.WriteState.Array">
+            <summary>
+            A array is being written.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.WriteState.Property">
+            <summary>
+            A property is being written.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.WriteState.Start">
+            <summary>
+            A write method has not been called.
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.Formatting">
+            <summary>
+            Specifies formatting options for the <see cref="T:Newtonsoft.Json.JsonWriter"/>.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Formatting.None">
+            <summary>
+            No special formatting is applied. This is the default.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Formatting.Indented">
+            <summary>
+            Causes child objects to be indented according to the <see cref="P:Newtonsoft.Json.JsonWriter.Indentation"/> and <see cref="P:Newtonsoft.Json.JsonWriter.IndentChar"/> settings.
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.JsonWriter">
+            <summary>
+            Represents a writer that provides a fast, non-cached, forward-only way of generating Json data.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.#ctor(System.IO.TextWriter)">
+            <summary>
+            Creates an instance of the <c>JsonWriter</c> class using the specified <see cref="T:System.IO.TextWriter"/>. 
+            </summary>
+            <param name="textWriter">The <c>TextWriter</c> to write to.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.Flush">
+            <summary>
+            Flushes whatever is in the buffer to the underlying streams and also flushes the underlying stream.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.Close">
+            <summary>
+            Closes this stream and the underlying stream.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteStartObject">
+            <summary>
+            Writes the beginning of a Json object.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteEndObject">
+            <summary>
+            Writes the end of a Json object.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteStartArray">
+            <summary>
+            Writes the beginning of a Json array.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteEndArray">
+            <summary>
+            Writes the end of an array.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WritePropertyName(System.String)">
+            <summary>
+            Writes the property name of a name/value pair on a Json object.
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteEnd">
+            <summary>
+            Writes the end of the current Json object or array.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteNull">
+            <summary>
+            Writes a null value.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteUndefined">
+            <summary>
+            Writes an undefined value.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteRaw(System.String)">
+            <summary>
+            Writes raw JavaScript manually.
+            </summary>
+            <param name="javaScript">The raw JavaScript to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.String)">
+            <summary>
+            Writes a <see cref="T:System.String"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.String"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.Int32)">
+            <summary>
+            Writes a <see cref="T:System.Int32"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.Int32"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.UInt32)">
+            <summary>
+            Writes a <see cref="T:System.UInt32"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.UInt32"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.Int64)">
+            <summary>
+            Writes a <see cref="T:System.Int64"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.Int64"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.UInt64)">
+            <summary>
+            Writes a <see cref="T:System.UInt64"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.UInt64"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.Single)">
+            <summary>
+            Writes a <see cref="T:System.Single"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.Single"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.Double)">
+            <summary>
+            Writes a <see cref="T:System.Double"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.Double"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.Boolean)">
+            <summary>
+            Writes a <see cref="T:System.Boolean"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.Boolean"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.Int16)">
+            <summary>
+            Writes a <see cref="T:System.Int16"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.Int16"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.UInt16)">
+            <summary>
+            Writes a <see cref="T:System.UInt16"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.UInt16"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.Char)">
+            <summary>
+            Writes a <see cref="T:System.Char"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.Char"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.Byte)">
+            <summary>
+            Writes a <see cref="T:System.Byte"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.Byte"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.SByte)">
+            <summary>
+            Writes a <see cref="T:System.SByte"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.SByte"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.Decimal)">
+            <summary>
+            Writes a <see cref="T:System.Decimal"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.Decimal"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.DateTime)">
+            <summary>
+            Writes a <see cref="T:System.DateTime"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.DateTime"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteComment(System.String)">
+            <summary>
+            Writes out a comment <code>/*...*/</code> containing the specified text. 
+            </summary>
+            <param name="text">Text to place inside the comment.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonWriter.WriteWhitespace(System.String)">
+            <summary>
+            Writes out the given white space.
+            </summary>
+            <param name="ws">The string of white space characters.</param>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonWriter.WriteState">
+            <summary>
+            Gets the state of the writer.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonWriter.Formatting">
+            <summary>
+            Indicates how the output is formatted.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonWriter.Indentation">
+            <summary>
+            Gets or sets how many IndentChars to write for each level in the hierarchy when <paramref name="Formatting"/> is set to <c>Formatting.Indented</c>.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonWriter.QuoteChar">
+            <summary>
+            Gets or sets which character to use to quote attribute values.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonWriter.IndentChar">
+            <summary>
+            Gets or sets which character to use for indenting when <paramref name="Formatting"/> is set to <c>Formatting.Indented</c>.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonWriter.QuoteName">
+            <summary>
+            Gets or sets a value indicating whether object names will be surrounded with quotes.
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.JsonReader">
+            <summary>
+            Represents a reader that provides fast, non-cached, forward-only access to serialized Json data.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonReader.#ctor(System.IO.TextReader)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonReader"/> class with the specified <see cref="T:System.IO.TextReader"/>.
+            </summary>
+            <param name="reader">The <c>TextReader</c> containing the XML data to read.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonReader.Read">
+            <summary>
+            Reads the next Json token from the stream.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonReader.Close">
+            <summary>
+            Changes the <see cref="T:Newtonsoft.Json.JsonReader.State"/> to Closed. 
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonReader.QuoteChar">
+            <summary>
+            Gets the quotation mark character used to enclose the value of a string.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonReader.TokenType">
+            <summary>
+            Gets the type of the current Json token. 
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonReader.Value">
+            <summary>
+            Gets the text value of the current Json token.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonReader.ValueType">
+            <summary>
+            Gets The Common Language Runtime (CLR) type for the current Json token.
+            </summary>
         </member>
         <member name="T:NBear.Common.EntityArrayItemChangeHandler">
             <summary>
@@ -3855,813 +4642,26 @@
             Assertion Exception.
             </summary>
         </member>
-        <member name="T:NBear.Common.SerializationManager">
+        <member name="T:Newtonsoft.Json.JavaScriptConstructor">
             <summary>
-            The serialization manager.
+            Represents a JavaScript constructor.
             </summary>
         </member>
-        <member name="M:NBear.Common.SerializationManager.Serialize(System.Object)">
+        <member name="T:NBear.Common.LogHandler">
             <summary>
-            Serializes the specified obj.
+            A delegate used for log.
             </summary>
-            <param name="obj">The obj.</param>
-            <returns></returns>
+            <param name="logMsg">The msg to write to log.</param>
         </member>
-        <member name="M:NBear.Common.SerializationManager.Deserialize(System.Type,System.String)">
+        <member name="T:NBear.Common.ILogable">
             <summary>
-            Deserializes the specified return type.
+            Mark a implementing class as loggable.
             </summary>
-            <param name="returnType">Type of the return.</param>
-            <param name="data">The data.</param>
-            <returns></returns>
         </member>
-        <member name="M:NBear.Common.SerializationManager.RegisterSerializeHandler(System.Type,NBear.Common.SerializationManager.TypeSerializeHandler,NBear.Common.SerializationManager.TypeDeserializeHandler)">
+        <member name="E:NBear.Common.ILogable.OnLog">
             <summary>
-            Registers the serialize handler.
+            OnLog event.
             </summary>
-            <param name="type">The type.</param>
-            <param name="serializeHandler">The serialize handler.</param>
-            <param name="deserializeHandler">The deserialize handler.</param>
-        </member>
-        <member name="M:NBear.Common.SerializationManager.UnregisterSerializeHandler(System.Type)">
-            <summary>
-            Unregisters the serialize handler.
-            </summary>
-            <param name="type">The type.</param>
-        </member>
-        <member name="T:NBear.Common.SerializationManager.TypeSerializeHandler">
-            <summary>
-            The serialize delegate.
-            </summary>
-            <param name="obj">obj to be serialized.</param>
-            <returns></returns>
-        </member>
-        <member name="T:NBear.Common.SerializationManager.TypeDeserializeHandler">
-            <summary>
-            The deserialize delegate.
-            </summary>
-            <param name="data">the data to be deserialied.</param>
-            <returns></returns>
-        </member>
-        <member name="T:Newtonsoft.Json.WriteState">
-            <summary>
-            Specifies the state of the <see cref="T:Newtonsoft.Json.JsonWriter"/>.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.WriteState.Error">
-            <summary>
-            An exception has been thrown, which has left the <see cref="T:Newtonsoft.Json.JsonWriter"/> in an invalid state.
-            You may call the <see cref="M:Newtonsoft.Json.JsonWriter.Close"/> method to put the <see cref="T:Newtonsoft.Json.JsonWriter"/> in the <c>Closed</c> state.
-            Any other <see cref="T:Newtonsoft.Json.JsonWriter"/> method calls results in an <see cref="T:System.InvalidOperationException"/> being thrown. 
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.WriteState.Closed">
-            <summary>
-            The <see cref="M:Newtonsoft.Json.JsonWriter.Close"/> method has been called. 
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.WriteState.Object">
-            <summary>
-            An object is being written. 
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.WriteState.Array">
-            <summary>
-            A array is being written.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.WriteState.Property">
-            <summary>
-            A property is being written.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.WriteState.Start">
-            <summary>
-            A write method has not been called.
-            </summary>
-        </member>
-        <member name="T:Newtonsoft.Json.Formatting">
-            <summary>
-            Specifies formatting options for the <see cref="T:Newtonsoft.Json.JsonWriter"/>.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.Formatting.None">
-            <summary>
-            No special formatting is applied. This is the default.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.Formatting.Indented">
-            <summary>
-            Causes child objects to be indented according to the <see cref="P:Newtonsoft.Json.JsonWriter.Indentation"/> and <see cref="P:Newtonsoft.Json.JsonWriter.IndentChar"/> settings.
-            </summary>
-        </member>
-        <member name="T:Newtonsoft.Json.JsonWriter">
-            <summary>
-            Represents a writer that provides a fast, non-cached, forward-only way of generating Json data.
-            </summary>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.#ctor(System.IO.TextWriter)">
-            <summary>
-            Creates an instance of the <c>JsonWriter</c> class using the specified <see cref="T:System.IO.TextWriter"/>. 
-            </summary>
-            <param name="textWriter">The <c>TextWriter</c> to write to.</param>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.Flush">
-            <summary>
-            Flushes whatever is in the buffer to the underlying streams and also flushes the underlying stream.
-            </summary>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.Close">
-            <summary>
-            Closes this stream and the underlying stream.
-            </summary>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteStartObject">
-            <summary>
-            Writes the beginning of a Json object.
-            </summary>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteEndObject">
-            <summary>
-            Writes the end of a Json object.
-            </summary>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteStartArray">
-            <summary>
-            Writes the beginning of a Json array.
-            </summary>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteEndArray">
-            <summary>
-            Writes the end of an array.
-            </summary>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WritePropertyName(System.String)">
-            <summary>
-            Writes the property name of a name/value pair on a Json object.
-            </summary>
-            <param name="name"></param>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteEnd">
-            <summary>
-            Writes the end of the current Json object or array.
-            </summary>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteNull">
-            <summary>
-            Writes a null value.
-            </summary>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteUndefined">
-            <summary>
-            Writes an undefined value.
-            </summary>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteRaw(System.String)">
-            <summary>
-            Writes raw JavaScript manually.
-            </summary>
-            <param name="javaScript">The raw JavaScript to write.</param>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.String)">
-            <summary>
-            Writes a <see cref="T:System.String"/> value.
-            </summary>
-            <param name="value">The <see cref="T:System.String"/> value to write.</param>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.Int32)">
-            <summary>
-            Writes a <see cref="T:System.Int32"/> value.
-            </summary>
-            <param name="value">The <see cref="T:System.Int32"/> value to write.</param>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.UInt32)">
-            <summary>
-            Writes a <see cref="T:System.UInt32"/> value.
-            </summary>
-            <param name="value">The <see cref="T:System.UInt32"/> value to write.</param>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.Int64)">
-            <summary>
-            Writes a <see cref="T:System.Int64"/> value.
-            </summary>
-            <param name="value">The <see cref="T:System.Int64"/> value to write.</param>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.UInt64)">
-            <summary>
-            Writes a <see cref="T:System.UInt64"/> value.
-            </summary>
-            <param name="value">The <see cref="T:System.UInt64"/> value to write.</param>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.Single)">
-            <summary>
-            Writes a <see cref="T:System.Single"/> value.
-            </summary>
-            <param name="value">The <see cref="T:System.Single"/> value to write.</param>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.Double)">
-            <summary>
-            Writes a <see cref="T:System.Double"/> value.
-            </summary>
-            <param name="value">The <see cref="T:System.Double"/> value to write.</param>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.Boolean)">
-            <summary>
-            Writes a <see cref="T:System.Boolean"/> value.
-            </summary>
-            <param name="value">The <see cref="T:System.Boolean"/> value to write.</param>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.Int16)">
-            <summary>
-            Writes a <see cref="T:System.Int16"/> value.
-            </summary>
-            <param name="value">The <see cref="T:System.Int16"/> value to write.</param>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.UInt16)">
-            <summary>
-            Writes a <see cref="T:System.UInt16"/> value.
-            </summary>
-            <param name="value">The <see cref="T:System.UInt16"/> value to write.</param>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.Char)">
-            <summary>
-            Writes a <see cref="T:System.Char"/> value.
-            </summary>
-            <param name="value">The <see cref="T:System.Char"/> value to write.</param>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.Byte)">
-            <summary>
-            Writes a <see cref="T:System.Byte"/> value.
-            </summary>
-            <param name="value">The <see cref="T:System.Byte"/> value to write.</param>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.SByte)">
-            <summary>
-            Writes a <see cref="T:System.SByte"/> value.
-            </summary>
-            <param name="value">The <see cref="T:System.SByte"/> value to write.</param>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.Decimal)">
-            <summary>
-            Writes a <see cref="T:System.Decimal"/> value.
-            </summary>
-            <param name="value">The <see cref="T:System.Decimal"/> value to write.</param>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteValue(System.DateTime)">
-            <summary>
-            Writes a <see cref="T:System.DateTime"/> value.
-            </summary>
-            <param name="value">The <see cref="T:System.DateTime"/> value to write.</param>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteComment(System.String)">
-            <summary>
-            Writes out a comment <code>/*...*/</code> containing the specified text. 
-            </summary>
-            <param name="text">Text to place inside the comment.</param>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriter.WriteWhitespace(System.String)">
-            <summary>
-            Writes out the given white space.
-            </summary>
-            <param name="ws">The string of white space characters.</param>
-        </member>
-        <member name="P:Newtonsoft.Json.JsonWriter.WriteState">
-            <summary>
-            Gets the state of the writer.
-            </summary>
-        </member>
-        <member name="P:Newtonsoft.Json.JsonWriter.Formatting">
-            <summary>
-            Indicates how the output is formatted.
-            </summary>
-        </member>
-        <member name="P:Newtonsoft.Json.JsonWriter.Indentation">
-            <summary>
-            Gets or sets how many IndentChars to write for each level in the hierarchy when <paramref name="Formatting"/> is set to <c>Formatting.Indented</c>.
-            </summary>
-        </member>
-        <member name="P:Newtonsoft.Json.JsonWriter.QuoteChar">
-            <summary>
-            Gets or sets which character to use to quote attribute values.
-            </summary>
-        </member>
-        <member name="P:Newtonsoft.Json.JsonWriter.IndentChar">
-            <summary>
-            Gets or sets which character to use for indenting when <paramref name="Formatting"/> is set to <c>Formatting.Indented</c>.
-            </summary>
-        </member>
-        <member name="P:Newtonsoft.Json.JsonWriter.QuoteName">
-            <summary>
-            Gets or sets a value indicating whether object names will be surrounded with quotes.
-            </summary>
-        </member>
-        <member name="T:Newtonsoft.Json.JsonToken">
-            <summary>
-            Specifies the type of Json token.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.JsonToken.None">
-            <summary>
-            This is returned by the <see cref="T:Newtonsoft.Json.JsonReader"/> if a <see cref="M:Newtonsoft.Json.JsonReader.Read"/> method has not been called. 
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.JsonToken.StartObject">
-            <summary>
-            An object start token.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.JsonToken.StartArray">
-            <summary>
-            An array start token.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.JsonToken.PropertyName">
-            <summary>
-            An object property name.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.JsonToken.Comment">
-            <summary>
-            A comment.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.JsonToken.Integer">
-            <summary>
-            An interger.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.JsonToken.Float">
-            <summary>
-            A float.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.JsonToken.String">
-            <summary>
-            A string.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.JsonToken.Boolean">
-            <summary>
-            A boolean.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.JsonToken.Null">
-            <summary>
-            A null token.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.JsonToken.Undefined">
-            <summary>
-            An undefined token.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.JsonToken.EndObject">
-            <summary>
-            An object end token.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.JsonToken.EndArray">
-            <summary>
-            An array end token.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.JsonToken.Constructor">
-            <summary>
-            A JavaScript object constructor.
-            </summary>
-        </member>
-        <member name="F:Newtonsoft.Json.JsonToken.Date">
-            <summary>
-            A Date.
-            </summary>
-        </member>
-        <member name="T:Newtonsoft.Json.JsonReader">
-            <summary>
-            Represents a reader that provides fast, non-cached, forward-only access to serialized Json data.
-            </summary>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonReader.#ctor(System.IO.TextReader)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonReader"/> class with the specified <see cref="T:System.IO.TextReader"/>.
-            </summary>
-            <param name="reader">The <c>TextReader</c> containing the XML data to read.</param>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonReader.Read">
-            <summary>
-            Reads the next Json token from the stream.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonReader.Close">
-            <summary>
-            Changes the <see cref="T:Newtonsoft.Json.JsonReader.State"/> to Closed. 
-            </summary>
-        </member>
-        <member name="P:Newtonsoft.Json.JsonReader.QuoteChar">
-            <summary>
-            Gets the quotation mark character used to enclose the value of a string.
-            </summary>
-        </member>
-        <member name="P:Newtonsoft.Json.JsonReader.TokenType">
-            <summary>
-            Gets the type of the current Json token. 
-            </summary>
-        </member>
-        <member name="P:Newtonsoft.Json.JsonReader.Value">
-            <summary>
-            Gets the text value of the current Json token.
-            </summary>
-        </member>
-        <member name="P:Newtonsoft.Json.JsonReader.ValueType">
-            <summary>
-            Gets The Common Language Runtime (CLR) type for the current Json token.
-            </summary>
-        </member>
-        <member name="T:NBear.Common.MetaDataManager">
-            <summary>
-            The entity meta data manager.
-            </summary>
-        </member>
-        <member name="M:NBear.Common.MetaDataManager.#cctor">
-            <summary>
-            Initializes the <see cref="T:NBear.Common.MetaDataManager"/> class.
-            </summary>
-        </member>
-        <member name="M:NBear.Common.MetaDataManager.GetEntityConfiguration(System.String)">
-            <summary>
-            Gets the entity configuration.
-            </summary>
-            <param name="typeName">Name of the type.</param>
-            <returns>The entity configuration</returns>
-        </member>
-        <member name="M:NBear.Common.MetaDataManager.GetChildEntityConfigurations(System.String)">
-            <summary>
-            Gets the child entity configurations.
-            </summary>
-            <param name="baseTypeName">Name of the base type.</param>
-            <returns>The entity configurations.</returns>
-        </member>
-        <member name="M:NBear.Common.MetaDataManager.IsLazyLoad(System.String,System.String)">
-            <summary>
-            Determines whether a specified property of an entity is lazyload.
-            </summary>
-            <param name="entityName">Name of the entity.</param>
-            <param name="propertyName">Name of the property.</param>
-            <returns>
-            	<c>true</c> if is lazy load ; otherwise, <c>false</c>.
-            </returns>
-        </member>
-        <member name="M:NBear.Common.MetaDataManager.IsNonRelatedEntity(System.String)">
-            <summary>
-            Determines whether the specified entity is non related entity, a non related entity is an entity without base/child entities and related contained query properties.
-            </summary>
-            <param name="entityName">Name of the entity.</param>
-            <returns>Wthether true.</returns>
-        </member>
-        <member name="M:NBear.Common.MetaDataManager.GetEntityAutoId(System.String)">
-            <summary>
-            Gets name of the entity's auto id column.
-            </summary>
-            <param name="entityName">Name of the entity.</param>
-            <returns>The auto id column name.</returns>
-        </member>
-        <member name="M:NBear.Common.MetaDataManager.GetByteArrayColumns(System.String)">
-            <summary>
-            Gets the byte array type columns.
-            </summary>
-            <param name="entityName">Name of the entity.</param>
-            <returns>The columns.</returns>
-        </member>
-        <member name="M:NBear.Common.MetaDataManager.GetNullableNumberColumns(System.String)">
-            <summary>
-            Gets the nullable number columns.
-            </summary>
-            <param name="entityName">Name of the entity.</param>
-            <returns></returns>
-        </member>
-        <member name="M:NBear.Common.MetaDataManager.GetSqlTypeWithDefaultValueColumns(System.String)">
-            <summary>
-            Gets the sqltype with default value columns.
-            </summary>
-            <param name="entityName">Name of the entity.</param>
-            <returns></returns>
-        </member>
-        <member name="T:NBear.Common.EntityConfigurationSection">
-            <summary>
-            The entity configuration section.
-            </summary>
-        </member>
-        <member name="P:NBear.Common.EntityConfigurationSection.Encrpyt">
-            <summary>
-            Whether encrpyted entity config file.
-            </summary>
-        </member>
-        <member name="P:NBear.Common.EntityConfigurationSection.Key">
-            <summary>
-            The encrpyt/decrypt key.
-            </summary>
-        </member>
-        <member name="P:NBear.Common.EntityConfigurationSection.Includes">
-            <summary>
-            Gets or sets the includes.
-            </summary>
-            <value>The includes.</value>
-        </member>
-        <member name="T:NBear.Common.EntityConfiguration">
-            <summary>
-            An entity configuration
-            </summary>
-        </member>
-        <member name="F:NBear.Common.EntityConfiguration.Name">
-            <summary>
-            Name of entity.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.EntityConfiguration.Commnet">
-            <summary>
-            Commnet of entity
-            </summary>
-        </member>
-        <member name="F:NBear.Common.EntityConfiguration.IsReadOnly">
-            <summary>
-            Whether the entity is readonly.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.EntityConfiguration.IsAutoPreLoad">
-            <summary>
-            Whether instances of the entity are automatically preloaded.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.EntityConfiguration.IsBatchUpdate">
-            <summary>
-            Whether the entity is save all property related values in a batch to improve performance.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.EntityConfiguration.IsRelation">
-            <summary>
-            Whether the entity is a relation type.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.EntityConfiguration.BaseEntity">
-            <summary>
-            Base entity of this entity.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.EntityConfiguration.CustomData">
-            <summary>
-            Custom data.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.EntityConfiguration.AdditionalSqlScript">
-            <summary>
-            Combined additional sql script clips which will be included into the sql script batch.
-            </summary>
-        </member>
-        <member name="M:NBear.Common.EntityConfiguration.GetPropertyConfiguration(System.String)">
-            <summary>
-            Gets the property configuration.
-            </summary>
-            <param name="propertyName">Name of the property.</param>
-            <returns>The property configuration</returns>
-        </member>
-        <member name="M:NBear.Common.EntityConfiguration.Add(NBear.Common.PropertyConfiguration)">
-            <summary>
-            Adds the specified item.
-            </summary>
-            <param name="item">The item.</param>
-        </member>
-        <member name="M:NBear.Common.EntityConfiguration.GetMappingColumnNames(System.String[])">
-            <summary>
-            Gets the mapping column names.
-            </summary>
-            <param name="propertyNames">The property names.</param>
-            <returns>The column names.</returns>
-        </member>
-        <member name="M:NBear.Common.EntityConfiguration.GetMappingColumnName(System.String)">
-            <summary>
-            Gets the name of the mapping column.
-            </summary>
-            <param name="propertyName">Name of the property.</param>
-            <returns>The column names.</returns>
-        </member>
-        <member name="P:NBear.Common.EntityConfiguration.MappingName">
-            <summary>
-            Gets or sets the name of the mapping.
-            </summary>
-            <value>The name of the mapping.</value>
-        </member>
-        <member name="P:NBear.Common.EntityConfiguration.ViewName">
-            <summary>
-            Gets the name of the view to select data.
-            </summary>
-            <value>The name of the view.</value>
-        </member>
-        <member name="P:NBear.Common.EntityConfiguration.BatchSize">
-            <summary>
-            The batch size when an entity is marked as IsBatchUpdate.
-            </summary>
-        </member>
-        <member name="P:NBear.Common.EntityConfiguration.Properties">
-            <summary>
-            Gets or sets the properties configuration.
-            </summary>
-            <value>The properties.</value>
-        </member>
-        <member name="T:NBear.Common.PropertyConfiguration">
-            <summary>
-            A property configuration.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.PropertyConfiguration.Name">
-            <summary>
-            Name of the property.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.PropertyConfiguration.Commnet">
-            <summary>
-            Commnet of entity
-            </summary>
-        </member>
-        <member name="F:NBear.Common.PropertyConfiguration.PropertyType">
-            <summary>
-            Type of the property.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.PropertyConfiguration.IsInherited">
-            <summary>
-            Whether the property is inherited from a base entity.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.PropertyConfiguration.SqlDefaultValue">
-            <summary>
-            The sql default value
-            </summary>
-        </member>
-        <member name="F:NBear.Common.PropertyConfiguration.IsReadOnly">
-            <summary>
-            Whether the property is readonly.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.PropertyConfiguration.IsCompoundUnit">
-            <summary>
-            Whether the property is a CompoundUnit.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.PropertyConfiguration.IsContained">
-            <summary>
-            Whether the property is a contained property, which means if the entity saved or deleted, all contained property will be included in update object list.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.PropertyConfiguration.IsQueryProperty">
-            <summary>
-            Whether this property is a query property.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.PropertyConfiguration.IsFriendKey">
-            <summary>
-            Whether a property is a friend DEFAULT_KEY.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.PropertyConfiguration.IsLazyLoad">
-            <summary>
-            Whether the property is a lazyload query property. It is only used by query entity.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.PropertyConfiguration.QueryWhere">
-            <summary>
-            The where condition used by query property.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.PropertyConfiguration.QueryType">
-            <summary>
-            The type of the query property.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.PropertyConfiguration.QueryOrderBy">
-            <summary>
-            The order by condition used by query property.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.PropertyConfiguration.IsRelationKey">
-            <summary>
-            Whether the property is a relationkey. It is only used by relation entity.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.PropertyConfiguration.RelatedType">
-            <summary>
-            The related entity type of this relationkey. It is only used by relation entity.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.PropertyConfiguration.RelationType">
-            <summary>
-            The relation type of the query property.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.PropertyConfiguration.RelatedForeignKey">
-            <summary>
-            The related entity type's foreignkey relating to this relationkey. It is only used by relation entity.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.PropertyConfiguration.IsIndexProperty">
-            <summary>
-            Whether need to add index for the property when creating the table in database.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.PropertyConfiguration.IsIndexPropertyDesc">
-            <summary>
-            Whether the index property is desc.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.PropertyConfiguration.IsSerializationIgnore">
-            <summary>
-            Whether this property should not included in default XML serialization.
-            </summary>
-        </member>
-        <member name="F:NBear.Common.PropertyConfiguration.CustomData">
-            <summary>
-            Custom data.
-            </summary>
-        </member>
-        <member name="P:NBear.Common.PropertyConfiguration.MappingName">
-            <summary>
-            Gets or sets the name of the mapping.
-            </summary>
-            <value>The name of the mapping.</value>
-        </member>
-        <member name="P:NBear.Common.PropertyConfiguration.PropertyMappingColumnType">
-            <summary>
-            Gets or sets the type of the property mapping column.
-            </summary>
-            <value>The type of the property mapping column.</value>
-        </member>
-        <member name="P:NBear.Common.PropertyConfiguration.SqlType">
-            <summary>
-            Gets or sets the mapping sql type.
-            </summary>
-            <value>The type of the SQL.</value>
-        </member>
-        <member name="P:NBear.Common.PropertyConfiguration.IsPrimaryKey">
-            <summary>
-            Gets or sets a value indicating whether this instance is primary DEFAULT_KEY.
-            </summary>
-            <value>
-            	<c>true</c> if this instance is primary DEFAULT_KEY; otherwise, <c>false</c>.
-            </value>
-        </member>
-        <member name="P:NBear.Common.PropertyConfiguration.IsNotNull">
-            <summary>
-            whether the property could not be NULL.
-            </summary>
-        </member>
-        <member name="T:Newtonsoft.Json.JsonWriterException">
-            <summary>
-            The exception thrown when an error occurs while reading Json text.
-            </summary>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriterException.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonWriterException"/> class.
-            </summary>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriterException.#ctor(System.String)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonWriterException"/> class
-            with a specified error message.
-            </summary>
-            <param name="message">The error message that explains the reason for the exception.</param>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonWriterException.#ctor(System.String,System.Exception)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonWriterException"/> class
-            with a specified error message and a reference to the inner exception that is the cause of this exception.
-            </summary>
-            <param name="message">The error message that explains the reason for the exception.</param>
-            <param name="innerException">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified.</param>
-        </member>
-        <member name="T:Newtonsoft.Json.JsonSerializationException">
-            <summary>
-            The exception thrown when an error occurs during Json serialization or deserialization.
-            </summary>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonSerializationException.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonSerializationException"/> class.
-            </summary>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonSerializationException.#ctor(System.String)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonSerializationException"/> class
-            with a specified error message.
-            </summary>
-            <param name="message">The error message that explains the reason for the exception.</param>
-        </member>
-        <member name="M:Newtonsoft.Json.JsonSerializationException.#ctor(System.String,System.Exception)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonSerializationException"/> class
-            with a specified error message and a reference to the inner exception that is the cause of this exception.
-            </summary>
-            <param name="message">The error message that explains the reason for the exception.</param>
-            <param name="innerException">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified.</param>
         </member>
     </members>
 </doc>

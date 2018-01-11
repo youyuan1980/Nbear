@@ -4,21 +4,6 @@
         <name>NBear.Net</name>
     </assembly>
     <members>
-        <member name="T:NBear.Net.Remoting.RemotingChannelType">
-            <summary>
-            Remoting Channel Type
-            </summary>
-        </member>
-        <member name="F:NBear.Net.Remoting.RemotingChannelType.TCP">
-            <summary>
-            TCP
-            </summary>
-        </member>
-        <member name="F:NBear.Net.Remoting.RemotingChannelType.HTTP">
-            <summary>
-            HTTP
-            </summary>
-        </member>
         <member name="T:NBear.Net.Remoting.RemotingServiceHelper">
             <summary>
             The Remoting Service Helper.
@@ -55,6 +40,21 @@
         <member name="E:NBear.Net.Remoting.RemotingServiceHelper.OnLog">
             <summary>
             OnLog event.
+            </summary>
+        </member>
+        <member name="T:NBear.Net.Remoting.RemotingChannelType">
+            <summary>
+            Remoting Channel Type
+            </summary>
+        </member>
+        <member name="F:NBear.Net.Remoting.RemotingChannelType.TCP">
+            <summary>
+            TCP
+            </summary>
+        </member>
+        <member name="F:NBear.Net.Remoting.RemotingChannelType.HTTP">
+            <summary>
+            HTTP
             </summary>
         </member>
         <member name="T:NBear.Net.Remoting.RemotingClientHelper">

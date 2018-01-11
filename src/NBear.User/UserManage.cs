@@ -9,34 +9,6 @@ namespace NBear.User
 {
     public class UserManage
     {
-
-        public static UserInfo Get_ById(string UserId) {
-
-            UserInfo data = null;
-            Gateway gateway = Gateway.Default;
-            string sql = "select * from t_user where userid = '"+UserId+"'";
-            DataSet dt = gateway.Db.ExecuteDataSet(CommandType.Text, sql);
-            for (int i = 0; i < dt.Tables[0].Rows.Count; i++)
-            {
-                data = new UserInfo();
-                DataRow row = dt.Tables[0].Rows[i];
-                data.UserID = Convert.ToString(row["userid"]);
-                data.UserName = Convert.ToString(row["username"]);
-                data.UserPwd = Convert.ToString(row["userpwd"]);
-
-                sql = "select roleid from t_userrole where userid = '"+UserId+"'";
-                DataSet roledt = gateway.Db.ExecuteDataSet(CommandType.Text, sql);
-                List<string> list = new List<string>();
-                for (int j = 0; j < roledt.Tables[0].Rows.Count; j++)
-                {
-                    list.Add(Convert.ToString(roledt.Tables[0].Rows[j]["roleid"]));
-                }
-
-                data.Roles = list.ToArray();
-            }
-            return data;
-        }
-
         public static string GetUserRoles(string UserId)
         {
             string rolesstr = string.Empty;
@@ -82,15 +54,23 @@ namespace NBear.User
         /// <param name="UserId"></param>
         /// <param name="UserPassWord"></param>
         /// <returns></returns>
-        public static UserInfo ValidateUser(string UserId, string UserPassWord)
+        public static IUserInfo ValidateUser(string UserId, string UserPassWord,Func<string,IUserInfo> func)
         {
-            List<string> list = new List<string>();
-            UserInfo data = Get_ById(UserId);
+            Gateway gateway = Gateway.Default;
+            IUserInfo data = func(UserId);
             if (data != null)
             {
                 string pwd = getMd5Hash(UserPassWord);
                 if (data.UserPwd == pwd)
                 {
+                    string sql = "select roleid from t_userrole where userid = '" + UserId + "'";
+                    DataSet roledt = gateway.Db.ExecuteDataSet(CommandType.Text, sql);
+                    List<string> list = new List<string>();
+                    for (int j = 0; j < roledt.Tables[0].Rows.Count; j++)
+                    {
+                        list.Add(Convert.ToString(roledt.Tables[0].Rows[j]["roleid"]));
+                    }
+                    data.Roles = list;
                     return data;
                 }
                 else

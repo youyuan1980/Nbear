@@ -24,3 +24,16 @@ F:\nbear3.6.6_src\src\NBear.Test.CaseTests\bin\Release\NBear.Data.pdb
 F:\nbear3.6.6_src\src\NBear.Test.CaseTests\bin\Release\NBear.Data.xml
 F:\nbear3.6.6_src\src\NBear.Test.CaseTests\obj\Release\ResolveAssemblyReference.cache
 F:\nbear3.6.6_src\src\NBear.Test.CaseTests\obj\Release\NBear.Test.CaseTests.dll
+F:\nbear\Nbear\src\NBear.Test.CaseTests\bin\Release\NBear.Test.CaseTests.dll.config
+F:\nbear\Nbear\src\NBear.Test.CaseTests\bin\Release\NBear.Test.CaseTests.dll
+F:\nbear\Nbear\src\NBear.Test.CaseTests\bin\Release\NBear.Common.Design.dll
+F:\nbear\Nbear\src\NBear.Test.CaseTests\bin\Release\NBear.Common.dll
+F:\nbear\Nbear\src\NBear.Test.CaseTests\bin\Release\NBear.Data.dll
+F:\nbear\Nbear\src\NBear.Test.CaseTests\bin\Release\NBear.Common.Design.pdb
+F:\nbear\Nbear\src\NBear.Test.CaseTests\bin\Release\NBear.Common.Design.xml
+F:\nbear\Nbear\src\NBear.Test.CaseTests\bin\Release\NBear.Common.pdb
+F:\nbear\Nbear\src\NBear.Test.CaseTests\bin\Release\NBear.Common.xml
+F:\nbear\Nbear\src\NBear.Test.CaseTests\bin\Release\NBear.Data.pdb
+F:\nbear\Nbear\src\NBear.Test.CaseTests\bin\Release\NBear.Data.xml
+F:\nbear\Nbear\src\NBear.Test.CaseTests\obj\Release\ResolveAssemblyReference.cache
+F:\nbear\Nbear\src\NBear.Test.CaseTests\obj\Release\NBear.Test.CaseTests.dll

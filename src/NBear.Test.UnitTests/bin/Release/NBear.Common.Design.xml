@@ -4,6 +4,100 @@
         <name>NBear.Common.Design</name>
     </assembly>
     <members>
+        <member name="T:NBear.Common.Design.QueryDescriber">
+            <summary>
+            Used by NBear self to describe the details of a QueryAttribute.
+            </summary>
+        </member>
+        <member name="M:NBear.Common.Design.QueryDescriber.GetPkPropertyName(System.Type)">
+            <summary>
+            Gets the name of the pk property or specified entity type.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>The pk name.</returns>
+        </member>
+        <member name="M:NBear.Common.Design.QueryDescriber.GetPkPropertyInfo(System.Type)">
+            <summary>
+            Gets the pk property info of the specified entity type.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>The property info.</returns>
+        </member>
+        <member name="M:NBear.Common.Design.QueryDescriber.GetPkPropertyType(System.Type)">
+            <summary>
+            Gets the type of the pk property.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>The type.</returns>
+        </member>
+        <member name="M:NBear.Common.Design.QueryDescriber.#ctor(NBear.Common.Design.QueryAttribute,System.Reflection.PropertyInfo,System.Type,System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NBear.Common.Design.QueryDescriber"/> class.
+            </summary>
+            <param name="qa">The query attribute instance.</param>
+            <param name="pi">The property's property info.</param>
+            <param name="propertyEntityType">The entity type that the property returns.</param>
+            <param name="entityType">The entity type.</param>
+        </member>
+        <member name="P:NBear.Common.Design.QueryDescriber.Where">
+            <summary>
+            Gets the where.
+            </summary>
+            <value>The where.</value>
+        </member>
+        <member name="P:NBear.Common.Design.QueryDescriber.OrderBy">
+            <summary>
+            Gets the order by.
+            </summary>
+            <value>The order by.</value>
+        </member>
+        <member name="P:NBear.Common.Design.QueryDescriber.RelationType">
+            <summary>
+            Gets the type of the relation.
+            </summary>
+            <value>The type of the relation.</value>
+        </member>
+        <member name="P:NBear.Common.Design.QueryDescriber.Contained">
+            <summary>
+            Gets a value indicating whether this <see cref="T:NBear.Common.Design.QueryDescriber"/> is contained in cascade update.
+            </summary>
+            <value><c>true</c> if contained; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:NBear.Common.Design.QueryDescriber.RelatedForeignKey">
+            <summary>
+            Gets the related foreign key.
+            </summary>
+            <value>The related foreign key.</value>
+        </member>
+        <member name="P:NBear.Common.Design.QueryDescriber.RelatedForeignKeyType">
+            <summary>
+            Gets the type of the related foreign key.
+            </summary>
+            <value>The type of the related foreign key.</value>
+        </member>
+        <member name="P:NBear.Common.Design.QueryDescriber.RelatedForeignKeyPropertyInfo">
+            <summary>
+            Gets the related foreign key property info.
+            </summary>
+            <value>The related foreign key property info.</value>
+        </member>
+        <member name="P:NBear.Common.Design.QueryDescriber.RelatedType">
+            <summary>
+            Gets the type of the related entity.
+            </summary>
+            <value>The type of the related.</value>
+        </member>
+        <member name="P:NBear.Common.Design.QueryDescriber.LazyLoad">
+            <summary>
+            Gets a value indicating whether the property is lazyload.
+            </summary>
+            <value><c>true</c> if lazyload; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:NBear.Common.Design.Entity">
+            <summary>
+            This interface is only used at entity design time to mark a interface as an entity.
+            </summary>
+        </member>
         <member name="T:NBear.Common.Design.PrimaryKeyAttribute">
             <summary>
             Mark a property as one of the primary keys of the owned entity.
@@ -459,100 +553,6 @@
             Gets or sets the additional where.
             </summary>
             <value>The additional where.</value>
-        </member>
-        <member name="T:NBear.Common.Design.QueryDescriber">
-            <summary>
-            Used by NBear self to describe the details of a QueryAttribute.
-            </summary>
-        </member>
-        <member name="M:NBear.Common.Design.QueryDescriber.GetPkPropertyName(System.Type)">
-            <summary>
-            Gets the name of the pk property or specified entity type.
-            </summary>
-            <param name="type">The type.</param>
-            <returns>The pk name.</returns>
-        </member>
-        <member name="M:NBear.Common.Design.QueryDescriber.GetPkPropertyInfo(System.Type)">
-            <summary>
-            Gets the pk property info of the specified entity type.
-            </summary>
-            <param name="type">The type.</param>
-            <returns>The property info.</returns>
-        </member>
-        <member name="M:NBear.Common.Design.QueryDescriber.GetPkPropertyType(System.Type)">
-            <summary>
-            Gets the type of the pk property.
-            </summary>
-            <param name="type">The type.</param>
-            <returns>The type.</returns>
-        </member>
-        <member name="M:NBear.Common.Design.QueryDescriber.#ctor(NBear.Common.Design.QueryAttribute,System.Reflection.PropertyInfo,System.Type,System.Type)">
-            <summary>
-            Initializes a new instance of the <see cref="T:NBear.Common.Design.QueryDescriber"/> class.
-            </summary>
-            <param name="qa">The query attribute instance.</param>
-            <param name="pi">The property's property info.</param>
-            <param name="propertyEntityType">The entity type that the property returns.</param>
-            <param name="entityType">The entity type.</param>
-        </member>
-        <member name="P:NBear.Common.Design.QueryDescriber.Where">
-            <summary>
-            Gets the where.
-            </summary>
-            <value>The where.</value>
-        </member>
-        <member name="P:NBear.Common.Design.QueryDescriber.OrderBy">
-            <summary>
-            Gets the order by.
-            </summary>
-            <value>The order by.</value>
-        </member>
-        <member name="P:NBear.Common.Design.QueryDescriber.RelationType">
-            <summary>
-            Gets the type of the relation.
-            </summary>
-            <value>The type of the relation.</value>
-        </member>
-        <member name="P:NBear.Common.Design.QueryDescriber.Contained">
-            <summary>
-            Gets a value indicating whether this <see cref="T:NBear.Common.Design.QueryDescriber"/> is contained in cascade update.
-            </summary>
-            <value><c>true</c> if contained; otherwise, <c>false</c>.</value>
-        </member>
-        <member name="P:NBear.Common.Design.QueryDescriber.RelatedForeignKey">
-            <summary>
-            Gets the related foreign key.
-            </summary>
-            <value>The related foreign key.</value>
-        </member>
-        <member name="P:NBear.Common.Design.QueryDescriber.RelatedForeignKeyType">
-            <summary>
-            Gets the type of the related foreign key.
-            </summary>
-            <value>The type of the related foreign key.</value>
-        </member>
-        <member name="P:NBear.Common.Design.QueryDescriber.RelatedForeignKeyPropertyInfo">
-            <summary>
-            Gets the related foreign key property info.
-            </summary>
-            <value>The related foreign key property info.</value>
-        </member>
-        <member name="P:NBear.Common.Design.QueryDescriber.RelatedType">
-            <summary>
-            Gets the type of the related entity.
-            </summary>
-            <value>The type of the related.</value>
-        </member>
-        <member name="P:NBear.Common.Design.QueryDescriber.LazyLoad">
-            <summary>
-            Gets a value indicating whether the property is lazyload.
-            </summary>
-            <value><c>true</c> if lazyload; otherwise, <c>false</c>.</value>
-        </member>
-        <member name="T:NBear.Common.Design.Entity">
-            <summary>
-            This interface is only used at entity design time to mark a interface as an entity.
-            </summary>
         </member>
     </members>
 </doc>
